@@ -1,0 +1,144 @@
+2025-09-24 03:01:42,493 - ERROR - Pipeline execution failed: 'data_dir'
+2025-09-24 03:02:40,452 - INFO - PipelineRunner initialized
+2025-09-24 03:02:40,509 - INFO - DataProcessor initialized
+2025-09-24 03:02:40,509 - INFO - Starting full data processing pipeline
+2025-09-24 03:02:40,510 - ERROR - Error in data processing pipeline: Excel file not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-24 03:02:40,512 - ERROR - Pipeline execution failed: Excel file not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-24 03:04:17,740 - INFO - PipelineRunner initialized
+2025-09-24 03:04:17,740 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:04:17,740 - INFO - Stage 1: Data Processing
+2025-09-24 03:04:17,741 - INFO - DataProcessor initialized
+2025-09-24 03:04:17,874 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:04:17,878 - ERROR - Pipeline failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-09-24 03:04:17,878 - ERROR - Pipeline execution failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-09-24 03:05:20,206 - INFO - PipelineRunner initialized
+2025-09-24 03:05:20,207 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:05:20,207 - INFO - Stage 1: Data Processing
+2025-09-24 03:05:20,208 - INFO - DataProcessor initialized
+2025-09-24 03:05:20,241 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:05:20,260 - ERROR - Pipeline failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-09-24 03:05:20,261 - ERROR - Pipeline execution failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-09-24 03:09:17,992 - INFO - PipelineRunner initialized
+2025-09-24 03:09:17,992 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:09:17,992 - INFO - Stage 1: Data Processing
+2025-09-24 03:09:17,993 - INFO - DataProcessor initialized
+2025-09-24 03:09:17,996 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
+2025-09-24 03:09:17,996 - INFO - Stage 2: AI Predictions
+2025-09-24 03:09:17,997 - ERROR - Predictions failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:09:17,997 - INFO - Stage 3: Export Analysis
+2025-09-24 03:09:17,998 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:09:17,998 - ERROR - Analysis failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:09:17,999 - INFO - Generating Summary Report
+2025-09-24 03:09:18,001 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-24 03:09:18,001 - INFO - Pipeline completed successfully!
+2025-09-24 03:11:58,856 - INFO - PipelineRunner initialized
+2025-09-24 03:11:58,857 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:11:58,857 - INFO - Stage 1: Data Processing
+2025-09-24 03:11:58,858 - INFO - DataProcessor initialized
+2025-09-24 03:11:58,863 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
+2025-09-24 03:11:58,864 - INFO - Stage 2: AI Predictions
+2025-09-24 03:11:58,866 - ERROR - Predictions failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:11:58,866 - INFO - Stage 3: Export Analysis
+2025-09-24 03:11:58,867 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:11:58,867 - ERROR - Analysis failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:11:58,867 - INFO - Generating Summary Report
+2025-09-24 03:11:58,870 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-24 03:11:58,871 - INFO - Pipeline completed successfully!
+2025-09-24 03:12:27,824 - INFO - PipelineRunner initialized
+2025-09-24 03:12:27,824 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:12:27,824 - INFO - Stage 1: Data Processing
+2025-09-24 03:12:27,825 - INFO - DataProcessor initialized
+2025-09-24 03:12:27,825 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
+2025-09-24 03:12:27,825 - INFO - Stage 2: AI Predictions
+2025-09-24 03:12:27,826 - ERROR - Predictions failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:12:27,828 - INFO - Stage 3: Export Analysis
+2025-09-24 03:12:27,829 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:12:27,830 - ERROR - Analysis failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:12:27,830 - INFO - Generating Summary Report
+2025-09-24 03:12:27,834 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-24 03:12:27,834 - INFO - Pipeline completed successfully!
+2025-09-24 03:13:04,222 - INFO - PipelineRunner initialized
+2025-09-24 03:13:04,223 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:13:04,223 - INFO - Stage 1: Data Processing
+2025-09-24 03:13:04,224 - INFO - DataProcessor initialized
+2025-09-24 03:13:04,226 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
+2025-09-24 03:13:04,226 - INFO - Stage 2: AI Predictions
+2025-09-24 03:13:04,228 - ERROR - Predictions failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:13:04,228 - INFO - Stage 3: Export Analysis
+2025-09-24 03:13:04,229 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:13:04,229 - ERROR - Analysis failed: Expecting value: line 1 column 1 (char 0)
+2025-09-24 03:13:04,229 - INFO - Generating Summary Report
+2025-09-24 03:13:04,232 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-24 03:13:04,232 - INFO - Pipeline completed successfully!
+2025-09-24 03:13:31,779 - INFO - PipelineRunner initialized
+2025-09-24 03:13:31,779 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:13:31,779 - INFO - Stage 1: Data Processing
+2025-09-24 03:13:31,780 - INFO - DataProcessor initialized
+2025-09-24 03:13:31,780 - INFO - Starting full data processing pipeline
+2025-09-24 03:13:31,780 - INFO - Loading Excel data...
+2025-09-24 03:13:31,781 - INFO - Loading Excel data from c:\Users\educa\HACKTON\rwanda-export-explorer\data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-24 03:13:32,819 - INFO - Found sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-09-24 03:13:33,757 - INFO - Loaded 13 sheets from Excel
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Graph Overall with shape (13, 14)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Graph EAC with shape (13, 14)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: EAC with shape (26, 27)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Total trade with the World with shape (18, 15)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Regional blocks with shape (32, 14)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Trade by continents with shape (23, 26)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: Sheet11 with shape (8, 6)
+2025-09-24 03:13:33,759 - INFO - Processing sheet: ExportCountry with shape (32, 16)
+2025-09-24 03:13:33,759 - INFO - Extracting export country data
+2025-09-24 03:13:33,759 - INFO - Extracting quarterly export data
+2025-09-24 03:13:33,759 - WARNING - Expected quarter headers not found, returning empty
+2025-09-24 03:13:33,761 - INFO - Extracted 0 country export records
+2025-09-24 03:13:33,762 - INFO - Processing sheet: ImportCountry with shape (27, 16)
+2025-09-24 03:13:33,762 - INFO - Extracting quarterly import data
+2025-09-24 03:13:33,762 - WARNING - Expected quarter headers not found, returning empty
+2025-09-24 03:13:33,763 - INFO - Processing sheet: ReexportsCountry with shape (28, 16)
+2025-09-24 03:13:33,763 - INFO - Extracting re-export data
+2025-09-24 03:13:33,766 - INFO - Processing sheet: ExportsCommodity with shape (16, 17)
+2025-09-24 03:13:33,766 - INFO - Extracting quarterly export data
+2025-09-24 03:13:33,786 - INFO - Extracted 157 export records
+2025-09-24 03:13:33,787 - INFO - Processing sheet: ImportsCommodity with shape (16, 17)
+2025-09-24 03:13:33,787 - INFO - Extracting quarterly import data
+2025-09-24 03:13:33,806 - INFO - Extracted 153 import records
+2025-09-24 03:13:33,807 - INFO - Processing sheet: ReexportsCommodity with shape (17, 17)
+2025-09-24 03:13:33,807 - INFO - Extracting re-export data
+2025-09-24 03:13:33,810 - INFO - Calculating trade balance
+2025-09-24 03:13:33,877 - INFO - Saving processed data to JSON files
+2025-09-24 03:13:33,897 - INFO - Saved processed data to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed
+2025-09-24 03:13:33,897 - INFO - Data processing completed successfully
+2025-09-24 03:13:33,898 - INFO - Validating processed data
+2025-09-24 03:13:33,898 - INFO - Validation passed: exports_not_empty
+2025-09-24 03:13:33,898 - INFO - Validation passed: imports_not_empty
+2025-09-24 03:13:33,898 - INFO - Validation passed: quarters_consistent
+2025-09-24 03:13:33,898 - INFO - Validation passed: values_non_negative
+2025-09-24 03:13:33,898 - INFO - Validation passed: countries_present
+2025-09-24 03:13:33,899 - INFO - Data processing completed: {'exports_count': 157, 'imports_count': 153, 'balance_records': 15, 'quarters_processed': 15, 'commodities_count': 1, 'countries_count': 11}
+2025-09-24 03:13:33,899 - INFO - Stage 2: AI Predictions
+2025-09-24 03:13:34,068 - INFO - TradePredictor initialized
+2025-09-24 03:13:34,071 - INFO - Starting full prediction pipeline
+2025-09-24 03:13:34,071 - INFO - Predicting exports for next 4 quarters
+2025-09-24 03:13:34,435 - INFO - Predicting imports for next 4 quarters
+2025-09-24 03:13:34,777 - INFO - Predicting trade balance for next 4 quarters
+2025-09-24 03:13:34,777 - INFO - Predicting exports for next 4 quarters
+2025-09-24 03:13:35,124 - INFO - Predicting imports for next 4 quarters
+2025-09-24 03:13:35,425 - INFO - Generating commodity predictions for top 10 commodities
+2025-09-24 03:13:35,463 - INFO - Generating country predictions for top 5 destinations
+2025-09-24 03:13:35,468 - INFO - Prediction pipeline completed successfully
+2025-09-24 03:13:35,468 - INFO - Predictions generated successfully
+2025-09-24 03:13:35,468 - INFO - Stage 3: Export Analysis
+2025-09-24 03:13:35,469 - INFO - Loaded 157 export records, 153 import records
+2025-09-24 03:13:35,470 - INFO - ExportAnalyzer initialized
+2025-09-24 03:13:35,470 - INFO - Generating comprehensive analysis report
+2025-09-24 03:13:35,470 - INFO - Analyzing top 5 export destinations
+2025-09-24 03:13:35,474 - INFO - Analyzing top 5 import sources
+2025-09-24 03:13:35,478 - INFO - Analyzing top 10 export products
+2025-09-24 03:13:35,480 - INFO - Analyzing quarterly trends
+2025-09-24 03:13:35,483 - INFO - Analyzing trade balance
+2025-09-24 03:13:35,483 - INFO - Analyzing market opportunities
+2025-09-24 03:13:35,517 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-24 03:13:35,517 - INFO - Analysis completed successfully
+2025-09-24 03:13:35,517 - INFO - Generating Summary Report
+2025-09-24 03:13:35,519 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-24 03:13:35,519 - INFO - Pipeline completed successfully!

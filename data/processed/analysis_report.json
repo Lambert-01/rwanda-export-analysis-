@@ -1,0 +1,310 @@
+{
+  "generated_at": "2025-09-24T03:13:35.470014",
+  "summary": {
+    "total_exports": 10851.057702765407,
+    "total_imports": 35428.48510511049,
+    "current_balance": 0.12838546633733472,
+    "quarters_analyzed": 15,
+    "export_growth_rate": 6940.091804944867,
+    "top_destination": "Various",
+    "top_product": "SITC SECTION"
+  },
+  "top_destinations": [
+    {
+      "destination_country": "Various",
+      "export_value": 10851.057702765409,
+      "percentage": 100.0,
+      "growth_rate": 0.0
+    }
+  ],
+  "top_sources": [
+    {
+      "source_country": "Various",
+      "import_value": 35428.485105110485,
+      "percentage": 100.0
+    }
+  ],
+  "top_products": [
+    {
+      "commodity": "SITC SECTION",
+      "export_value": 5411.05268575581,
+      "percentage": 49.89,
+      "category": "Other"
+    },
+    {
+      "commodity": "9",
+      "export_value": 2970.726673800891,
+      "percentage": 27.39,
+      "category": "Other"
+    },
+    {
+      "commodity": "0",
+      "export_value": 1093.9193071046222,
+      "percentage": 10.09,
+      "category": "Other"
+    },
+    {
+      "commodity": "2",
+      "export_value": 693.8307604654647,
+      "percentage": 6.4,
+      "category": "Other"
+    },
+    {
+      "commodity": "6",
+      "export_value": 359.7672058288146,
+      "percentage": 3.32,
+      "category": "Other"
+    },
+    {
+      "commodity": "8",
+      "export_value": 96.6893800493319,
+      "percentage": 0.89,
+      "category": "Other"
+    },
+    {
+      "commodity": "4",
+      "export_value": 80.7577829911629,
+      "percentage": 0.74,
+      "category": "Other"
+    },
+    {
+      "commodity": "7",
+      "export_value": 80.61467528080067,
+      "percentage": 0.74,
+      "category": "Other"
+    },
+    {
+      "commodity": "5",
+      "export_value": 50.57657143622141,
+      "percentage": 0.47,
+      "category": "Other"
+    },
+    {
+      "commodity": "3",
+      "export_value": 8.395802621215138,
+      "percentage": 0.08,
+      "category": "Other"
+    }
+  ],
+  "quarterly_trends": {
+    "export_trends": [
+      {
+        "quarter": "% change Q4/Q3",
+        "export_value": 2.8408699284805037
+      },
+      {
+        "quarter": "% change Q4/Q4",
+        "export_value": 27.714997869090514
+      },
+      {
+        "quarter": "2022Q1",
+        "export_value": 587.1576966294377
+      },
+      {
+        "quarter": "2022Q2",
+        "export_value": 663.1051024793469
+      },
+      {
+        "quarter": "2022Q3",
+        "export_value": 685.1270758964293
+      },
+      {
+        "quarter": "2022Q4",
+        "export_value": 709.6773815406855
+      },
+      {
+        "quarter": "2023Q1",
+        "export_value": 804.2573477346095
+      },
+      {
+        "quarter": "2023Q2",
+        "export_value": 969.4786925057047
+      },
+      {
+        "quarter": "2023Q3",
+        "export_value": 776.1938702636716
+      },
+      {
+        "quarter": "2023Q4",
+        "export_value": 798.215315020499
+      },
+      {
+        "quarter": "2024Q1",
+        "export_value": 863.2188834895298
+      },
+      {
+        "quarter": "2024Q2",
+        "export_value": 1075.172476647118
+      },
+      {
+        "quarter": "2024Q3",
+        "export_value": 1334.0067409868425
+      },
+      {
+        "quarter": "2024Q4",
+        "export_value": 1354.891400749864
+      },
+      {
+        "quarter": "Shares in % Q4",
+        "export_value": 199.9998510240991
+      }
+    ],
+    "import_trends": [
+      {
+        "quarter": "% change Q4/Q3",
+        "import_value": 0.12878895411162383
+      },
+      {
+        "quarter": "% change Q4/Q4",
+        "import_value": 1.306028414360386
+      },
+      {
+        "quarter": "2022Q1",
+        "import_value": 2069.0788513602984
+      },
+      {
+        "quarter": "2022Q2",
+        "import_value": 2696.0518934557854
+      },
+      {
+        "quarter": "2022Q3",
+        "import_value": 2962.4481479237243
+      },
+      {
+        "quarter": "2022Q4",
+        "import_value": 2562.4148313857154
+      },
+      {
+        "quarter": "2023Q1",
+        "import_value": 2952.7268134826368
+      },
+      {
+        "quarter": "2023Q2",
+        "import_value": 3141.6082469425
+      },
+      {
+        "quarter": "2023Q3",
+        "import_value": 3159.7278630853416
+      },
+      {
+        "quarter": "2023Q4",
+        "import_value": 2970.7567861887683
+      },
+      {
+        "quarter": "2024Q1",
+        "import_value": 2819.675485063255
+      },
+      {
+        "quarter": "2024Q2",
+        "import_value": 3134.533596041795
+      },
+      {
+        "quarter": "2024Q3",
+        "import_value": 3501.471066147378
+      },
+      {
+        "quarter": "2024Q4",
+        "import_value": 3256.6852411070554
+      },
+      {
+        "quarter": "Shares in % Q4",
+        "import_value": 199.87146555776175
+      }
+    ],
+    "balance_trends": [
+      {
+        "quarter": "% change Q4/Q3",
+        "trade_balance": 2.71208097436888
+      },
+      {
+        "quarter": "% change Q4/Q4",
+        "trade_balance": 26.408969454730126
+      },
+      {
+        "quarter": "2022Q1",
+        "trade_balance": -1481.9211547308605
+      },
+      {
+        "quarter": "2022Q2",
+        "trade_balance": -2032.9467909764385
+      },
+      {
+        "quarter": "2022Q3",
+        "trade_balance": -2277.321072027295
+      },
+      {
+        "quarter": "2022Q4",
+        "trade_balance": -1852.73744984503
+      },
+      {
+        "quarter": "2023Q1",
+        "trade_balance": -2148.4694657480272
+      },
+      {
+        "quarter": "2023Q2",
+        "trade_balance": -2172.1295544367954
+      },
+      {
+        "quarter": "2023Q3",
+        "trade_balance": -2383.53399282167
+      },
+      {
+        "quarter": "2023Q4",
+        "trade_balance": -2172.5414711682693
+      },
+      {
+        "quarter": "2024Q1",
+        "trade_balance": -1956.4566015737253
+      },
+      {
+        "quarter": "2024Q2",
+        "trade_balance": -2059.361119394677
+      },
+      {
+        "quarter": "2024Q3",
+        "trade_balance": -2167.4643251605357
+      },
+      {
+        "quarter": "2024Q4",
+        "trade_balance": -1901.7938403571914
+      },
+      {
+        "quarter": "Shares in % Q4",
+        "trade_balance": 0.12838546633733472
+      }
+    ],
+    "growth_rates": {
+      "export_growth": 6940.091804944867,
+      "import_growth": 155093.01863770813,
+      "balance_improvement": "negative"
+    }
+  },
+  "trade_balance_analysis": {
+    "current_balance": 0.12838546633733472,
+    "balance_type": "surplus",
+    "deficit_percentage": 80.0,
+    "quarters_in_deficit": 12,
+    "average_deficit": -2050.5564031867093,
+    "recommendations": [
+      "Implement import substitution strategies for key commodities",
+      "Strengthen export promotion agencies and trade facilitation",
+      "Review trade policies and tariff structures",
+      "Invest in export-oriented industries and infrastructure"
+    ]
+  },
+  "market_opportunities": [
+    {
+      "country": "Various",
+      "current_exports": 10851.057702765409,
+      "opportunity_score": 4392.02,
+      "potential": "Medium"
+    }
+  ],
+  "recommendations": [
+    "Diversify export markets to reduce risk and increase opportunities",
+    "Implement import substitution strategies for key commodities",
+    "Strengthen export promotion agencies and trade facilitation",
+    "Review trade policies and tariff structures",
+    "Invest in export-oriented industries and infrastructure"
+  ]
+}

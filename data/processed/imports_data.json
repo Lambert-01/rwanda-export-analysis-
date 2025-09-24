@@ -1,0 +1,920 @@
+[
+  {
+    "quarter": "2022Q1",
+    "import_value": 1034.5394256801528,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 1348.0259467278936,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 1481.2243433417425,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 1281.2074275500079,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 1476.5099483773447,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 1571.0946258966371,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 1581.8144762227898,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 1486.9343027633097,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 1410.520446799369,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 1568.9725638823377,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 1751.5689343393103,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 1629.3897840889606,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 100.0,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.0958048254458268,
+    "commodity": "SITC SECTION",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 126.66981761995423,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 200.87132644629102,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 187.43902821660419,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 248.72188488698654,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 264.48208607512186,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 228.98319809771624,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 254.3593310805153,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 290.3228110732528,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 201.87559206218555,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 238.02216370523092,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 237.53641377813463,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 234.56643276944516,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 14.395968052579763,
+    "commodity": "0",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 16.0459553052468,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 33.323797797152146,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 23.556121788797626,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 30.60355569487538,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 27.883302870403096,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 25.20022769590143,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 29.6217990849481,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 26.72937521476849,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 21.912874604542942,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 24.973699574774777,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 26.94692779961212,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 27.40919862604367,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 1.6821756766671365,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q3",
+    "import_value": 0.017154861951951483,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.025433569090667074,
+    "commodity": "1",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 29.350214446020015,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 44.37157806481526,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 29.524170517408802,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 27.62761010304426,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 39.36663978982,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 32.80676861321486,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 41.14364629359716,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 39.199202801521466,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 33.55480650491717,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 31.86964859738773,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 44.32582056873473,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 40.664177707047784,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 2.4956691212952653,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.037372568849013854,
+    "commodity": "2",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 149.0075651452561,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 186.94191532858284,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 274.88588741588353,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 179.15128509586913,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 190.83281970316793,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 161.7909827807951,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 157.6190056404909,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 174.68451009985884,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 184.27484600813108,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 202.23215711508107,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 202.0833231126036,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 190.52678439970418,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 11.69313728735775,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.09069077899802935,
+    "commodity": "3",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 49.511893350923174,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 51.49848978139928,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 56.553602102832606,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 41.727512324766025,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 63.50942757856312,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 54.00324272010022,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 52.95085316136619,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 57.26825300032536,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 38.8653409324913,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 46.333280207576394,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 53.27944196959287,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 55.924705765790115,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 3.4322484596317295,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q3",
+    "import_value": 0.04964886452277284,
+    "commodity": "4",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 111.88162959721392,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 153.82447995665595,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 156.39407586053665,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 140.70710481384234,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 139.71334668642845,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 136.89632552264456,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 149.4623575462687,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 130.4712544312906,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 120.45635674450412,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 137.98190703289092,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 146.93103368490648,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 135.39214316316625,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 8.30937719662137,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.03771626748991763,
+    "commodity": "5",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 190.69468827104814,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 219.3138321837735,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 220.09742601750935,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 214.01753191686666,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 198.95793346354318,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 215.32300609053192,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 254.21104321367343,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 216.8710660360427,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 162.59677935164316,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 171.5496377320884,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 218.56345206751854,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 215.1264163020412,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 13.202882355269255,
+    "commodity": "6",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 173.02060554025084,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 201.0674078034677,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 242.44813340550206,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 235.6760844929735,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 256.265069087053,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 318.7974058804671,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 320.3309988398417,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 258.6270759354252,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 278.4342638762441,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 286.4094076274374,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 253.86170721845394,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 238.86086994544144,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 14.659529124211094,
+    "commodity": "7",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 69.90857506264948,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 94.83302277167117,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 135.87284684859134,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 81.76859053455723,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 87.0919098485116,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 87.74971050023294,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 107.35132524359203,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 87.39400134840432,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 92.02958680030616,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 88.35398769123687,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 87.25386718889216,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 92.66231800879544,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 5.6869337781325076,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q3",
+    "import_value": 0.06198522763689951,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.060282360106026944,
+    "commodity": "8",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q1",
+    "import_value": 118.44848134158273,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q2",
+    "import_value": 161.9800965940828,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q3",
+    "import_value": 154.45251240831573,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2022Q4",
+    "import_value": 81.20624397192661,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 208.1143300026799,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 308.9627531442586,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 210.86302675825806,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 202.254933484569,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 275.1545913789204,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 337.8351428757529,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 479.1201444196187,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 396.1624103306197,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "Shares in % Q4",
+    "import_value": 24.313544505995885,
+    "commodity": "9",
+    "source_country": "Various"
+  },
+  {
+    "quarter": "% change Q4/Q4",
+    "import_value": 0.9587280443809043,
+    "commodity": "9",
+    "source_country": "Various"
+  }
+]

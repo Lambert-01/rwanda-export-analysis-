@@ -1,0 +1,55 @@
+{
+  "execution_info": {
+    "start_time": "2025-09-24T03:13:31.779430",
+    "end_time": null,
+    "duration_seconds": 0,
+    "stages_completed": [
+      "data_processing",
+      "predictions",
+      "analysis"
+    ],
+    "errors": []
+  },
+  "data_summary": {
+    "exports_count": 157,
+    "imports_count": 153,
+    "balance_records": 15,
+    "quarters_processed": 15,
+    "commodities_count": 1,
+    "countries_count": 11
+  },
+  "predictions_summary": {
+    "next_quarter_export": 4.331734578330347,
+    "next_quarter_import": 43.76625669784637,
+    "next_quarter_balance": -39.434522119516025,
+    "top_growing_commodity": "SITC SECTION",
+    "top_opportunity_country": "Various",
+    "overall_confidence": 72.5
+  },
+  "analysis_summary": {
+    "total_exports": 10851.057702765407,
+    "current_balance": 0.12838546633733472,
+    "top_destination": "Various",
+    "top_product": "SITC SECTION",
+    "recommendations_count": 5
+  },
+  "files_generated": [
+    "data/processed/exports_data.json",
+    "data/processed/imports_data.json",
+    "data/processed/trade_balance.json",
+    "data/processed/metadata.json",
+    "data/processed/predictions.json",
+    "data/processed/analysis_report.json"
+  ],
+  "config": {
+    "data_dir": "c:\\Users\\educa\\HACKTON\\rwanda-export-explorer\\data",
+    "processed_dir": "c:\\Users\\educa\\HACKTON\\rwanda-export-explorer\\data\\processed",
+    "models_dir": "c:\\Users\\educa\\HACKTON\\rwanda-export-explorer\\models",
+    "excel_filename": "2024Q4_Trade_report_annexTables.xlsx",
+    "prediction_quarters": 4,
+    "analysis_top_n": 10,
+    "force_reprocess": false,
+    "skip_predictions": false,
+    "skip_analysis": false
+  }
+}
