@@ -496,22 +496,112 @@
 }
 
 /************************************
- * 11. MAP, SEARCH, ANALYTICS      *
- ************************************/
-#exportMap {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #dee2e6;
-  }
-#export-map, .map-container {
-    width: 100%;
-    height: 400px;
-    border-radius: 12px;
-    border: 1px solid #dee2e6;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-    margin-bottom: 1.5rem;
-    background: #f8fafc;
-}
+  * 11. MAP, SEARCH, ANALYTICS      *
+  ************************************/
+ #exportMap {
+     width: 100%;
+     border-radius: 8px;
+     border: 1px solid #dee2e6;
+   }
+ #export-map, .map-container {
+     width: 100%;
+     height: 400px;
+     border-radius: 12px;
+     border: 1px solid #dee2e6;
+     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+     margin-bottom: 1.5rem;
+     background: #f8fafc;
+ }
+
+ /* Map Tooltips and Markers */
+ .map-tooltip {
+     background: rgba(26, 54, 93, 0.95) !important;
+     border: none !important;
+     border-radius: 8px !important;
+     color: #fff !important;
+     font-size: 0.9rem !important;
+     font-weight: 500 !important;
+     padding: 0.75rem 1rem !important;
+     box-shadow: 0 4px 16px rgba(44, 62, 80, 0.25) !important;
+     backdrop-filter: blur(8px) !important;
+     -webkit-backdrop-filter: blur(8px) !important;
+     border-left: 4px solid #f7931e !important;
+ }
+
+ .country-marker {
+     background: #fff !important;
+     border: 2px solid #2d7dd2 !important;
+     border-radius: 50% !important;
+     width: 20px !important;
+     height: 20px !important;
+     display: flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15) !important;
+     transition: all 0.3s ease !important;
+ }
+
+ .country-marker .color-dot {
+     width: 8px !important;
+     height: 8px !important;
+     border-radius: 50% !important;
+     background: #f7931e !important;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+ }
+
+ .country-marker:hover {
+     transform: scale(1.2) !important;
+     box-shadow: 0 4px 12px rgba(44, 62, 80, 0.25) !important;
+     border-color: #f7931e !important;
+ }
+
+ /* Map Legend */
+ .map-legend {
+     background: rgba(255, 255, 255, 0.95) !important;
+     border-radius: 8px !important;
+     padding: 0.75rem 1rem !important;
+     box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15) !important;
+     backdrop-filter: blur(8px) !important;
+     -webkit-backdrop-filter: blur(8px) !important;
+     border: 1px solid rgba(255, 255, 255, 0.2) !important;
+     font-size: 0.9rem !important;
+     font-weight: 500 !important;
+     color: #1a365d !important;
+ }
+
+ /* Leaflet Cluster Styles */
+ .marker-cluster-small {
+     background-color: rgba(45, 125, 210, 0.8) !important;
+     border: 2px solid rgba(255, 255, 255, 0.8) !important;
+ }
+
+ .marker-cluster-small div {
+     background-color: rgba(247, 147, 30, 0.9) !important;
+     color: #fff !important;
+     font-weight: 600 !important;
+ }
+
+ .marker-cluster-medium {
+     background-color: rgba(45, 125, 210, 0.8) !important;
+     border: 2px solid rgba(255, 255, 255, 0.8) !important;
+ }
+
+ .marker-cluster-medium div {
+     background-color: rgba(247, 147, 30, 0.9) !important;
+     color: #fff !important;
+     font-weight: 600 !important;
+ }
+
+ .marker-cluster-large {
+     background-color: rgba(45, 125, 210, 0.8) !important;
+     border: 2px solid rgba(255, 255, 255, 0.8) !important;
+ }
+
+ .marker-cluster-large div {
+     background-color: rgba(247, 147, 30, 0.9) !important;
+     color: #fff !important;
+     font-weight: 600 !important;
+ }
 #searchResults {
     background: #fff;
     border-radius: 8px;

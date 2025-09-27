@@ -1,7 +1,8 @@
 /* =====================================================================
-   RWANDA EXPORT EXPLORER - MAIN.JS
-   Pro-level dashboard interactivity, navigation, and UI logic
-   ===================================================================== */
+    RWANDA EXPORT EXPLORER - MAIN.JS (HACKATHON ENHANCED)
+    NISR Hackathon 2025 - Track 5: Mobile/Web Data Solutions
+    Enhanced with modern features, PWA capabilities, and mobile optimization
+    ===================================================================== */
 
 /************************************
  * 1. NAVIGATION & SECTION CONTROL  *
@@ -804,8 +805,551 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 /************************************
- * 12. EXTENSIBILITY                *
- ************************************/
+  * 12. HACKATHON ENHANCEMENTS       *
+  ************************************/
+
+/* PWA Service Worker Registration */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+                console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
+
+/* Enhanced Mobile Features */
+function initializeMobileFeatures() {
+    // Touch gesture support
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    document.addEventListener('touchstart', (e) => {
+        touchStartY = e.changedTouches[0].screenY;
+    });
+
+    document.addEventListener('touchend', (e) => {
+        touchEndY = e.changedTouches[0].screenY;
+        handleSwipeGesture();
+    });
+
+    function handleSwipeGesture() {
+        const swipeThreshold = 50;
+        const deltaY = touchStartY - touchEndY;
+
+        if (Math.abs(deltaY) > swipeThreshold) {
+            if (deltaY > 0) {
+                // Swipe up - could trigger additional features
+                showToast('Swipe up detected! More features coming soon.', 'info', 2000);
+            } else {
+                // Swipe down - could refresh data
+                if (confirm('Refresh trade data?')) {
+                    loadExcelAnalysis();
+                }
+            }
+        }
+    }
+
+    // Viewport height fix for mobile browsers
+    function setVH() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+
+    setVH();
+    window.addEventListener('resize', setVH);
+    window.addEventListener('orientationchange', () => {
+        setTimeout(setVH, 100);
+    });
+}
+
+/* Enhanced Performance Monitoring */
+function initializePerformanceMonitoring() {
+    if ('performance' in window) {
+        // Monitor page load performance
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                console.log(`Page load time: ${loadTime}ms`);
+
+                // Show performance indicator in development
+                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                    showPerformanceIndicator(loadTime);
+                }
+            }, 0);
+        });
+    }
+}
+
+function showPerformanceIndicator(loadTime) {
+    const indicator = document.createElement('div');
+    indicator.className = 'performance-indicator';
+    indicator.innerHTML = `
+        <div>Load: ${loadTime.toFixed(0)}ms</div>
+        <div>Score: ${getPerformanceScore(loadTime)}</div>
+    `;
+    document.body.appendChild(indicator);
+
+    setTimeout(() => {
+        indicator.remove();
+    }, 5000);
+}
+
+function getPerformanceScore(loadTime) {
+    if (loadTime < 1000) return '🟢 Excellent';
+    if (loadTime < 2000) return '🟡 Good';
+    if (loadTime < 3000) return '🟠 Fair';
+    return '🔴 Poor';
+}
+
+/* Enhanced Accessibility Features */
+function initializeAccessibilityFeatures() {
+    // Keyboard navigation enhancement
+    document.addEventListener('keydown', (e) => {
+        // Alt + 1-9 to navigate sections
+        if (e.altKey && e.key >= '1' && e.key <= '9') {
+            e.preventDefault();
+            const sectionIndex = parseInt(e.key) - 1;
+            const sections = ['home', 'exports', 'imports', 'predictions', 'excel-analysis', 'regional', 'commodities', 'analytics'];
+            if (sections[sectionIndex]) {
+                showSection(sections[sectionIndex]);
+            }
+        }
+
+        // Alt + R to refresh data
+        if (e.altKey && e.key.toLowerCase() === 'r') {
+            e.preventDefault();
+            loadExcelAnalysis();
+        }
+
+        // Alt + H to show help
+        if (e.altKey && e.key.toLowerCase() === 'h') {
+            e.preventDefault();
+            showAccessibilityHelp();
+        }
+    });
+
+    // Focus management for modal dialogs
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            // Close any open modals
+            document.querySelectorAll('.modal.active').forEach(modal => {
+                hideModal(modal.id);
+            });
+        }
+    });
+
+    // Announce dynamic content changes to screen readers
+    const announcer = document.createElement('div');
+    announcer.setAttribute('aria-live', 'polite');
+    announcer.setAttribute('aria-atomic', 'true');
+    announcer.className = 'sr-only';
+    announcer.id = 'content-announcer';
+    document.body.appendChild(announcer);
+}
+
+function announceToScreenReader(message) {
+    const announcer = document.getElementById('content-announcer');
+    if (announcer) {
+        announcer.textContent = message;
+    }
+}
+
+function showAccessibilityHelp() {
+    const helpContent = `
+        <div class="accessibility-help">
+            <h3>Accessibility Features</h3>
+            <div class="help-section">
+                <h4>Keyboard Navigation</h4>
+                <ul>
+                    <li><kbd>Alt + 1-9</kbd>: Navigate to different sections</li>
+                    <li><kbd>Alt + R</kbd>: Refresh trade data</li>
+                    <li><kbd>Alt + H</kbd>: Show this help</li>
+                    <li><kbd>Escape</kbd>: Close modals</li>
+                    <li><kbd>Tab</kbd>: Navigate through interactive elements</li>
+                </ul>
+            </div>
+            <div class="help-section">
+                <h4>Screen Reader Support</h4>
+                <ul>
+                    <li>All charts have descriptive alt text</li>
+                    <li>Dynamic content changes are announced</li>
+                    <li>Form labels are properly associated</li>
+                    <li>Color contrast meets WCAG guidelines</li>
+                </ul>
+            </div>
+            <div class="help-section">
+                <h4>Mobile Features</h4>
+                <ul>
+                    <li>Touch-friendly interface</li>
+                    <li>Swipe gestures supported</li>
+                    <li>Responsive design for all screen sizes</li>
+                    <li>Optimized for one-handed use</li>
+                </ul>
+            </div>
+        </div>
+    `;
+
+    showModal('accessibility-modal', helpContent);
+}
+
+/* Enhanced Data Export Features */
+function exportToMultipleFormats() {
+    const exportOptions = [
+        { format: 'PDF', icon: 'file-pdf', action: exportToPDF },
+        { format: 'Excel', icon: 'file-excel', action: exportToExcel },
+        { format: 'CSV', icon: 'file-csv', action: exportToCSV },
+        { format: 'JSON', icon: 'file-code', action: exportToJSON },
+        { format: 'Image', icon: 'image', action: exportToImage }
+    ];
+
+    const modal = createExportModal(exportOptions);
+    showModal('export-modal', modal);
+}
+
+function createExportModal(options) {
+    return `
+        <div class="export-options">
+            <h4>Export Data</h4>
+            <p>Choose your preferred format:</p>
+            <div class="export-grid">
+                ${options.map(option => `
+                    <button class="export-option" onclick="${option.action.name}()">
+                        <i class="fas fa-${option.icon}"></i>
+                        <span>${option.format}</span>
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+function exportToPDF() {
+    showToast('PDF export feature coming soon!', 'info');
+    hideModal('export-modal');
+}
+
+function exportToExcel() {
+    showToast('Excel export feature coming soon!', 'info');
+    hideModal('export-modal');
+}
+
+function exportToJSON() {
+    const data = {
+        metadata: {
+            title: 'Rwanda Export Explorer - Hackathon Data',
+            exportDate: new Date().toISOString(),
+            source: 'NISR Q4 2024 Trade Report'
+        },
+        kpis: window.currentKPIs || {},
+        opportunities: window.currentOpportunities || []
+    };
+
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `rwanda-trade-data-${new Date().toISOString().split('T')[0]}.json`;
+    link.click();
+    URL.revokeObjectURL(url);
+
+    showToast('Data exported as JSON!', 'success');
+    hideModal('export-modal');
+}
+
+/* Enhanced Chart Interactions */
+function initializeChartInteractivity() {
+    // Add click handlers to chart elements
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.chart-container')) {
+            const chartElement = e.target.closest('.chart-container');
+            const section = chartElement.closest('.section');
+            if (section) {
+                announceToScreenReader(`Chart in ${section.id} section activated`);
+            }
+        }
+    });
+
+    // Add hover effects for better mobile interaction feedback
+    if ('ontouchstart' in window) {
+        document.querySelectorAll('.chart-card, .stats-card').forEach(card => {
+            card.addEventListener('touchstart', function() {
+                this.style.transform = 'translateY(-2px) scale(1.02)';
+            });
+
+            card.addEventListener('touchend', function() {
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+    }
+}
+
+/* Enhanced Search with Autocomplete */
+function initializeEnhancedSearch() {
+    const searchInput = document.getElementById('product-search');
+    if (!searchInput) return;
+
+    let searchTimeout;
+    const searchResults = [];
+
+    searchInput.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            performSearch(e.target.value);
+        }, 300);
+    });
+
+    function performSearch(query) {
+        if (query.length < 2) return;
+
+        // Mock search results - in real implementation, this would query the API
+        const mockResults = [
+            'Coffee', 'Tea', 'Minerals', 'Textiles', 'Machinery',
+            'Agricultural Products', 'Manufactured Goods', 'Chemicals'
+        ].filter(item => item.toLowerCase().includes(query.toLowerCase()));
+
+        showSearchSuggestions(mockResults);
+    }
+
+    function showSearchSuggestions(results) {
+        // Remove existing suggestions
+        document.querySelectorAll('.search-suggestion').forEach(el => el.remove());
+
+        if (results.length === 0) return;
+
+        const suggestionsContainer = document.createElement('div');
+        suggestionsContainer.className = 'search-suggestions';
+
+        results.forEach(result => {
+            const suggestion = document.createElement('div');
+            suggestion.className = 'search-suggestion';
+            suggestion.textContent = result;
+            suggestion.addEventListener('click', () => {
+                searchInput.value = result;
+                suggestionsContainer.remove();
+                announceToScreenReader(`Selected ${result}`);
+            });
+            suggestionsContainer.appendChild(suggestion);
+        });
+
+        searchInput.parentNode.appendChild(suggestionsContainer);
+    }
+
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-box')) {
+            document.querySelectorAll('.search-suggestions').forEach(el => el.remove());
+        }
+    });
+}
+
+/* Geolocation Features for Mobile */
+function initializeGeolocationFeatures() {
+    if (!navigator.geolocation) return;
+
+    const locationButton = document.createElement('button');
+    locationButton.className = 'btn btn-outline-primary location-btn';
+    locationButton.innerHTML = '<i class="fas fa-map-marker-alt"></i> Use My Location';
+    locationButton.title = 'Find nearby export opportunities';
+
+    // Add to section actions where appropriate
+    const sectionActions = document.querySelector('.section-actions');
+    if (sectionActions) {
+        const clone = locationButton.cloneNode(true);
+        clone.addEventListener('click', getUserLocation);
+        sectionActions.appendChild(clone);
+    }
+}
+
+function getUserLocation() {
+    if (!navigator.geolocation) {
+        showToast('Geolocation not supported', 'error');
+        return;
+    }
+
+    showToast('Getting your location...', 'info');
+
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            const { latitude, longitude } = position.coords;
+            showToast(`Location: ${latitude.toFixed(4)}, ${longitude.toFixed(4)}`, 'success');
+            // In a real implementation, this could show nearby trade opportunities
+            announceToScreenReader('Location acquired successfully');
+        },
+        (error) => {
+            console.error('Geolocation error:', error);
+            showToast('Unable to get location', 'error');
+        },
+        {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 300000
+        }
+    );
+}
+
+/* Enhanced Notification System */
+function initializeNotificationSystem() {
+    // Request notification permission
+    if ('Notification' in window && Notification.permission === 'default') {
+        Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+                console.log('Notification permission granted');
+            }
+        });
+    }
+
+    // Show welcome notification
+    setTimeout(() => {
+        if ('Notification' in window && Notification.permission === 'granted') {
+            new Notification('Welcome to Rwanda Export Explorer!', {
+                body: 'AI-powered trade analytics for Rwanda\'s economic development',
+                icon: '/assets/images/favicon.ico',
+                badge: '/assets/images/favicon.ico'
+            });
+        }
+    }, 3000);
+}
+
+/* Enhanced Data Caching */
+function initializeDataCaching() {
+    const CACHE_KEY = 'rwanda_trade_data';
+    const CACHE_EXPIRY = 24 * 60 * 60 * 1000; // 24 hours
+
+    window.getCachedData = function(key) {
+        try {
+            const cached = localStorage.getItem(`${CACHE_KEY}_${key}`);
+            if (cached) {
+                const { data, timestamp } = JSON.parse(cached);
+                if (Date.now() - timestamp < CACHE_EXPIRY) {
+                    return data;
+                } else {
+                    localStorage.removeItem(`${CACHE_KEY}_${key}`);
+                }
+            }
+        } catch (e) {
+            console.error('Cache read error:', e);
+        }
+        return null;
+    };
+
+    window.setCachedData = function(key, data) {
+        try {
+            const cacheData = {
+                data: data,
+                timestamp: Date.now()
+            };
+            localStorage.setItem(`${CACHE_KEY}_${key}`, JSON.stringify(cacheData));
+        } catch (e) {
+            console.error('Cache write error:', e);
+        }
+    };
+}
+
+/* Enhanced Error Handling */
+function initializeErrorHandling() {
+    window.addEventListener('error', (e) => {
+        console.error('Global error:', e.error);
+        // In production, you might want to send this to an error tracking service
+    });
+
+    window.addEventListener('unhandledrejection', (e) => {
+        console.error('Unhandled promise rejection:', e.reason);
+        e.preventDefault();
+    });
+}
+
+/* Initialize all enhanced features */
+function initializeHackathonFeatures() {
+    initializeMobileFeatures();
+    initializePerformanceMonitoring();
+    initializeAccessibilityFeatures();
+    initializeChartInteractivity();
+    initializeEnhancedSearch();
+    initializeGeolocationFeatures();
+    initializeNotificationSystem();
+    initializeDataCaching();
+    initializeErrorHandling();
+
+    console.log('🚀 Hackathon features initialized successfully');
+}
+
+/* Enhanced Demo & Init */
+window.addEventListener('DOMContentLoaded', () => {
+    showToast('🇷🇼 Welcome to Rwanda Export Explorer - Hackathon Edition!', 'success', 3000);
+
+    // Load Excel analysis on page load
+    loadExcelAnalysis();
+
+    // Initialize hackathon features
+    initializeHackathonFeatures();
+
+    // Demo: Show shimmer on analytics load
+    if (analyticsResults) {
+        showShimmer('analytics-results');
+        setTimeout(() => hideShimmer('analytics-results'), 1200);
+    }
+
+    // Enhanced keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        // Ctrl/Cmd + E to export data
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'e') {
+            e.preventDefault();
+            exportToMultipleFormats();
+        }
+
+        // Ctrl/Cmd + P to print current section
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p') {
+            e.preventDefault();
+            const activeSection = document.querySelector('.section.active');
+            if (activeSection) printSection(activeSection.id);
+        }
+
+        // Ctrl/Cmd + R to refresh analysis
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'r') {
+            e.preventDefault();
+            loadExcelAnalysis();
+        }
+
+        // Ctrl/Cmd + C to show comparison tools
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'c') {
+            e.preventDefault();
+            showComparisonModal();
+        }
+
+        // Ctrl/Cmd + M to toggle mobile view
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'm') {
+            e.preventDefault();
+            document.body.classList.toggle('mobile-debug');
+            showToast('Mobile debug mode toggled', 'info');
+        }
+    });
+
+    // Add hackathon branding
+    const brandElements = document.querySelectorAll('.navbar-brand, .footer-title');
+    brandElements.forEach(element => {
+        element.classList.add('brand-enhanced');
+    });
+
+    // Add NISR badges
+    const sectionHeaders = document.querySelectorAll('.section-header');
+    sectionHeaders.forEach(header => {
+        const badge = document.createElement('div');
+        badge.className = 'nisr-badge';
+        badge.innerHTML = '<i class="fas fa-database"></i> NISR Data';
+        header.appendChild(badge);
+    });
+});
+
+/************************************
+  * 13. EXTENSIBILITY                *
+  ************************************/
 // Add more UI logic, event handlers, or integrations as needed
 // Example: Export data, print, advanced analytics, etc.
 // ...

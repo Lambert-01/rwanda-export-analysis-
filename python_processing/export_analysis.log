@@ -1,0 +1,70 @@
+2025-09-27 01:20:19,085 - INFO - Loaded 0 export records, 0 import records
+2025-09-27 01:20:19,085 - INFO - ExportAnalyzer initialized
+2025-09-27 01:20:19,085 - INFO - Generating comprehensive analysis report
+2025-09-27 01:20:19,086 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:20:19,086 - INFO - Analyzing top 5 import sources
+2025-09-27 01:20:19,086 - INFO - Analyzing top 10 export products
+2025-09-27 01:20:19,086 - INFO - Analyzing quarterly trends
+2025-09-27 01:20:19,086 - INFO - Analyzing trade balance
+2025-09-27 01:20:19,086 - INFO - Analyzing market opportunities
+2025-09-27 01:22:31,744 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 01:22:31,744 - INFO - ExportAnalyzer initialized
+2025-09-27 01:22:31,744 - INFO - Generating comprehensive analysis report
+2025-09-27 01:22:31,744 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:22:31,795 - INFO - Analyzing top 5 import sources
+2025-09-27 01:22:31,804 - INFO - Analyzing top 10 export products
+2025-09-27 01:22:31,817 - INFO - Analyzing quarterly trends
+2025-09-27 01:22:31,826 - INFO - Analyzing trade balance
+2025-09-27 01:22:31,829 - INFO - Analyzing market opportunities
+2025-09-27 01:22:31,852 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 01:22:31,852 - ERROR - Main analysis execution failed: 'charmap' codec can't encode character '\U0001f4ca' in position 0: character maps to <undefined>
+2025-09-27 01:32:59,519 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 01:32:59,519 - INFO - ExportAnalyzer initialized
+2025-09-27 01:32:59,519 - INFO - Generating comprehensive analysis report
+2025-09-27 01:32:59,519 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:32:59,535 - INFO - Analyzing top 5 import sources
+2025-09-27 01:32:59,539 - INFO - Analyzing top 10 export products
+2025-09-27 01:32:59,544 - INFO - Analyzing quarterly trends
+2025-09-27 01:32:59,548 - INFO - Analyzing trade balance
+2025-09-27 01:32:59,550 - INFO - Analyzing market opportunities
+2025-09-27 01:32:59,561 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 01:34:01,154 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 01:34:01,154 - INFO - ExportAnalyzer initialized
+2025-09-27 01:34:01,154 - INFO - Generating comprehensive analysis report
+2025-09-27 01:34:01,154 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:34:01,172 - INFO - Analyzing top 5 import sources
+2025-09-27 01:34:01,176 - INFO - Analyzing top 10 export products
+2025-09-27 01:34:01,182 - INFO - Analyzing quarterly trends
+2025-09-27 01:34:01,185 - INFO - Analyzing trade balance
+2025-09-27 01:34:01,187 - INFO - Analyzing market opportunities
+2025-09-27 01:34:01,201 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 01:34:35,631 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 01:34:35,631 - INFO - ExportAnalyzer initialized
+2025-09-27 01:34:35,631 - INFO - Generating comprehensive analysis report
+2025-09-27 01:34:35,631 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:34:35,638 - INFO - Analyzing top 5 import sources
+2025-09-27 01:34:35,641 - INFO - Analyzing top 10 export products
+2025-09-27 01:34:35,646 - INFO - Analyzing quarterly trends
+2025-09-27 01:34:35,651 - INFO - Analyzing trade balance
+2025-09-27 01:34:35,652 - INFO - Analyzing market opportunities
+2025-09-27 01:34:35,665 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 01:36:16,968 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 01:36:16,973 - INFO - ExportAnalyzer initialized
+2025-09-27 01:36:16,974 - INFO - Generating comprehensive analysis report
+2025-09-27 01:36:16,974 - INFO - Analyzing top 5 export destinations
+2025-09-27 01:36:17,070 - INFO - Analyzing top 5 import sources
+2025-09-27 01:36:17,085 - INFO - Analyzing top 10 export products
+2025-09-27 01:36:17,116 - INFO - Analyzing quarterly trends
+2025-09-27 01:36:17,129 - INFO - Analyzing trade balance
+2025-09-27 01:36:17,136 - INFO - Analyzing market opportunities
+2025-09-27 01:36:17,176 - INFO - Analysis report saved to C:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 02:08:28,048 - INFO - Loaded 157 export records, 153 import records
+2025-09-27 02:08:28,049 - INFO - ExportAnalyzer initialized
+2025-09-27 02:08:28,049 - INFO - Generating comprehensive analysis report
+2025-09-27 02:08:28,049 - INFO - Analyzing top 5 export destinations
+2025-09-27 02:08:28,083 - INFO - Analyzing top 5 import sources
+2025-09-27 02:08:28,088 - INFO - Analyzing top 10 export products
+2025-09-27 02:08:28,101 - INFO - Analyzing quarterly trends
+2025-09-27 02:08:28,107 - INFO - Analyzing trade balance
+2025-09-27 02:08:28,110 - INFO - Analyzing market opportunities
+2025-09-27 02:08:28,131 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json

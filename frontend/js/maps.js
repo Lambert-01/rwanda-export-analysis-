@@ -53,7 +53,19 @@ function renderExportDestinations(destinations) {
     if (!exportMap) initExportMap();
     // Remove previous layers
     if (clusterLayer) exportMap.removeLayer(clusterLayer);
-    clusterLayer = L.markerClusterGroup();
+
+    // Check if marker cluster is available
+    if (typeof L.markerClusterGroup !== 'undefined') {
+        clusterLayer = L.markerClusterGroup({
+            chunkedLoading: true,
+            maxClusterRadius: 50
+        });
+    } else {
+        // Fallback to simple layer group if clustering not available
+        clusterLayer = L.layerGroup();
+        console.warn('Leaflet marker cluster not available, using simple layer group');
+    }
+
     destinations.forEach(dest => {
         const marker = L.marker([dest.lat, dest.lng], {
             icon: createCountryIcon(dest.country)
@@ -118,7 +130,19 @@ function initImportMap() {
 function renderImportSources(sources) {
     if (!importMap) initImportMap();
     if (clusterLayer) importMap.removeLayer(clusterLayer);
-    clusterLayer = L.markerClusterGroup();
+
+    // Check if marker cluster is available
+    if (typeof L.markerClusterGroup !== 'undefined') {
+        clusterLayer = L.markerClusterGroup({
+            chunkedLoading: true,
+            maxClusterRadius: 50
+        });
+    } else {
+        // Fallback to simple layer group if clustering not available
+        clusterLayer = L.layerGroup();
+        console.warn('Leaflet marker cluster not available, using simple layer group');
+    }
+
     sources.forEach(src => {
         const marker = L.marker([src.lat, src.lng], {
             icon: createCountryIcon(src.country)

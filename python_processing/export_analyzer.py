@@ -25,7 +25,9 @@ class ExportAnalyzer:
 
     def __init__(self, processed_data_dir: str = "data/processed"):
         """Initialize the export analyzer."""
-        self.processed_data_dir = Path(processed_data_dir)
+        # Get the parent directory (project root) when running from python_processing
+        project_root = Path(__file__).parent.parent
+        self.processed_data_dir = project_root / processed_data_dir
         self.exports_data = []
         self.imports_data = []
         self.trade_balance_data = []
@@ -361,16 +363,16 @@ def main():
         report = analyzer.generate_comprehensive_report()
         analyzer.save_analysis_report(report)
 
-        print("📊 Export Analysis Report Generated:")
-        print(f"Total Exports: ${report['summary'].get('total_exports', 0):,.2f}")
-        print(f"Current Trade Balance: ${report['summary'].get('current_balance', 0):,.2f}")
-        print(f"Top Destination: {report['summary'].get('top_destination', 'Unknown')}")
-        print(f"Top Product: {report['summary'].get('top_product', 'Unknown')}")
-
-        print("\n✅ Export analysis completed successfully!")
+        # Return JSON output instead of printing
+        print(json.dumps(report, indent=2, default=str))
 
     except Exception as e:
-        print(f"❌ Error during export analysis: {str(e)}")
+        error_response = {
+            "error": "Analysis failed",
+            "message": str(e),
+            "details": "An error occurred during export analysis"
+        }
+        print(json.dumps(error_response, indent=2))
         logger.error(f"Main analysis execution failed: {str(e)}")
 
 if __name__ == "__main__":

@@ -1,13 +1,35 @@
 /* ============================================
-   RWANDA EXPORT EXPLORER - MAIN CSS
-   ============================================ */
+    RWANDA EXPORT EXPLORER - MAIN CSS (HACKATHON ENHANCED)
+    NISR Hackathon 2025 - Track 5: Mobile/Web Data Solutions
+    ============================================ */
 
-/* CSS Variables - Rwanda-Inspired Color Scheme */
+/* Enhanced CSS Variables - Hackathon Edition */
 :root {
-    /* Rwanda Flag Colors */
-    --rwanda-blue: #00a0d2;     /* Blue from Rwanda flag */
-    --rwanda-green: #00a95c;    /* Green from Rwanda flag */
-    --rwanda-yellow: #e5be01;   /* Yellow from Rwanda flag */
+    /* Rwanda Flag Colors - Official Hex Codes */
+    --rwanda-blue: #00A1F1;     /* Official Rwanda flag blue */
+    --rwanda-green: #00AF54;    /* Official Rwanda flag green */
+    --rwanda-yellow: #FCDD09;   /* Official Rwanda flag yellow */
+
+    /* Hackathon Enhanced Palette */
+    --primary-color: #00A1F1;
+    --secondary-color: #00AF54;
+    --accent-color: #FCDD09;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+
+    /* AI & Innovation Colors */
+    --ai-purple: #6f42c1;
+    --tech-blue: #0056b3;
+    --innovation-orange: #fd7e14;
+    --data-teal: #20c997;
+
+    /* Enhanced Gradients for Hackathon */
+    --hackathon-gradient: linear-gradient(135deg, var(--rwanda-blue), var(--rwanda-green));
+    --ai-gradient: linear-gradient(135deg, var(--ai-purple), var(--tech-blue));
+    --success-gradient: linear-gradient(135deg, var(--success-color), var(--data-teal));
+    --rwanda-flag-gradient: linear-gradient(135deg, var(--rwanda-blue) 0%, var(--rwanda-green) 50%, var(--rwanda-yellow) 100%);
     
     /* Main Color Palette */
     --primary-color: #00205b;   /* Darker blue for primary elements */

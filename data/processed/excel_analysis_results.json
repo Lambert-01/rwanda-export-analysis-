@@ -8,11 +8,29 @@
     "export_growth_qoq": 0,
     "import_growth_qoq": 0,
     "trade_balance_change": 0,
-    "yearly_export_trend": -39.91856168984713,
-    "yearly_import_trend": -46.41968328655195
+    "yearly_export_trend": -133.10321012878558,
+    "yearly_import_trend": -141.2600254052213
   },
   "top_countries": {
     "top_export_countries": [
+      {
+        "country": "Congo, The Democratic Republic Of",
+        "q1_2022": 35.450077620754016,
+        "q2_2022": 35.82042284883672,
+        "q3_2022": 40.65118465075666,
+        "q4_2022": 43.31945294817195,
+        "q1_2023": 44.31962833433481,
+        "q2_2023": 38.177690325724,
+        "q3_2023": 51.12107401344382,
+        "q4_2023": 47.007099306209,
+        "q1_2024": 51.02525700576274,
+        "q2_2024": 47.52663133276006,
+        "q3_2024": 62.168168319276454,
+        "q4_2024": 84.11370016259441,
+        "share_q4": 12.416292178320779,
+        "growth_qoq": 0.35300270920984045,
+        "growth_yoy": 0.7893829103274224
+      },
       {
         "country": "China",
         "q1_2022": 4.157610098986904,
@@ -84,27 +102,27 @@
         "share_q4": 1.3238929479168067,
         "growth_qoq": 0.09877277028458376,
         "growth_yoy": 0.021664645644321023
-      },
-      {
-        "country": "Uganda",
-        "q1_2022": 1.1250725071805954,
-        "q2_2022": 5.073829791015922,
-        "q3_2022": 8.081551425786262,
-        "q4_2022": 3.5183529831510163,
-        "q1_2023": 12.364758234083107,
-        "q2_2023": 9.337270144222712,
-        "q3_2023": 8.832121558256693,
-        "q4_2023": 3.991475732094096,
-        "q1_2024": 0.8953029853843497,
-        "q2_2024": 2.270775659905636,
-        "q3_2024": 4.530275962154506,
-        "q4_2024": 7.5039074536482016,
-        "share_q4": 1.1076757679601927,
-        "growth_qoq": 0.6563908062853412,
-        "growth_yoy": 0.8799832335974986
       }
     ],
     "top_import_countries": [
+      {
+        "country": "Tanzania, United Republic Of",
+        "q1_2022": 158.6576568892324,
+        "q2_2022": 149.01325961486071,
+        "q3_2022": 176.7837167300198,
+        "q4_2022": 141.0074379814429,
+        "q1_2023": 207.57694056551915,
+        "q2_2023": 188.58894651759994,
+        "q3_2023": 219.86143958272282,
+        "q4_2023": 227.42777279833612,
+        "q1_2024": 170.99585811588764,
+        "q2_2024": 158.17287476197555,
+        "q3_2024": 267.6228652908819,
+        "q4_2024": 298.93414365213897,
+        "share_q4": 18.34638627118199,
+        "growth_qoq": 0.11699776970560616,
+        "growth_yoy": 0.31441353874229216
+      },
       {
         "country": "Kenya",
         "q1_2022": 96.55224953855134,
@@ -176,32 +194,35 @@
         "share_q4": 4.611201516612892,
         "growth_qoq": 0.18454000565027706,
         "growth_yoy": 0.05647597822994377
-      },
-      {
-        "country": "South Africa",
-        "q1_2022": 20.445531366076153,
-        "q2_2022": 56.70422550115163,
-        "q3_2022": 35.37991788066285,
-        "q4_2022": 25.946690606927085,
-        "q1_2023": 25.22370396864258,
-        "q2_2023": 25.23021114012141,
-        "q3_2023": 35.961088791730326,
-        "q4_2023": 78.79409780534824,
-        "q1_2024": 46.94237389330483,
-        "q2_2024": 12.480575221118828,
-        "q3_2024": 14.85857825388964,
-        "q4_2024": 55.745399907220495,
-        "share_q4": 3.4212439805119668,
-        "growth_qoq": 2.751731757554099,
-        "growth_yoy": -0.2925180761009144
       }
     ]
   },
   "commodities": {
     "top_export_commodities": [
       {
+        "sitc_section": "SITC SECTION",
+        "description": "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+        "trade_type": "exports",
+        "q1_2022": 293.57884831471915,
+        "q2_2022": 331.55255123967333,
+        "q3_2022": 342.5635379482146,
+        "q4_2022": 354.8386907703432,
+        "q1_2023": 402.14468784688006,
+        "q2_2023": 484.73934625285204,
+        "q3_2023": 388.1129711318348,
+        "q4_2023": 399.1084006995603,
+        "q1_2024": 431.6120219963785,
+        "q2_2024": 537.6377961348556,
+        "q3_2024": 667.0045749074241,
+        "q4_2024": 677.4462049907256,
+        "share_q4": 100.0,
+        "growth_qoq": 0.015654510442826952,
+        "growth_yoy": 0.6973990119057696
+      },
+      {
         "sitc_section": "9",
         "description": "Other commodities & transactions, n.e.s",
+        "trade_type": "exports",
         "q1_2022": 116.49681442007613,
         "q2_2022": 160.18543308243397,
         "q3_2022": 144.60928520925683,
@@ -216,12 +237,12 @@
         "q4_2024": 428.1483479071482,
         "share_q4": 63.200346352668646,
         "growth_qoq": -0.01505429527242197,
-        "growth_yoy": 1.113087002060793,
-        "trade_type": "exports"
+        "growth_yoy": 1.113087002060793
       },
       {
         "sitc_section": "0",
         "description": "Food and live animals",
+        "trade_type": "exports",
         "q1_2022": 72.79279307385237,
         "q2_2022": 69.36432201301506,
         "q3_2022": 95.67960065183868,
@@ -236,12 +257,12 @@
         "q4_2024": 101.12493008783761,
         "share_q4": 14.927374209620384,
         "growth_qoq": 0.01974455278738141,
-        "growth_yoy": -0.025880806800425593,
-        "trade_type": "exports"
+        "growth_yoy": -0.025880806800425593
       },
       {
         "sitc_section": "2",
-        "description": "Crude materials, inedible, except fuels ",
+        "description": "Crude materials, inedible, except fuels",
+        "trade_type": "exports",
         "q1_2022": 50.85256278669341,
         "q2_2022": 58.07464653394181,
         "q3_2022": 49.83752362891537,
@@ -256,12 +277,12 @@
         "q4_2024": 58.78923659545866,
         "share_q4": 8.678067153134839,
         "growth_qoq": -0.13426232539342609,
-        "growth_yoy": 0.14851985527506817,
-        "trade_type": "exports"
+        "growth_yoy": 0.14851985527506817
       },
       {
         "sitc_section": "6",
         "description": "Manufactured goods classified chiefly by material",
+        "trade_type": "exports",
         "q1_2022": 25.38965641283493,
         "q2_2022": 28.067078929904493,
         "q3_2022": 34.14974107925114,
@@ -276,12 +297,12 @@
         "q4_2024": 34.872048192777875,
         "share_q4": 5.147574513795568,
         "growth_qoq": 0.13495541664728616,
-        "growth_yoy": 0.4157132218918549,
-        "trade_type": "exports"
+        "growth_yoy": 0.4157132218918549
       },
       {
         "sitc_section": "4",
         "description": "Animals and vegetable oils, fats & waxes",
+        "trade_type": "exports",
         "q1_2022": 0.9009118006592631,
         "q2_2022": 0.5610719135293183,
         "q3_2022": 2.4632689450661474,
@@ -296,12 +317,12 @@
         "q4_2024": 23.396384054352332,
         "share_q4": 3.4536150445587976,
         "growth_qoq": 0.9433547923008432,
-        "growth_yoy": 20.002958196272285,
-        "trade_type": "exports"
+        "growth_yoy": 20.002958196272285
       },
       {
         "sitc_section": "7",
         "description": "Machinery and transport equipment",
+        "trade_type": "exports",
         "q1_2022": 15.274058349257402,
         "q2_2022": 2.7277417199399974,
         "q3_2022": 3.8278008295252137,
@@ -316,12 +337,12 @@
         "q4_2024": 16.870761895697886,
         "share_q4": 2.49034709640581,
         "growth_qoq": 1.3852925830440999,
-        "growth_yoy": 4.945666302034924,
-        "trade_type": "exports"
+        "growth_yoy": 4.945666302034924
       },
       {
         "sitc_section": "8",
         "description": "Miscellaneous manufactured articles",
+        "trade_type": "exports",
         "q1_2022": 8.366119200017183,
         "q2_2022": 7.757543497295132,
         "q3_2022": 8.309330528121391,
@@ -336,12 +357,12 @@
         "q4_2024": 8.323204657159229,
         "share_q4": 1.2286148473255047,
         "growth_qoq": -0.12024699015155571,
-        "growth_yoy": 0.3103899224991493,
-        "trade_type": "exports"
+        "growth_yoy": 0.3103899224991493
       },
       {
         "sitc_section": "5",
         "description": "Chemicals & related products, n.e.s.",
+        "trade_type": "exports",
         "q1_2022": 3.1357657611962972,
         "q2_2022": 4.59223880523061,
         "q3_2022": 2.850555924162513,
@@ -356,12 +377,12 @@
         "q4_2024": 4.87797166069729,
         "share_q4": 0.7200529908886376,
         "growth_qoq": -0.0002789957565847434,
-        "growth_yoy": 0.08126435715066771,
-        "trade_type": "exports"
+        "growth_yoy": 0.08126435715066771
       },
       {
         "sitc_section": "3",
         "description": "Mineral fuels, lubricants and related materials",
+        "trade_type": "exports",
         "q1_2022": 0.272083076905626,
         "q2_2022": 0.16826898083848993,
         "q3_2022": 0.3009802835224496,
@@ -376,34 +397,34 @@
         "q4_2024": 0.9406992131324204,
         "share_q4": 0.13885961810728556,
         "growth_qoq": -0.04303796901415091,
-        "growth_yoy": -0.4514484419712864,
-        "trade_type": "exports"
-      },
-      {
-        "sitc_section": "1",
-        "description": "Beverages and tobacco",
-        "q1_2022": 0.09808343322598985,
-        "q2_2022": 0.05420576354468978,
-        "q3_2022": 0.5354508685550223,
-        "q4_2022": 0.28866082350522215,
-        "q1_2023": 0.2130086565330435,
-        "q2_2023": 0.337233001201293,
-        "q3_2023": 0.2642564826128532,
-        "q4_2023": 0.3292999841952596,
-        "q1_2024": 1.9913044915033715,
-        "q2_2024": 0.08115125220834257,
-        "q3_2024": 0.07572390826037595,
-        "q4_2024": 0.10161149487692121,
-        "share_q4": 0.014999197593602622,
-        "growth_qoq": 0.3418680732580659,
-        "growth_yoy": -0.691431825831275,
-        "trade_type": "exports"
+        "growth_yoy": -0.4514484419712864
       }
     ],
     "top_import_commodities": [
       {
+        "sitc_section": "SITC SECTION",
+        "description": "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+        "trade_type": "imports",
+        "q1_2022": 1034.5394256801528,
+        "q2_2022": 1348.0259467278936,
+        "q3_2022": 1481.2243433417425,
+        "q4_2022": 1281.2074275500079,
+        "q1_2023": 1476.5099483773447,
+        "q2_2023": 1571.0946258966371,
+        "q3_2023": 1581.8144762227898,
+        "q4_2023": 1486.9343027633097,
+        "q1_2024": 1410.520446799369,
+        "q2_2024": 1568.9725638823377,
+        "q3_2024": 1751.5689343393103,
+        "q4_2024": 1629.3897840889606,
+        "share_q4": 100.0,
+        "growth_qoq": -0.06975412035178363,
+        "growth_yoy": 0.0958048254458268
+      },
+      {
         "sitc_section": "9",
         "description": "Other commodities & transactions, n.e.s",
+        "trade_type": "imports",
         "q1_2022": 118.44848134158273,
         "q2_2022": 161.9800965940828,
         "q3_2022": 154.45251240831573,
@@ -418,12 +439,12 @@
         "q4_2024": 396.1624103306197,
         "share_q4": 24.313544505995885,
         "growth_qoq": -0.17314599491426041,
-        "growth_yoy": 0.9587280443809043,
-        "trade_type": "imports"
+        "growth_yoy": 0.9587280443809043
       },
       {
         "sitc_section": "7",
         "description": "Machinery and transport equipment",
+        "trade_type": "imports",
         "q1_2022": 173.02060554025084,
         "q2_2022": 201.0674078034677,
         "q3_2022": 242.44813340550206,
@@ -438,12 +459,12 @@
         "q4_2024": 238.86086994544144,
         "share_q4": 14.659529124211094,
         "growth_qoq": -0.059090586908028375,
-        "growth_yoy": -0.07642744255794409,
-        "trade_type": "imports"
+        "growth_yoy": -0.07642744255794409
       },
       {
         "sitc_section": "0",
         "description": "Food and live animals",
+        "trade_type": "imports",
         "q1_2022": 126.66981761995423,
         "q2_2022": 200.87132644629102,
         "q3_2022": 187.43902821660419,
@@ -458,12 +479,12 @@
         "q4_2024": 234.56643276944516,
         "share_q4": 14.395968052579763,
         "growth_qoq": -0.01250326617906894,
-        "growth_yoy": -0.19204959506175168,
-        "trade_type": "imports"
+        "growth_yoy": -0.19204959506175168
       },
       {
         "sitc_section": "6",
         "description": "Manufactured goods classified chiefly by material",
+        "trade_type": "imports",
         "q1_2022": 190.69468827104814,
         "q2_2022": 219.3138321837735,
         "q3_2022": 220.09742601750935,
@@ -478,12 +499,12 @@
         "q4_2024": 215.1264163020412,
         "share_q4": 13.202882355269255,
         "growth_qoq": -0.015725574120304286,
-        "growth_yoy": -0.00804464037499375,
-        "trade_type": "imports"
+        "growth_yoy": -0.00804464037499375
       },
       {
         "sitc_section": "3",
         "description": "Mineral fuels, lubricants and related materials",
+        "trade_type": "imports",
         "q1_2022": 149.0075651452561,
         "q2_2022": 186.94191532858284,
         "q3_2022": 274.88588741588353,
@@ -498,12 +519,12 @@
         "q4_2024": 190.52678439970418,
         "share_q4": 11.69313728735775,
         "growth_qoq": -0.057186998585033955,
-        "growth_yoy": 0.09069077899802935,
-        "trade_type": "imports"
+        "growth_yoy": 0.09069077899802935
       },
       {
         "sitc_section": "5",
         "description": "Chemicals & related products, n.e.s.",
+        "trade_type": "imports",
         "q1_2022": 111.88162959721392,
         "q2_2022": 153.82447995665595,
         "q3_2022": 156.39407586053665,
@@ -518,12 +539,12 @@
         "q4_2024": 135.39214316316625,
         "share_q4": 8.30937719662137,
         "growth_qoq": -0.07853269818059927,
-        "growth_yoy": 0.03771626748991763,
-        "trade_type": "imports"
+        "growth_yoy": 0.03771626748991763
       },
       {
         "sitc_section": "8",
         "description": "Miscellaneous manufactured articles",
+        "trade_type": "imports",
         "q1_2022": 69.90857506264948,
         "q2_2022": 94.83302277167117,
         "q3_2022": 135.87284684859134,
@@ -538,12 +559,12 @@
         "q4_2024": 92.66231800879544,
         "share_q4": 5.6869337781325076,
         "growth_qoq": 0.06198522763689951,
-        "growth_yoy": 0.060282360106026944,
-        "trade_type": "imports"
+        "growth_yoy": 0.060282360106026944
       },
       {
         "sitc_section": "4",
         "description": "Animals and vegetable oils, fats & waxes",
+        "trade_type": "imports",
         "q1_2022": 49.511893350923174,
         "q2_2022": 51.49848978139928,
         "q3_2022": 56.553602102832606,
@@ -558,12 +579,12 @@
         "q4_2024": 55.924705765790115,
         "share_q4": 3.4322484596317295,
         "growth_qoq": 0.04964886452277284,
-        "growth_yoy": -0.023460594031524118,
-        "trade_type": "imports"
+        "growth_yoy": -0.023460594031524118
       },
       {
         "sitc_section": "2",
-        "description": "Crude materials, inedible, except fuels ",
+        "description": "Crude materials, inedible, except fuels",
+        "trade_type": "imports",
         "q1_2022": 29.350214446020015,
         "q2_2022": 44.37157806481526,
         "q3_2022": 29.524170517408802,
@@ -578,28 +599,7 @@
         "q4_2024": 40.664177707047784,
         "share_q4": 2.4956691212952653,
         "growth_qoq": -0.08260744673657971,
-        "growth_yoy": 0.037372568849013854,
-        "trade_type": "imports"
-      },
-      {
-        "sitc_section": "1",
-        "description": "Beverages and tobacco",
-        "q1_2022": 16.0459553052468,
-        "q2_2022": 33.323797797152146,
-        "q3_2022": 23.556121788797626,
-        "q4_2022": 30.60355569487538,
-        "q1_2023": 27.883302870403096,
-        "q2_2023": 25.20022769590143,
-        "q3_2023": 29.6217990849481,
-        "q4_2023": 26.72937521476849,
-        "q1_2024": 21.912874604542942,
-        "q2_2024": 24.973699574774777,
-        "q3_2024": 26.94692779961212,
-        "q4_2024": 27.40919862604367,
-        "share_q4": 1.6821756766671365,
-        "growth_qoq": 0.017154861951951483,
-        "growth_yoy": 0.025433569090667074,
-        "trade_type": "imports"
+        "growth_yoy": 0.037372568849013854
       }
     ]
   },
@@ -607,12 +607,12 @@
     {
       "type": "info",
       "title": "Leading Export Destination",
-      "message": "China is the top export destination with $20.43M in Q4 2024"
+      "message": "Congo, The Democratic Republic Of is the top export destination with $84.11M in Q4 2024"
     },
     {
       "type": "info",
       "title": "Top Export Product",
-      "message": "Other commodities & transactions, n.e.s leads exports with $428.15M in Q4 2024"
+      "message": "COMMODITY DESCRIPTION/ TOTAL ESTIMATES leads exports with $677.45M in Q4 2024"
     }
   ],
   "regional_analysis": {
@@ -621,16 +621,160 @@
       "top_country": "*Major revisions  include Domestic exports destination of Tea and Coffee",
       "top_country_value": 0,
       "share_of_total_exports": 0
+    },
+    "regional_blocks": {
+      "CEPGL": {
+        "exports": [
+          35.45378280470507,
+          36.816684545695466,
+          41.354026967411045,
+          44.76068875508835,
+          46.58475235039783,
+          41.899510512663,
+          56.303220976683214,
+          52.47382580237515,
+          52.19023333340873,
+          49.71088903144254,
+          65.19401428990813,
+          86.55593772219183
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      },
+      "COMESA": {
+        "exports": [
+          50.06048787485192,
+          54.37877499479242,
+          68.10583131085716,
+          66.15348201669627,
+          67.79756275119595,
+          58.37817245533874,
+          72.09541740177163,
+          61.817258300386975,
+          60.75454741486748,
+          60.360341245883866,
+          79.38935749848665,
+          102.06254227158526
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      },
+      "COMMON WEALTH": {
+        "exports": [
+          45.65539664534099,
+          44.741293348762355,
+          49.2024426038563,
+          99.59867038660364,
+          45.19344873938611,
+          35.47060403214672,
+          36.83317371771053,
+          29.720269308928415,
+          29.28204437168459,
+          32.463730541831545,
+          35.44342067487271,
+          38.93946523226788
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      },
+      "ECOWAS": {
+        "exports": [
+          0.8450550604174194,
+          1.9128807537743995,
+          0.09947691887535476,
+          1.1280435682383867,
+          0.35833563728434614,
+          0.6088201084557546,
+          0.3290359014850712,
+          0.494386114309946,
+          0.22927519401426397,
+          0.08791739133061308,
+          0.2851205553536466,
+          0.3166436940498444
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      },
+      "SADC": {
+        "exports": [
+          37.604740658959365,
+          38.26743590705814,
+          43.72071197122627,
+          45.09887514534678,
+          46.86554204641111,
+          39.92302952010472,
+          54.421221424114066,
+          48.32278803028183,
+          55.07021774384263,
+          48.964228868137994,
+          64.80277449230628,
+          86.68421922987609
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      },
+      "EU": {
+        "exports": [
+          20.41905581924619,
+          11.777948577892177,
+          20.51282478819066,
+          27.054633332463254,
+          21.13910607033323,
+          21.682679395453583,
+          19.066200109654748,
+          28.44490318819894,
+          25.669329021434116,
+          31.74253513456382,
+          42.403889373992165,
+          42.11086645491012
+        ],
+        "imports": [],
+        "reexports": [],
+        "total_trade": []
+      }
     }
   },
   "detailed_commodities": {
     "export_sections": {
+      "SITC SECTION": {
+        "total_q4_2024": 677.4462049907256,
+        "top_commodities": [
+          {
+            "sitc_section": "SITC SECTION",
+            "description": "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+            "trade_type": "exports",
+            "q1_2022": 293.57884831471915,
+            "q2_2022": 331.55255123967333,
+            "q3_2022": 342.5635379482146,
+            "q4_2022": 354.8386907703432,
+            "q1_2023": 402.14468784688006,
+            "q2_2023": 484.73934625285204,
+            "q3_2023": 388.1129711318348,
+            "q4_2023": 399.1084006995603,
+            "q1_2024": 431.6120219963785,
+            "q2_2024": 537.6377961348556,
+            "q3_2024": 667.0045749074241,
+            "q4_2024": 677.4462049907256,
+            "share_q4": 100.0,
+            "growth_qoq": 0.015654510442826952,
+            "growth_yoy": 0.6973990119057696
+          }
+        ],
+        "growth_trend": 1.565451044282686,
+        "commodity_count": 1
+      },
       "0": {
         "total_q4_2024": 101.12493008783761,
         "top_commodities": [
           {
             "sitc_section": "0",
             "description": "Food and live animals",
+            "trade_type": "exports",
             "q1_2022": 72.79279307385237,
             "q2_2022": 69.36432201301506,
             "q3_2022": 95.67960065183868,
@@ -645,8 +789,7 @@
             "q4_2024": 101.12493008783761,
             "share_q4": 14.927374209620384,
             "growth_qoq": 0.01974455278738141,
-            "growth_yoy": -0.025880806800425593,
-            "trade_type": "exports"
+            "growth_yoy": -0.025880806800425593
           }
         ],
         "growth_trend": 1.974455278738142,
@@ -658,6 +801,7 @@
           {
             "sitc_section": "1",
             "description": "Beverages and tobacco",
+            "trade_type": "exports",
             "q1_2022": 0.09808343322598985,
             "q2_2022": 0.05420576354468978,
             "q3_2022": 0.5354508685550223,
@@ -672,8 +816,7 @@
             "q4_2024": 0.10161149487692121,
             "share_q4": 0.014999197593602622,
             "growth_qoq": 0.3418680732580659,
-            "growth_yoy": -0.691431825831275,
-            "trade_type": "exports"
+            "growth_yoy": -0.691431825831275
           }
         ],
         "growth_trend": 34.18680732580658,
@@ -684,7 +827,8 @@
         "top_commodities": [
           {
             "sitc_section": "2",
-            "description": "Crude materials, inedible, except fuels ",
+            "description": "Crude materials, inedible, except fuels",
+            "trade_type": "exports",
             "q1_2022": 50.85256278669341,
             "q2_2022": 58.07464653394181,
             "q3_2022": 49.83752362891537,
@@ -699,8 +843,7 @@
             "q4_2024": 58.78923659545866,
             "share_q4": 8.678067153134839,
             "growth_qoq": -0.13426232539342609,
-            "growth_yoy": 0.14851985527506817,
-            "trade_type": "exports"
+            "growth_yoy": 0.14851985527506817
           }
         ],
         "growth_trend": -13.426232539342612,
@@ -712,6 +855,7 @@
           {
             "sitc_section": "3",
             "description": "Mineral fuels, lubricants and related materials",
+            "trade_type": "exports",
             "q1_2022": 0.272083076905626,
             "q2_2022": 0.16826898083848993,
             "q3_2022": 0.3009802835224496,
@@ -726,8 +870,7 @@
             "q4_2024": 0.9406992131324204,
             "share_q4": 0.13885961810728556,
             "growth_qoq": -0.04303796901415091,
-            "growth_yoy": -0.4514484419712864,
-            "trade_type": "exports"
+            "growth_yoy": -0.4514484419712864
           }
         ],
         "growth_trend": -4.303796901415096,
@@ -739,6 +882,7 @@
           {
             "sitc_section": "4",
             "description": "Animals and vegetable oils, fats & waxes",
+            "trade_type": "exports",
             "q1_2022": 0.9009118006592631,
             "q2_2022": 0.5610719135293183,
             "q3_2022": 2.4632689450661474,
@@ -753,8 +897,7 @@
             "q4_2024": 23.396384054352332,
             "share_q4": 3.4536150445587976,
             "growth_qoq": 0.9433547923008432,
-            "growth_yoy": 20.002958196272285,
-            "trade_type": "exports"
+            "growth_yoy": 20.002958196272285
           }
         ],
         "growth_trend": 94.3354792300843,
@@ -766,6 +909,7 @@
           {
             "sitc_section": "5",
             "description": "Chemicals & related products, n.e.s.",
+            "trade_type": "exports",
             "q1_2022": 3.1357657611962972,
             "q2_2022": 4.59223880523061,
             "q3_2022": 2.850555924162513,
@@ -780,8 +924,7 @@
             "q4_2024": 4.87797166069729,
             "share_q4": 0.7200529908886376,
             "growth_qoq": -0.0002789957565847434,
-            "growth_yoy": 0.08126435715066771,
-            "trade_type": "exports"
+            "growth_yoy": 0.08126435715066771
           }
         ],
         "growth_trend": -0.027899575658479663,
@@ -793,6 +936,7 @@
           {
             "sitc_section": "6",
             "description": "Manufactured goods classified chiefly by material",
+            "trade_type": "exports",
             "q1_2022": 25.38965641283493,
             "q2_2022": 28.067078929904493,
             "q3_2022": 34.14974107925114,
@@ -807,8 +951,7 @@
             "q4_2024": 34.872048192777875,
             "share_q4": 5.147574513795568,
             "growth_qoq": 0.13495541664728616,
-            "growth_yoy": 0.4157132218918549,
-            "trade_type": "exports"
+            "growth_yoy": 0.4157132218918549
           }
         ],
         "growth_trend": 13.495541664728622,
@@ -820,6 +963,7 @@
           {
             "sitc_section": "7",
             "description": "Machinery and transport equipment",
+            "trade_type": "exports",
             "q1_2022": 15.274058349257402,
             "q2_2022": 2.7277417199399974,
             "q3_2022": 3.8278008295252137,
@@ -834,8 +978,7 @@
             "q4_2024": 16.870761895697886,
             "share_q4": 2.49034709640581,
             "growth_qoq": 1.3852925830440999,
-            "growth_yoy": 4.945666302034924,
-            "trade_type": "exports"
+            "growth_yoy": 4.945666302034924
           }
         ],
         "growth_trend": 138.52925830440995,
@@ -847,6 +990,7 @@
           {
             "sitc_section": "8",
             "description": "Miscellaneous manufactured articles",
+            "trade_type": "exports",
             "q1_2022": 8.366119200017183,
             "q2_2022": 7.757543497295132,
             "q3_2022": 8.309330528121391,
@@ -861,8 +1005,7 @@
             "q4_2024": 8.323204657159229,
             "share_q4": 1.2286148473255047,
             "growth_qoq": -0.12024699015155571,
-            "growth_yoy": 0.3103899224991493,
-            "trade_type": "exports"
+            "growth_yoy": 0.3103899224991493
           }
         ],
         "growth_trend": -12.024699015155575,
@@ -874,6 +1017,7 @@
           {
             "sitc_section": "9",
             "description": "Other commodities & transactions, n.e.s",
+            "trade_type": "exports",
             "q1_2022": 116.49681442007613,
             "q2_2022": 160.18543308243397,
             "q3_2022": 144.60928520925683,
@@ -888,8 +1032,7 @@
             "q4_2024": 428.1483479071482,
             "share_q4": 63.200346352668646,
             "growth_qoq": -0.01505429527242197,
-            "growth_yoy": 1.113087002060793,
-            "trade_type": "exports"
+            "growth_yoy": 1.113087002060793
           }
         ],
         "growth_trend": -1.5054295272421923,
@@ -900,14 +1043,21 @@
   "ai_forecasts": {
     "export_forecast": {
       "model_type": "Linear Regression",
-      "r2_score": 0.1669596203858139,
+      "r2_score": 0.28879717955613826,
       "predictions": [
-        -189.07625878520275,
-        -320.8896864162705,
-        -452.7031140473382,
-        -584.5165416784059
+        -383.1692277653573,
+        -534.9541733647712,
+        -686.7391189641852,
+        -838.5240645635992
       ],
       "confidence": "Medium"
+    },
+    "congo,_the_democratic_republic_of_forecast": {
+      "predictions": [
+        89.68515581935125,
+        101.0758424650524
+      ],
+      "growth_rate": 20.165730754525885
     },
     "china_forecast": {
       "predictions": [
@@ -936,33 +1086,31 @@
         12.707721071671022
       ],
       "growth_rate": 41.69025787040739
-    },
-    "uganda_forecast": {
-      "predictions": [
-        9.321393942033279,
-        11.529925312737321
-      ],
-      "growth_rate": 53.65228561196841
     }
   },
   "metadata": {
-    "analysis_date": "2025-09-24T23:24:03.974842",
+    "analysis_date": "2025-09-26T10:37:09.741139",
     "data_source": "data\\raw\\2024Q4_Trade_report_annexTables.xlsx",
-    "quarters_analyzed": 7,
-    "export_countries": 20,
-    "import_countries": 18,
-    "export_commodities": 10,
-    "import_commodities": 10,
-    "reexport_commodities": 9,
+    "quarters_analyzed": 6,
+    "export_countries": 21,
+    "import_countries": 19,
+    "reexport_countries": 19,
+    "export_commodities": 11,
+    "import_commodities": 11,
+    "reexport_commodities": 11,
     "eac_countries": 2,
-    "regional_blocks": 29,
-    "continents_analyzed": 21,
-    "analysis_version": "2.0",
+    "regional_blocks": 6,
+    "continents_analyzed": 3,
+    "world_trade_data": 2,
+    "total_sheets_processed": 13,
+    "analysis_version": "2.1",
     "ai_features": [
       "forecasting",
       "trend_analysis",
       "regional_insights",
-      "commodity_breakdown"
-    ]
+      "commodity_breakdown",
+      "continental_analysis"
+    ],
+    "data_completeness": "Complete Q4 2024 dataset with all 12 sheets processed"
   }
 }

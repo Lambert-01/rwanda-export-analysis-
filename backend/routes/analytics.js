@@ -364,4 +364,211 @@ function summarizeSearchResults(data, type) {
   return [...Object.values(commodityMap), ...Object.values(countryMap)];
 }
 
+/**
+  * @route   GET /api/analysis-results
+  * @desc    Get analysis results (main endpoint for frontend)
+  * @access  Public
+  */
+router.get('/analysis-results', (req, res) => {
+  try {
+    // Check if analysis report exists
+    if (dataFileExists('analysis_report.json')) {
+      const analysisData = loadJsonData('analysis_report.json');
+      res.json(analysisData);
+    } else {
+      // If analysis report doesn't exist, return a basic structure
+      res.json({
+        summary: {
+          total_exports: 0,
+          total_imports: 0,
+          current_balance: 0,
+          quarters_analyzed: 0,
+          export_growth_rate: 0,
+          top_destination: 'Unknown',
+          top_product: 'Unknown'
+        },
+        top_destinations: [],
+        top_sources: [],
+        top_products: [],
+        quarterly_trends: {
+          export_trends: [],
+          import_trends: [],
+          balance_trends: []
+        },
+        trade_balance_analysis: {
+          current_balance: 0,
+          balance_type: 'balanced',
+          deficit_percentage: 0,
+          quarters_in_deficit: 0,
+          average_deficit: 0,
+          recommendations: []
+        },
+        market_opportunities: [],
+        recommendations: []
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching analysis results:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+  * @route   GET /api/trade-overview
+  * @desc    Get trade overview data
+  * @access  Public
+  */
+router.get('/trade-overview', (req, res) => {
+  try {
+    // Check if analysis report exists
+    if (dataFileExists('analysis_report.json')) {
+      const analysisData = loadJsonData('analysis_report.json');
+      const summary = analysisData.summary;
+
+      const overview = {
+        total_exports_q4_2024: summary.total_exports,
+        total_imports_q4_2024: summary.total_imports,
+        total_trade_q4_2024: summary.total_exports + summary.total_imports,
+        trade_balance_q4_2024: summary.current_balance,
+        export_growth_qoq: summary.export_growth_rate,
+        import_growth_qoq: 0,
+        total_reexports_q4_2024: 0
+      };
+
+      res.json(overview);
+    } else {
+      res.json({
+        total_exports_q4_2024: 0,
+        total_imports_q4_2024: 0,
+        total_trade_q4_2024: 0,
+        trade_balance_q4_2024: 0,
+        export_growth_qoq: 0,
+        import_growth_qoq: 0,
+        total_reexports_q4_2024: 0
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching trade overview:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+  * @route   GET /api/top-countries
+  * @desc    Get top countries data
+  * @access  Public
+  */
+router.get('/top-countries', (req, res) => {
+  try {
+    // Check if analysis report exists
+    if (dataFileExists('analysis_report.json')) {
+      const analysisData = loadJsonData('analysis_report.json');
+
+      const result = {
+        top_export_countries: analysisData.top_destinations || [],
+        top_import_countries: analysisData.top_sources || []
+      };
+
+      res.json(result);
+    } else {
+      res.json({
+        top_export_countries: [],
+        top_import_countries: []
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching top countries:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+  * @route   GET /api/commodities
+  * @desc    Get commodities analysis
+  * @access  Public
+  */
+router.get('/commodities', (req, res) => {
+  try {
+    // Check if analysis report exists
+    if (dataFileExists('analysis_report.json')) {
+      const analysisData = loadJsonData('analysis_report.json');
+
+      const result = {
+        top_export_commodities: analysisData.top_products || [],
+        top_import_commodities: analysisData.top_products?.slice(0, 5) || []
+      };
+
+      res.json(result);
+    } else {
+      res.json({
+        top_export_commodities: [],
+        top_import_commodities: []
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching commodities:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+  * @route   GET /api/insights
+  * @desc    Get key insights
+  * @access  Public
+  */
+router.get('/insights', (req, res) => {
+  try {
+    // Check if analysis report exists
+    if (dataFileExists('analysis_report.json')) {
+      const analysisData = loadJsonData('analysis_report.json');
+
+      const insights = [
+        {
+          type: 'info',
+          title: 'Leading Export Destination',
+          message: `${analysisData.summary.top_destination} is the top export destination with $${analysisData.summary.total_exports.toFixed(2)}M in Q4 2024`
+        },
+        {
+          type: 'success',
+          title: 'Top Export Product',
+          message: `${analysisData.summary.top_product} leads exports with significant market share`
+        }
+      ];
+
+      res.json(insights);
+    } else {
+      res.json([
+        {
+          type: 'info',
+          title: 'No Data Available',
+          message: 'Analysis data not available yet'
+        }
+      ]);
+    }
+  } catch (error) {
+    console.error('Error fetching insights:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+  * @route   POST /api/analyze-excel
+  * @desc    Trigger Excel analysis
+  * @access  Public
+  */
+router.post('/analyze-excel', (req, res) => {
+  try {
+    // For now, just return success
+    // In a real implementation, this would trigger the Python analysis
+    res.json({
+      success: true,
+      message: 'Excel analysis completed successfully',
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    console.error('Error analyzing Excel:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = router;

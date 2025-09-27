@@ -6,7 +6,7 @@
 /************************************
  * 1. API CONFIGURATION             *
  ************************************/
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = '/api';
 const API_TIMEOUT = 12000; // ms
 const API_CACHE = {};
 
@@ -146,48 +146,94 @@ window.retryFetch = function(endpoint) {
 };
 
 /************************************
- * 3. API ENDPOINTS (EXPORTS)       *
- ************************************/
-async function getQuarterlyExports() {
-    return await apiFetch('/exports/quarterly');
-}
-async function getExportDestinations(year = '2024') {
-    return await apiFetch(`/exports/destinations?year=${year}`);
-}
-async function getExportProducts() {
-    return await apiFetch('/exports/products');
-}
-
-/************************************
- * 4. API ENDPOINTS (IMPORTS)       *
- ************************************/
-async function getImportSources(year = '2024') {
-    return await apiFetch(`/imports/sources?year=${year}`);
-}
-async function getImportCategories() {
-    return await apiFetch('/imports/categories');
-}
-
-
-/************************************
- * 5. API ENDPOINTS (PREDICTIONS)   *
- ************************************/
-async function getPredictions() {
-    return await apiFetch('/predictions/next');
-}
-
-/************************************
-  * 6. API ENDPOINTS (ANALYTICS)     *
+  * 3. API ENDPOINTS (TRADE DATA)    *
   ************************************/
-async function getGrowthAnalytics() {
-    return await apiFetch('/analytics/growth');
-}
-async function searchProduct(product, category = '', time = '') {
-    let url = `/search/${encodeURIComponent(product)}`;
-    if (category || time) {
-        url += `?category=${encodeURIComponent(category)}&time=${encodeURIComponent(time)}`;
+async function getQuarterlyExports() {
+    const results = await getAnalysisResults();
+    if (results.success && results.data) {
+        // Extract quarterly data from Graph Overall
+        const overview = results.data.trade_overview || {};
+        return {
+            periods: ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4'],
+            exports: [overview.q1_2022_exports || 0, overview.q2_2022_exports || 0, overview.q3_2022_exports || 0, overview.q4_2022_exports || 0,
+                     overview.q1_2023_exports || 0, overview.q2_2023_exports || 0, overview.q3_2023_exports || 0, overview.q4_2023_exports || 0,
+                     overview.q1_2024_exports || 0, overview.q2_2024_exports || 0, overview.q3_2024_exports || 0, overview.q4_2024_exports || 0],
+            imports: [overview.q1_2022_imports || 0, overview.q2_2022_imports || 0, overview.q3_2022_imports || 0, overview.q4_2022_imports || 0,
+                     overview.q1_2023_imports || 0, overview.q2_2023_imports || 0, overview.q3_2023_imports || 0, overview.q4_2023_imports || 0,
+                     overview.q1_2024_imports || 0, overview.q2_2024_imports || 0, overview.q3_2024_imports || 0, overview.q4_2024_imports || 0]
+        };
     }
-    return await apiFetch(url);
+    return { periods: [], exports: [], imports: [] };
+}
+
+async function getExportDestinations(year = '2024') {
+    const results = await getAnalysisResults();
+    if (results.success && results.data && results.data.top_countries) {
+        return results.data.top_countries.top_export_countries || [];
+    }
+    return [];
+}
+
+async function getExportProducts() {
+    const results = await getAnalysisResults();
+    if (results.success && results.data && results.data.commodities) {
+        return results.data.commodities.top_export_commodities || [];
+    }
+    return [];
+}
+
+/************************************
+  * 4. API ENDPOINTS (IMPORTS)       *
+  ************************************/
+async function getImportSources(year = '2024') {
+    const results = await getAnalysisResults();
+    if (results.success && results.data && results.data.top_countries) {
+        return results.data.top_countries.top_import_countries || [];
+    }
+    return [];
+}
+
+async function getImportCategories() {
+    const results = await getAnalysisResults();
+    if (results.success && results.data && results.data.commodities) {
+        return results.data.commodities.top_import_commodities || [];
+    }
+    return [];
+}
+
+/************************************
+  * 5. API ENDPOINTS (PREDICTIONS)   *
+  ************************************/
+async function getPredictions() {
+    const results = await getAnalysisResults();
+    if (results.success && results.data && results.data.ai_forecasts) {
+        return results.data.ai_forecasts;
+    }
+    return {};
+}
+
+/************************************
+   * 6. API ENDPOINTS (ANALYTICS)     *
+   ************************************/
+async function getGrowthAnalytics() {
+    const results = await getAnalysisResults();
+    if (results.success && results.data) {
+        return results.data.trade_overview || {};
+    }
+    return {};
+}
+
+async function searchProduct(product, category = '', time = '') {
+    // For now, return filtered commodity data
+    const commodities = await getCommodityAnalysis();
+    if (commodities.success && commodities.data) {
+        const filtered = commodities.data.top_export_commodities?.filter(item =>
+            item.description?.toLowerCase().includes(product.toLowerCase()) ||
+            item.sitc_section?.toLowerCase().includes(product.toLowerCase())
+        ) || [];
+        return { success: true, data: filtered };
+    }
+    return { success: false, data: [] };
 }
 
 /************************************
@@ -396,7 +442,14 @@ async function loadDashboardCharts() {
 // ...
 
 
-module.exports = {
+/************************************
+ * 11. EXTENSIBILITY                *
+ ************************************/
+// Add more API endpoints, helpers, or integrations as needed
+// ...
+
+// Export functions for use in other scripts
+window.apiUtils = {
     // API endpoints
     getQuarterlyExports,
     getExportDestinations,

@@ -7,7 +7,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const path = require('path');
-const { PythonShell } = require('python-shell');
+const { spawn } = require('child_process');
 const fs = require('fs');
 
 // Initialize Express app
@@ -36,55 +36,204 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// Proxy API requests to backend server
+app.use('/api/exports', async (req, res) => {
+    try {
+        const backendUrl = `http://localhost:3000/api/exports${req.url}`;
+        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+
+        // Prepare headers, removing host to avoid conflicts
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers,
+            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+        });
+
+        if (!response.ok) {
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('Error proxying to backend:', error);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message,
+            details: 'Failed to proxy request to backend server on port 3000'
+        });
+    }
+});
+
+app.use('/api/imports', async (req, res) => {
+    try {
+        const backendUrl = `http://localhost:3000/api/imports${req.url}`;
+        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+
+        // Prepare headers, removing host to avoid conflicts
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers,
+            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+        });
+
+        if (!response.ok) {
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('Error proxying to backend:', error);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message,
+            details: 'Failed to proxy request to backend server on port 3000'
+        });
+    }
+});
+
+app.use('/api/predictions', async (req, res) => {
+    try {
+        const backendUrl = `http://localhost:3000/api/predictions${req.url}`;
+        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+
+        // Prepare headers, removing host to avoid conflicts
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers,
+            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+        });
+
+        if (!response.ok) {
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('Error proxying to backend:', error);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message,
+            details: 'Failed to proxy request to backend server on port 3000'
+        });
+    }
+});
+
+app.use('/api/analytics', async (req, res) => {
+    try {
+        const backendUrl = `http://localhost:3000/api/analytics${req.url}`;
+        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+
+        // Prepare headers, removing host to avoid conflicts
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers,
+            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+        });
+
+        if (!response.ok) {
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('Error proxying to backend:', error);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message,
+            details: 'Failed to proxy request to backend server on port 3000'
+        });
+    }
+});
+
 // API endpoint to analyze Excel data
 app.post('/api/analyze-excel', async (req, res) => {
     try {
         console.log('Starting Excel analysis...');
 
         // Run Python analysis script
-        const pythonScript = path.join(__dirname, 'excel_analyzer.py');
+        const pythonScript = path.join(__dirname, 'python_processing', 'export_analyzer.py');
 
         if (!fs.existsSync(pythonScript)) {
             return res.status(500).json({
                 error: 'Python analysis script not found',
-                message: 'Please ensure excel_analyzer.py exists in the project root'
+                message: 'Please ensure export_analyzer.py exists in the python_processing directory'
             });
         }
 
-        const options = {
-            mode: 'json',
-            pythonPath: 'python', // Use system python
-            scriptPath: __dirname,
-            args: []
-        };
+        // Run Python script using spawn
+        const pythonProcess = spawn('python', ['export_analyzer.py'], {
+            cwd: path.join(__dirname, 'python_processing'),
+            stdio: ['pipe', 'pipe', 'pipe']
+        });
 
-        PythonShell.run('excel_analyzer.py', options, (err, results) => {
-            if (err) {
-                console.error('Python script error:', err);
+        let stdout = '';
+        let stderr = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+            stdout += data.toString();
+        });
+
+        pythonProcess.stderr.on('data', (data) => {
+            stderr += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code !== 0) {
+                console.error('Python script error:', stderr);
                 return res.status(500).json({
                     error: 'Analysis failed',
-                    message: err.message,
-                    details: err
+                    message: stderr,
+                    details: `Python script exited with code ${code}`
                 });
             }
 
-            if (!results || results.length === 0) {
-                return res.status(500).json({
-                    error: 'No results from analysis',
-                    message: 'Python script completed but returned no results'
+            try {
+                // Try to parse JSON output from Python script
+                const analysisResults = JSON.parse(stdout.trim());
+                console.log('Analysis completed successfully');
+
+                res.json({
+                    success: true,
+                    data: analysisResults,
+                    metadata: {
+                        analysis_time: new Date().toISOString(),
+                        server_port: PORT
+                    }
+                });
+            } catch (parseError) {
+                console.error('Failed to parse Python output:', parseError);
+                res.status(500).json({
+                    error: 'Analysis failed',
+                    message: 'Failed to parse analysis results',
+                    details: parseError.message,
+                    stdout: stdout,
+                    stderr: stderr
                 });
             }
+        });
 
-            const analysisResults = results[0];
-            console.log('Analysis completed successfully');
-
-            res.json({
-                success: true,
-                data: analysisResults,
-                metadata: {
-                    analysis_time: new Date().toISOString(),
-                    server_port: PORT
-                }
+        pythonProcess.on('error', (error) => {
+            console.error('Failed to start Python script:', error);
+            res.status(500).json({
+                error: 'Analysis failed',
+                message: 'Failed to start Python script',
+                details: error.message
             });
         });
 
@@ -116,34 +265,61 @@ app.get('/api/analysis-results', (req, res) => {
     }
 
     // Trigger new analysis
-    const options = {
-        mode: 'json',
-        pythonPath: 'python',
-        scriptPath: __dirname,
-        args: []
-    };
+    const pythonProcess = spawn('python', ['export_analyzer.py'], {
+        cwd: path.join(__dirname, 'python_processing'),
+        stdio: ['pipe', 'pipe', 'pipe']
+    });
 
-    PythonShell.run('excel_analyzer.py', options, (err, results) => {
-        if (err) {
+    let stdout = '';
+    let stderr = '';
+
+    pythonProcess.stdout.on('data', (data) => {
+        stdout += data.toString();
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+        stderr += data.toString();
+    });
+
+    pythonProcess.on('close', (code) => {
+        if (code !== 0) {
+            console.error('Python script error:', stderr);
             return res.status(500).json({
                 error: 'Analysis failed',
-                message: err.message
+                message: stderr,
+                details: `Python script exited with code ${code}`
             });
         }
 
-        if (!results || results.length === 0) {
-            return res.status(500).json({
-                error: 'No results from analysis'
+        try {
+            const analysisResults = JSON.parse(stdout.trim());
+            cachedAnalysis = analysisResults;
+            lastAnalysisTime = Date.now();
+
+            console.log('Analysis completed successfully, data cached');
+            res.json({
+                success: true,
+                data: cachedAnalysis,
+                cached: false
+            });
+        } catch (parseError) {
+            console.error('Failed to parse Python output:', parseError);
+            res.status(500).json({
+                error: 'Analysis failed',
+                message: 'Failed to parse analysis results',
+                details: parseError.message,
+                stdout: stdout,
+                stderr: stderr
             });
         }
+    });
 
-        cachedAnalysis = results[0];
-        lastAnalysisTime = Date.now();
-
-        res.json({
-            success: true,
-            data: cachedAnalysis,
-            cached: false
+    pythonProcess.on('error', (error) => {
+        console.error('Failed to start Python script:', error);
+        res.status(500).json({
+            error: 'Analysis failed',
+            message: 'Failed to start Python script',
+            details: error.message
         });
     });
 });
@@ -178,6 +354,150 @@ app.get('/api/top-countries', (req, res) => {
     });
 });
 
+// API endpoint to get exports data (alias for top-countries)
+app.get('/api/exports', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.top_countries || {}
+    });
+});
+
+// API endpoint to get predictions (alias for ai-forecasts)
+app.get('/api/predictions', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.ai_forecasts || {}
+    });
+});
+
+// API endpoint to get imports data
+app.get('/api/imports', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.commodities?.top_import_commodities || []
+    });
+});
+
+// API endpoint to get exports destinations
+app.get('/api/exports/destinations', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.top_countries?.top_export_countries || []
+    });
+});
+
+// API endpoint to analyze (alias for analyze-excel)
+app.post('/api/analyze', async (req, res) => {
+    try {
+        console.log('Starting Excel analysis...');
+
+        // Run Python analysis script
+        const pythonScript = path.join(__dirname, 'python_processing', 'export_analyzer.py');
+
+        if (!fs.existsSync(pythonScript)) {
+            return res.status(500).json({
+                error: 'Python analysis script not found',
+                message: 'Please ensure export_analyzer.py exists in the python_processing directory'
+            });
+        }
+
+        // Run Python script using spawn
+        const pythonProcess = spawn('python', ['export_analyzer.py'], {
+            cwd: path.join(__dirname, 'python_processing'),
+            stdio: ['pipe', 'pipe', 'pipe']
+        });
+
+        let stdout = '';
+        let stderr = '';
+
+        pythonProcess.stdout.on('data', (data) => {
+            stdout += data.toString();
+        });
+
+        pythonProcess.stderr.on('data', (data) => {
+            stderr += data.toString();
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code !== 0) {
+                console.error('Python script error:', stderr);
+                return res.status(500).json({
+                    error: 'Analysis failed',
+                    message: stderr,
+                    details: `Python script exited with code ${code}`
+                });
+            }
+
+            try {
+                const analysisResults = JSON.parse(stdout.trim());
+                console.log('Analysis completed successfully');
+
+                res.json({
+                    success: true,
+                    data: analysisResults,
+                    metadata: {
+                        analysis_time: new Date().toISOString(),
+                        server_port: PORT
+                    }
+                });
+            } catch (parseError) {
+                console.error('Failed to parse Python output:', parseError);
+                res.status(500).json({
+                    error: 'Analysis failed',
+                    message: 'Failed to parse analysis results',
+                    details: parseError.message,
+                    stdout: stdout,
+                    stderr: stderr
+                });
+            }
+        });
+
+        pythonProcess.on('error', (error) => {
+            console.error('Failed to start Python script:', error);
+            res.status(500).json({
+                error: 'Analysis failed',
+                message: 'Failed to start Python script',
+                details: error.message
+            });
+        });
+
+    } catch (error) {
+        console.error('Server error during analysis:', error);
+        res.status(500).json({
+            error: 'Server error',
+            message: error.message
+        });
+    }
+});
+
 // API endpoint to get commodity analysis
 app.get('/api/commodities', (req, res) => {
     if (!cachedAnalysis) {
@@ -208,12 +528,106 @@ app.get('/api/insights', (req, res) => {
     });
 });
 
+// API endpoint to get regional analysis
+app.get('/api/regional-analysis', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.regional_analysis || {}
+    });
+});
+
+// API endpoint to get commodity analysis
+app.get('/api/commodity-analysis', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.commodities || {}
+    });
+});
+
+// API endpoint to get detailed commodities
+app.get('/api/detailed-commodities', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.detailed_commodities || {}
+    });
+});
+
+// API endpoint to get AI forecasts
+app.get('/api/ai-forecasts', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.ai_forecasts || {}
+    });
+});
+
+// API endpoint to get raw data by sheet
+app.get('/api/raw-data/:sheet', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    const sheetName = req.params.sheet;
+    const rawData = cachedAnalysis.get('raw_data', {}).get(sheetName, []);
+
+    res.json({
+        success: true,
+        data: rawData,
+        sheet: sheetName
+    });
+});
+
+// API endpoint to get metadata
+app.get('/api/metadata', (req, res) => {
+    if (!cachedAnalysis) {
+        return res.status(503).json({
+            error: 'Analysis not available',
+            message: 'Please run analysis first'
+        });
+    }
+
+    res.json({
+        success: true,
+        data: cachedAnalysis.metadata || {}
+    });
+});
+
 // API documentation endpoint
 app.get('/api', (req, res) => {
     res.json({
         name: 'Rwanda Export Explorer API',
-        version: '1.0.0',
-        description: 'API for analyzing Rwanda trade data from Excel files',
+        version: '2.1.0',
+        description: 'Comprehensive API for analyzing Rwanda trade data from Excel files with AI capabilities',
         port: PORT,
         endpoints: {
             health: {
@@ -250,8 +664,47 @@ app.get('/api', (req, res) => {
                 method: 'GET',
                 path: '/api/insights',
                 description: 'Get key insights from analysis'
+            },
+            regionalAnalysis: {
+                method: 'GET',
+                path: '/api/regional-analysis',
+                description: 'Get regional and continental analysis'
+            },
+            commodityAnalysis: {
+                method: 'GET',
+                path: '/api/commodity-analysis',
+                description: 'Get detailed commodity analysis'
+            },
+            detailedCommodities: {
+                method: 'GET',
+                path: '/api/detailed-commodities',
+                description: 'Get detailed commodity breakdown'
+            },
+            aiForecasts: {
+                method: 'GET',
+                path: '/api/ai-forecasts',
+                description: 'Get AI-powered forecasts'
+            },
+            rawData: {
+                method: 'GET',
+                path: '/api/raw-data/:sheet',
+                description: 'Get raw data by sheet name'
+            },
+            metadata: {
+                method: 'GET',
+                path: '/api/metadata',
+                description: 'Get analysis metadata'
             }
-        }
+        },
+        features: [
+            'Complete Q4 2024 Rwanda trade data analysis',
+            'AI-powered forecasting and predictions',
+            'Regional and continental trade analysis',
+            'Detailed commodity breakdown by SITC sections',
+            'Interactive charts and visualizations',
+            'Export functionality for reports',
+            'Real-time data processing and caching'
+        ]
     });
 });
 

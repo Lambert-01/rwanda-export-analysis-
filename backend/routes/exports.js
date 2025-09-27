@@ -213,4 +213,47 @@ function getCountryCoordinates(country) {
   return coordinates[country] || { lat: 0, lng: 0 };
 }
 
+/**
+  * @route   GET /api/exports
+  * @desc    Get all exports data (main endpoint for frontend)
+  * @access  Public
+  */
+router.get('/', (req, res) => {
+  try {
+    // Check if exports data exists
+    if (dataFileExists('exports_data.json')) {
+      const exportsData = loadJsonData('exports_data.json');
+
+      // Group by quarter and sum export values
+      const quarterlyData = exportsData.reduce((acc, item) => {
+        const quarter = item.quarter;
+        if (!acc[quarter]) {
+          acc[quarter] = {
+            period: quarter,
+            exports: 0,
+            count: 0
+          };
+        }
+        acc[quarter].exports += parseFloat(item.export_value) || 0;
+        acc[quarter].count += 1;
+        return acc;
+      }, {});
+
+      // Convert to array and sort by quarter
+      const result = Object.values(quarterlyData).sort((a, b) => {
+        const [aYear, aQ] = a.period.split('Q');
+        const [bYear, bQ] = b.period.split('Q');
+        return aYear === bYear ? aQ - bQ : aYear - bYear;
+      });
+
+      res.json(result);
+    } else {
+      res.json([]);
+    }
+  } catch (error) {
+    console.error('Error fetching exports data:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = router;

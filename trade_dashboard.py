@@ -487,8 +487,8 @@ def create_summary_chart(chart_type, time_range):
     fig = make_subplots(
         rows=2, cols=2,
         subplot_titles=('Trade Volume', 'Growth Rates', 'Regional Share', 'Commodity Mix'),
-        specs=[[{\"type\": \"bar\"}, {\"type\": \"line\"}],
-               [{\"type\": \"pie\"}, {\"type\": \"bar\"}]]
+        specs=[[{"type": "bar"}, {"type": "line"}],
+               [{"type": "pie"}, {"type": "bar"}]]
     )
 
     # Sample data for summary
@@ -526,10 +526,10 @@ def create_summary_chart(chart_type, time_range):
     return fig
 
 if __name__ == '__main__':
-    print("🚀 Starting Rwanda Trade Analysis Dashboard...")
-    print(f"📊 Loaded {len(processed_data)} data sheets")
-    print("🌐 Dashboard available at: http://localhost:8050")
-    print("📈 Features:")
+    print("Starting Rwanda Trade Analysis Dashboard...")
+    print(f"Loaded {len(processed_data)} data sheets")
+    print("Dashboard available at: http://localhost:8050")
+    print("Features:")
     print("   • Interactive charts with multiple visualization types")
     print("   • Sidebar navigation between different analysis views")
     print("   • Real-time metric updates")

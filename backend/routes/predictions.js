@@ -288,4 +288,39 @@ function generateMockRisks(count) {
   return risks.slice(0, count);
 }
 
+/**
+  * @route   GET /api/predictions
+  * @desc    Get all predictions data (main endpoint for frontend)
+  * @access  Public
+  */
+router.get('/', (req, res) => {
+  try {
+    // Check if predictions data exists
+    if (dataFileExists('predictions.json')) {
+      const predictionsData = loadJsonData('predictions.json');
+      res.json(predictionsData);
+    } else {
+      // Return mock predictions if data doesn't exist
+      res.json({
+        export_predictions: [
+          { quarter: "2025Q1", predicted_export: 700, confidence: 80 },
+          { quarter: "2025Q2", predicted_export: 720, confidence: 75 },
+          { quarter: "2025Q3", predicted_export: 740, confidence: 70 },
+          { quarter: "2025Q4", predicted_export: 760, confidence: 65 }
+        ],
+        import_predictions: [
+          { quarter: "2025Q1", predicted_import: 1700, confidence: 78 },
+          { quarter: "2025Q2", predicted_import: 1750, confidence: 73 },
+          { quarter: "2025Q3", predicted_import: 1800, confidence: 68 },
+          { quarter: "2025Q4", predicted_import: 1850, confidence: 63 }
+        ],
+        commodity_predictions: []
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching predictions data:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = router;

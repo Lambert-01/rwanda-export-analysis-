@@ -29,6 +29,13 @@ app.use('/api/imports', importsRoutes);
 app.use('/api/predictions', predictionsRoutes);
 app.use('/api/analytics', analyticsRoutes);
 
+// Direct route for analysis-results (for frontend compatibility)
+app.get('/api/analysis-results', (req, res) => {
+  // Redirect to the analytics route
+  req.url = '/analysis-results';
+  analyticsRoutes(req, res);
+});
+
 // Serve static frontend files in production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../frontend')));
