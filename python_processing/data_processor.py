@@ -24,10 +24,12 @@ logger = logging.getLogger(__name__)
 class DataProcessor:
     """Main class for processing Rwanda trade data from raw sources."""
     
-    def __init__(self, raw_data_dir: str = "data/raw", processed_data_dir: str = "data/processed"):
+    def __init__(self, raw_data_dir: str = None, processed_data_dir: str = None):
         """Initialize the data processor with directory paths."""
-        self.raw_data_dir = Path(raw_data_dir)
-        self.processed_data_dir = Path(processed_data_dir)
+        import os
+        # Use environment variables if provided, otherwise use defaults
+        self.raw_data_dir = Path(raw_data_dir or os.getenv('DATA_RAW_PATH', "data/raw"))
+        self.processed_data_dir = Path(processed_data_dir or os.getenv('DATA_PROCESSED_PATH', "data/processed"))
         self.processed_data_dir.mkdir(parents=True, exist_ok=True)
         
         # Initialize data containers
@@ -90,46 +92,37 @@ class DataProcessor:
             return pd.DataFrame()
 
         # Check for expected header pattern
-        header_row = 3  # Row 3 (0-indexed) should contain headers
-        headers = df.iloc[header_row].tolist()
-
-        if not any('2024Q4' in str(h) for h in headers):
-            logger.warning("Expected quarter headers not found, returning empty")
+        header_row = 4  # Row 4 (0-indexed) should contain "Year and Period"
+        if pd.isna(df.iloc[header_row, 0]) or 'Year and Period' not in str(df.iloc[header_row, 0]):
+            logger.warning("Expected header pattern not found")
             return pd.DataFrame()
 
-        # Extract quarter columns (skip first column which is "Year and Period")
-        quarter_columns = []
-        for i, header in enumerate(headers[1:], 1):  # Start from index 1
-            if pd.notna(header) and 'Q' in str(header) and len(str(header)) >= 6:  # Like "2024Q4"
-                quarter_columns.append(i)
+        # Extract quarter columns (columns 1-12 for 2022Q1 to 2024Q4)
+        quarter_columns = list(range(1, 13))  # Columns 1-12
+        quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
 
-        if not quarter_columns:
-            logger.warning("No quarter columns found, returning empty")
-            return pd.DataFrame()
-
-        # Extract data starting from row 4 (countries/commodities)
+        # Extract data starting from row 7 (countries start here)
         data_rows = []
-        for row_idx in range(4, len(df)):  # Start from row 4
+        for row_idx in range(7, len(df)):  # Start from row 7
             row_data = df.iloc[row_idx]
-            entity_name = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
+            country_name = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
 
-            if not entity_name or entity_name.lower() in ['nan', 'source:', 'total', '']:
+            if not country_name or country_name.lower() in ['nan', 'source:', 'total', '']:
                 continue
 
             # Extract values for each quarter
-            for col_idx in quarter_columns:
-                quarter = str(headers[col_idx]).strip()
+            for col_idx, quarter in zip(quarter_columns, quarters):
                 value = row_data.iloc[col_idx]
 
-                if pd.notna(value) and pd.notna(quarter):
+                if pd.notna(value):
                     try:
                         numeric_value = float(value)
                         if numeric_value > 0:  # Only include positive values
                             data_rows.append({
                                 'quarter': quarter,
                                 'export_value': numeric_value,
-                                'commodity': 'Unknown',  # Will be determined by sheet type
-                                'destination_country': entity_name
+                                'commodity': 'Total Exports',  # Country-level data
+                                'destination_country': clean_country_name(country_name)
                             })
                     except (ValueError, TypeError):
                         continue
@@ -168,46 +161,37 @@ class DataProcessor:
             return pd.DataFrame()
 
         # Check for expected header pattern
-        header_row = 3  # Row 3 (0-indexed) should contain headers
-        headers = df.iloc[header_row].tolist()
-
-        if not any('2024Q4' in str(h) for h in headers):
-            logger.warning("Expected quarter headers not found, returning empty")
+        header_row = 4  # Row 4 (0-indexed) should contain "Year and Period"
+        if pd.isna(df.iloc[header_row, 0]) or 'Year and Period' not in str(df.iloc[header_row, 0]):
+            logger.warning("Expected header pattern not found")
             return pd.DataFrame()
 
-        # Extract quarter columns (skip first column which is "Year and Period")
-        quarter_columns = []
-        for i, header in enumerate(headers[1:], 1):  # Start from index 1
-            if pd.notna(header) and 'Q' in str(header) and len(str(header)) >= 6:  # Like "2024Q4"
-                quarter_columns.append(i)
+        # Extract quarter columns (columns 1-12 for 2022Q1 to 2024Q4)
+        quarter_columns = list(range(1, 13))  # Columns 1-12
+        quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
 
-        if not quarter_columns:
-            logger.warning("No quarter columns found, returning empty")
-            return pd.DataFrame()
-
-        # Extract data starting from row 4 (countries/commodities)
+        # Extract data starting from row 7 (countries start here)
         data_rows = []
-        for row_idx in range(4, len(df)):  # Start from row 4
+        for row_idx in range(7, len(df)):  # Start from row 7
             row_data = df.iloc[row_idx]
-            entity_name = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
+            country_name = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
 
-            if not entity_name or entity_name.lower() in ['nan', 'source:', 'total', '']:
+            if not country_name or country_name.lower() in ['nan', 'source:', 'total', '']:
                 continue
 
             # Extract values for each quarter
-            for col_idx in quarter_columns:
-                quarter = str(headers[col_idx]).strip()
+            for col_idx, quarter in zip(quarter_columns, quarters):
                 value = row_data.iloc[col_idx]
 
-                if pd.notna(value) and pd.notna(quarter):
+                if pd.notna(value):
                     try:
                         numeric_value = float(value)
                         if numeric_value > 0:  # Only include positive values
                             data_rows.append({
                                 'quarter': quarter,
                                 'import_value': numeric_value,
-                                'commodity': 'Unknown',  # Will be determined by sheet type
-                                'source_country': entity_name
+                                'commodity': 'Total Imports',  # Country-level data
+                                'source_country': clean_country_name(country_name)
                             })
                     except (ValueError, TypeError):
                         continue
@@ -288,17 +272,6 @@ class DataProcessor:
                         else:
                             exports_df = pd.concat([exports_df, country_exports], ignore_index=True)
 
-                elif sheet_name == 'ExportsCommodity':
-                    commodity_exports = self.extract_quarterly_exports(df)
-                    # For commodity sheets, update commodity column with entity name
-                    if not commodity_exports.empty:
-                        commodity_exports['commodity'] = commodity_exports['destination_country']
-                        commodity_exports['destination_country'] = 'Various'  # Since commodity data doesn't specify destination
-                        if exports_df is None:
-                            exports_df = commodity_exports
-                        else:
-                            exports_df = pd.concat([exports_df, commodity_exports], ignore_index=True)
-
                 elif sheet_name == 'ImportCountry':
                     country_imports = self.extract_quarterly_imports(df)
                     # For country sheets, the entity is source_country
@@ -308,16 +281,22 @@ class DataProcessor:
                         else:
                             imports_df = pd.concat([imports_df, country_imports], ignore_index=True)
 
-                elif sheet_name == 'ImportsCommodity':
-                    commodity_imports = self.extract_quarterly_imports(df)
-                    # For commodity sheets, update commodity column with entity name
-                    if not commodity_imports.empty:
-                        commodity_imports['commodity'] = commodity_imports['source_country']
-                        commodity_imports['source_country'] = 'Various'  # Since commodity data doesn't specify source
-                        if imports_df is None:
-                            imports_df = commodity_imports
-                        else:
-                            imports_df = pd.concat([imports_df, commodity_imports], ignore_index=True)
+                # Skip commodity sheets for now as they have different structure
+                # elif sheet_name == 'ExportsCommodity':
+                #     commodity_exports = self.extract_commodity_exports(df)
+                #     if not commodity_exports.empty:
+                #         if exports_df is None:
+                #             exports_df = commodity_exports
+                #         else:
+                #             exports_df = pd.concat([exports_df, commodity_exports], ignore_index=True)
+
+                # elif sheet_name == 'ImportsCommodity':
+                #     commodity_imports = self.extract_commodity_imports(df)
+                #     if not commodity_imports.empty:
+                #         if imports_df is None:
+                #             imports_df = commodity_imports
+                #         else:
+                #             imports_df = pd.concat([imports_df, commodity_imports], ignore_index=True)
 
                 elif sheet_name in ['ReexportsCountry', 'ReexportsCommodity']:
                     re_exports_df = self.extract_re_exports(df)
@@ -420,32 +399,65 @@ def clean_country_name(country: str) -> str:
     """Clean and standardize country names."""
     if pd.isna(country) or country == 'Unknown':
         return 'Unknown'
-    
+
     country = str(country).strip()
-    country = re.sub(r'\\(.*?\\)', '', country)  # Remove parentheses
-    country = re.sub(r'[^a-zA-Z\\s]', '', country)  # Keep only letters and spaces
-    country = country.strip()
-    
-    # Standardize common country names
+
+    # Handle specific country name mappings from the Excel data
     country_mapping = {
-        'united states of america': 'United States',
-        'usa': 'United States',
-        'uk': 'United Kingdom',
-        'uae': 'United Arab Emirates',
-        'drc': 'Democratic Republic of the Congo',
-        'congo drc': 'Democratic Republic of the Congo',
-        'tanzania': 'Tanzania',
-        'kenya': 'Kenya',
-        'china': 'China',
-        'india': 'India',
-        'luxembourg': 'Luxembourg'
+        'United Arab Emirates': 'United Arab Emirates',
+        'Congo, The Democratic Republic Of': 'Democratic Republic of the Congo',
+        'China': 'China',
+        'Luxembourg': 'Luxembourg',
+        'United Kingdom': 'United Kingdom',
+        'United States': 'United States',
+        'Uganda': 'Uganda',
+        'India': 'India',
+        'Hong Kong': 'Hong Kong',
+        'Netherlands': 'Netherlands',
+        'Italy': 'Italy',
+        'Belgium': 'Belgium',
+        'Singapore': 'Singapore',
+        'Pakistan': 'Pakistan',
+        'Thailand': 'Thailand',
+        'Congo': 'Congo',
+        'Ethiopia': 'Ethiopia',
+        'South Sudan': 'South Sudan',
+        'Germany': 'Germany',
+        'Turkey': 'Turkey',
+        'Tanzania, United Republic Of': 'Tanzania',
+        'Kenya': 'Kenya',
+        'Burundi': 'Burundi',
+        'South Africa': 'South Africa',
+        'Japan': 'Japan',
+        'Egypt': 'Egypt',
+        'Cameroon': 'Cameroon',
+        'France': 'France',
+        'Saudi Arabia': 'Saudi Arabia',
+        'Russian Federation': 'Russia',
+        'Burkina Faso': 'Burkina Faso',
+        'Malaysia': 'Malaysia',
+        'Greece': 'Greece',
+        'Ghana': 'Ghana',
+        'Qatar': 'Qatar',
+        'Sudan': 'Sudan',
+        'Zambia': 'Zambia'
     }
-    
+
+    # Direct mapping first
+    if country in country_mapping:
+        return country_mapping[country]
+
+    # Handle variations and clean up
+    country = re.sub(r'[^a-zA-Z\\s]', '', country)  # Remove special characters
+    country = country.strip()
+
+    # Try to match with cleaned version
     country_lower = country.lower()
     for key, value in country_mapping.items():
-        if key in country_lower:
+        if key.lower() == country_lower or key.lower().replace(',', '').replace('the', '').strip() == country_lower:
             return value
-    
+
+    # If no match found, return the cleaned original
     return country.title() if country else 'Unknown'
 
 def clean_commodity_name(commodity: str) -> str:

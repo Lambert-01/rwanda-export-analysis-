@@ -1,6 +1,6 @@
 {
   "execution_info": {
-    "start_time": "2025-09-24T03:13:31.779430",
+    "start_time": "2025-09-27T09:54:56.316940",
     "end_time": null,
     "duration_seconds": 0,
     "stages_completed": [
@@ -11,26 +11,26 @@
     "errors": []
   },
   "data_summary": {
-    "exports_count": 157,
-    "imports_count": 153,
-    "balance_records": 15,
-    "quarters_processed": 15,
-    "commodities_count": 1,
-    "countries_count": 11
+    "exports_count": 237,
+    "imports_count": 225,
+    "balance_records": 12,
+    "quarters_processed": 12,
+    "commodities_count": 2,
+    "countries_count": 31
   },
   "predictions_summary": {
-    "next_quarter_export": 4.331734578330347,
-    "next_quarter_import": 43.76625669784637,
-    "next_quarter_balance": -39.434522119516025,
-    "top_growing_commodity": "SITC SECTION",
-    "top_opportunity_country": "Various",
+    "next_quarter_export": 2.405313860737231,
+    "next_quarter_import": 27.218071917894232,
+    "next_quarter_balance": -24.812758057157,
+    "top_growing_commodity": "Total Exports",
+    "top_opportunity_country": "Democratic Republic of the Congo",
     "overall_confidence": 72.5
   },
   "analysis_summary": {
-    "total_exports": 10851.057702765407,
-    "current_balance": 0.12838546633733472,
-    "top_destination": "Various",
-    "top_product": "SITC SECTION",
+    "total_exports": 4890.848444069578,
+    "current_balance": -494.2445688702811,
+    "top_destination": "United Arab Emirates",
+    "top_product": "Total Exports",
     "recommendations_count": 5
   },
   "files_generated": [
@@ -39,7 +39,8 @@
     "data/processed/trade_balance.json",
     "data/processed/metadata.json",
     "data/processed/predictions.json",
-    "data/processed/analysis_report.json"
+    "data/processed/analysis_report.json",
+    "data/processed/pipeline_summary.json"
   ],
   "config": {
     "data_dir": "c:\\Users\\educa\\HACKTON\\rwanda-export-explorer\\data",
@@ -48,7 +49,7 @@
     "excel_filename": "2024Q4_Trade_report_annexTables.xlsx",
     "prediction_quarters": 4,
     "analysis_top_n": 10,
-    "force_reprocess": false,
+    "force_reprocess": true,
     "skip_predictions": false,
     "skip_analysis": false
   }

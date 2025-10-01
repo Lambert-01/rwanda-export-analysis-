@@ -2,163 +2,128 @@
   "export_predictions": [
     {
       "quarter": "2025Q1",
-      "predicted_export": 4.331734578330347,
+      "predicted_export": 2.405313860737231,
       "confidence": 80
     },
     {
       "quarter": "2025Q2",
-      "predicted_export": 4.331734578330346,
+      "predicted_export": 2.405313860737231,
       "confidence": 75
     },
     {
       "quarter": "2025Q3",
-      "predicted_export": 4.331734578330346,
+      "predicted_export": 2.405313860737231,
       "confidence": 70
     },
     {
       "quarter": "2025Q4",
-      "predicted_export": 4.331734578330345,
+      "predicted_export": 2.405313860737231,
       "confidence": 65
     }
   ],
   "import_predictions": [
     {
       "quarter": "2025Q1",
-      "predicted_import": 43.76625669784637,
+      "predicted_import": 27.218071917894232,
       "confidence": 80
     },
     {
       "quarter": "2025Q2",
-      "predicted_import": 43.76625669784637,
+      "predicted_import": 27.218071917894225,
       "confidence": 75
     },
     {
       "quarter": "2025Q3",
-      "predicted_import": 43.76625669784637,
+      "predicted_import": 27.218071917894225,
       "confidence": 70
     },
     {
       "quarter": "2025Q4",
-      "predicted_import": 43.76625669784637,
+      "predicted_import": 27.218071917894225,
       "confidence": 65
     }
   ],
   "balance_predictions": [
     {
       "quarter": "2025Q1",
-      "predicted_balance": -39.434522119516025,
-      "predicted_export": 4.331734578330346,
-      "predicted_import": 43.76625669784637,
+      "predicted_balance": -24.812758057157,
+      "predicted_export": 2.405313860737231,
+      "predicted_import": 27.218071917894232,
       "balance_type": "deficit",
       "confidence": 80
     },
     {
       "quarter": "2025Q2",
-      "predicted_balance": -39.434522119516025,
-      "predicted_export": 4.331734578330345,
-      "predicted_import": 43.76625669784637,
+      "predicted_balance": -24.812758057157,
+      "predicted_export": 2.405313860737231,
+      "predicted_import": 27.218071917894232,
       "balance_type": "deficit",
       "confidence": 75
     },
     {
       "quarter": "2025Q3",
-      "predicted_balance": -39.434522119516025,
-      "predicted_export": 4.331734578330345,
-      "predicted_import": 43.76625669784637,
+      "predicted_balance": -24.812758057157,
+      "predicted_export": 2.405313860737231,
+      "predicted_import": 27.218071917894232,
       "balance_type": "deficit",
       "confidence": 70
     },
     {
       "quarter": "2025Q4",
-      "predicted_balance": -39.434522119516025,
-      "predicted_export": 4.331734578330346,
-      "predicted_import": 43.76625669784637,
+      "predicted_balance": -24.812758057157,
+      "predicted_export": 2.405313860737231,
+      "predicted_import": 27.218071917894232,
       "balance_type": "deficit",
       "confidence": 65
     }
   ],
   "commodity_predictions": [
     {
-      "commodity": "SITC SECTION",
-      "current_value": 100.0,
-      "predicted_next_quarter": 436.2641801191203,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "9",
-      "current_value": 63.200346352668646,
-      "predicted_next_quarter": 333.26197606584174,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "0",
-      "current_value": 14.927374209620384,
-      "predicted_next_quarter": 68.55205377393759,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "2",
-      "current_value": 8.678067153134839,
-      "predicted_next_quarter": 44.68016545517912,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "6",
-      "current_value": 5.147574513795568,
-      "predicted_next_quarter": 20.04294303214283,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "8",
-      "current_value": 1.2286148473255047,
-      "predicted_next_quarter": 5.797292463664689,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "4",
-      "current_value": 3.4536150445587976,
-      "predicted_next_quarter": 13.175809785732781,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "7",
-      "current_value": 2.49034709640581,
-      "predicted_next_quarter": 5.2349902882684205,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "5",
-      "current_value": 0.7200529908886376,
-      "predicted_next_quarter": 3.693840703384055,
-      "growth_trend": "positive",
-      "confidence": 75
-    },
-    {
-      "commodity": "3",
-      "current_value": 0.13885961810728556,
-      "predicted_next_quarter": 1.0388246211379055,
-      "growth_trend": "positive",
+      "commodity": "Total Exports",
+      "current_value": 643.5620013711347,
+      "predicted_next_quarter": 610.1238996004104,
+      "growth_trend": "negative",
       "confidence": 75
     }
   ],
   "country_predictions": [
     {
-      "country": "Various",
-      "current_export_value": 199.9998510240991,
-      "predicted_next_quarter": 99.99992551204954,
-      "growth_rate": -0.8523868031685718,
-      "opportunity_score": 0
+      "country": "United Arab Emirates",
+      "current_export_value": 442.54866971286344,
+      "predicted_next_quarter": 438.1289248885621,
+      "growth_rate": -0.009987025443255642,
+      "opportunity_score": 49.00129745567443
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "current_export_value": 84.11370016259441,
+      "predicted_next_quarter": 113.80606420165444,
+      "growth_rate": 0.3530027092098404,
+      "opportunity_score": 85.30027092098405
+    },
+    {
+      "country": "China",
+      "current_export_value": 20.42731227798233,
+      "predicted_next_quarter": 18.274011304700764,
+      "growth_rate": -0.10541283865339993,
+      "opportunity_score": 39.45871613466001
+    },
+    {
+      "country": "United Kingdom",
+      "current_export_value": 9.310812866389798,
+      "predicted_next_quarter": 7.947833776946177,
+      "growth_rate": -0.1463866913665194,
+      "opportunity_score": 35.36133086334806
+    },
+    {
+      "country": "Hong Kong",
+      "current_export_value": 5.888581333649638,
+      "predicted_next_quarter": 4.067556087006757,
+      "growth_rate": -0.3092468530980181,
+      "opportunity_score": 19.07531469019819
     }
   ],
-  "generated_at": "2025-09-24T03:13:35.466521",
+  "generated_at": "2025-09-27T09:55:01.786492",
   "model_info": {
     "export_models": [
       "random_forest"

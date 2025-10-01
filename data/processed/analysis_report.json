@@ -1,291 +1,248 @@
 {
-  "generated_at": "2025-09-27T02:08:28.049597",
+  "generated_at": "2025-09-27T09:55:01.795248",
   "summary": {
-    "total_exports": 10851.057702765407,
-    "total_imports": 35428.48510511049,
-    "current_balance": 0.12838546633733472,
-    "quarters_analyzed": 15,
-    "export_growth_rate": 6940.091804944867,
-    "top_destination": "Various",
-    "top_product": "SITC SECTION"
+    "total_exports": 4890.848444069578,
+    "total_imports": 11457.564792677953,
+    "current_balance": -494.2445688702811,
+    "quarters_analyzed": 12,
+    "export_growth_rate": 157.90400174809264,
+    "top_destination": "United Arab Emirates",
+    "top_product": "Total Exports"
   },
   "top_destinations": [
     {
-      "destination_country": "Various",
-      "export_value": 10851.057702765409,
-      "percentage": 100.0,
+      "destination_country": "United Arab Emirates",
+      "export_value": 3055.0147959514015,
+      "percentage": 75.13,
+      "growth_rate": 0.0
+    },
+    {
+      "destination_country": "Democratic Republic of the Congo",
+      "export_value": 580.7003868686246,
+      "percentage": 14.28,
+      "growth_rate": 0.0
+    },
+    {
+      "destination_country": "China",
+      "export_value": 203.47162094497057,
+      "percentage": 5.0,
+      "growth_rate": 0.0
+    },
+    {
+      "destination_country": "United Kingdom",
+      "export_value": 119.0513932891796,
+      "percentage": 2.93,
+      "growth_rate": 0.0
+    },
+    {
+      "destination_country": "Hong Kong",
+      "export_value": 108.06798924362923,
+      "percentage": 2.66,
       "growth_rate": 0.0
     }
   ],
   "top_sources": [
     {
-      "source_country": "Various",
-      "import_value": 35428.485105110485,
-      "percentage": 100.0
+      "source_country": "Tanzania",
+      "import_value": 2364.642912500618,
+      "percentage": 31.82
+    },
+    {
+      "source_country": "Kenya",
+      "import_value": 1718.3857894579746,
+      "percentage": 23.13
+    },
+    {
+      "source_country": "India",
+      "import_value": 1613.4557811128932,
+      "percentage": 21.71
+    },
+    {
+      "source_country": "United Arab Emirates",
+      "import_value": 1139.8644567880435,
+      "percentage": 15.34
+    },
+    {
+      "source_country": "Cameroon",
+      "import_value": 594.4567079768431,
+      "percentage": 8.0
     }
   ],
   "top_products": [
     {
-      "commodity": "SITC SECTION",
-      "export_value": 5411.05268575581,
-      "percentage": 49.89,
-      "category": "Other"
-    },
-    {
-      "commodity": "9",
-      "export_value": 2970.726673800891,
-      "percentage": 27.39,
-      "category": "Other"
-    },
-    {
-      "commodity": "0",
-      "export_value": 1093.9193071046222,
-      "percentage": 10.09,
-      "category": "Other"
-    },
-    {
-      "commodity": "2",
-      "export_value": 693.8307604654647,
-      "percentage": 6.4,
-      "category": "Other"
-    },
-    {
-      "commodity": "6",
-      "export_value": 359.7672058288146,
-      "percentage": 3.32,
-      "category": "Other"
-    },
-    {
-      "commodity": "8",
-      "export_value": 96.6893800493319,
-      "percentage": 0.89,
-      "category": "Other"
-    },
-    {
-      "commodity": "4",
-      "export_value": 80.7577829911629,
-      "percentage": 0.74,
-      "category": "Other"
-    },
-    {
-      "commodity": "7",
-      "export_value": 80.61467528080067,
-      "percentage": 0.74,
-      "category": "Other"
-    },
-    {
-      "commodity": "5",
-      "export_value": 50.57657143622141,
-      "percentage": 0.47,
-      "category": "Other"
-    },
-    {
-      "commodity": "3",
-      "export_value": 8.395802621215138,
-      "percentage": 0.08,
+      "commodity": "Total Exports",
+      "export_value": 4890.848444069577,
+      "percentage": 100.0,
       "category": "Other"
     }
   ],
   "quarterly_trends": {
     "export_trends": [
       {
-        "quarter": "% change Q4/Q3",
-        "export_value": 2.8408699284805037
-      },
-      {
-        "quarter": "% change Q4/Q4",
-        "export_value": 27.714997869090514
-      },
-      {
         "quarter": "2022Q1",
-        "export_value": 587.1576966294377
+        "export_value": 249.53548491261216
       },
       {
         "quarter": "2022Q2",
-        "export_value": 663.1051024793469
+        "export_value": 301.52085155871305
       },
       {
         "quarter": "2022Q3",
-        "export_value": 685.1270758964293
+        "export_value": 316.06078098558515
       },
       {
         "quarter": "2022Q4",
-        "export_value": 709.6773815406855
+        "export_value": 312.03177093342254
       },
       {
         "quarter": "2023Q1",
-        "export_value": 804.2573477346095
+        "export_value": 370.57682763930944
       },
       {
         "quarter": "2023Q2",
-        "export_value": 969.4786925057047
+        "export_value": 456.2086885056222
       },
       {
         "quarter": "2023Q3",
-        "export_value": 776.1938702636716
+        "export_value": 348.9605301987203
       },
       {
         "quarter": "2023Q4",
-        "export_value": 798.215315020499
+        "export_value": 354.8208682109885
       },
       {
         "quarter": "2024Q1",
-        "export_value": 863.2188834895298
+        "export_value": 400.1192236064361
       },
       {
         "quarter": "2024Q2",
-        "export_value": 1075.172476647118
+        "export_value": 509.41095069192323
       },
       {
         "quarter": "2024Q3",
-        "export_value": 1334.0067409868425
+        "export_value": 628.0404654551105
       },
       {
         "quarter": "2024Q4",
-        "export_value": 1354.891400749864
-      },
-      {
-        "quarter": "Shares in % Q4",
-        "export_value": 199.9998510240991
+        "export_value": 643.5620013711347
       }
     ],
     "import_trends": [
       {
-        "quarter": "% change Q4/Q3",
-        "import_value": 0.12878895411162383
-      },
-      {
-        "quarter": "% change Q4/Q4",
-        "import_value": 1.306028414360386
-      },
-      {
         "quarter": "2022Q1",
-        "import_value": 2069.0788513602984
+        "import_value": 639.103549526494
       },
       {
         "quarter": "2022Q2",
-        "import_value": 2696.0518934557854
+        "import_value": 853.6931815795832
       },
       {
         "quarter": "2022Q3",
-        "import_value": 2962.4481479237243
+        "import_value": 877.3500901197733
       },
       {
         "quarter": "2022Q4",
-        "import_value": 2562.4148313857154
+        "import_value": 742.7854183102794
       },
       {
         "quarter": "2023Q1",
-        "import_value": 2952.7268134826368
+        "import_value": 948.6765230837119
       },
       {
         "quarter": "2023Q2",
-        "import_value": 3141.6082469425
+        "import_value": 1080.6538446062536
       },
       {
         "quarter": "2023Q3",
-        "import_value": 3159.7278630853416
+        "import_value": 1047.4373628027279
       },
       {
         "quarter": "2023Q4",
-        "import_value": 2970.7567861887683
+        "import_value": 936.2472719796052
       },
       {
         "quarter": "2024Q1",
-        "import_value": 2819.675485063255
+        "import_value": 896.4951108151131
       },
       {
         "quarter": "2024Q2",
-        "import_value": 3134.533596041795
+        "import_value": 1057.3418985682586
       },
       {
         "quarter": "2024Q3",
-        "import_value": 3501.471066147378
+        "import_value": 1239.973971044739
       },
       {
         "quarter": "2024Q4",
-        "import_value": 3256.6852411070554
-      },
-      {
-        "quarter": "Shares in % Q4",
-        "import_value": 199.87146555776175
+        "import_value": 1137.8065702414158
       }
     ],
     "balance_trends": [
       {
-        "quarter": "% change Q4/Q3",
-        "trade_balance": 2.71208097436888
-      },
-      {
-        "quarter": "% change Q4/Q4",
-        "trade_balance": 26.408969454730126
-      },
-      {
         "quarter": "2022Q1",
-        "trade_balance": -1481.9211547308605
+        "trade_balance": -389.56806461388186
       },
       {
         "quarter": "2022Q2",
-        "trade_balance": -2032.9467909764385
+        "trade_balance": -552.1723300208702
       },
       {
         "quarter": "2022Q3",
-        "trade_balance": -2277.321072027295
+        "trade_balance": -561.2893091341882
       },
       {
         "quarter": "2022Q4",
-        "trade_balance": -1852.73744984503
+        "trade_balance": -430.75364737685686
       },
       {
         "quarter": "2023Q1",
-        "trade_balance": -2148.4694657480272
+        "trade_balance": -578.0996954444024
       },
       {
         "quarter": "2023Q2",
-        "trade_balance": -2172.1295544367954
+        "trade_balance": -624.4451561006315
       },
       {
         "quarter": "2023Q3",
-        "trade_balance": -2383.53399282167
+        "trade_balance": -698.4768326040075
       },
       {
         "quarter": "2023Q4",
-        "trade_balance": -2172.5414711682693
+        "trade_balance": -581.4264037686166
       },
       {
         "quarter": "2024Q1",
-        "trade_balance": -1956.4566015737253
+        "trade_balance": -496.375887208677
       },
       {
         "quarter": "2024Q2",
-        "trade_balance": -2059.361119394677
+        "trade_balance": -547.9309478763353
       },
       {
         "quarter": "2024Q3",
-        "trade_balance": -2167.4643251605357
+        "trade_balance": -611.9335055896286
       },
       {
         "quarter": "2024Q4",
-        "trade_balance": -1901.7938403571914
-      },
-      {
-        "quarter": "Shares in % Q4",
-        "trade_balance": 0.12838546633733472
+        "trade_balance": -494.2445688702811
       }
     ],
     "growth_rates": {
-      "export_growth": 6940.091804944867,
-      "import_growth": 155093.01863770813,
+      "export_growth": 157.90400174809264,
+      "import_growth": 78.03164621514092,
       "balance_improvement": "negative"
     }
   },
   "trade_balance_analysis": {
-    "current_balance": 0.12838546633733472,
-    "balance_type": "surplus",
-    "deficit_percentage": 80.0,
+    "current_balance": -494.2445688702811,
+    "balance_type": "deficit",
+    "deficit_percentage": 100.0,
     "quarters_in_deficit": 12,
-    "average_deficit": -2050.5564031867093,
+    "average_deficit": -547.2263623840314,
     "recommendations": [
+      "Focus on increasing export volumes to reduce trade deficit",
+      "Diversify export destinations to reduce dependency on key markets",
+      "Promote value addition to agricultural and mineral products",
       "Implement import substitution strategies for key commodities",
       "Strengthen export promotion agencies and trade facilitation",
       "Review trade policies and tariff structures",
@@ -294,17 +251,41 @@
   },
   "market_opportunities": [
     {
-      "country": "Various",
-      "current_exports": 10851.057702765409,
-      "opportunity_score": 4392.02,
-      "potential": "Medium"
+      "country": "United Arab Emirates",
+      "current_exports": 3055.0147959514015,
+      "opportunity_score": 1229.21,
+      "potential": "High"
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "current_exports": 580.7003868686246,
+      "opportunity_score": 239.48,
+      "potential": "High"
+    },
+    {
+      "country": "China",
+      "current_exports": 203.47162094497057,
+      "opportunity_score": 88.59,
+      "potential": "High"
+    },
+    {
+      "country": "United Kingdom",
+      "current_exports": 119.0513932891796,
+      "opportunity_score": 54.82,
+      "potential": "High"
+    },
+    {
+      "country": "Hong Kong",
+      "current_exports": 108.06798924362923,
+      "opportunity_score": 50.43,
+      "potential": "High"
     }
   ],
   "recommendations": [
+    "Reduce dependency on primary commodities through product diversification",
     "Diversify export markets to reduce risk and increase opportunities",
-    "Implement import substitution strategies for key commodities",
-    "Strengthen export promotion agencies and trade facilitation",
-    "Review trade policies and tariff structures",
-    "Invest in export-oriented industries and infrastructure"
+    "Focus on increasing export volumes to reduce trade deficit",
+    "Diversify export destinations to reduce dependency on key markets",
+    "Promote value addition to agricultural and mineral products"
   ]
 }

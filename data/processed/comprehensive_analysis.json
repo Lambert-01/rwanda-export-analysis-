@@ -1,0 +1,572 @@
+{
+  "summary": {
+    "total_files_processed": 2,
+    "total_sheets_processed": 26,
+    "total_records_extracted": 812,
+    "quarters_covered": [
+      "2023Q2",
+      "2023Q3",
+      "2022Q4",
+      "2023Q4",
+      "2024Q4",
+      "2024Q2",
+      "2022Q3",
+      "2023Q1",
+      "2022Q1",
+      "2024Q3",
+      "2024Q1",
+      "2025Q1",
+      "2022Q2"
+    ],
+    "countries_found": [
+      "Ethiopia",
+      "Thailand",
+      "India",
+      "Pakistan",
+      "Russia",
+      "Belgium",
+      "Congo",
+      "Luxembourg",
+      "Italy",
+      "Egypt",
+      "Japan",
+      "Uganda",
+      "Singapore",
+      "Kenya",
+      "France",
+      "United States",
+      "Ireland",
+      "Turkey",
+      "South Africa",
+      "Netherlands",
+      "Malaysia",
+      "Hong Kong",
+      "Tanzania",
+      "United Kingdom",
+      "Democratic Republic of the Congo",
+      "South Sudan",
+      "Brazil",
+      "Saudi Arabia",
+      "Cameroon",
+      "Burkina Faso",
+      "Burundi",
+      "Kazakhstan",
+      "China",
+      "Germany",
+      "United Arab Emirates"
+    ]
+  },
+  "quarterly_aggregation": {
+    "exports": [
+      {
+        "quarter": "2022Q1",
+        "export_value": 249.53548491261216
+      },
+      {
+        "quarter": "2022Q2",
+        "export_value": 301.52085155871305
+      },
+      {
+        "quarter": "2022Q3",
+        "export_value": 316.06078098558515
+      },
+      {
+        "quarter": "2022Q4",
+        "export_value": 312.03177093342254
+      },
+      {
+        "quarter": "2023Q1",
+        "export_value": 738.2090528876635
+      },
+      {
+        "quarter": "2023Q2",
+        "export_value": 909.7093553963832
+      },
+      {
+        "quarter": "2023Q3",
+        "export_value": 698.5853943606064
+      },
+      {
+        "quarter": "2023Q4",
+        "export_value": 707.4984750130135
+      },
+      {
+        "quarter": "2024Q1",
+        "export_value": 801.2963588984035
+      },
+      {
+        "quarter": "2024Q2",
+        "export_value": 1018.3694581698994
+      },
+      {
+        "quarter": "2024Q3",
+        "export_value": 1254.7070111655871
+      },
+      {
+        "quarter": "2024Q4",
+        "export_value": 1269.6232738234066
+      },
+      {
+        "quarter": "2025Q1",
+        "export_value": 458.4402335617165
+      }
+    ],
+    "imports": [
+      {
+        "quarter": "2022Q1",
+        "import_value": 639.103549526494
+      },
+      {
+        "quarter": "2022Q2",
+        "import_value": 853.6931815795832
+      },
+      {
+        "quarter": "2022Q3",
+        "import_value": 877.3500901197733
+      },
+      {
+        "quarter": "2022Q4",
+        "import_value": 742.7854183102794
+      },
+      {
+        "quarter": "2023Q1",
+        "import_value": 1853.0112845554147
+      },
+      {
+        "quarter": "2023Q2",
+        "import_value": 2046.0631831362205
+      },
+      {
+        "quarter": "2023Q3",
+        "import_value": 2049.91518839299
+      },
+      {
+        "quarter": "2023Q4",
+        "import_value": 1885.1472407395925
+      },
+      {
+        "quarter": "2024Q1",
+        "import_value": 1786.0111725767817
+      },
+      {
+        "quarter": "2024Q2",
+        "import_value": 2136.2202789560524
+      },
+      {
+        "quarter": "2024Q3",
+        "import_value": 2398.21576840186
+      },
+      {
+        "quarter": "2024Q4",
+        "import_value": 2228.358345897104
+      },
+      {
+        "quarter": "2025Q1",
+        "import_value": 869.7892320581909
+      }
+    ]
+  },
+  "country_aggregation": {
+    "export_destinations": [
+      {
+        "destination_country": "United Arab Emirates",
+        "export_value": 5814.3334398658035
+      },
+      {
+        "destination_country": "Democratic Republic of the Congo",
+        "export_value": 1049.1480313577633
+      },
+      {
+        "destination_country": "China",
+        "export_value": 394.68547636006474
+      },
+      {
+        "destination_country": "United Kingdom",
+        "export_value": 201.09772139734017
+      },
+      {
+        "destination_country": "Hong Kong",
+        "export_value": 182.1705149991934
+      },
+      {
+        "destination_country": "Luxembourg",
+        "export_value": 165.56379190015443
+      },
+      {
+        "destination_country": "Pakistan",
+        "export_value": 159.54756792799404
+      },
+      {
+        "destination_country": "India",
+        "export_value": 143.23002355723168
+      },
+      {
+        "destination_country": "Uganda",
+        "export_value": 123.1281476024794
+      },
+      {
+        "destination_country": "United States",
+        "export_value": 123.0913150488274
+      },
+      {
+        "destination_country": "Netherlands",
+        "export_value": 96.70065434696224
+      },
+      {
+        "destination_country": "Singapore",
+        "export_value": 87.20134626336902
+      },
+      {
+        "destination_country": "South Sudan",
+        "export_value": 85.77778442915942
+      },
+      {
+        "destination_country": "Belgium",
+        "export_value": 67.73295503394876
+      },
+      {
+        "destination_country": "Congo",
+        "export_value": 62.69322997264164
+      },
+      {
+        "destination_country": "Ethiopia",
+        "export_value": 49.13378721729381
+      },
+      {
+        "destination_country": "Germany",
+        "export_value": 39.234884330205986
+      },
+      {
+        "destination_country": "Thailand",
+        "export_value": 36.397689762433416
+      },
+      {
+        "destination_country": "Egypt",
+        "export_value": 29.67438518755538
+      },
+      {
+        "destination_country": "Burundi",
+        "export_value": 29.190795908195383
+      }
+    ],
+    "import_sources": [
+      {
+        "source_country": "Tanzania",
+        "import_value": 4255.12481713586
+      },
+      {
+        "source_country": "Kenya",
+        "import_value": 3055.4834005258613
+      },
+      {
+        "source_country": "India",
+        "import_value": 2881.913558240844
+      },
+      {
+        "source_country": "United Arab Emirates",
+        "import_value": 1936.2968599355684
+      },
+      {
+        "source_country": "Cameroon",
+        "import_value": 1240.7731547212636
+      },
+      {
+        "source_country": "Uganda",
+        "import_value": 1081.351730399914
+      },
+      {
+        "source_country": "South Africa",
+        "import_value": 747.201805626359
+      },
+      {
+        "source_country": "Turkey",
+        "import_value": 626.7575243788409
+      },
+      {
+        "source_country": "Japan",
+        "import_value": 525.2993464349131
+      },
+      {
+        "source_country": "Malaysia",
+        "import_value": 521.2812419487694
+      },
+      {
+        "source_country": "Germany",
+        "import_value": 500.2733539682667
+      },
+      {
+        "source_country": "Belgium",
+        "import_value": 462.8648438638508
+      },
+      {
+        "source_country": "United States",
+        "import_value": 458.0850471837747
+      },
+      {
+        "source_country": "Saudi Arabia",
+        "import_value": 400.3938900170391
+      },
+      {
+        "source_country": "Egypt",
+        "import_value": 338.3344159853048
+      },
+      {
+        "source_country": "Russia",
+        "import_value": 327.0249105007592
+      },
+      {
+        "source_country": "Burkina Faso",
+        "import_value": 270.30863420630016
+      },
+      {
+        "source_country": "France",
+        "import_value": 270.3078216470705
+      },
+      {
+        "source_country": "Democratic Republic of the Congo",
+        "import_value": 253.24571658460047
+      },
+      {
+        "source_country": "Brazil",
+        "import_value": 110.25975515718628
+      }
+    ]
+  },
+  "trade_balance_analysis": {
+    "quarterly_balance": [
+      {
+        "quarter": "2022Q1",
+        "export_value": 249.53548491261216,
+        "import_value": 639.103549526494,
+        "trade_balance": -389.56806461388186,
+        "balance_type": "deficit",
+        "export_growth": 0.0,
+        "import_growth": 0.0,
+        "balance_growth": 0.0
+      },
+      {
+        "quarter": "2022Q2",
+        "export_value": 301.52085155871305,
+        "import_value": 853.6931815795832,
+        "trade_balance": -552.1723300208702,
+        "balance_type": "deficit",
+        "export_growth": 0.20832855360954472,
+        "import_growth": 0.3357666096708063,
+        "balance_growth": 0.41739629137247825
+      },
+      {
+        "quarter": "2022Q3",
+        "export_value": 316.06078098558515,
+        "import_value": 877.3500901197733,
+        "trade_balance": -561.2893091341882,
+        "balance_type": "deficit",
+        "export_growth": 0.04822196989597205,
+        "import_growth": 0.02771125393835039,
+        "balance_growth": 0.01651111187149401
+      },
+      {
+        "quarter": "2022Q4",
+        "export_value": 312.03177093342254,
+        "import_value": 742.7854183102794,
+        "trade_balance": -430.75364737685686,
+        "balance_type": "deficit",
+        "export_growth": -0.012747579878777726,
+        "import_growth": -0.1533762557556967,
+        "balance_growth": -0.2325639552242461
+      },
+      {
+        "quarter": "2023Q1",
+        "export_value": 738.2090528876635,
+        "import_value": 1853.0112845554147,
+        "trade_balance": -1114.8022316677511,
+        "balance_type": "deficit",
+        "export_growth": 1.3658137460789956,
+        "import_growth": 1.4946791346156543,
+        "balance_growth": 1.5880273758713765
+      },
+      {
+        "quarter": "2023Q2",
+        "export_value": 909.7093553963832,
+        "import_value": 2046.0631831362205,
+        "trade_balance": -1136.3538277398372,
+        "balance_type": "deficit",
+        "export_growth": 0.23231942474541523,
+        "import_growth": 0.10418279704493205,
+        "balance_growth": 0.019332214683356774
+      },
+      {
+        "quarter": "2023Q3",
+        "export_value": 698.5853943606064,
+        "import_value": 2049.91518839299,
+        "trade_balance": -1351.3297940323835,
+        "balance_type": "deficit",
+        "export_growth": -0.23207847625551214,
+        "import_growth": 0.0018826423780642365,
+        "balance_growth": 0.18918048326560832
+      },
+      {
+        "quarter": "2023Q4",
+        "export_value": 707.4984750130135,
+        "import_value": 1885.1472407395925,
+        "trade_balance": -1177.6487657265789,
+        "balance_type": "deficit",
+        "export_growth": 0.012758756086741485,
+        "import_growth": -0.08037793396836357,
+        "balance_growth": -0.12852601124669827
+      },
+      {
+        "quarter": "2024Q1",
+        "export_value": 801.2963588984035,
+        "import_value": 1786.0111725767817,
+        "trade_balance": -984.7148136783783,
+        "balance_type": "deficit",
+        "export_growth": 0.1325768000894485,
+        "import_growth": -0.05258797085999345,
+        "balance_growth": -0.16382979175388113
+      },
+      {
+        "quarter": "2024Q2",
+        "export_value": 1018.3694581698994,
+        "import_value": 2136.2202789560524,
+        "trade_balance": -1117.850820786153,
+        "balance_type": "deficit",
+        "export_growth": 0.2709023906834185,
+        "import_growth": 0.19608449922180715,
+        "balance_growth": 0.13520260410265217
+      },
+      {
+        "quarter": "2024Q3",
+        "export_value": 1254.7070111655871,
+        "import_value": 2398.21576840186,
+        "trade_balance": -1143.5087572362727,
+        "balance_type": "deficit",
+        "export_growth": 0.23207447071361242,
+        "import_growth": 0.12264441641469759,
+        "balance_growth": 0.02295291641157915
+      },
+      {
+        "quarter": "2024Q4",
+        "export_value": 1269.6232738234066,
+        "import_value": 2228.358345897104,
+        "trade_balance": -958.7350720736972,
+        "balance_type": "deficit",
+        "export_growth": 0.011888243649776697,
+        "import_growth": -0.07082658063663172,
+        "balance_growth": -0.16158484488492408
+      },
+      {
+        "quarter": "2025Q1",
+        "export_value": 458.4402335617165,
+        "import_value": 869.7892320581909,
+        "trade_balance": -411.3489984964744,
+        "balance_type": "deficit",
+        "export_growth": -0.6389163281631197,
+        "import_growth": -0.6096726392056002,
+        "balance_growth": -0.5709461242439514
+      }
+    ],
+    "summary": {
+      "total_export_value": 9035.587501667012,
+      "total_import_value": 20365.663934250337,
+      "overall_balance": -11330.076432583324,
+      "quarters_analyzed": 13
+    }
+  },
+  "year_over_year_comparison": {
+    "exports_comparison": {
+      "2024_total": 4890.848444069578,
+      "2025_total": 4144.739057597435,
+      "growth": -15.255213793771135
+    },
+    "imports_comparison": {},
+    "growth_analysis": {}
+  },
+  "top_performers": {
+    "top_export_destinations": [
+      {
+        "destination_country": "United Arab Emirates",
+        "export_value": 5814.3334398658035
+      },
+      {
+        "destination_country": "Democratic Republic of the Congo",
+        "export_value": 1049.1480313577633
+      },
+      {
+        "destination_country": "China",
+        "export_value": 394.68547636006474
+      },
+      {
+        "destination_country": "United Kingdom",
+        "export_value": 201.09772139734017
+      },
+      {
+        "destination_country": "Hong Kong",
+        "export_value": 182.1705149991934
+      },
+      {
+        "destination_country": "Luxembourg",
+        "export_value": 165.56379190015443
+      },
+      {
+        "destination_country": "Pakistan",
+        "export_value": 159.54756792799404
+      },
+      {
+        "destination_country": "India",
+        "export_value": 143.23002355723168
+      },
+      {
+        "destination_country": "Uganda",
+        "export_value": 123.1281476024794
+      },
+      {
+        "destination_country": "United States",
+        "export_value": 123.0913150488274
+      }
+    ],
+    "top_import_sources": [
+      {
+        "source_country": "Tanzania",
+        "import_value": 4255.12481713586
+      },
+      {
+        "source_country": "Kenya",
+        "import_value": 3055.4834005258613
+      },
+      {
+        "source_country": "India",
+        "import_value": 2881.913558240844
+      },
+      {
+        "source_country": "United Arab Emirates",
+        "import_value": 1936.2968599355684
+      },
+      {
+        "source_country": "Cameroon",
+        "import_value": 1240.7731547212636
+      },
+      {
+        "source_country": "Uganda",
+        "import_value": 1081.351730399914
+      },
+      {
+        "source_country": "South Africa",
+        "import_value": 747.201805626359
+      },
+      {
+        "source_country": "Turkey",
+        "import_value": 626.7575243788409
+      },
+      {
+        "source_country": "Japan",
+        "import_value": 525.2993464349131
+      },
+      {
+        "source_country": "Malaysia",
+        "import_value": 521.2812419487694
+      }
+    ],
+    "fastest_growing_exports": [],
+    "fastest_growing_imports": []
+  }
+}

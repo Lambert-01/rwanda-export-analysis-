@@ -1480,3 +1480,606 @@ a:hover {
     }
 }
 
+/* Statistical Analysis Section Styles */
+.analysis-overview-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.analysis-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.analysis-metric {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-top: 4px solid var(--rwanda-blue);
+}
+
+.analysis-metric:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.metric-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    color: white;
+    font-size: 1.25rem;
+}
+
+.metric-content {
+    text-align: center;
+}
+
+.metric-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: var(--spacing-xs);
+}
+
+/* Model Rankings Styles */
+.model-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.ranking-item:hover {
+    background: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.rank-number {
+    width: 32px;
+    height: 32px;
+    background: var(--gradient-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.rank-info {
+    flex: 1;
+}
+
+.rank-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2px;
+}
+
+.rank-score {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.rank-badge {
+    padding: 4px 12px;
+    border-radius: var(--border-radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rank-badge.gold {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: white;
+}
+
+.rank-badge.silver {
+    background: linear-gradient(135deg, #d1d5db, #9ca3af);
+    color: white;
+}
+
+.rank-badge.bronze {
+    background: linear-gradient(135deg, #cd7f32, #a0522d);
+    color: white;
+}
+
+/* Correlation Matrix Styles */
+.correlation-matrix {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.correlation-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.correlation-label {
+    min-width: 120px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.correlation-bar {
+    flex: 1;
+    height: 20px;
+    background: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.correlation-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.correlation-fill.positive {
+    background: linear-gradient(90deg, #fef3c7, #fbbf24);
+}
+
+.correlation-fill.negative {
+    background: linear-gradient(90deg, #fee2e2, #f87171);
+}
+
+.correlation-value {
+    min-width: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Outlier Analysis Styles */
+.outlier-analysis {
+    text-align: center;
+}
+
+.outlier-summary {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.outlier-metric {
+    text-align: center;
+}
+
+.outlier-metric .metric-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--danger-color);
+}
+
+.outlier-metric .metric-label {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Statistical Tests Styles */
+.statistical-tests {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.test-result {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--info-color);
+}
+
+.test-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+}
+
+.test-header h6 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.test-badge {
+    padding: 4px 12px;
+    border-radius: var(--border-radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.test-badge.significant {
+    background: var(--success-color);
+    color: white;
+}
+
+.test-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.test-statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.stat-value {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.test-conclusion {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--light-color);
+    border-radius: var(--border-radius-sm);
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Interactive Analysis Tools */
+.analysis-tools {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.tool-section {
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    border-left: 4px solid var(--rwanda-blue);
+}
+
+.tool-section h5 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.variable-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+}
+
+.checkbox-container:hover {
+    background: white;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--rwanda-blue);
+}
+
+.filter-controls {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.filter-controls .form-select {
+    flex: 1;
+    min-width: 150px;
+}
+
+.viz-controls {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+/* Geographic Analysis Styles */
+.geographic-insights {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.geo-metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.geo-metric:last-child {
+    border-bottom: none;
+}
+
+.geo-label {
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.geo-value {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+}
+
+/* AI Insights Styles */
+.ai-insights-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.insight-category {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--ai-purple);
+}
+
+.insight-category h5 {
+    color: var(--ai-purple);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.insight-item {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--light-color);
+    border-radius: var(--border-radius-sm);
+    border-left: 3px solid var(--info-color);
+}
+
+.insight-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Regional Breakdown Styles */
+.regional-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.regional-breakdown h5 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.region-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.region-name {
+    min-width: 60px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.region-bar {
+    flex: 1;
+    height: 20px;
+    background: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.region-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out;
+}
+
+.region-fill.asia {
+    background: linear-gradient(90deg, #fef3c7, #fbbf24);
+}
+
+.region-fill.africa {
+    background: linear-gradient(90deg, #dbeafe, #3b82f6);
+}
+
+.region-fill.europe {
+    background: linear-gradient(90deg, #d1fae5, #10b981);
+}
+
+.region-fill.americas {
+    background: linear-gradient(90deg, #fee2e2, #ef4444);
+}
+
+.region-value {
+    min-width: 80px;
+    text-align: right;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 991px) {
+    .analysis-results-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .outlier-summary {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .test-details {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-controls {
+        flex-direction: column;
+    }
+
+    .filter-controls .form-select {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .analysis-overview-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .variable-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .viz-controls {
+        flex-direction: column;
+    }
+
+    .geo-metric {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .region-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .region-bar {
+        width: 100%;
+    }
+}
+
+/* Priority Badges */
+.ai-badge.priority-high {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+}
+
+.ai-badge.priority-medium {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.ai-badge.priority-low {
+    background: linear-gradient(135deg, #059669, #047857);
+}
+
+/* Loading Animation for Analysis */
+.analysis-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+    color: var(--text-secondary);
+}
+
+.analysis-loading .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border-color);
+    border-left: 3px solid var(--rwanda-blue);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Enhanced Chart Animations */
+.chart-animate-in {
+    animation: chartSlideIn 0.8s ease-out;
+}
+
+@keyframes chartSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Interactive Elements */
+.interactive-element {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.interactive-element:hover {
+    transform: scale(1.02);
+}
+
+/* Data Quality Indicators */
+.data-quality-excellent {
+    color: var(--success-color);
+}
+
+.data-quality-good {
+    color: var(--warning-color);
+}
+
+.data-quality-poor {
+    color: var(--danger-color);
+}
+

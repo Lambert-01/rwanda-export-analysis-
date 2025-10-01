@@ -9,50 +9,29 @@ const { loadJsonData, dataFileExists } = require('../utils/dataLoader');
 
 /**
  * @route   GET /api/predictions/next
- * @desc    Get predictions for next quarters
+ * @desc    Get predictions for next quarters with live forecasting
  * @access  Public
  * @query   {number} quarters - Optional number of quarters to predict (default: 4)
+ * @query   {string} method - Prediction method: 'linear', 'seasonal', 'ml' (default: 'linear')
  */
 router.get('/next', (req, res) => {
-  try {
-    // Check if predictions data exists
-    if (dataFileExists('predictions.json')) {
-      const predictionsData = loadJsonData('predictions.json');
-      res.json(predictionsData);
-    } else {
-      // If predictions file doesn't exist, generate a simple response
-      // based on trade balance data
-      
-      // Load trade balance data
-      const balanceData = loadJsonData('trade_balance.json');
-      
-      // Sort by quarter
-      const sortedData = [...balanceData].sort((a, b) => {
-        const [aYear, aQ] = a.quarter.split('Q');
-        const [bYear, bQ] = b.quarter.split('Q');
-        return aYear === bYear ? aQ - bQ : aYear - bYear;
-      });
-      
-      // Get the last 4 quarters of actual data
-      const lastQuarters = sortedData.slice(-4);
-      
-      // Generate simple predictions for the next 4 quarters
-      const predictions = generateSimplePredictions(lastQuarters);
-      
-      // Format response with both actual and predicted data
-      const result = {
-        labels: [...lastQuarters.map(q => q.quarter), ...predictions.map(p => p.period)],
-        actual: [...lastQuarters.map(q => q.export_value), ...Array(predictions.length).fill(null)],
-        predicted: [...Array(lastQuarters.length).fill(null), ...predictions.map(p => p.exports)]
-      };
-      
-      res.json(result);
-    }
-  } catch (error) {
-    console.error('Error fetching predictions:', error);
-    res.status(500).json({ error: error.message });
-  }
-});
+   try {
+     const { quarters = 4, method = 'linear' } = req.query;
+
+     // Check if predictions data exists
+     if (dataFileExists('predictions.json')) {
+       const predictionsData = loadJsonData('predictions.json');
+       res.json(predictionsData);
+     } else {
+       // Generate live predictions based on available data
+       const predictions = generateLivePredictions(parseInt(quarters), method);
+       res.json(predictions);
+     }
+   } catch (error) {
+     console.error('Error fetching predictions:', error);
+     res.status(500).json({ error: error.message });
+   }
+ });
 
 /**
  * @route   GET /api/predictions/opportunities
@@ -89,6 +68,110 @@ router.get('/opportunities', (req, res) => {
 });
 
 /**
+ * @route   GET /api/predictions/live
+ * @desc    Get real-time live forecasting with multiple methods
+ * @access  Public
+ * @query   {number} quarters - Number of quarters to predict (default: 4)
+ * @query   {string} method - Prediction method: 'linear', 'seasonal', 'ml', 'ensemble' (default: 'ensemble')
+ */
+router.get('/live', async (req, res) => {
+   try {
+     const { quarters = 4, method = 'ensemble' } = req.query;
+
+     console.log(`🔮 Generating live ${method} predictions for ${quarters} quarters`);
+
+     let result;
+
+     if (method === 'ensemble') {
+       // Generate predictions using multiple methods and combine them
+       const linearResult = generateLivePredictions(quarters, 'linear');
+       const seasonalResult = generateLivePredictions(quarters, 'seasonal');
+       const mlResult = generateLivePredictions(quarters, 'ml');
+
+       // Ensemble method: weighted average of all methods
+       result = {
+         method: 'ensemble',
+         confidence: Math.round((linearResult.confidence + seasonalResult.confidence + mlResult.confidence) / 3),
+         last_updated: new Date().toISOString(),
+         ensemble_weights: {
+           linear: 0.3,
+           seasonal: 0.4,
+           ml: 0.3
+         },
+         predictions: combineEnsemblePredictions([
+           { method: 'linear', data: linearResult.predictions, weight: 0.3 },
+           { method: 'seasonal', data: seasonalResult.predictions, weight: 0.4 },
+           { method: 'ml', data: mlResult.predictions, weight: 0.3 }
+         ]),
+         individual_predictions: {
+           linear: linearResult.predictions,
+           seasonal: seasonalResult.predictions,
+           ml: mlResult.predictions
+         },
+         metadata: {
+           data_points: linearResult.metadata?.data_points || 0,
+           prediction_method: 'ensemble',
+           forecast_horizon: quarters,
+           ensemble_description: 'Weighted combination of linear regression, seasonal analysis, and ML methods'
+         }
+       };
+     } else {
+       result = generateLivePredictions(quarters, method);
+     }
+
+     console.log(`✅ Live predictions generated successfully using ${method} method`);
+     res.json(result);
+   } catch (error) {
+     console.error('Error generating live predictions:', error);
+     res.status(500).json({
+       error: error.message,
+       fallback: generateFallbackPredictions(parseInt(quarters))
+     });
+   }
+ });
+
+/**
+ * Combine predictions from multiple methods using weighted average
+ */
+function combineEnsemblePredictions(methodResults) {
+   const combined = {};
+
+   // Initialize combined predictions
+   methodResults[0].data.forEach((pred, index) => {
+     combined[pred.period] = {
+       period: pred.period,
+       exports: 0,
+       confidence: 0,
+       methods: []
+     };
+   });
+
+   // Weight predictions from each method
+   methodResults.forEach(({ data, weight }) => {
+     data.forEach(pred => {
+       if (combined[pred.period]) {
+         combined[pred.period].exports += pred.exports * weight;
+         combined[pred.period].confidence += pred.confidence * weight;
+         combined[pred.period].methods.push({
+           method: pred.method,
+           value: pred.exports,
+           confidence: pred.confidence
+         });
+       }
+     });
+   });
+
+   // Convert back to array and round values
+   return Object.values(combined).map(pred => ({
+     period: pred.period,
+     exports: Math.round(pred.exports * 100) / 100,
+     confidence: Math.round(pred.confidence * 100) / 100,
+     method: 'ensemble',
+     method_details: pred.methods
+   }));
+ }
+
+/**
  * @route   GET /api/predictions/risks
  * @desc    Get predicted export risks
  * @access  Public
@@ -123,67 +206,321 @@ router.get('/risks', (req, res) => {
 });
 
 /**
+ * Enhanced live forecasting function with multiple prediction methods
+ * @param {number} quarters - Number of quarters to predict
+ * @param {string} method - Prediction method: 'linear', 'seasonal', 'ml'
+ * @returns {Object} Prediction results with metadata
+ */
+function generateLivePredictions(quarters, method) {
+   try {
+     // Load available data sources
+     const exportsData = loadJsonData('exports_data.json');
+     const balanceData = dataFileExists('trade_balance.json') ? loadJsonData('trade_balance.json') : [];
+
+     // Group exports by quarter
+     const quarterlyExports = exportsData.reduce((acc, item) => {
+       const quarter = item.quarter;
+       if (!acc[quarter]) {
+         acc[quarter] = { period: quarter, exports: 0, count: 0 };
+       }
+       acc[quarter].exports += parseFloat(item.export_value) || 0;
+       acc[quarter].count += 1;
+       return acc;
+     }, {});
+
+     // Convert to array and sort
+     const sortedQuarters = Object.values(quarterlyExports).sort((a, b) => {
+       const [aYear, aQ] = a.period.split('Q');
+       const [bYear, bQ] = b.period.split('Q');
+       return aYear === bYear ? aQ - bQ : aYear - bYear;
+     });
+
+     // Get last 8 quarters for trend analysis
+     const recentData = sortedQuarters.slice(-8);
+
+     // Generate predictions based on method
+     let predictions = [];
+     let confidence = 0;
+
+     switch (method) {
+       case 'seasonal':
+         ({ predictions, confidence } = generateSeasonalPredictions(recentData, quarters));
+         break;
+       case 'ml':
+         ({ predictions, confidence } = generateMLPredictions(recentData, quarters));
+         break;
+       default: // linear
+         ({ predictions, confidence } = generateLinearPredictions(recentData, quarters));
+     }
+
+     // Format response
+     const result = {
+       method: method,
+       confidence: confidence,
+       last_updated: new Date().toISOString(),
+       historical_data: recentData.map(q => ({ period: q.period, exports: q.exports })),
+       predictions: predictions,
+       metadata: {
+         data_points: recentData.length,
+         prediction_method: method,
+         forecast_horizon: quarters
+       }
+     };
+
+     return result;
+   } catch (error) {
+     console.error('Error in live predictions:', error);
+     return generateFallbackPredictions(quarters);
+   }
+ }
+
+/**
+ * Linear regression-based predictions
+ */
+function generateLinearPredictions(recentData, quarters) {
+   if (!recentData || recentData.length < 3) {
+     return { predictions: [], confidence: 0 };
+   }
+
+   // Calculate linear regression
+   const n = recentData.length;
+   const sumX = recentData.reduce((sum, item, index) => sum + index, 0);
+   const sumY = recentData.reduce((sum, item) => sum + item.exports, 0);
+   const sumXY = recentData.reduce((sum, item, index) => sum + (index * item.exports), 0);
+   const sumXX = recentData.reduce((sum, item, index) => sum + (index * index), 0);
+
+   const slope = (n * sumXY - sumX * sumY) / (n * sumXX - sumX * sumX);
+   const intercept = (sumY - slope * sumX) / n;
+
+   // Calculate R-squared for confidence
+   const meanY = sumY / n;
+   const totalSumSquares = recentData.reduce((sum, item) => sum + Math.pow(item.exports - meanY, 2), 0);
+   const residualSumSquares = recentData.reduce((sum, item, index) => {
+     const predicted = slope * index + intercept;
+     return sum + Math.pow(item.exports - predicted, 2);
+   }, 0);
+
+   const rSquared = totalSumSquares === 0 ? 0 : 1 - (residualSumSquares / totalSumSquares);
+   const confidence = Math.max(0, Math.min(100, rSquared * 100));
+
+   // Generate predictions
+   const predictions = [];
+   const lastIndex = recentData.length - 1;
+   const lastQuarter = recentData[lastIndex].period;
+   const [year, quarter] = [parseInt(lastQuarter.substring(0, 4)), parseInt(lastQuarter.substring(5))];
+
+   for (let i = 1; i <= quarters; i++) {
+     let nextQuarter = quarter + i;
+     let nextYear = year;
+
+     while (nextQuarter > 4) {
+       nextQuarter -= 4;
+       nextYear += 1;
+     }
+
+     const predictedValue = Math.max(0, slope * (lastIndex + i) + intercept);
+
+     predictions.push({
+       period: `${nextYear}Q${nextQuarter}`,
+       exports: Math.round(predictedValue * 100) / 100,
+       confidence: Math.round(confidence * 0.9) / 100, // Slight decrease in confidence for future periods
+       method: 'linear_regression'
+     });
+   }
+
+   return { predictions, confidence: Math.round(confidence) };
+ }
+
+/**
+ * Seasonal decomposition predictions
+ */
+function generateSeasonalPredictions(recentData, quarters) {
+   if (!recentData || recentData.length < 8) {
+     return generateLinearPredictions(recentData, quarters);
+   }
+
+   // Simple seasonal adjustment - use average quarterly growth
+   const quarterlyGrowth = [];
+   for (let i = 4; i < recentData.length; i++) {
+     const growth = (recentData[i].exports - recentData[i-4].exports) / recentData[i-4].exports;
+     quarterlyGrowth.push(growth);
+   }
+
+   const avgQuarterlyGrowth = quarterlyGrowth.reduce((sum, growth) => sum + growth, 0) / quarterlyGrowth.length;
+   const confidence = Math.min(85, Math.max(60, 100 - (quarterlyGrowth.length * 2)));
+
+   // Generate predictions
+   const predictions = [];
+   const lastValue = recentData[recentData.length - 1].exports;
+   const lastQuarter = recentData[recentData.length - 1].period;
+   const [year, quarter] = [parseInt(lastQuarter.substring(0, 4)), parseInt(lastQuarter.substring(5))];
+
+   let currentValue = lastValue;
+   for (let i = 1; i <= quarters; i++) {
+     let nextQuarter = quarter + i;
+     let nextYear = year;
+
+     while (nextQuarter > 4) {
+       nextQuarter -= 4;
+       nextYear += 1;
+     }
+
+     currentValue = currentValue * (1 + avgQuarterlyGrowth);
+
+     predictions.push({
+       period: `${nextYear}Q${nextQuarter}`,
+       exports: Math.round(currentValue * 100) / 100,
+       confidence: Math.round(confidence * Math.pow(0.95, i)) / 100,
+       method: 'seasonal'
+     });
+   }
+
+   return { predictions, confidence: Math.round(confidence) };
+ }
+
+/**
+ * Machine learning style predictions (simplified)
+ */
+function generateMLPredictions(recentData, quarters) {
+   if (!recentData || recentData.length < 6) {
+     return generateLinearPredictions(recentData, quarters);
+   }
+
+   // Use exponential smoothing for ML-style prediction
+   const alpha = 0.3; // Smoothing parameter
+   let smoothedValue = recentData[0].exports;
+
+   for (let i = 1; i < recentData.length; i++) {
+     smoothedValue = alpha * recentData[i].exports + (1 - alpha) * smoothedValue;
+   }
+
+   // Calculate trend
+   const trend = recentData.length > 1 ?
+     (recentData[recentData.length - 1].exports - recentData[0].exports) / (recentData.length - 1) : 0;
+
+   const confidence = 75; // ML methods typically have good confidence
+
+   // Generate predictions
+   const predictions = [];
+   const lastQuarter = recentData[recentData.length - 1].period;
+   const [year, quarter] = [parseInt(lastQuarter.substring(0, 4)), parseInt(lastQuarter.substring(5))];
+
+   for (let i = 1; i <= quarters; i++) {
+     let nextQuarter = quarter + i;
+     let nextYear = year;
+
+     while (nextQuarter > 4) {
+       nextQuarter -= 4;
+       nextYear += 1;
+     }
+
+     // Combine smoothed value with trend
+     const predictedValue = smoothedValue + (trend * i);
+
+     predictions.push({
+       period: `${nextYear}Q${nextQuarter}`,
+       exports: Math.round(Math.max(0, predictedValue) * 100) / 100,
+       confidence: Math.round(confidence * Math.pow(0.92, i)) / 100,
+       method: 'ml_exponential_smoothing'
+     });
+   }
+
+   return { predictions, confidence: Math.round(confidence) };
+ }
+
+/**
+ * Fallback predictions when data is insufficient
+ */
+function generateFallbackPredictions(quarters) {
+   const predictions = [];
+   const baseValue = 700; // Base prediction value
+
+   for (let i = 1; i <= quarters; i++) {
+     predictions.push({
+       period: `2025Q${i}`,
+       exports: Math.round((baseValue + (i * 20)) * 100) / 100,
+       confidence: 0.5,
+       method: 'fallback'
+     });
+   }
+
+   return {
+     method: 'fallback',
+     confidence: 50,
+     last_updated: new Date().toISOString(),
+     historical_data: [],
+     predictions: predictions,
+     metadata: {
+       data_points: 0,
+       prediction_method: 'fallback',
+       forecast_horizon: quarters,
+       note: 'Insufficient historical data for accurate predictions'
+     }
+   };
+ }
+
+/**
  * Helper function to generate simple predictions based on recent data
  * Uses a very basic linear extrapolation
  * @param {Array} recentData - Recent quarters of trade data
  * @returns {Array} Predicted data for next quarters
  */
 function generateSimplePredictions(recentData) {
-  // If no recent data, return empty array
-  if (!recentData || recentData.length === 0) {
-    return [];
-  }
-  
-  // Calculate average growth rate from recent data
-  let growthRates = [];
-  for (let i = 1; i < recentData.length; i++) {
-    const prev = parseFloat(recentData[i-1].export_value);
-    const curr = parseFloat(recentData[i].export_value);
-    if (prev > 0) {
-      growthRates.push((curr - prev) / prev);
-    }
-  }
-  
-  // Calculate average growth rate (or use 0.05 if no valid rates)
-  const avgGrowthRate = growthRates.length > 0 
-    ? growthRates.reduce((sum, rate) => sum + rate, 0) / growthRates.length
-    : 0.05;
-  
-  // Get the last quarter and value
-  const lastQuarter = recentData[recentData.length - 1].quarter;
-  const lastValue = parseFloat(recentData[recentData.length - 1].export_value);
-  
-  // Parse year and quarter
-  const [year, quarter] = [parseInt(lastQuarter.substring(0, 4)), parseInt(lastQuarter.substring(5))];
-  
-  // Generate predictions for next 4 quarters
-  const predictions = [];
-  let currentValue = lastValue;
-  
-  for (let i = 1; i <= 4; i++) {
-    // Calculate next quarter
-    let nextQuarter = quarter + i;
-    let nextYear = year;
-    
-    // Adjust year if quarter > 4
-    while (nextQuarter > 4) {
-      nextQuarter -= 4;
-      nextYear += 1;
-    }
-    
-    // Apply growth rate to current value
-    currentValue = currentValue * (1 + avgGrowthRate);
-    
-    // Add prediction
-    predictions.push({
-      period: `${nextYear}Q${nextQuarter}`,
-      exports: currentValue,
-      growth: avgGrowthRate * 100
-    });
-  }
-  
-  return predictions;
-}
+   // If no recent data, return empty array
+   if (!recentData || recentData.length === 0) {
+     return [];
+   }
+
+   // Calculate average growth rate from recent data
+   let growthRates = [];
+   for (let i = 1; i < recentData.length; i++) {
+     const prev = parseFloat(recentData[i-1].export_value);
+     const curr = parseFloat(recentData[i].export_value);
+     if (prev > 0) {
+       growthRates.push((curr - prev) / prev);
+     }
+   }
+
+   // Calculate average growth rate (or use 0.05 if no valid rates)
+   const avgGrowthRate = growthRates.length > 0
+     ? growthRates.reduce((sum, rate) => sum + rate, 0) / growthRates.length
+     : 0.05;
+
+   // Get the last quarter and value
+   const lastQuarter = recentData[recentData.length - 1].quarter;
+   const lastValue = parseFloat(recentData[recentData.length - 1].export_value);
+
+   // Parse year and quarter
+   const [year, quarter] = [parseInt(lastQuarter.substring(0, 4)), parseInt(lastQuarter.substring(5))];
+
+   // Generate predictions for next 4 quarters
+   const predictions = [];
+   let currentValue = lastValue;
+
+   for (let i = 1; i <= 4; i++) {
+     // Calculate next quarter
+     let nextQuarter = quarter + i;
+     let nextYear = year;
+
+     // Adjust year if quarter > 4
+     while (nextQuarter > 4) {
+       nextQuarter -= 4;
+       nextYear += 1;
+     }
+
+     // Apply growth rate to current value
+     currentValue = currentValue * (1 + avgGrowthRate);
+
+     // Add prediction
+     predictions.push({
+       period: `${nextYear}Q${nextQuarter}`,
+       exports: currentValue,
+       growth: avgGrowthRate * 100
+     });
+   }
+
+   return predictions;
+ }
 
 /**
  * Helper function to generate mock export opportunities

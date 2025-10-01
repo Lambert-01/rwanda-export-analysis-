@@ -1,0 +1,1028 @@
+[
+  {
+    "quarter": "2023Q1",
+    "import_value": 207.57694056551912,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 188.5889465176001,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 219.86143958272297,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 227.42777279833592,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 170.99585811588764,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 158.17287476197578,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 267.6228652908818,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 298.9341436521392,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 151.3010633501802,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 122.35774641909303,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 110.69071275319526,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 127.0095206389752,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 70.63943319377401,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 99.54162459980276,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 245.0814926833845,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 215.20945217095618,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 211.22111726016598,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 135.34651134853993,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 173.47523266651348,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 183.28537288221338,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 165.86054707454176,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 115.35976104021601,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 144.46460702484745,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 151.50913832230583,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 117.02246852171643,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 101.828859235935,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 115.65179035966133,
+    "source_country": "India",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 90.09586207492713,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 72.39933752442451,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 89.43228939748072,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 86.50304344546247,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 96.61522130432428,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 95.90520612910616,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 87.7576556632927,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 96.63555229033568,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 81.08823531817124,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 52.18730731292682,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 45.426258154282344,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 58.18977371026045,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 71.11798846702453,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 60.23770823619534,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 56.84415799741327,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 63.42921815814832,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 75.13444643544562,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 59.135891598864404,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 0.008959250748744653,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 118.340441545014,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 33.71072717322035,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 41.85928240601458,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 86.86583556187436,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 126.01823523888415,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 162.23612945748724,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 18.665667207985813,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 58.61116890319137,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 22.21036854247413,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 21.763361711793035,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 25.424301585912623,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 20.602130841103186,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 21.386757122770508,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 18.82293869811499,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 35.8059811988748,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 42.418297164568905,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 45.2021534653468,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 19.569163530405014,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 20.926051524888187,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 23.034466917136907,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 16.79292671548245,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 21.181736679360082,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 21.308257442898302,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 22.428503868409795,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 18.69338985906637,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 37.27615295589491,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 22.66832102678733,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 23.00445227422835,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 26.3924097406875,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 25.830732342660898,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 23.40074915373279,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 26.38406403704202,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 29.245241400173086,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 28.014673224010757,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 34.373522670941654,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 33.39505267385827,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 28.023489013967392,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 36.440858257122784,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 15.677711125051427,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 16.301953121765976,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 33.20082627504323,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 19.975466733787087,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 21.650713805990826,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 23.005043177136844,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 22.959293686435476,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 18.3719844862608,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 26.991840860827725,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 18.958412475348254,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 16.119440690189027,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 17.153615370791425,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 19.495230156615705,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 18.462861237725033,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 18.591706676490396,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 25.223703968642564,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 25.230211140121416,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 35.961088791730326,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 78.79409780534829,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 46.94237389330478,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 12.480575221118826,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 14.858578253889641,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 55.74539990722043,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 18.253382308788634,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 33.076978354750686,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 42.94638007794604,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 70.04973934310979,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 50.82922333003194,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 13.106193606111287,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 17.7993048982778,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 16.9541586160437,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 15.569346958946474,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 14.906112714735862,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 20.395896708587934,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 18.263739244270802,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 12.444064654093927,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 16.970586656017975,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 9.41824840892116,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 14.270844335686007,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 17.87262607911754,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 19.14247527934077,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 14.489701468143933,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 12.907790050673105,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 4.141403145671176,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 4.351267063395516,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 17.3460247168505,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 17.614160330687145,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 14.183535188805187,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.288737679451442,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 8.706658879995924,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 13.54252873245873,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 3.6457055404640784,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 0.5523304505307716,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 7.365378650734626,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 28.48634056636826,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 18.55922847701246,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 19.993761765821308,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.714689771738525,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 7.843380530306384,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 13.098939404209862,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 24.154885343917606,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 14.617314743853886,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 18.21993273338776,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 18.367387185861407,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 5.020650232451683,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 29.899654749206316,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 16.640727506630956,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 13.388545996175075,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 12.697723786210576,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 4.301334509085885,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 5.8334214563727995,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 8.047322470013482,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 11.24919389839665,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 13.962641453694376,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 10.852233314012956,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 20.61425588779364,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 26.500726929434702,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 11.869878035322595,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 14.124219245892375,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 23.00412988333251,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 13.690856944907676,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 16.087919750638555,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 7.781073748735518,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 8.997663957905973,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.069810942112085,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 11.995519800899027,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 11.34772578390165,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  }
+]

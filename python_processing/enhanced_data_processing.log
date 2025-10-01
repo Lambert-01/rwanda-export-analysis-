@@ -1,0 +1,61 @@
+2025-09-30 09:59:22,911 - INFO - EnhancedDataProcessor initialized
+2025-09-30 09:59:22,912 - INFO - Processing 2 Excel files
+2025-09-30 09:59:22,912 - INFO - Processing file: 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:59:22,912 - INFO - Loading Excel file: 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:59:23,634 - INFO - Found 13 sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-09-30 09:59:24,606 - INFO - Processing sheet: Graph Overall
+2025-09-30 09:59:24,641 - INFO - Processing sheet: Graph EAC
+2025-09-30 09:59:24,660 - INFO - Processing sheet: EAC
+2025-09-30 09:59:24,690 - INFO - Processing sheet: Total trade with the World
+2025-09-30 09:59:24,761 - INFO - Processing sheet: Regional blocks
+2025-09-30 09:59:24,794 - INFO - Processing sheet: Trade by continents
+2025-09-30 09:59:24,808 - INFO - Processing sheet: Sheet11
+2025-09-30 09:59:24,813 - INFO - Processing sheet: ExportCountry
+2025-09-30 09:59:24,827 - INFO - Extracting country export data
+2025-09-30 09:59:24,829 - INFO - Extracted 237 country export records
+2025-09-30 09:59:24,829 - INFO - Processing sheet: ImportCountry
+2025-09-30 09:59:24,841 - INFO - Extracting country import data
+2025-09-30 09:59:24,844 - INFO - Extracted 225 country import records
+2025-09-30 09:59:24,844 - INFO - Processing sheet: ReexportsCountry
+2025-09-30 09:59:24,855 - INFO - Extracting country re-export data
+2025-09-30 09:59:24,855 - INFO - Extracting country export data
+2025-09-30 09:59:24,857 - INFO - Extracted 206 country export records
+2025-09-30 09:59:24,857 - INFO - Processing sheet: ExportsCommodity
+2025-09-30 09:59:24,869 - INFO - Extracting commodity export data
+2025-09-30 09:59:24,869 - INFO - Processing sheet: ImportsCommodity
+2025-09-30 09:59:24,878 - INFO - Extracting commodity import data
+2025-09-30 09:59:24,878 - INFO - Processing sheet: ReexportsCommodity
+2025-09-30 09:59:24,887 - INFO - Extracting commodity re-export data
+2025-09-30 09:59:24,887 - INFO - Processing file: 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:59:24,889 - INFO - Loading Excel file: 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:59:24,974 - INFO - Found 13 sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-09-30 09:59:26,003 - INFO - Processing sheet: Graph Overall
+2025-09-30 09:59:26,017 - INFO - Processing sheet: Graph EAC
+2025-09-30 09:59:26,031 - INFO - Processing sheet: EAC
+2025-09-30 09:59:26,053 - INFO - Processing sheet: Total trade with the World
+2025-09-30 09:59:26,071 - INFO - Processing sheet: Regional blocks
+2025-09-30 09:59:26,085 - INFO - Processing sheet: Trade by continents
+2025-09-30 09:59:26,106 - INFO - Processing sheet: Sheet11
+2025-09-30 09:59:26,111 - INFO - Processing sheet: ExportCountry
+2025-09-30 09:59:26,126 - INFO - Extracting country export data
+2025-09-30 09:59:26,131 - INFO - Extracted 179 country export records
+2025-09-30 09:59:26,131 - INFO - Processing sheet: ImportCountry
+2025-09-30 09:59:26,142 - INFO - Extracting country import data
+2025-09-30 09:59:26,145 - INFO - Extracted 171 country import records
+2025-09-30 09:59:26,145 - INFO - Processing sheet: ReexportsCountry
+2025-09-30 09:59:26,158 - INFO - Extracting country re-export data
+2025-09-30 09:59:26,159 - INFO - Extracting country export data
+2025-09-30 09:59:26,161 - INFO - Extracted 164 country export records
+2025-09-30 09:59:26,161 - INFO - Processing sheet: ExportsCommodity
+2025-09-30 09:59:26,172 - INFO - Extracting commodity export data
+2025-09-30 09:59:26,172 - INFO - Processing sheet: ImportsCommodity
+2025-09-30 09:59:26,182 - INFO - Extracting commodity import data
+2025-09-30 09:59:26,182 - INFO - Processing sheet: ReexportsCommodity
+2025-09-30 09:59:26,194 - INFO - Extracting commodity re-export data
+2025-09-30 09:59:26,195 - INFO - Combining data from all files
+2025-09-30 09:59:26,196 - INFO - Generating comprehensive analysis
+2025-09-30 09:59:26,222 - INFO - Calculating trade balance analysis
+2025-09-30 09:59:26,244 - INFO - Saving all results to JSON files
+2025-09-30 09:59:26,310 - INFO - Generating comprehensive analysis
+2025-09-30 09:59:26,320 - INFO - Calculating trade balance analysis
+2025-09-30 09:59:26,354 - INFO - Saved all results to ..\data\processed

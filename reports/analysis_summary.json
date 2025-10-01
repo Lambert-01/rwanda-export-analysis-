@@ -1,0 +1,10 @@
+{
+  "analysis_timestamp": "2025-10-01T01:17:52.002108",
+  "total_export_value": 9035.587501667012,
+  "total_import_value": 20365.663934250337,
+  "trade_balance": -11330.076432583324,
+  "export_destinations": 20,
+  "quarters_analyzed": 13,
+  "outliers_detected": 0,
+  "correlation_export_import": 0.9360748893406969
+}

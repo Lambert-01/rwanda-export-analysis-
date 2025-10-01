@@ -70,16 +70,17 @@ class PipelineRunner:
         """Get default pipeline configuration."""
         # Paths relative to the project root (parent of python_processing)
         project_root = Path(__file__).parent.parent
+        import os
         return {
             'data_dir': str(project_root / 'data'),
-            'processed_dir': str(project_root / 'data' / 'processed'),
-            'models_dir': str(project_root / 'models'),
-            'excel_filename': '2024Q4_Trade_report_annexTables.xlsx',
-            'prediction_quarters': 4,
-            'analysis_top_n': 10,
-            'force_reprocess': False,
-            'skip_predictions': False,
-            'skip_analysis': False
+            'processed_dir': os.getenv('DATA_PROCESSED_PATH', str(project_root / 'data' / 'processed')),
+            'models_dir': os.getenv('MODELS_DIR', str(project_root / 'models')),
+            'excel_filename': os.getenv('EXCEL_FILE_PATH', '2024Q4_Trade_report_annexTables.xlsx') or '2024Q4_Trade_report_annexTables.xlsx',
+            'prediction_quarters': int(os.getenv('PREDICTION_QUARTERS', '4')),
+            'analysis_top_n': int(os.getenv('ANALYSIS_TOP_N', '10')),
+            'force_reprocess': os.getenv('FORCE_REPROCESS', 'false').lower() == 'true',
+            'skip_predictions': os.getenv('SKIP_PREDICTIONS', 'false').lower() == 'true',
+            'skip_analysis': os.getenv('SKIP_ANALYSIS', 'false').lower() == 'true'
         }
 
     def run_full_pipeline(self) -> dict:

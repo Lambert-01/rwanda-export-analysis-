@@ -1,0 +1,1444 @@
+[
+  {
+    "quarter": "2022Q1",
+    "export_value": 1.634032257702684,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.5862852031757928,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 3.9943176483810117,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 3.3323038786830947,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.5012117527639606,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.551471271993813,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.31928232349218,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 1.237660075537893,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 3.4374218479467684,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.5350750103366488,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 3.0328094647245454,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.7888489413336703,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 1.3283353123651993,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.8244222761489316,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 2.431065789328187,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 1.5150620162109611,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 1.5982119059419604,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.478548894340646,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 4.79711376808941,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 1.309686526352588,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.6476192830862677,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.2544160695451712,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 1.9846025850627917,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 1.9733105659834758,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.10084652599274804,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.22184155305507566,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.46818822082120404,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.23867113124313,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.19383344592231,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 4.035607294844987,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.496505255252506,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 4.1394031402181595,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 2.3072025400302407,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 1.6335200082384154,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 1.2646074005265855,
+    "destination_country": "Burundi",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.37635748616369835,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.9734197562035936,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.3326827188502888,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 1.253046713843178,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 1.882145771818588,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.2344227978683637,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.4073848384159448,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.7713986143524678,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.8274714440397872,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.6425024109594746,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.798468509678894,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 1.1205275827339896,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.30799620941414674,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.14488194821634603,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.1285375291285508,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.1284125194927196,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.5879975510681692,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.002553514485610553,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.7261826422231922,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.0014965323395086938,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.21082582923076923,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.0099129200913242,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.9287486380482063,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.36607947604405333,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.07722082412933863,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.09146475816747333,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.629348713868662,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.6340483512085954,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.4287575269400631,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.6324541397061082,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.5349290398979809,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.34620595803660764,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.27749050773416023,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.8966499439505589,
+    "destination_country": "Zambia",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.060387566324489786,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.02541122198657115,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.19134971293612985,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.4071647806409297,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.19061543890247362,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.24433814917815647,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.21597886773440683,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.2677499769660376,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.4488197568857983,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.3922688115147675,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.7534792588998113,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.6166563520878539,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.11097456169514189,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.05886574398839055,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 2.3897520753583605,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.20848133311408654,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.21098861622893755,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.10966535412501398,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.18176529565361949,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.09301794114616344,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.1624428170726983,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.0776434513813195,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.1608051474207993,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.2975322371088048,
+    "destination_country": "Kenya",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.09249322560930272,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.27505055145354634,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.19933195375303284,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.18020858020658595,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.13648368419330711,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.0672000440845134,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.21078821830220387,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.08261192616146125,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.061121593060204905,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.10143664716628367,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.1564231519423431,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.2585481357692071,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.27524962162471095,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.23944464744214847,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.37840309266915373,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.3186853786266467,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.35616624319614104,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.33619573014329934,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.20501130598324363,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.2018232174093516,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.41362473564355867,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.20126730665823084,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.2454895753343383,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.18985552219976334,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.12213492129711612,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.27112041929222086,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.32914271638566267,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.18403272569843473,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.06940247818411055,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.14240509090330045,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.32530138147191234,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.17079338883350423,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.21644156794127828,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.07337991086045553,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.10747203487709278,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.1598756573365035,
+    "destination_country": "Greece",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.007242591720372762,
+    "destination_country": "Ghana",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.09686837075332348,
+    "destination_country": "Ghana",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.06640999303289898,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.16416235765891335,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.23505865100911028,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.08626117884822225,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.013708442058044529,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.1929977022121308,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 1.049239644797499,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.4734596809813886,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.4441382275843778,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.030556438887646403,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.010990169789335162,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.08166719791801637,
+    "destination_country": "Qatar",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.023869097506384402,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.03542529606485628,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.10625526351221526,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.07254362965142212,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.11045440073529413,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.038328183070899254,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.15962353095685966,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.20631236424924096,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.05939818270390041,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.08495339148302364,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.2338794414605057,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.07212786389196768,
+    "destination_country": "Germany",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.006053639384469323,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.012083087821991358,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.0280780594388687,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.007288946533146479,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.028351212922699466,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.025454128333042593,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.0032430064503613165,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.014736140618079244,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.009650479430869162,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.05917084702336097,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.05293484283625731,
+    "destination_country": "China",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.543947676294614,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.48297366615914195,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.2879495785494142,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.3971279139063242,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.23039663421375656,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.08532741444828681,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.08846481025329055,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.18713811385514945,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.12669145459105305,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.13666594629097759,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.12404360579146965,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.03529799103479402,
+    "destination_country": "United States",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.0040629152535746746,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.031230676642180145,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.018614840222801552,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.001818710897715699,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.12349951981351469,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.0036422027543993878,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.02161313969791062,
+    "destination_country": "Sudan",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.014287600840894534,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.0016937404259975198,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.02719661018618198,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.0004924731295913917,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.015856041353444233,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.08060572823857022,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.24627458569416355,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.03809404693871231,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.019892645135784162,
+    "destination_country": "South Africa",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 1.1689019203079782,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.0680699010764882,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.777751339627841,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.1189332423956568,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.05923930183275967,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.03300394899879577,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.08851132564680132,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.059970804648920226,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.025053511843270527,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 0.29100561494700355,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 0.04629356074413163,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 0.019397682936415386,
+    "destination_country": "Tanzania",
+    "data_source": "2024Q4",
+    "trade_type": "reexport"
+  }
+]

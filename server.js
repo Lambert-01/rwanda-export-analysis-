@@ -12,7 +12,7 @@ const fs = require('fs');
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || Math.floor(Math.random() * 1000) + 3000; // Random port between 3000-3999
+const PORT = process.env.PORT || 3001; // Use environment variable or default to 3001
 
 // Middleware
 app.use(morgan('dev'));
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 // Serve static assets
 app.use('/assets', express.static(path.join(__dirname, 'frontend', 'assets')));
 
-// API Routes
+// API Routes - Order matters! More specific routes first
 app.get('/api/health', (req, res) => {
     res.json({
         status: 'ok',
@@ -36,20 +36,63 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-// Proxy API requests to backend server
-app.use('/api/exports', async (req, res) => {
+// CRITICAL: Main API proxy MUST come BEFORE other routes to avoid conflicts
+// This handles all /api/* requests
+app.use('/api', async (req, res) => {
+    try {
+        // Keep the full path including /api prefix for the backend
+        const backendUrl = `http://localhost:3000${req.originalUrl}`;
+        console.log(`[API PROXY] ${req.method} ${req.originalUrl} → ${backendUrl}`);
+
+        // Prepare headers, removing host to avoid conflicts
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        // Prepare request body
+        let body = undefined;
+        if (req.method !== 'GET' && req.method !== 'HEAD') {
+            if (req.body) {
+                body = JSON.stringify(req.body);
+            }
+        }
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers,
+            body: body
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`[API PROXY ERROR] Backend ${response.status}: ${errorText}`);
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText} - ${errorText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('[API PROXY ERROR]', error.message);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message,
+            details: 'Failed to proxy request to backend server on port 3000',
+            url: req.originalUrl
+        });
+    }
+});
+
+// Legacy proxy routes for backward compatibility - these should not conflict with /api/*
+app.use('/exports', async (req, res) => {
     try {
         const backendUrl = `http://localhost:3000/api/exports${req.url}`;
-        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+        console.log(`[EXPORTS PROXY] ${req.method} ${req.url} → ${backendUrl}`);
 
-        // Prepare headers, removing host to avoid conflicts
         const headers = { ...req.headers };
         delete headers.host;
 
         const response = await fetch(backendUrl, {
             method: req.method,
-            headers: headers,
-            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+            headers: headers
         });
 
         if (!response.ok) {
@@ -59,28 +102,25 @@ app.use('/api/exports', async (req, res) => {
         const data = await response.json();
         res.json(data);
     } catch (error) {
-        console.error('Error proxying to backend:', error);
+        console.error('[EXPORTS PROXY ERROR]', error.message);
         res.status(500).json({
             error: 'Backend server error',
-            message: error.message,
-            details: 'Failed to proxy request to backend server on port 3000'
+            message: error.message
         });
     }
 });
 
-app.use('/api/imports', async (req, res) => {
+app.use('/imports', async (req, res) => {
     try {
         const backendUrl = `http://localhost:3000/api/imports${req.url}`;
-        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+        console.log(`[IMPORTS PROXY] ${req.method} ${req.url} → ${backendUrl}`);
 
-        // Prepare headers, removing host to avoid conflicts
         const headers = { ...req.headers };
         delete headers.host;
 
         const response = await fetch(backendUrl, {
             method: req.method,
-            headers: headers,
-            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+            headers: headers
         });
 
         if (!response.ok) {
@@ -90,28 +130,25 @@ app.use('/api/imports', async (req, res) => {
         const data = await response.json();
         res.json(data);
     } catch (error) {
-        console.error('Error proxying to backend:', error);
+        console.error('[IMPORTS PROXY ERROR]', error.message);
         res.status(500).json({
             error: 'Backend server error',
-            message: error.message,
-            details: 'Failed to proxy request to backend server on port 3000'
+            message: error.message
         });
     }
 });
 
-app.use('/api/predictions', async (req, res) => {
+app.use('/predictions', async (req, res) => {
     try {
         const backendUrl = `http://localhost:3000/api/predictions${req.url}`;
-        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+        console.log(`[PREDICTIONS PROXY] ${req.method} ${req.url} → ${backendUrl}`);
 
-        // Prepare headers, removing host to avoid conflicts
         const headers = { ...req.headers };
         delete headers.host;
 
         const response = await fetch(backendUrl, {
             method: req.method,
-            headers: headers,
-            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+            headers: headers
         });
 
         if (!response.ok) {
@@ -121,28 +158,25 @@ app.use('/api/predictions', async (req, res) => {
         const data = await response.json();
         res.json(data);
     } catch (error) {
-        console.error('Error proxying to backend:', error);
+        console.error('[PREDICTIONS PROXY ERROR]', error.message);
         res.status(500).json({
             error: 'Backend server error',
-            message: error.message,
-            details: 'Failed to proxy request to backend server on port 3000'
+            message: error.message
         });
     }
 });
 
-app.use('/api/analytics', async (req, res) => {
+app.use('/analytics', async (req, res) => {
     try {
         const backendUrl = `http://localhost:3000/api/analytics${req.url}`;
-        console.log(`Proxying ${req.method} ${req.url} to ${backendUrl}`);
+        console.log(`[ANALYTICS PROXY] ${req.method} ${req.url} → ${backendUrl}`);
 
-        // Prepare headers, removing host to avoid conflicts
         const headers = { ...req.headers };
         delete headers.host;
 
         const response = await fetch(backendUrl, {
             method: req.method,
-            headers: headers,
-            body: req.method !== 'GET' && req.method !== 'HEAD' ? JSON.stringify(req.body) : undefined
+            headers: headers
         });
 
         if (!response.ok) {
@@ -152,11 +186,39 @@ app.use('/api/analytics', async (req, res) => {
         const data = await response.json();
         res.json(data);
     } catch (error) {
-        console.error('Error proxying to backend:', error);
+        console.error('[ANALYTICS PROXY ERROR]', error.message);
         res.status(500).json({
             error: 'Backend server error',
-            message: error.message,
-            details: 'Failed to proxy request to backend server on port 3000'
+            message: error.message
+        });
+    }
+});
+
+// Direct proxy for analysis-results endpoint (for backward compatibility)
+app.get('/analysis-results', async (req, res) => {
+    try {
+        const backendUrl = `http://localhost:3000/api/analysis-results`;
+        console.log(`[ANALYSIS PROXY] ${req.method} ${req.url} → ${backendUrl}`);
+
+        const headers = { ...req.headers };
+        delete headers.host;
+
+        const response = await fetch(backendUrl, {
+            method: req.method,
+            headers: headers
+        });
+
+        if (!response.ok) {
+            throw new Error(`Backend responded with ${response.status}: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        res.json(data);
+    } catch (error) {
+        console.error('[ANALYSIS PROXY ERROR]', error.message);
+        res.status(500).json({
+            error: 'Backend server error',
+            message: error.message
         });
     }
 });
@@ -621,7 +683,7 @@ app.get('/api/metadata', (req, res) => {
         data: cachedAnalysis.metadata || {}
     });
 });
-
+   
 // API documentation endpoint
 app.get('/api', (req, res) => {
     res.json({
@@ -743,14 +805,13 @@ app.listen(PORT, () => {
     console.log(`🔍 API documentation at: http://localhost:${PORT}/api`);
     console.log(`💾 Static files served from: ./frontend/`);
     console.log('='.repeat(60));
-    console.log('📋 Available endpoints:');
-    console.log('   GET  /api/health - Server health check');
-    console.log('   POST /api/analyze-excel - Analyze Excel data');
-    console.log('   GET  /api/analysis-results - Get analysis results');
-    console.log('   GET  /api/trade-overview - Trade overview data');
-    console.log('   GET  /api/top-countries - Top countries data');
-    console.log('   GET  /api/commodities - Commodity analysis');
-    console.log('   GET  /api/insights - Key insights');
+    console.log('📋 Available proxy routes:');
+    console.log('   /api/* → http://localhost:3000/api/* (Main API proxy)');
+    console.log('   /exports/* → http://localhost:3000/api/exports/* (Legacy exports)');
+    console.log('   /imports/* → http://localhost:3000/api/imports/* (Legacy imports)');
+    console.log('   /predictions/* → http://localhost:3000/api/predictions/* (Legacy predictions)');
+    console.log('   /analytics/* → http://localhost:3000/api/analytics/* (Legacy analytics)');
+    console.log('   /analysis-results → http://localhost:3000/api/analysis-results (Direct)');
     console.log('='.repeat(60));
     console.log('✨ Open http://localhost:' + PORT + ' in your browser to start exploring!');
     console.log('='.repeat(60));

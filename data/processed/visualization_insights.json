@@ -1,0 +1,28 @@
+{
+  "trade_overview": {
+    "total_export_value": 8939.733542468619,
+    "total_import_value": 20262.581828462346,
+    "trade_balance": -11322.848285993727,
+    "export_destinations_count": 20,
+    "import_sources_count": 20,
+    "top_export_destination": "United Arab Emirates",
+    "top_import_source": "Tanzania"
+  },
+  "regional_analysis": {
+    "asia_exports": 6817.56605873609,
+    "africa_exports": 1369.8809805793376,
+    "europe_exports": 570.3300070086116,
+    "americas_exports": 123.0913150488274
+  },
+  "statistical_insights": {
+    "export_volatility": 342.7074717910641,
+    "import_volatility": 619.7470557609547,
+    "correlation_strength": 0.9253207525791126,
+    "trade_imbalance_ratio": 0.4453919915789414
+  },
+  "geographic_insights": {
+    "average_distance_to_partners": 5539.547518075077,
+    "farthest_partner": "United States",
+    "closest_partner": "Uganda"
+  }
+}

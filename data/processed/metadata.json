@@ -1,9 +1,9 @@
 {
-  "processed_at": "2025-09-24T03:13:31.780437",
+  "processed_at": "2025-09-27T09:54:56.316940",
   "source_files": [
     "c:\\Users\\educa\\HACKTON\\rwanda-export-explorer\\data\\raw\\2024Q4_Trade_report_annexTables.xlsx"
   ],
-  "data_quarters": "{'2023Q1', '2022Q2', '2023Q3', '2024Q2', '% change Q4/Q3', '2023Q4', '2024Q4', '% change Q4/Q4', '2022Q4', '2022Q3', '2023Q2', 'Shares in % Q4', '2024Q3', '2022Q1', '2024Q1'}",
-  "commodities": "{'Unknown'}",
-  "countries": "{'1', 'SITC SECTION', '6', '5', '4', '2', '0', '9', '3', '7', '8'}"
+  "data_quarters": "{'2024Q1', '2022Q2', '2023Q2', '2024Q2', '2024Q3', '2024Q4', '2023Q1', '2022Q4', '2023Q4', '2022Q3', '2022Q1', '2023Q3'}",
+  "commodities": "{'Total Exports', 'Total Imports'}",
+  "countries": "{'Burkina Faso', 'Kenya', 'Tanzania', 'Italy', 'Uganda', 'Egypt', 'South Sudan', 'Netherlands', 'United Kingdom', 'Pakistan', 'Ethiopia', 'South Africa', 'India', 'Japan', 'Hong Kong', 'United Arab Emirates', 'China', 'Russia', 'Turkey', 'Saudi Arabia', 'France', 'Malaysia', 'Luxembourg', 'Thailand', 'Germany', 'Belgium', 'Cameroon', 'Democratic Republic of the Congo', 'Singapore', 'United States', 'Congo'}"
 }

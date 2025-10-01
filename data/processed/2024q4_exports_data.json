@@ -1,0 +1,1424 @@
+[
+  {
+    "quarter": "2022Q1",
+    "export_value": 139.1705788270839,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 188.38460486235326,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 163.98934768220548,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 92.90154557550389,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 211.59547680912505,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 321.56673518985093,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 203.48599686973353,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 215.0663888878028,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 268.67271469094425,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 360.6197369274397,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 447.0129999164955,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 442.54866971286344,
+    "destination_country": "United Arab Emirates",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 35.450077620754016,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 35.82042284883672,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 40.65118465075666,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 43.31945294817195,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 44.31962833433481,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 38.177690325724,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 51.12107401344382,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 47.007099306209,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 51.02525700576274,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 47.52663133276006,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 62.168168319276454,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 84.11370016259441,
+    "destination_country": "Democratic Republic of the Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 4.157610098986904,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 6.195712019461166,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 7.9501339409501615,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 17.402430461031567,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 21.490104943830122,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 19.429222127239324,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 23.416293033824648,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 19.102856196330777,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 17.74773132763921,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 23.317869066957506,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 22.83434545073685,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 20.42731227798233,
+    "destination_country": "China",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 4.730503009177127,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 2.257559919782895,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 2.2968534409010726,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 1.200701139748671,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.1116192088083734,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 3.618823679001695,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.383613600466215,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 8.00945237371573,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 12.072544018847726,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 15.480067824632682,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 13.768811171215525,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 14.104303092608351,
+    "destination_country": "Luxembourg",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 8.327758993105794,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 7.7334921748911,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 15.611099737460066,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 14.59510720358746,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 11.75842177993816,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 9.58152091928097,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 7.742862315573887,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 7.950727229626466,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 7.621291315368445,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 7.9107686437543325,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 10.907530110203119,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 9.310812866389798,
+    "destination_country": "United Kingdom",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 3.455927838939858,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 4.001540616115152,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 5.317496193849092,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 8.475748915255647,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.3647281627316343,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.1279334090144992,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 5.486070495450929,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 8.778479877950648,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 4.117622067279408,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 5.549042327810409,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 8.162436107221108,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 8.96866253380225,
+    "destination_country": "United States",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 1.1250725071805954,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 5.073829791015922,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 8.081551425786262,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 3.5183529831510163,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 12.364758234083107,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 9.337270144222712,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 8.832121558256693,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.991475732094096,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.8953029853843497,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 2.270775659905636,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 4.530275962154506,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 7.5039074536482016,
+    "destination_country": "Uganda",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 2.8305787782637934,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 2.739383912234257,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 3.823279058118582,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 61.86274899295693,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 4.307349245087192,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 3.632231633334361,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.890959127373866,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.8411399878650547,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 5.14212684980389,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 5.816508728403505,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 2.6283844909637137,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 6.180915322446868,
+    "destination_country": "India",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 6.384558352760166,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 11.631660601954442,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 10.611596417476374,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 10.724781031854667,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 10.597105577969899,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 13.16677190926577,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 10.437871945618348,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 9.84980391015447,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 5.525053643513976,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 4.725333717070813,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 8.524870802340665,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.888581333649638,
+    "destination_country": "Hong Kong",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 4.232911747895032,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.0244756610363284,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 3.5870508002600836,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 5.651192235052051,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 8.218430571869277,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 3.809927896027667,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.922899161699167,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.3143437773162523,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 2.860043920223681,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 4.983824511721758,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 6.768982783635531,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.757676657700764,
+    "destination_country": "Netherlands",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 3.2637056480284894,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.5317551004367231,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.2417969004388145,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 1.006359092759301,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 1.2046132137953514,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.9967465664805738,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 1.8597415557350718,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.636520897929719,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 2.0655968526486217,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.826329732586269,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 1.2019659507436438,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.722292233192514,
+    "destination_country": "Italy",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 3.0651817552200677,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.4325361994803458,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 5.398995004300231,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 5.303007460931087,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.0302304488127736,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 3.9051588140056746,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.314802725538964,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.2204255199735163,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.5531523738245443,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.5672184631451944,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.569556042168521,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.4444087953521985,
+    "destination_country": "Belgium",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 9.649971965006403,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 10.803841969910467,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 8.075367627353218,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 4.080542935391139,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 1.9109347928844638,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.3096987494878243,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.4954459999549763,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.793091477512703,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.731227591502341,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 4.3782782817860975,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.470144119187616,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.312367459921619,
+    "destination_country": "Singapore",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 11.497495592949797,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 10.72129726715442,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 8.71737982713301,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 8.897427409879866,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 9.879329342221101,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 7.023600300626357,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 8.179504367596717,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 5.272698531152048,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 7.7575538188922115,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 7.27903045337029,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 6.222464768094115,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 4.120503691429067,
+    "destination_country": "Pakistan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.7587937335093103,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.020602470392527734,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.1487948309495538,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.5240639133068979,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.043725675771102396,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.36479501335373277,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.8476109689919533,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.3602183942304684,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.9433915582427643,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 2.4467052185213967,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 6.184508793486708,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.74591108819005,
+    "destination_country": "Thailand",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 3.1457338974957274,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 4.3082586174303765,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 6.0872388242930064,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.171721470804842,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 6.776145819378542,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 7.031403891942984,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 5.657724054819582,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 5.884796900199647,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 5.515603418961903,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 5.412002694660817,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 3.207793894586699,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.4948064880675087,
+    "destination_country": "Congo",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.9129886476563003,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 12.835644274633363,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 11.237501529268506,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.5789446199333517,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.040989686993782914,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 4.23080653765944e-05,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.012316491697037042,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.2435655604503233,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 3.3098228116260597,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.067360469872635,
+    "destination_country": "Ethiopia",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 5.4136067536489225,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.8708900485392457,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 7.956856700922503,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.094266020352963,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 13.391927245123599,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 4.091295474268339,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 3.6389220688013095,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.3519109709758825,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.347183764915457,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.8083983890896258,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 1.4234934854729386,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.8281150174016645,
+    "destination_country": "South Sudan",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 2.8754177926062625,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 2.1074845424050035,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.977798375112656,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.358018710094454,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 5.386426129110372,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.526592195770201,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 3.2902279553256717,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.4860384032741623,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.5888226868499835,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.5391346152966054,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.578659538617138,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.520263385743478,
+    "destination_country": "Germany",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.9485142876263852,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.7013152726849923,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 2.7068009043196457,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.8258721044345225,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.9323256467912193,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 1.9157986935211413,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.9033575286097286,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.9246872241335546,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 3.709728542560235,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 2.565250936884045,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.501431328277835,
+    "destination_country": "Turkey",
+    "data_source": "2024Q4"
+  }
+]

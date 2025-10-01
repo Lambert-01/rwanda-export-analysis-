@@ -23,11 +23,14 @@ logger = logging.getLogger(__name__)
 class ExportAnalyzer:
     """Advanced analytics and insights for Rwanda export data."""
 
-    def __init__(self, processed_data_dir: str = "data/processed"):
+    def __init__(self, processed_data_dir: str = None):
         """Initialize the export analyzer."""
+        import os
         # Get the parent directory (project root) when running from python_processing
         project_root = Path(__file__).parent.parent
-        self.processed_data_dir = project_root / processed_data_dir
+        # Use environment variable if provided, otherwise use default
+        data_dir = processed_data_dir or os.getenv('DATA_PROCESSED_PATH', "data/processed")
+        self.processed_data_dir = project_root / data_dir
         self.exports_data = []
         self.imports_data = []
         self.trade_balance_data = []

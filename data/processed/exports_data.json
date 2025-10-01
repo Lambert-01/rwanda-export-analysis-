@@ -1,944 +1,1424 @@
 [
   {
     "quarter": "2022Q1",
-    "export_value": 293.57884831471915,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 139.1705788270839,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 331.55255123967333,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 188.38460486235326,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 342.5635379482146,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 163.98934768220548,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 354.8386907703432,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 92.90154557550389,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 402.14468784688006,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 211.59547680912505,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 484.73934625285204,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 321.56673518985093,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 388.1129711318348,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 203.48599686973353,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 399.1084006995603,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 215.0663888878028,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 431.6120219963785,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 268.67271469094425,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 537.6377961348556,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 360.6197369274397,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 667.0045749074241,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 447.0129999164955,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 677.4462049907256,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 100.0,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 0.015654510442826952,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 0.6973990119057696,
-    "commodity": "SITC SECTION",
-    "destination_country": "Various"
+    "export_value": 442.54866971286344,
+    "commodity": "Total Exports",
+    "destination_country": "United Arab Emirates"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 72.79279307385237,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 35.450077620754016,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 69.36432201301506,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 35.82042284883672,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 95.67960065183868,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 40.65118465075666,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 117.07624018265753,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 43.31945294817195,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 106.34298380408096,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 44.31962833433481,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 74.6218162158154,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 38.177690325724,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 89.35060707907544,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 51.12107401344382,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 103.8116595934061,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 47.007099306209,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 76.20898691691421,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 51.02525700576274,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 73.43132519231175,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 47.52663133276006,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 99.16692353140948,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 62.168168319276454,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 101.12493008783761,
-    "commodity": "0",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 14.927374209620384,
-    "commodity": "0",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 0.01974455278738141,
-    "commodity": "0",
-    "destination_country": "Various"
+    "export_value": 84.11370016259441,
+    "commodity": "Total Exports",
+    "destination_country": "Democratic Republic of the Congo"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 0.09808343322598985,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 4.157610098986904,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 0.05420576354468978,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 6.195712019461166,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 0.5354508685550223,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 7.9501339409501615,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 0.28866082350522215,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 17.402430461031567,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 0.2130086565330435,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 21.490104943830122,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 0.337233001201293,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 19.429222127239324,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 0.2642564826128532,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 23.416293033824648,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 0.3292999841952596,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 19.102856196330777,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 1.9913044915033715,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 17.74773132763921,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 0.08115125220834257,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 23.317869066957506,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 0.07572390826037595,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 22.83434545073685,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 0.10161149487692121,
-    "commodity": "1",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 0.014999197593602622,
-    "commodity": "1",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 0.3418680732580659,
-    "commodity": "1",
-    "destination_country": "Various"
+    "export_value": 20.42731227798233,
+    "commodity": "Total Exports",
+    "destination_country": "China"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 50.85256278669341,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 4.730503009177127,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 58.07464653394181,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 2.257559919782895,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 49.83752362891537,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 2.2968534409010726,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 54.98878032512337,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 1.200701139748671,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 59.67882704952933,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 2.1116192088083734,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 58.58735770273703,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 3.618823679001695,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 62.22667563118029,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 2.383613600466215,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 51.18695713047012,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 8.00945237371573,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 56.49911383710479,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 12.072544018847726,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 56.375967754134365,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 15.480067824632682,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 67.90652448176621,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 13.768811171215525,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 58.78923659545866,
-    "commodity": "2",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 8.678067153134839,
-    "commodity": "2",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 0.14851985527506817,
-    "commodity": "2",
-    "destination_country": "Various"
+    "export_value": 14.104303092608351,
+    "commodity": "Total Exports",
+    "destination_country": "Luxembourg"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 0.272083076905626,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 8.327758993105794,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 0.16826898083848993,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 7.7334921748911,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 0.3009802835224496,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 15.611099737460066,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 0.3559059207859616,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 14.59510720358746,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 0.7350569222770823,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 11.75842177993816,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 0.6000137661537696,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 9.58152091928097,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 1.1378654455018191,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 7.742862315573887,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 1.7148783908534266,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 7.950727229626466,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 0.27148747858095773,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 7.621291315368445,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 0.7766977388787255,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 7.9107686437543325,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 0.9830057856771236,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 10.907530110203119,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 0.9406992131324204,
-    "commodity": "3",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 0.13885961810728556,
-    "commodity": "3",
-    "destination_country": "Various"
+    "export_value": 9.310812866389798,
+    "commodity": "Total Exports",
+    "destination_country": "United Kingdom"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 0.9009118006592631,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 3.455927838939858,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 0.5610719135293183,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 4.001540616115152,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 2.4632689450661474,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 5.317496193849092,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 2.458923395652554,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 8.475748915255647,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 0.7154575981391863,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 2.3647281627316343,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 2.4132661990925284,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 2.1279334090144992,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 2.8662642444486863,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 5.486070495450929,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 1.1139566072413953,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 8.778479877950648,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 2.8668821184208566,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 4.117622067279408,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 4.562295333846123,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 5.549042327810409,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 12.039172747582588,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 8.162436107221108,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 23.396384054352332,
-    "commodity": "4",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 3.4536150445587976,
-    "commodity": "4",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 0.9433547923008432,
-    "commodity": "4",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 20.002958196272285,
-    "commodity": "4",
-    "destination_country": "Various"
+    "export_value": 8.96866253380225,
+    "commodity": "Total Exports",
+    "destination_country": "United States"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 3.1357657611962972,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 1.1250725071805954,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 4.59223880523061,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 5.073829791015922,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 2.850555924162513,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 8.081551425786262,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 4.206729933315976,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 3.5183529831510163,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 4.399181305070329,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 12.364758234083107,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 3.579546658468743,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 9.337270144222712,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 3.6977277833867315,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 8.832121558256693,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 4.511358973814369,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 3.991475732094096,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 4.172229445742013,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 0.8953029853843497,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 4.872614863205262,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 2.270775659905636,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 4.87933297389197,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 4.530275962154506,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 4.87797166069729,
-    "commodity": "5",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 0.7200529908886376,
-    "commodity": "5",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 0.08126435715066771,
-    "commodity": "5",
-    "destination_country": "Various"
+    "export_value": 7.5039074536482016,
+    "commodity": "Total Exports",
+    "destination_country": "Uganda"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 25.38965641283493,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 2.8305787782637934,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 28.067078929904493,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 2.739383912234257,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 34.14974107925114,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 3.823279058118582,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 26.805525245802382,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 61.86274899295693,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 29.52335295343607,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 4.307349245087192,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 28.76374482506517,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 3.632231633334361,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 28.606534640355786,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 2.890959127373866,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 24.632141350052123,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 3.8411399878650547,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 27.186257347050443,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 5.14212684980389,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 35.347403252706485,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 5.816508728403505,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 30.725478447242985,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 2.6283844909637137,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 34.872048192777875,
-    "commodity": "6",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 5.147574513795568,
-    "commodity": "6",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 0.13495541664728616,
-    "commodity": "6",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 0.4157132218918549,
-    "commodity": "6",
-    "destination_country": "Various"
+    "export_value": 6.180915322446868,
+    "commodity": "Total Exports",
+    "destination_country": "India"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 15.274058349257402,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 6.384558352760166,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 2.7277417199399974,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 11.631660601954442,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 3.8278008295252137,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 10.611596417476374,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 4.474734687684158,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 10.724781031854667,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 5.362641680207477,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 10.597105577969899,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 4.647074183904382,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 13.16677190926577,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 3.144311028127498,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 10.437871945618348,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 2.8374888597302896,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 9.84980391015447,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 4.064978713699648,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 5.525053643513976,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 1.4889503048206374,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 4.725333717070813,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 7.072827046721243,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 8.524870802340665,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 16.870761895697886,
-    "commodity": "7",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 2.49034709640581,
-    "commodity": "7",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q3",
-    "export_value": 1.3852925830440999,
-    "commodity": "7",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 4.945666302034924,
-    "commodity": "7",
-    "destination_country": "Various"
+    "export_value": 5.888581333649638,
+    "commodity": "Total Exports",
+    "destination_country": "Hong Kong"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 8.366119200017183,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 4.232911747895032,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 7.757543497295132,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 1.0244756610363284,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 8.309330528121391,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 3.5870508002600836,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 9.734305686184237,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 5.651192235052051,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 4.858497994627951,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 8.218430571869277,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 8.496410067557473,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 3.809927896027667,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 8.772848244857833,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 2.922899161699167,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 6.351700752769359,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 3.3143437773162523,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 4.975599158499757,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 2.860043920223681,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 9.74397300141779,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 4.983824511721758,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 9.460842490999916,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 6.768982783635531,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 8.323204657159229,
-    "commodity": "8",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "Shares in % Q4",
-    "export_value": 1.2286148473255047,
-    "commodity": "8",
-    "destination_country": "Various"
-  },
-  {
-    "quarter": "% change Q4/Q4",
-    "export_value": 0.3103899224991493,
-    "commodity": "8",
-    "destination_country": "Various"
+    "export_value": 5.757676657700764,
+    "commodity": "Total Exports",
+    "destination_country": "Netherlands"
   },
   {
     "quarter": "2022Q1",
-    "export_value": 116.49681442007613,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 3.2637056480284894,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2022Q2",
-    "export_value": 160.18543308243397,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.5317551004367231,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2022Q3",
-    "export_value": 144.60928520925683,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.2417969004388145,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2022Q4",
-    "export_value": 134.44888456963088,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.006359092759301,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2023Q1",
-    "export_value": 190.28365192382807,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.2046132137953514,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2023Q2",
-    "export_value": 302.6928836328568,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 0.9967465664805738,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2023Q3",
-    "export_value": 188.0138085522898,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.8597415557350718,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2023Q4",
-    "export_value": 202.6174726784063,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 2.636520897929719,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2024Q1",
-    "export_value": 253.37002198563528,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 2.0655968526486217,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2024Q2",
-    "export_value": 350.8543018187329,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.826329732586269,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2024Q3",
-    "export_value": 434.6923346658666,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 1.2019659507436438,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
     "quarter": "2024Q4",
-    "export_value": 428.1483479071482,
-    "commodity": "9",
-    "destination_country": "Various"
+    "export_value": 5.722292233192514,
+    "commodity": "Total Exports",
+    "destination_country": "Italy"
   },
   {
-    "quarter": "Shares in % Q4",
-    "export_value": 63.200346352668646,
-    "commodity": "9",
-    "destination_country": "Various"
+    "quarter": "2022Q1",
+    "export_value": 3.0651817552200677,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
   },
   {
-    "quarter": "% change Q4/Q4",
-    "export_value": 1.113087002060793,
-    "commodity": "9",
-    "destination_country": "Various"
+    "quarter": "2022Q2",
+    "export_value": 1.4325361994803458,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 5.398995004300231,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 5.303007460931087,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 2.0302304488127736,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 3.9051588140056746,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.314802725538964,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.2204255199735163,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.5531523738245443,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.5672184631451944,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.569556042168521,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.4444087953521985,
+    "commodity": "Total Exports",
+    "destination_country": "Belgium"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 9.649971965006403,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 10.803841969910467,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 8.075367627353218,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 4.080542935391139,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 1.9109347928844638,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.3096987494878243,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 2.4954459999549763,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.793091477512703,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.731227591502341,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 4.3782782817860975,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.470144119187616,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 5.312367459921619,
+    "commodity": "Total Exports",
+    "destination_country": "Singapore"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 11.497495592949797,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 10.72129726715442,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 8.71737982713301,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 8.897427409879866,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 9.879329342221101,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 7.023600300626357,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 8.179504367596717,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 5.272698531152048,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 7.7575538188922115,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 7.27903045337029,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 6.222464768094115,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 4.120503691429067,
+    "commodity": "Total Exports",
+    "destination_country": "Pakistan"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 0.7587937335093103,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 0.020602470392527734,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 0.1487948309495538,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 0.5240639133068979,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.043725675771102396,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 0.36479501335373277,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.8476109689919533,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 0.3602183942304684,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.9433915582427643,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 2.4467052185213967,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 6.184508793486708,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.74591108819005,
+    "commodity": "Total Exports",
+    "destination_country": "Thailand"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 3.1457338974957274,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 4.3082586174303765,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 6.0872388242930064,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.171721470804842,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 6.776145819378542,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 7.031403891942984,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 5.657724054819582,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 5.884796900199647,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 5.515603418961903,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 5.412002694660817,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 3.207793894586699,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.4948064880675087,
+    "commodity": "Total Exports",
+    "destination_country": "Congo"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.9129886476563003,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 12.835644274633363,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 11.237501529268506,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 1.5789446199333517,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 0.040989686993782914,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 4.23080653765944e-05,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.012316491697037042,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.2435655604503233,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 3.3098228116260597,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 3.067360469872635,
+    "commodity": "Total Exports",
+    "destination_country": "Ethiopia"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 5.4136067536489225,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.8708900485392457,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 7.956856700922503,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.094266020352963,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 13.391927245123599,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 4.091295474268339,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 3.6389220688013095,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.3519109709758825,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.347183764915457,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.8083983890896258,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 1.4234934854729386,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.8281150174016645,
+    "commodity": "Total Exports",
+    "destination_country": "South Sudan"
+  },
+  {
+    "quarter": "2022Q1",
+    "export_value": 2.8754177926062625,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 2.1074845424050035,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.977798375112656,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 6.358018710094454,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 5.386426129110372,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.526592195770201,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 3.2902279553256717,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 3.4860384032741623,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 1.5888226868499835,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 1.5391346152966054,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 5.578659538617138,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.520263385743478,
+    "commodity": "Total Exports",
+    "destination_country": "Germany"
+  },
+  {
+    "quarter": "2022Q2",
+    "export_value": 1.9485142876263852,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2022Q3",
+    "export_value": 1.7013152726849923,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2022Q4",
+    "export_value": 2.7068009043196457,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2023Q1",
+    "export_value": 0.8258721044345225,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2023Q2",
+    "export_value": 2.9323256467912193,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2023Q3",
+    "export_value": 1.9157986935211413,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2023Q4",
+    "export_value": 2.9033575286097286,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2024Q1",
+    "export_value": 0.9246872241335546,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2024Q2",
+    "export_value": 3.709728542560235,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2024Q3",
+    "export_value": 2.565250936884045,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
+  },
+  {
+    "quarter": "2024Q4",
+    "export_value": 2.501431328277835,
+    "commodity": "Total Exports",
+    "destination_country": "Turkey"
   }
 ]

@@ -4,17 +4,29 @@
    ===================================================================== */
 
 /************************************
- * 1. API CONFIGURATION             *
- ************************************/
-const API_BASE = '/api';
-const API_TIMEOUT = 12000; // ms
+  * 1. API CONFIGURATION             *
+  ************************************/
+// Browser-compatible environment variable access
+const API_BASE = (typeof process !== 'undefined' && process.env && process.env.API_BASE_URL)
+    ? process.env.API_BASE_URL.replace(/\/$/, '') + '/api'
+    : 'http://localhost:3000/api'; // Direct backend API URL for browser
+
+// Also try to get from window if available (for frontend config)
+const FRONTEND_API_BASE = (typeof window !== 'undefined' && window.APP_CONFIG && window.APP_CONFIG.API_BASE)
+    ? window.APP_CONFIG.API_BASE
+    : API_BASE;
+const API_TIMEOUT = (typeof process !== 'undefined' && process.env && process.env.API_TIMEOUT)
+    ? parseInt(process.env.API_TIMEOUT)
+    : 12000; // ms
 const API_CACHE = {};
 
 /************************************
-  * 2. GENERIC API FETCH WRAPPER     *
-  ************************************/
+   * 2. GENERIC API FETCH WRAPPER     *
+   ************************************/
 async function apiFetch(endpoint, options = {}) {
-    const url = API_BASE + endpoint;
+    // Use direct backend URL to bypass proxy issues
+    const baseUrl = FRONTEND_API_BASE.startsWith('http') ? FRONTEND_API_BASE : `http://localhost:3000/api`;
+    const url = baseUrl + endpoint;
     const cacheKey = url + JSON.stringify(options);
 
     // Show loading indicator for the target element if provided
@@ -205,11 +217,36 @@ async function getImportCategories() {
   * 5. API ENDPOINTS (PREDICTIONS)   *
   ************************************/
 async function getPredictions() {
-    const results = await getAnalysisResults();
-    if (results.success && results.data && results.data.ai_forecasts) {
-        return results.data.ai_forecasts;
+    try {
+        // Try to get live predictions from the new endpoint
+        const livePredictions = await apiFetch('/predictions/live?method=ensemble&quarters=4');
+        if (livePredictions && livePredictions.predictions) {
+            return {
+                success: true,
+                data: livePredictions,
+                method: 'live_ensemble'
+            };
+        }
+    } catch (error) {
+        console.warn('Live predictions failed, falling back to static predictions:', error);
     }
-    return {};
+
+    // Fallback to static predictions
+    try {
+        const staticPredictions = await apiFetch('/predictions/next');
+        return {
+            success: true,
+            data: staticPredictions,
+            method: 'static'
+        };
+    } catch (error) {
+        console.error('Error getting predictions:', error);
+        return {
+            success: false,
+            data: {},
+            error: error.message
+        };
+    }
 }
 
 /************************************
@@ -247,9 +284,73 @@ async function analyzeExcelData() {
 }
 
 async function getAnalysisResults() {
-    return await apiFetch('/analysis-results', {
-        targetId: 'excel-analysis-results'
-    });
+    try {
+        // Try to get comprehensive model dashboard data from MongoDB
+        const modelDashboard = await apiFetch('/models/dashboard', {
+            targetId: 'excel-analysis-results'
+        });
+
+        if (modelDashboard && modelDashboard.summary) {
+            console.log('📊 Using MongoDB-backed model dashboard data');
+            return {
+                success: true,
+                data: {
+                    trade_overview: await getTradeOverviewData(),
+                    top_countries: await getTopCountriesData(),
+                    commodities: await getCommoditiesData(),
+                    insights: await getInsightsData(),
+                    model_dashboard: modelDashboard,
+                    metadata: {
+                        last_updated: new Date().toISOString(),
+                        data_sources: ['MongoDB', 'exports_data.json', 'imports_data.json'],
+                        database_connected: true
+                    }
+                }
+            };
+        }
+
+        // Fallback to analytics summary
+        const response = await apiFetch('/analytics/summary', {
+            targetId: 'excel-analysis-results'
+        });
+
+        // If we get summary data, enhance it with other data sources
+        if (response) {
+            const enhancedData = {
+                success: true,
+                data: {
+                    trade_overview: await getTradeOverviewData(),
+                    top_countries: await getTopCountriesData(),
+                    commodities: await getCommoditiesData(),
+                    insights: await getInsightsData(),
+                    metadata: {
+                        last_updated: new Date().toISOString(),
+                        data_sources: ['exports_data.json', 'imports_data.json', 'trade_balance.json'],
+                        database_connected: false
+                    }
+                }
+            };
+            return enhancedData;
+        }
+    } catch (error) {
+        console.error('Error getting analysis results:', error);
+        // Return fallback data structure
+        return {
+            success: true,
+            data: {
+                trade_overview: {},
+                top_countries: { top_export_countries: [], top_import_countries: [] },
+                commodities: { top_export_commodities: [], top_import_commodities: [] },
+                insights: [],
+                model_dashboard: null,
+                metadata: {
+                    last_updated: new Date().toISOString(),
+                    data_sources: ['fallback'],
+                    database_connected: false
+                }
+            }
+        };
+    }
 }
 
 async function getTradeOverview() {
@@ -274,6 +375,259 @@ async function getInsights() {
     return await apiFetch('/insights', {
         targetId: 'insights-list'
     });
+}
+
+// New MongoDB-backed API functions
+async function getModelDashboard() {
+    try {
+        const dashboard = await apiFetch('/models/dashboard');
+        return {
+            success: true,
+            data: dashboard,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting model dashboard:', error);
+        return {
+            success: false,
+            data: {},
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function getStatisticalAnalyses(type = null) {
+    try {
+        const endpoint = type ? `/models/statistical-analyses?type=${type}` : '/models/statistical-analyses';
+        const analyses = await apiFetch(endpoint);
+        return {
+            success: true,
+            data: analyses,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting statistical analyses:', error);
+        return {
+            success: false,
+            data: { count: 0, analyses: [] },
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function getMLModels(type = null, status = null) {
+    try {
+        let endpoint = '/models/ml-models';
+        const params = new URLSearchParams();
+        if (type) params.append('type', type);
+        if (status) params.append('status', status);
+        if (params.toString()) endpoint += '?' + params.toString();
+
+        const models = await apiFetch(endpoint);
+        return {
+            success: true,
+            data: models,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting ML models:', error);
+        return {
+            success: false,
+            data: { count: 0, models: [] },
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function getPredictions(type = null) {
+    try {
+        const endpoint = type ? `/models/predictions?type=${type}` : '/models/predictions';
+        const predictions = await apiFetch(endpoint);
+        return {
+            success: true,
+            data: predictions,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting predictions:', error);
+        return {
+            success: false,
+            data: { count: 0, predictions: [] },
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function getExportInsights() {
+    try {
+        const insights = await apiFetch('/exports/insights');
+        return {
+            success: true,
+            data: insights,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting export insights:', error);
+        return {
+            success: false,
+            data: {},
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function getModelStatus() {
+    try {
+        const status = await apiFetch('/models/status');
+        return {
+            success: true,
+            data: status,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error getting model status:', error);
+        return {
+            success: false,
+            data: {},
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+async function seedDatabase() {
+    try {
+        const result = await apiFetch('/models/seed-database', {
+            method: 'POST'
+        });
+        return {
+            success: true,
+            data: result,
+            source: 'mongodb'
+        };
+    } catch (error) {
+        console.error('Error seeding database:', error);
+        return {
+            success: false,
+            data: {},
+            error: error.message,
+            source: 'fallback'
+        };
+    }
+}
+
+// Helper functions to get data from correct backend endpoints
+async function getTradeOverviewData() {
+    try {
+        const exportsData = await apiFetch('/exports/quarterly');
+        const importsData = await apiFetch('/imports/quarterly');
+
+        if (exportsData && importsData) {
+            // Calculate totals for Q4 2024
+            const q4Exports = exportsData.find(item => item.period === '2024Q4');
+            const q4Imports = importsData.find(item => item.period === '2024Q4');
+
+            return {
+                total_exports_q4_2024: q4Exports ? q4Exports.exports : 0,
+                total_imports_q4_2024: q4Imports ? q4Imports.imports : 0,
+                trade_balance_q4_2024: (q4Exports ? q4Exports.exports : 0) - (q4Imports ? q4Imports.imports : 0),
+                export_growth_qoq: 0, // Would need more data to calculate
+                q1_2022_exports: 293.58,
+                q2_2022_exports: 331.55,
+                q3_2022_exports: 342.56,
+                q4_2022_exports: 354.84,
+                q1_2023_exports: 402.14,
+                q2_2023_exports: 484.74,
+                q3_2023_exports: 388.11,
+                q4_2023_exports: 399.11,
+                q1_2024_exports: 431.61,
+                q2_2024_exports: 537.64,
+                q3_2024_exports: 667.00,
+                q4_2024_exports: 677.45,
+                q1_2022_imports: 1034.54,
+                q2_2022_imports: 1348.03,
+                q3_2022_imports: 1481.22,
+                q4_2022_imports: 1281.21,
+                q1_2023_imports: 1476.51,
+                q2_2023_imports: 1571.09,
+                q3_2023_imports: 1581.81,
+                q4_2023_imports: 1486.93,
+                q1_2024_imports: 1410.52,
+                q2_2024_imports: 1568.97,
+                q3_2024_imports: 1751.57,
+                q4_2024_imports: 1629.39
+            };
+        }
+    } catch (error) {
+        console.error('Error getting trade overview data:', error);
+    }
+    return {};
+}
+
+async function getTopCountriesData() {
+    try {
+        const exportDestinations = await apiFetch('/exports/destinations?limit=10');
+        const importSources = await apiFetch('/imports/sources?limit=10');
+
+        return {
+            top_export_countries: exportDestinations || [],
+            top_import_countries: importSources || []
+        };
+    } catch (error) {
+        console.error('Error getting top countries data:', error);
+    }
+    return { top_export_countries: [], top_import_countries: [] };
+}
+
+async function getCommoditiesData() {
+    try {
+        const exportProducts = await apiFetch('/exports/products?limit=10');
+        const importCategories = await apiFetch('/imports/categories?limit=10');
+
+        return {
+            top_export_commodities: exportProducts || [],
+            top_import_commodities: importCategories || []
+        };
+    } catch (error) {
+        console.error('Error getting commodities data:', error);
+    }
+    return { top_export_commodities: [], top_import_commodities: [] };
+}
+
+async function getInsightsData() {
+    try {
+        // Generate insights based on available data
+        const exportsData = await apiFetch('/exports/summary');
+        const importsData = await apiFetch('/imports/summary');
+
+        const insights = [];
+
+        if (exportsData && exportsData.total_export_value > 0) {
+            insights.push({
+                type: 'success',
+                title: 'Leading Export Destination',
+                message: `${exportsData.top_destination} is the top export destination with $${(exportsData.total_export_value/1000000).toFixed(2)}M in total exports`
+            });
+        }
+
+        if (exportsData && exportsData.total_countries > 0) {
+            insights.push({
+                type: 'info',
+                title: 'Market Diversification',
+                message: `Rwanda exports to ${exportsData.total_countries} countries, showing good market diversification`
+            });
+        }
+
+        return insights;
+    } catch (error) {
+        console.error('Error getting insights data:', error);
+    }
+    return [];
 }
 
 /************************************
@@ -448,6 +802,133 @@ async function loadDashboardCharts() {
 // Add more API endpoints, helpers, or integrations as needed
 // ...
 
+// Real-time data management
+let dataRefreshInterval = null;
+let isRealTimeEnabled = false;
+
+/**
+ * Enable real-time data updates
+ * @param {number} intervalSeconds - Update interval in seconds (default: 30)
+ */
+function enableRealTimeUpdates(intervalSeconds = 30) {
+    if (isRealTimeEnabled) return;
+
+    isRealTimeEnabled = true;
+    console.log(`🔄 Real-time updates enabled (${intervalSeconds}s interval)`);
+
+    dataRefreshInterval = setInterval(async () => {
+        try {
+            await refreshAllData();
+            console.log('📡 Real-time data refreshed');
+        } catch (error) {
+            console.error('Real-time refresh failed:', error);
+        }
+    }, intervalSeconds * 1000);
+
+    return true;
+}
+
+/**
+ * Disable real-time data updates
+ */
+function disableRealTimeUpdates() {
+    if (!isRealTimeEnabled) return;
+
+    isRealTimeEnabled = false;
+    if (dataRefreshInterval) {
+        clearInterval(dataRefreshInterval);
+        dataRefreshInterval = null;
+    }
+
+    console.log('⏹️ Real-time updates disabled');
+    return true;
+}
+
+/**
+ * Refresh all dashboard data
+ */
+async function refreshAllData() {
+    try {
+        // Clear cache to force fresh data
+        Object.keys(API_CACHE).forEach(key => {
+            if (key.includes('/exports') || key.includes('/imports') || key.includes('/predictions')) {
+                delete API_CACHE[key];
+            }
+        });
+
+        // Refresh main dashboard data
+        if (typeof loadDashboardCharts === 'function') {
+            await loadDashboardCharts();
+        }
+
+        // Refresh current section data
+        const activeSection = document.querySelector('.section.active');
+        if (activeSection) {
+            await refreshSectionData(activeSection.id);
+        }
+
+        // Update last refresh timestamp
+        updateLastRefreshTime();
+
+        return true;
+    } catch (error) {
+        console.error('Error refreshing data:', error);
+        throw error;
+    }
+}
+
+/**
+ * Refresh data for a specific section
+ */
+async function refreshSectionData(sectionId) {
+    switch (sectionId) {
+        case 'home':
+            await loadDashboardCharts();
+            break;
+        case 'exports':
+            if (typeof loadExportAnalysis === 'function') {
+                await loadExportAnalysis();
+            }
+            break;
+        case 'imports':
+            if (typeof loadImportAnalysis === 'function') {
+                await loadImportAnalysis();
+            }
+            break;
+        case 'predictions':
+            if (typeof loadPredictionAnalysis === 'function') {
+                await loadPredictionAnalysis();
+            }
+            break;
+        case 'excel-analysis':
+            await loadExcelAnalysis();
+            break;
+        default:
+            console.log(`No refresh function for section: ${sectionId}`);
+    }
+}
+
+/**
+ * Update the last refresh timestamp display
+ */
+function updateLastRefreshTime() {
+    const lastUpdatedEl = document.getElementById('last-updated');
+    if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = new Date().toLocaleTimeString();
+    }
+}
+
+/**
+ * Get real-time status
+ */
+function getRealTimeStatus() {
+    return {
+        enabled: isRealTimeEnabled,
+        interval: dataRefreshInterval ? 'active' : 'inactive',
+        lastRefresh: new Date().toISOString()
+    };
+}
+
 // Export functions for use in other scripts
 window.apiUtils = {
     // API endpoints
@@ -468,6 +949,15 @@ window.apiUtils = {
     getCommodityAnalysis,
     getInsights,
 
+    // MongoDB-backed endpoints
+    getModelDashboard,
+    getStatisticalAnalyses,
+    getMLModels,
+    getPredictions,
+    getExportInsights,
+    getModelStatus,
+    seedDatabase,
+
     // Authentication
     login,
     logout,
@@ -481,7 +971,14 @@ window.apiUtils = {
 
     // Data transformation
     transformTradeData,
-    transformProductData
+    transformProductData,
+
+    // Real-time features
+    enableRealTimeUpdates,
+    disableRealTimeUpdates,
+    refreshAllData,
+    refreshSectionData,
+    getRealTimeStatus
 };
 
 

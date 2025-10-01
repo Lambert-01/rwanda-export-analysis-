@@ -32,9 +32,13 @@ logger = logging.getLogger(__name__)
 class TradePredictor:
     """Main class for predicting Rwanda trade data using ML models."""
     
-    def __init__(self, processed_data_dir: str = "data/processed", models_dir: str = "models"):
+    def __init__(self, processed_data_dir: str = None, models_dir: str = None):
         """Initialize the predictor with data directories."""
-        self.processed_data_dir = Path(processed_data_dir)
+        import os
+        # Use environment variables if provided, otherwise use defaults
+        data_dir = processed_data_dir or os.getenv('DATA_PROCESSED_PATH', "data/processed")
+        models_dir = models_dir or os.getenv('MODELS_DIR', "models")
+        self.processed_data_dir = Path(data_dir)
         self.models_dir = Path(models_dir)
         self.models_dir.mkdir(parents=True, exist_ok=True)
         

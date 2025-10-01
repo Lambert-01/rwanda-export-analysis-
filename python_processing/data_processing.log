@@ -142,3 +142,139 @@
 2025-09-24 03:13:35,517 - INFO - Generating Summary Report
 2025-09-24 03:13:35,519 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:13:35,519 - INFO - Pipeline completed successfully!
+2025-09-27 09:53:35,689 - INFO - PipelineRunner initialized
+2025-09-27 09:53:35,689 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-27 09:53:35,690 - INFO - Stage 1: Data Processing
+2025-09-27 09:53:35,690 - INFO - DataProcessor initialized
+2025-09-27 09:53:35,690 - INFO - Starting full data processing pipeline
+2025-09-27 09:53:35,690 - INFO - Loading Excel data...
+2025-09-27 09:53:35,690 - INFO - Loading Excel data from c:\Users\educa\HACKTON\rwanda-export-explorer\data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-27 09:53:36,485 - INFO - Found sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-09-27 09:53:37,762 - INFO - Loaded 13 sheets from Excel
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Graph Overall with shape (11, 14)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Graph EAC with shape (13, 13)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: EAC with shape (26, 26)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Total trade with the World with shape (17, 14)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Regional blocks with shape (30, 14)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Trade by continents with shape (22, 26)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: Sheet11 with shape (8, 6)
+2025-09-27 09:53:37,763 - INFO - Processing sheet: ExportCountry with shape (32, 16)
+2025-09-27 09:53:37,763 - INFO - Extracting export country data
+2025-09-27 09:53:37,763 - INFO - Extracting quarterly export data
+2025-09-27 09:53:37,788 - INFO - Extracted 237 export records
+2025-09-27 09:53:37,788 - INFO - Extracted 237 country export records
+2025-09-27 09:53:37,788 - INFO - Processing sheet: ImportCountry with shape (27, 16)
+2025-09-27 09:53:37,788 - INFO - Extracting quarterly import data
+2025-09-27 09:53:37,798 - INFO - Extracted 225 import records
+2025-09-27 09:53:37,799 - INFO - Processing sheet: ReexportsCountry with shape (28, 16)
+2025-09-27 09:53:37,799 - INFO - Extracting re-export data
+2025-09-27 09:53:37,803 - INFO - Processing sheet: ExportsCommodity with shape (15, 17)
+2025-09-27 09:53:37,803 - INFO - Processing sheet: ImportsCommodity with shape (15, 17)
+2025-09-27 09:53:37,803 - INFO - Processing sheet: ReexportsCommodity with shape (15, 17)
+2025-09-27 09:53:37,803 - INFO - Extracting re-export data
+2025-09-27 09:53:37,804 - INFO - Calculating trade balance
+2025-09-27 09:53:37,842 - INFO - Saving processed data to JSON files
+2025-09-27 09:53:37,856 - INFO - Saved processed data to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed
+2025-09-27 09:53:37,856 - INFO - Data processing completed successfully
+2025-09-27 09:53:37,857 - INFO - Validating processed data
+2025-09-27 09:53:37,857 - INFO - Validation passed: exports_not_empty
+2025-09-27 09:53:37,857 - INFO - Validation passed: imports_not_empty
+2025-09-27 09:53:37,858 - INFO - Validation passed: quarters_consistent
+2025-09-27 09:53:37,858 - INFO - Validation passed: values_non_negative
+2025-09-27 09:53:37,858 - INFO - Validation passed: countries_present
+2025-09-27 09:53:37,858 - INFO - Data processing completed: {'exports_count': 237, 'imports_count': 225, 'balance_records': 12, 'quarters_processed': 12, 'commodities_count': 2, 'countries_count': 31}
+2025-09-27 09:53:37,858 - INFO - Stage 2: AI Predictions
+2025-09-27 09:53:37,955 - INFO - TradePredictor initialized
+2025-09-27 09:53:37,955 - INFO - Starting full prediction pipeline
+2025-09-27 09:53:37,955 - INFO - Predicting exports for next 4 quarters
+2025-09-27 09:53:38,356 - INFO - Predicting imports for next 4 quarters
+2025-09-27 09:53:38,763 - INFO - Predicting trade balance for next 4 quarters
+2025-09-27 09:53:38,763 - INFO - Predicting exports for next 4 quarters
+2025-09-27 09:53:39,115 - INFO - Predicting imports for next 4 quarters
+2025-09-27 09:53:39,451 - INFO - Generating commodity predictions for top 10 commodities
+2025-09-27 09:53:39,484 - INFO - Generating country predictions for top 5 destinations
+2025-09-27 09:53:39,512 - INFO - Prediction pipeline completed successfully
+2025-09-27 09:53:39,512 - INFO - Predictions generated successfully
+2025-09-27 09:53:39,512 - INFO - Stage 3: Export Analysis
+2025-09-27 09:53:39,515 - INFO - Loaded 237 export records, 225 import records
+2025-09-27 09:53:39,515 - INFO - ExportAnalyzer initialized
+2025-09-27 09:53:39,515 - INFO - Generating comprehensive analysis report
+2025-09-27 09:53:39,515 - INFO - Analyzing top 5 export destinations
+2025-09-27 09:53:39,521 - INFO - Analyzing top 5 import sources
+2025-09-27 09:53:39,526 - INFO - Analyzing top 10 export products
+2025-09-27 09:53:39,532 - INFO - Analyzing quarterly trends
+2025-09-27 09:53:39,535 - INFO - Analyzing trade balance
+2025-09-27 09:53:39,537 - INFO - Analyzing market opportunities
+2025-09-27 09:53:39,554 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 09:53:39,554 - INFO - Analysis completed successfully
+2025-09-27 09:53:39,554 - INFO - Generating Summary Report
+2025-09-27 09:53:39,557 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-27 09:53:39,557 - INFO - Pipeline completed successfully!
+2025-09-27 09:54:56,315 - INFO - PipelineRunner initialized
+2025-09-27 09:54:56,316 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-27 09:54:56,316 - INFO - Stage 1: Data Processing
+2025-09-27 09:54:56,316 - INFO - DataProcessor initialized
+2025-09-27 09:54:56,316 - INFO - Starting full data processing pipeline
+2025-09-27 09:54:56,316 - INFO - Loading Excel data...
+2025-09-27 09:54:56,318 - INFO - Loading Excel data from c:\Users\educa\HACKTON\rwanda-export-explorer\data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-27 09:54:57,527 - INFO - Found sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-09-27 09:54:58,896 - INFO - Loaded 13 sheets from Excel
+2025-09-27 09:54:58,896 - INFO - Processing sheet: Graph Overall with shape (11, 14)
+2025-09-27 09:54:58,896 - INFO - Processing sheet: Graph EAC with shape (13, 13)
+2025-09-27 09:54:58,896 - INFO - Processing sheet: EAC with shape (26, 26)
+2025-09-27 09:54:58,896 - INFO - Processing sheet: Total trade with the World with shape (17, 14)
+2025-09-27 09:54:58,896 - INFO - Processing sheet: Regional blocks with shape (30, 14)
+2025-09-27 09:54:58,898 - INFO - Processing sheet: Trade by continents with shape (22, 26)
+2025-09-27 09:54:58,898 - INFO - Processing sheet: Sheet11 with shape (8, 6)
+2025-09-27 09:54:58,898 - INFO - Processing sheet: ExportCountry with shape (32, 16)
+2025-09-27 09:54:58,898 - INFO - Extracting export country data
+2025-09-27 09:54:58,899 - INFO - Extracting quarterly export data
+2025-09-27 09:54:58,935 - INFO - Extracted 237 export records
+2025-09-27 09:54:58,942 - INFO - Extracted 237 country export records
+2025-09-27 09:54:58,943 - INFO - Processing sheet: ImportCountry with shape (27, 16)
+2025-09-27 09:54:58,943 - INFO - Extracting quarterly import data
+2025-09-27 09:54:58,962 - INFO - Extracted 225 import records
+2025-09-27 09:54:58,963 - INFO - Processing sheet: ReexportsCountry with shape (28, 16)
+2025-09-27 09:54:58,963 - INFO - Extracting re-export data
+2025-09-27 09:54:58,970 - INFO - Processing sheet: ExportsCommodity with shape (15, 17)
+2025-09-27 09:54:58,971 - INFO - Processing sheet: ImportsCommodity with shape (15, 17)
+2025-09-27 09:54:58,971 - INFO - Processing sheet: ReexportsCommodity with shape (15, 17)
+2025-09-27 09:54:58,971 - INFO - Extracting re-export data
+2025-09-27 09:54:58,974 - INFO - Calculating trade balance
+2025-09-27 09:54:59,040 - INFO - Saving processed data to JSON files
+2025-09-27 09:54:59,062 - INFO - Saved processed data to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed
+2025-09-27 09:54:59,063 - INFO - Data processing completed successfully
+2025-09-27 09:54:59,064 - INFO - Validating processed data
+2025-09-27 09:54:59,064 - INFO - Validation passed: exports_not_empty
+2025-09-27 09:54:59,065 - INFO - Validation passed: imports_not_empty
+2025-09-27 09:54:59,065 - INFO - Validation passed: quarters_consistent
+2025-09-27 09:54:59,065 - INFO - Validation passed: values_non_negative
+2025-09-27 09:54:59,065 - INFO - Validation passed: countries_present
+2025-09-27 09:54:59,065 - INFO - Data processing completed: {'exports_count': 237, 'imports_count': 225, 'balance_records': 12, 'quarters_processed': 12, 'commodities_count': 2, 'countries_count': 31}
+2025-09-27 09:54:59,066 - INFO - Stage 2: AI Predictions
+2025-09-27 09:54:59,155 - INFO - TradePredictor initialized
+2025-09-27 09:54:59,155 - INFO - Starting full prediction pipeline
+2025-09-27 09:54:59,156 - INFO - Predicting exports for next 4 quarters
+2025-09-27 09:54:59,876 - INFO - Predicting imports for next 4 quarters
+2025-09-27 09:55:00,608 - INFO - Predicting trade balance for next 4 quarters
+2025-09-27 09:55:00,608 - INFO - Predicting exports for next 4 quarters
+2025-09-27 09:55:01,347 - INFO - Predicting imports for next 4 quarters
+2025-09-27 09:55:01,748 - INFO - Generating commodity predictions for top 10 commodities
+2025-09-27 09:55:01,760 - INFO - Generating country predictions for top 5 destinations
+2025-09-27 09:55:01,788 - INFO - Prediction pipeline completed successfully
+2025-09-27 09:55:01,789 - INFO - Predictions generated successfully
+2025-09-27 09:55:01,789 - INFO - Stage 3: Export Analysis
+2025-09-27 09:55:01,794 - INFO - Loaded 237 export records, 225 import records
+2025-09-27 09:55:01,794 - INFO - ExportAnalyzer initialized
+2025-09-27 09:55:01,795 - INFO - Generating comprehensive analysis report
+2025-09-27 09:55:01,795 - INFO - Analyzing top 5 export destinations
+2025-09-27 09:55:01,803 - INFO - Analyzing top 5 import sources
+2025-09-27 09:55:01,810 - INFO - Analyzing top 10 export products
+2025-09-27 09:55:01,815 - INFO - Analyzing quarterly trends
+2025-09-27 09:55:01,820 - INFO - Analyzing trade balance
+2025-09-27 09:55:01,822 - INFO - Analyzing market opportunities
+2025-09-27 09:55:01,870 - INFO - Analysis report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\analysis_report.json
+2025-09-27 09:55:01,870 - INFO - Analysis completed successfully
+2025-09-27 09:55:01,871 - INFO - Generating Summary Report
+2025-09-27 09:55:01,878 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
+2025-09-27 09:55:01,878 - INFO - Pipeline completed successfully!

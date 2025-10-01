@@ -1,0 +1,41 @@
+2025-09-30 09:55:43,158 - INFO - Examining 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:55:43,160 - ERROR - File not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:55:43,160 - INFO - Examining 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:55:43,161 - ERROR - File not found: data\raw\2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:55:43,161 - ERROR - Examination failed: name 'files_to_examine' is not defined
+2025-09-30 09:56:27,143 - INFO - Examining 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:56:27,145 - ERROR - File not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:56:27,147 - INFO - Examining 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:56:27,148 - ERROR - File not found: data\raw\2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:56:27,154 - INFO - Examination results saved to data\processed\excel_examination_results.json
+2025-09-30 09:56:50,359 - INFO - Examining 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:56:50,360 - INFO - Examining Excel file: 2024Q4_Trade_report_annexTables.xlsx
+2025-09-30 09:56:51,595 - INFO -   Examining sheet: Graph Overall
+2025-09-30 09:56:51,799 - INFO -   Examining sheet: Graph EAC
+2025-09-30 09:56:51,900 - INFO -   Examining sheet: EAC
+2025-09-30 09:56:52,040 - INFO -   Examining sheet: Total trade with the World
+2025-09-30 09:56:52,118 - INFO -   Examining sheet: Regional blocks
+2025-09-30 09:56:52,256 - INFO -   Examining sheet: Trade by continents
+2025-09-30 09:56:52,402 - INFO -   Examining sheet: Sheet11
+2025-09-30 09:56:52,484 - INFO -   Examining sheet: ExportCountry
+2025-09-30 09:56:52,606 - INFO -   Examining sheet: ImportCountry
+2025-09-30 09:56:52,739 - INFO -   Examining sheet: ReexportsCountry
+2025-09-30 09:56:52,945 - INFO -   Examining sheet: ExportsCommodity
+2025-09-30 09:56:53,132 - INFO -   Examining sheet: ImportsCommodity
+2025-09-30 09:56:53,218 - INFO -   Examining sheet: ReexportsCommodity
+2025-09-30 09:56:53,300 - INFO - Examining 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:56:53,301 - INFO - Examining Excel file: 2025Q1_Trade_report_annexTables.xlsx
+2025-09-30 09:56:53,523 - INFO -   Examining sheet: Graph Overall
+2025-09-30 09:56:53,609 - INFO -   Examining sheet: Graph EAC
+2025-09-30 09:56:53,682 - INFO -   Examining sheet: EAC
+2025-09-30 09:56:53,765 - INFO -   Examining sheet: Total trade with the World
+2025-09-30 09:56:53,859 - INFO -   Examining sheet: Regional blocks
+2025-09-30 09:56:53,991 - INFO -   Examining sheet: Trade by continents
+2025-09-30 09:56:54,083 - INFO -   Examining sheet: Sheet11
+2025-09-30 09:56:54,225 - INFO -   Examining sheet: ExportCountry
+2025-09-30 09:56:54,316 - INFO -   Examining sheet: ImportCountry
+2025-09-30 09:56:54,409 - INFO -   Examining sheet: ReexportsCountry
+2025-09-30 09:56:54,536 - INFO -   Examining sheet: ExportsCommodity
+2025-09-30 09:56:54,658 - INFO -   Examining sheet: ImportsCommodity
+2025-09-30 09:56:54,781 - INFO -   Examining sheet: ReexportsCommodity
+2025-09-30 09:56:54,874 - INFO - Examination results saved to data\processed\excel_examination_results.json
