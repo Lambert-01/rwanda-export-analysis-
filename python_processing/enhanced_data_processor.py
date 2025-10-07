@@ -36,16 +36,7 @@ class EnhancedDataProcessor:
         self.processed_data_dir = Path(processed_data_dir)
         self.processed_data_dir.mkdir(parents=True, exist_ok=True)
 
-        # Initialize data containers for both files
-        self.data_2024q4 = {
-            "exports_data": [],
-            "imports_data": [],
-            "re_exports_data": [],
-            "commodity_exports": [],
-            "commodity_imports": [],
-            "commodity_re_exports": []
-        }
-
+        # Initialize data containers for 2025Q1 file only
         self.data_2025q1 = {
             "exports_data": [],
             "imports_data": [],
@@ -82,10 +73,18 @@ class EnhancedDataProcessor:
     def process_multiple_files(self, files_to_process: List[str] = None) -> Dict[str, Any]:
         """Process multiple Excel files comprehensively."""
         if files_to_process is None:
-            files_to_process = [
-                "2024Q4_Trade_report_annexTables.xlsx",
-                "2025Q1_Trade_report_annexTables.xlsx"
-            ]
+            # Check if 2025Q1 file exists
+            filename = "2025Q1_Trade_report_annexTables.xlsx"
+            filepath = self.raw_data_dir / filename
+
+            if filepath.exists():
+                files_to_process = [filename]
+                logger.info(f"Found file: {filename}")
+            else:
+                raise FileNotFoundError(f"Required file not found: {filepath}")
+
+        if not files_to_process:
+            raise FileNotFoundError("No Excel files found in the raw data directory")
 
         logger.info(f"Processing {len(files_to_process)} Excel files")
 
@@ -355,7 +354,7 @@ class EnhancedDataProcessor:
             return []
 
         # Define quarters based on file
-        if quarter_prefix == '2024Q4':
+        if '2024' in quarter_prefix:
             quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
         else:  # 2025Q1
             quarters = ['2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4', '2025Q1']
@@ -406,7 +405,7 @@ class EnhancedDataProcessor:
             return []
 
         # Define quarters based on file
-        if quarter_prefix == '2024Q4':
+        if '2024' in quarter_prefix:
             quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
         else:  # 2025Q1
             quarters = ['2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4', '2025Q1']
@@ -454,43 +453,197 @@ class EnhancedDataProcessor:
     def extract_commodity_exports(self, df: pd.DataFrame, quarter_prefix: str) -> List[Dict]:
         """Extract commodity-level export data."""
         logger.info("Extracting commodity export data")
-        # Placeholder for commodity-level extraction
-        return []
+
+        if len(df) < 5 or df.shape[1] < 13:
+            logger.warning("Dataframe too small for commodity exports")
+            return []
+
+        # Check for expected header pattern
+        header_row = 3  # Different header structure for commodity sheets
+        if pd.isna(df.iloc[header_row, 0]) or 'SITC SECTION' not in str(df.iloc[header_row, 0]):
+            logger.warning("Expected commodity header pattern not found")
+            return []
+
+        # Define quarters based on file
+        if '2024' in quarter_prefix:
+            quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
+        else:  # 2025Q1
+            quarters = ['2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4', '2025Q1']
+
+        quarter_columns = list(range(2, len(quarters) + 2))  # Start from column 2 for commodities
+        data_rows = []
+
+        for row_idx in range(4, len(df)):  # Start from row 4 for commodity data
+            row_data = df.iloc[row_idx]
+            commodity_code = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
+            commodity_name = str(row_data.iloc[1]).strip() if pd.notna(row_data.iloc[1]) else None
+
+            if not commodity_name or commodity_name.lower() in ['nan', 'source:', 'total', '']:
+                continue
+
+            # Skip section headers (SITC codes like "0", "1", etc.)
+            if commodity_code in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                continue
+
+            for col_idx, quarter in zip(quarter_columns[:len(quarters)], quarters):
+                if col_idx >= len(row_data):
+                    break
+
+                value = row_data.iloc[col_idx]
+                if pd.notna(value):
+                    try:
+                        numeric_value = float(value)
+                        if numeric_value > 0:
+                            data_rows.append({
+                                'quarter': quarter,
+                                'export_value': numeric_value,
+                                'commodity_code': commodity_code,
+                                'commodity_name': clean_commodity_name(commodity_name),
+                                'sitc_section': commodity_code[0] if len(commodity_code) > 0 else 'Unknown',
+                                'data_source': quarter_prefix
+                            })
+                    except (ValueError, TypeError):
+                        continue
+
+        logger.info(f"Extracted {len(data_rows)} commodity export records")
+        return data_rows
 
     def extract_commodity_imports(self, df: pd.DataFrame, quarter_prefix: str) -> List[Dict]:
         """Extract commodity-level import data."""
         logger.info("Extracting commodity import data")
-        # Placeholder for commodity-level extraction
-        return []
+
+        if len(df) < 5 or df.shape[1] < 13:
+            logger.warning("Dataframe too small for commodity imports")
+            return []
+
+        # Check for expected header pattern
+        header_row = 3  # Different header structure for commodity sheets
+        if pd.isna(df.iloc[header_row, 0]) or 'SITC SECTION' not in str(df.iloc[header_row, 0]):
+            logger.warning("Expected commodity header pattern not found")
+            return []
+
+        # Define quarters based on file
+        if '2024' in quarter_prefix:
+            quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
+        else:  # 2025Q1
+            quarters = ['2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4', '2025Q1']
+
+        quarter_columns = list(range(2, len(quarters) + 2))  # Start from column 2 for commodities
+        data_rows = []
+
+        for row_idx in range(4, len(df)):  # Start from row 4 for commodity data
+            row_data = df.iloc[row_idx]
+            commodity_code = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
+            commodity_name = str(row_data.iloc[1]).strip() if pd.notna(row_data.iloc[1]) else None
+
+            if not commodity_name or commodity_name.lower() in ['nan', 'source:', 'total', '']:
+                continue
+
+            # Skip section headers (SITC codes like "0", "1", etc.)
+            if commodity_code in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                continue
+
+            for col_idx, quarter in zip(quarter_columns[:len(quarters)], quarters):
+                if col_idx >= len(row_data):
+                    break
+
+                value = row_data.iloc[col_idx]
+                if pd.notna(value):
+                    try:
+                        numeric_value = float(value)
+                        if numeric_value > 0:
+                            data_rows.append({
+                                'quarter': quarter,
+                                'import_value': numeric_value,
+                                'commodity_code': commodity_code,
+                                'commodity_name': clean_commodity_name(commodity_name),
+                                'sitc_section': commodity_code[0] if len(commodity_code) > 0 else 'Unknown',
+                                'data_source': quarter_prefix
+                            })
+                    except (ValueError, TypeError):
+                        continue
+
+        logger.info(f"Extracted {len(data_rows)} commodity import records")
+        return data_rows
 
     def extract_commodity_reexports(self, df: pd.DataFrame, quarter_prefix: str) -> List[Dict]:
         """Extract commodity-level re-export data."""
         logger.info("Extracting commodity re-export data")
-        # Placeholder for commodity-level extraction
-        return []
+
+        if len(df) < 5 or df.shape[1] < 13:
+            logger.warning("Dataframe too small for commodity re-exports")
+            return []
+
+        # Check for expected header pattern
+        header_row = 3  # Different header structure for commodity sheets
+        if pd.isna(df.iloc[header_row, 0]) or 'SITC SECTION' not in str(df.iloc[header_row, 0]):
+            logger.warning("Expected commodity header pattern not found")
+            return []
+
+        # Define quarters based on file
+        if '2024' in quarter_prefix:
+            quarters = ['2022Q1', '2022Q2', '2022Q3', '2022Q4', '2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4']
+        else:  # 2025Q1
+            quarters = ['2023Q1', '2023Q2', '2023Q3', '2023Q4', '2024Q1', '2024Q2', '2024Q3', '2024Q4', '2025Q1']
+
+        quarter_columns = list(range(2, len(quarters) + 2))  # Start from column 2 for commodities
+        data_rows = []
+
+        for row_idx in range(4, len(df)):  # Start from row 4 for commodity data
+            row_data = df.iloc[row_idx]
+            commodity_code = str(row_data.iloc[0]).strip() if pd.notna(row_data.iloc[0]) else None
+            commodity_name = str(row_data.iloc[1]).strip() if pd.notna(row_data.iloc[1]) else None
+
+            if not commodity_name or commodity_name.lower() in ['nan', 'source:', 'total', '']:
+                continue
+
+            # Skip section headers (SITC codes like "0", "1", etc.)
+            if commodity_code in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                continue
+
+            for col_idx, quarter in zip(quarter_columns[:len(quarters)], quarters):
+                if col_idx >= len(row_data):
+                    break
+
+                value = row_data.iloc[col_idx]
+                if pd.notna(value):
+                    try:
+                        numeric_value = float(value)
+                        if numeric_value > 0:
+                            data_rows.append({
+                                'quarter': quarter,
+                                'reexport_value': numeric_value,
+                                'commodity_code': commodity_code,
+                                'commodity_name': clean_commodity_name(commodity_name),
+                                'sitc_section': commodity_code[0] if len(commodity_code) > 0 else 'Unknown',
+                                'data_source': quarter_prefix,
+                                'trade_type': 'reexport'
+                            })
+                    except (ValueError, TypeError):
+                        continue
+
+        logger.info(f"Extracted {len(data_rows)} commodity re-export records")
+        return data_rows
 
     def _combine_all_data(self) -> None:
-        """Combine data from all processed files."""
-        logger.info("Combining data from all files")
+        """Use data from 2025Q1 file only."""
+        logger.info("Using 2025Q1 data")
 
-        # Combine exports
-        all_exports = self.data_2024q4["exports_data"] + self.data_2025q1["exports_data"]
-        self.combined_data["exports_data"] = all_exports
+        # Use exports data directly from 2025Q1
+        self.combined_data["exports_data"] = self.data_2025q1["exports_data"]
 
-        # Combine imports
-        all_imports = self.data_2024q4["imports_data"] + self.data_2025q1["imports_data"]
-        self.combined_data["imports_data"] = all_imports
+        # Use imports data directly from 2025Q1
+        self.combined_data["imports_data"] = self.data_2025q1["imports_data"]
 
-        # Combine re-exports
-        all_reexports = self.data_2024q4["re_exports_data"] + self.data_2025q1["re_exports_data"]
-        self.combined_data["re_exports_data"] = all_reexports
+        # Use re-exports data directly from 2025Q1
+        self.combined_data["re_exports_data"] = self.data_2025q1["re_exports_data"]
 
         # Update metadata
-        for record in all_exports:
+        for record in self.combined_data["exports_data"]:
             self.metadata["data_quarters"].add(record.get("quarter", ""))
             self.metadata["countries"].add(record.get("destination_country", ""))
 
-        for record in all_imports:
+        for record in self.combined_data["imports_data"]:
             self.metadata["data_quarters"].add(record.get("quarter", ""))
             self.metadata["countries"].add(record.get("source_country", ""))
 
@@ -503,10 +656,8 @@ class EnhancedDataProcessor:
             "data_by_type": {}
         }
 
-        if '2024' in filename:
-            data_dict = self.data_2024q4
-        else:
-            data_dict = self.data_2025q1
+        # Use 2025Q1 data only
+        data_dict = self.data_2025q1
 
         for data_type, data_list in data_dict.items():
             count = len(data_list)
@@ -684,14 +835,13 @@ class EnhancedDataProcessor:
         """Save all processed data and analysis results."""
         logger.info("Saving all results to JSON files")
 
-        # Save individual file data
-        for file_prefix, data_dict in [("2024q4", self.data_2024q4), ("2025q1", self.data_2025q1)]:
-            for data_type, data_list in data_dict.items():
-                if data_list:
-                    filename = f"{file_prefix}_{data_type}.json"
-                    filepath = self.processed_data_dir / filename
-                    with open(filepath, 'w', encoding='utf-8') as f:
-                        json.dump(data_list, f, indent=2, ensure_ascii=False, default=str)
+        # Save individual file data for 2025Q1 only
+        for data_type, data_list in self.data_2025q1.items():
+            if data_list:
+                filename = f"2025q1_{data_type}.json"
+                filepath = self.processed_data_dir / filename
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    json.dump(data_list, f, indent=2, ensure_ascii=False, default=str)
 
         # Save combined data
         for data_type, data_list in self.combined_data.items():
@@ -717,7 +867,6 @@ class EnhancedDataProcessor:
 # Utility functions (same as before)
 def clean_country_name(country: str) -> str:
     """Clean and standardize country names."""
-    # ... (same implementation as before)
     country_mapping = {
         'United Arab Emirates': 'United Arab Emirates',
         'Congo, The Democratic Republic Of': 'Democratic Republic of the Congo',
@@ -775,6 +924,42 @@ def clean_country_name(country: str) -> str:
             return value
 
     return country.title() if country else 'Unknown'
+
+def clean_commodity_name(commodity: str) -> str:
+    """Clean and standardize commodity names."""
+    if pd.isna(commodity) or commodity == 'Unknown':
+        return 'Unknown'
+
+    commodity = str(commodity).strip()
+
+    # Remove SITC codes and extra formatting
+    commodity = re.sub(r'SITC SECTION', '', commodity, flags=re.IGNORECASE)
+    commodity = re.sub(r'COMMODITY DESCRIPTION/', '', commodity, flags=re.IGNORECASE)
+    commodity = re.sub(r'TOTAL ESTIMATES', '', commodity, flags=re.IGNORECASE)
+    commodity = re.sub(r'^\d+\s*', '', commodity)  # Remove leading numbers
+    commodity = re.sub(r'[^a-zA-Z0-9\s\-&(),.]', ' ', commodity)  # Keep alphanumeric and common punctuation
+    commodity = re.sub(r'\s+', ' ', commodity).strip()  # Clean whitespace
+
+    # Standardize common commodity names
+    commodity_clean = {
+        'food and live animals': 'Food and Live Animals',
+        'beverages and tobacco': 'Beverages and Tobacco',
+        'crude materials inedible except fuels': 'Crude Materials (Inedible) Except Fuels',
+        'mineral fuels lubricants and related materials': 'Mineral Fuels, Lubricants and Related Materials',
+        'animals and vegetable oils fats  waxes': 'Animal and Vegetable Oils, Fats & Waxes',
+        'chemicals  related products n e s': 'Chemicals & Related Products',
+        'manufactured goods classified chiefly by material': 'Manufactured Goods Classified by Material',
+        'machinery and transport equipment': 'Machinery and Transport Equipment',
+        'miscellaneous manufactured articles': 'Miscellaneous Manufactured Articles',
+        'other commodities  transactions n e s': 'Other Commodities & Transactions'
+    }
+
+    commodity_lower = commodity.lower()
+    for key, value in commodity_clean.items():
+        if key in commodity_lower:
+            return value
+
+    return commodity.title() if commodity else 'Unknown'
 
 def main():
     """Main function to run enhanced data processing."""

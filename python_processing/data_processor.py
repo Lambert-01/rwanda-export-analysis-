@@ -49,7 +49,7 @@ class DataProcessor:
         
         logger.info("DataProcessor initialized")
     
-    def load_excel_data(self, filename: str = "2024Q4_Trade_report_annexTables.xlsx") -> Dict[str, pd.DataFrame]:
+    def load_excel_data(self, filename: str = "2025Q1_Trade_report_annexTables.xlsx") -> Dict[str, pd.DataFrame]:
         """
         Load and parse the Excel file containing trade data.
         Handles multiple sheets for exports, imports, and re-exports.

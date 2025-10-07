@@ -6,7 +6,7 @@
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
-const path = require('path');
+const path = require('path');  
 const corsMiddleware = require('./middleware/cors');
 
 // Import database connection
@@ -18,6 +18,7 @@ const importsRoutes = require('./routes/imports');
 const predictionsRoutes = require('./routes/predictions');
 const analyticsRoutes = require('./routes/analytics');
 const modelsRoutes = require('./routes/models');
+const chatRoutes = require('./routes/chat');
 
 // Log route loading
 console.log('Loading backend routes...');
@@ -63,6 +64,8 @@ async function initializeApp() {
         console.log('   ✅ /api/analytics routes registered');
         app.use('/api/models', modelsRoutes);
         console.log('   ✅ /api/models routes registered');
+        app.use('/api/chat', chatRoutes);
+        console.log('   ✅ /api/chat routes registered');
 
         // Direct route for analysis-results (for frontend compatibility)
         app.get('/api/analysis-results', (req, res) => {

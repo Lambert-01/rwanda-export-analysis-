@@ -1,0 +1,197 @@
+/* ============================================
+    RWANDA EXPORT EXPLORER - PREDICTIONS.HTML CSS
+    AI Predictions Page Styles
+    ============================================ */
+
+/* Predictions Page Specific Styles */
+.predictions-hero {
+    background: linear-gradient(135deg, #6f42c1 0%, #00205b 50%, #00A1F1 100%);
+}
+
+/* AI Model Cards */
+.ai-model-card {
+    animation: glow 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.ai-model-card:nth-child(1) { animation-delay: 0.1s; }
+.ai-model-card:nth-child(2) { animation-delay: 0.2s; }
+.ai-model-card:nth-child(3) { animation-delay: 0.3s; }
+.ai-model-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(111, 66, 193, 0);
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(111, 66, 193, 0.3);
+    }
+}
+
+/* Predictions Chart Container */
+.predictions-chart-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #6f42c1;
+    position: relative;
+    overflow: hidden;
+}
+
+.predictions-chart-container::before {
+    content: '🤖';
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.1;
+}
+
+/* Model Performance Section */
+.model-performance-container {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.model-rankings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.ranking-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rank-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #00A1F1, #6f42c1);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.rank-info {
+    flex: 1;
+}
+
+.rank-name {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.rank-score {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+/* Opportunities List */
+.opportunities-list .data-card {
+    border-left: 4px solid #00A1F1;
+    transition: all 0.3s ease;
+}
+
+.opportunities-list .data-card:hover {
+    border-left-width: 6px;
+    transform: translateX(4px);
+}
+
+/* Predictions Table */
+.predictions-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.predictions-table th {
+    background: linear-gradient(135deg, #6f42c1, #00205b);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.predictions-table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.predictions-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* AI Badge Styles */
+.ai-badge {
+    background: linear-gradient(135deg, #6f42c1 0%, #00205b 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(111, 66, 193, 0.3);
+}
+
+/* Responsive Design for Predictions Page */
+@media (max-width: 768px) {
+    .predictions-chart-container {
+        padding: 1rem;
+    }
+
+    .model-performance-container {
+        padding: 1rem;
+    }
+
+    .ranking-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+
+    .rank-info {
+        text-align: center;
+    }
+}
+
+/* Print Styles for Predictions Page */
+@media print {
+    .navbar, .footer {
+        display: none;
+    }
+
+    .predictions-table {
+        font-size: 0.8rem;
+    }
+
+    .model-rankings {
+        gap: 0.5rem;
+    }
+}

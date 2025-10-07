@@ -1,1352 +1,1028 @@
 [
   {
-    "quarter": "2022Q1",
-    "import_value": 158.6576568892324,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 149.01325961486071,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 176.7837167300198,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 141.0074379814429,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
-  },
-  {
     "quarter": "2023Q1",
-    "import_value": 207.57694056551915,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 207.57694056551912,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 188.58894651759994,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 188.5889465176001,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 219.86143958272282,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 219.86143958272297,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 227.42777279833612,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 227.42777279833592,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
     "import_value": 170.99585811588764,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 158.17287476197555,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 158.17287476197578,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 267.6228652908819,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 267.6228652908818,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 298.93414365213897,
-    "commodity": "Total Imports",
-    "source_country": "Tanzania"
+    "import_value": 298.9341436521392,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 96.55224953855134,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 157.32920829756972,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 151.85339941341343,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 110.89983248909338,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "quarter": "2025Q1",
+    "import_value": 151.3010633501802,
+    "source_country": "Tanzania",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 122.35774641909295,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 122.35774641909303,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 110.69071275319513,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 110.69071275319526,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 127.00952063897532,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 127.0095206389752,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 70.63943319377385,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 70.63943319377401,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 99.54162459980274,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 99.54162459980276,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 245.08149268338448,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 245.0814926833845,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 215.20945217095635,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 215.20945217095618,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 211.22111726016584,
-    "commodity": "Total Imports",
-    "source_country": "Kenya"
+    "import_value": 211.22111726016598,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 99.1947501292397,
-    "commodity": "Total Imports",
-    "source_country": "India"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 152.16387813632562,
-    "commodity": "Total Imports",
-    "source_country": "India"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 111.48840037152604,
-    "commodity": "Total Imports",
-    "source_country": "India"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 97.80276570751249,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "quarter": "2025Q1",
+    "import_value": 135.34651134853993,
+    "source_country": "Kenya",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 173.4752326665138,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 173.47523266651348,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 183.2853728822137,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 183.28537288221338,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 165.8605470745419,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 165.86054707454176,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 115.3597610402159,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 115.35976104021601,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 144.4646070248474,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 144.46460702484745,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 151.50913832230532,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 151.50913832230583,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 117.0224685217164,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 117.02246852171643,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 101.82885923593503,
-    "commodity": "Total Imports",
-    "source_country": "India"
+    "import_value": 101.828859235935,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 75.27032081689703,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 112.47050678681809,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 143.73248520754885,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 86.27927368912414,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "quarter": "2025Q1",
+    "import_value": 115.65179035966133,
+    "source_country": "India",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 90.09586207492718,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 90.09586207492713,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 72.39933752442457,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 72.39933752442451,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 89.43228939748057,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 89.43228939748072,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 86.50304344546228,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 86.50304344546247,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 96.6152213043245,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 96.61522130432428,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 102.67290858740759,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 95.90520612910616,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 87.75765566329264,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 87.7576556632927,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 96.63555229033614,
-    "commodity": "Total Imports",
-    "source_country": "United Arab Emirates"
+    "import_value": 96.63555229033568,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 0.10946391163705381,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 0.13862757980998697,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 17.062781472066177,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 39.77124889414275,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "quarter": "2025Q1",
+    "import_value": 81.08823531817124,
+    "source_country": "United Arab Emirates",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 52.1873073129268,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 52.18730731292682,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 45.42625815428235,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 45.426258154282344,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 58.18977371026043,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 58.18977371026045,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 71.1179884670246,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 71.11798846702453,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
     "import_value": 60.23770823619534,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 56.84415799741338,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 56.84415799741327,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 63.42921815814834,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
+    "import_value": 63.42921815814832,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 75.13444643544568,
-    "commodity": "Total Imports",
-    "source_country": "Uganda"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 20.445531366076153,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 56.70422550115163,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 35.37991788066285,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 25.946690606927085,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 25.22370396864258,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 25.23021114012141,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 35.961088791730326,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 78.79409780534824,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 46.94237389330483,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 12.480575221118828,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 14.85857825388964,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 55.745399907220495,
-    "commodity": "Total Imports",
-    "source_country": "South Africa"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 16.400562936719645,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 20.027096737019193,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 19.133953887956817,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 49.94581531095716,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 3.2368004231179355,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 0.0027288732872946726,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 32.236030833294016,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 79.00747739952394,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 50.31816780442414,
-    "commodity": "Total Imports",
-    "source_country": "Burkina Faso"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 13.313123120999364,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 16.623393689655558,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 19.316657421159373,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 9.957640520384034,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 22.210368542474146,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 21.76336171179303,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 25.424301585912627,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 20.60213084110318,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 21.3867571227705,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 18.822938698114985,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 35.8059811988748,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 42.418297164568905,
-    "commodity": "Total Imports",
-    "source_country": "Malaysia"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 22.565100001362556,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 20.504539051807853,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 22.114720800425996,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 15.860177511729622,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 22.66832102678734,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 23.004452274228353,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 26.392409740687498,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 25.830732342660905,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 23.40074915373278,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 26.384064037041988,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 29.24524140017308,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 28.014673224010753,
-    "commodity": "Total Imports",
-    "source_country": "Japan"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 10.438873583838776,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 11.885024789569988,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 8.29697494477279,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 8.032705393487328,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 4.301334509085886,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 5.8334214563727995,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 8.04732247001348,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 11.249193898396653,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 13.962641453694378,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 10.852233314012961,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 20.614255887793625,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 26.500726929434713,
-    "commodity": "Total Imports",
-    "source_country": "Democratic Republic of the Congo"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 13.692987888822046,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 15.005093614989516,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 19.08923644072694,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 20.148850833417388,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 33.39505267385828,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 28.023489013967435,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 36.440858257122756,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 15.677711125051433,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 16.30195312176597,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 33.200826275043205,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 19.975466733787066,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 21.650713805990804,
-    "commodity": "Total Imports",
-    "source_country": "Germany"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 11.34465434221365,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 23.825288961771847,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 16.9659777119318,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 14.151830769171347,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 20.39589670858793,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 18.263739244270802,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 12.444064654093923,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 16.97058665601796,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 9.418248408921164,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 14.270844335686009,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 17.872626079117545,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 19.14247527934076,
-    "commodity": "Total Imports",
-    "source_country": "Egypt"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 23.288399919754216,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 30.241760090082124,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 18.72693244233989,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 20.682808700409268,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2023Q1",
-    "import_value": 19.569163530405035,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2023Q2",
-    "import_value": 20.92605152488818,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2023Q3",
-    "import_value": 23.034466917136914,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2023Q4",
-    "import_value": 16.79292671548245,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2024Q1",
-    "import_value": 21.18173667936008,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2024Q2",
-    "import_value": 21.308257442898324,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2024Q3",
-    "import_value": 22.428503868409795,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2024Q4",
-    "import_value": 18.693389859066368,
-    "commodity": "Total Imports",
-    "source_country": "United States"
-  },
-  {
-    "quarter": "2022Q1",
-    "import_value": 0.02657808581915089,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 6.699715897665841,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 0.0004983952577491757,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 0.024637756871020617,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 75.13444643544562,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 59.135891598864404,
+    "source_country": "Uganda",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
     "import_value": 0.008959250748744653,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 118.34044154501407,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 118.340441545014,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 33.7107271732204,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 33.71072717322035,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 41.85928240601452,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 41.85928240601458,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 86.86583556187445,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 86.86583556187436,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 126.01823523888406,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 126.01823523888415,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 162.23612945748727,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 162.23612945748724,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 18.665667207985848,
-    "commodity": "Total Imports",
-    "source_country": "Cameroon"
+    "import_value": 18.665667207985813,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 18.30622071354258,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 23.272517104239284,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 26.92610461062773,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 58.74293683056394,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "quarter": "2025Q1",
+    "import_value": 58.61116890319137,
+    "source_country": "Cameroon",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 22.959293686435498,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 22.21036854247413,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 18.371984486260814,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 21.763361711793035,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 26.99184086082767,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 25.424301585912623,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 18.958412475348233,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 20.602130841103186,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 16.119440690189034,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 21.386757122770508,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 18.82293869811499,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 35.8059811988748,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 42.418297164568905,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 45.2021534653468,
+    "source_country": "Malaysia",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 19.569163530405014,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 20.926051524888187,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 23.034466917136907,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 16.79292671548245,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 21.181736679360082,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 21.308257442898302,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 22.428503868409795,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 18.69338985906637,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 37.27615295589491,
+    "source_country": "United States",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 22.66832102678733,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 23.00445227422835,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 26.3924097406875,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 25.830732342660898,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 23.40074915373279,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 26.38406403704202,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 29.245241400173086,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 28.014673224010757,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 34.373522670941654,
+    "source_country": "Japan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 33.39505267385827,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 28.023489013967392,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 36.440858257122784,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 15.677711125051427,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 16.301953121765976,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 33.20082627504323,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 19.975466733787087,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 21.650713805990826,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 23.005043177136844,
+    "source_country": "Germany",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 22.959293686435476,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 18.3719844862608,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 26.991840860827725,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 18.958412475348254,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 16.119440690189027,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
     "import_value": 17.153615370791425,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 19.49523015661571,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 19.495230156615705,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 18.462861237725054,
-    "commodity": "Total Imports",
-    "source_country": "Belgium"
+    "import_value": 18.462861237725033,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 31.106390167657338,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 23.969485614669157,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 16.541783716667208,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 19.57110179467587,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "quarter": "2025Q1",
+    "import_value": 18.591706676490396,
+    "source_country": "Belgium",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 33.07697835475071,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 25.223703968642564,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 42.946380077946046,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 25.230211140121416,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 35.961088791730326,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 78.79409780534829,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 46.94237389330478,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 12.480575221118826,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 14.858578253889641,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 55.74539990722043,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 18.253382308788634,
+    "source_country": "South Africa",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 33.076978354750686,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 42.94638007794604,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
     "import_value": 70.04973934310979,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 50.829223330031944,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 50.82922333003194,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 13.106193606111276,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 13.106193606111287,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 17.799304898277807,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 17.7993048982778,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
     "import_value": 16.9541586160437,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 15.569346958946475,
-    "commodity": "Total Imports",
-    "source_country": "Turkey"
+    "import_value": 15.569346958946474,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 31.170188121050618,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 22.806285292262082,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 41.60124974479159,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 52.44180741365664,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "quarter": "2025Q1",
+    "import_value": 14.906112714735862,
+    "source_country": "Turkey",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 41.761303315189124,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 20.395896708587934,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 69.99242436153143,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 18.263739244270802,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 53.4393825034781,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 12.444064654093927,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 33.17693962954964,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 16.970586656017975,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 10.91640702784975,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 9.41824840892116,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 5.873112676790358,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 14.270844335686007,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 23.72812373928413,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 17.87262607911754,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 13.48666619160563,
-    "commodity": "Total Imports",
-    "source_country": "Saudi Arabia"
+    "import_value": 19.14247527934077,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 3.647600766152149,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 1.7717165468001932,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 16.01108664469211,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 12.27858577393479,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "quarter": "2025Q1",
+    "import_value": 14.489701468143933,
+    "source_country": "Egypt",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 24.154885343917595,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "import_value": 12.907790050673105,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 4.141403145671176,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 4.351267063395516,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 17.3460247168505,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 17.614160330687145,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 14.183535188805187,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.288737679451442,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 8.706658879995924,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 13.54252873245873,
+    "source_country": "Pakistan",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 3.6457055404640784,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 0.5523304505307716,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 7.365378650734626,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 28.48634056636826,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 18.55922847701246,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 19.993761765821308,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.714689771738525,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 7.843380530306384,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 13.098939404209862,
+    "source_country": "Brazil",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 24.154885343917606,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
     "import_value": 14.617314743853886,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 18.21993273338777,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "import_value": 18.21993273338776,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 18.367387185861404,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "import_value": 18.367387185861407,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 5.020650232451687,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "import_value": 5.020650232451683,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
     "import_value": 29.899654749206316,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
     "import_value": 16.640727506630956,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
-    "import_value": 13.38854599617508,
-    "commodity": "Total Imports",
-    "source_country": "Russia"
+    "import_value": 13.388545996175075,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
-    "quarter": "2022Q1",
-    "import_value": 9.973460163647895,
-    "commodity": "Total Imports",
-    "source_country": "France"
-  },
-  {
-    "quarter": "2022Q2",
-    "import_value": 12.868092072814388,
-    "commodity": "Total Imports",
-    "source_country": "France"
-  },
-  {
-    "quarter": "2022Q3",
-    "import_value": 15.43106943412384,
-    "commodity": "Total Imports",
-    "source_country": "France"
-  },
-  {
-    "quarter": "2022Q4",
-    "import_value": 9.185085643735341,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "quarter": "2025Q1",
+    "import_value": 12.697723786210576,
+    "source_country": "Russia",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q1",
-    "import_value": 14.124219245892373,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 4.301334509085885,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q2",
-    "import_value": 23.004129883332475,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 5.8334214563727995,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q3",
-    "import_value": 13.690856944907667,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 8.047322470013482,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2023Q4",
-    "import_value": 16.087919750638566,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 11.24919389839665,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q1",
-    "import_value": 7.781073748735513,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 13.962641453694376,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q2",
-    "import_value": 8.997663957905976,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 10.852233314012956,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q3",
-    "import_value": 10.06981094211209,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "import_value": 20.61425588779364,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q4",
+    "import_value": 26.500726929434702,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 11.869878035322595,
+    "source_country": "Democratic Republic of the Congo",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q1",
+    "import_value": 14.124219245892375,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q2",
+    "import_value": 23.00412988333251,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q3",
+    "import_value": 13.690856944907676,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2023Q4",
+    "import_value": 16.087919750638555,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q1",
+    "import_value": 7.781073748735518,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q2",
+    "import_value": 8.997663957905973,
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2024Q3",
+    "import_value": 10.069810942112085,
+    "source_country": "France",
+    "data_source": "2025Q1"
   },
   {
     "quarter": "2024Q4",
     "import_value": 11.995519800899027,
-    "commodity": "Total Imports",
-    "source_country": "France"
+    "source_country": "France",
+    "data_source": "2025Q1"
+  },
+  {
+    "quarter": "2025Q1",
+    "import_value": 11.34772578390165,
+    "source_country": "France",
+    "data_source": "2025Q1"
   }
 ]

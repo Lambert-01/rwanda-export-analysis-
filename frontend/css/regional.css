@@ -1,0 +1,194 @@
+/* ============================================
+    RWANDA EXPORT EXPLORER - REGIONAL.HTML CSS
+    Regional Analysis Page Styles
+    ============================================ */
+
+/* Regional Page Specific Styles */
+.regional-hero {
+    background: linear-gradient(135deg, #00AF54 0%, #FCDD09 50%, #00205b 100%);
+}
+
+/* Regional Stats Cards */
+.regional-stats-card {
+    animation: zoomIn 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.regional-stats-card:nth-child(1) { animation-delay: 0.1s; }
+.regional-stats-card:nth-child(2) { animation-delay: 0.2s; }
+.regional-stats-card:nth-child(3) { animation-delay: 0.3s; }
+.regional-stats-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* EAC Trade Chart */
+.eac-trade-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00AF54;
+}
+
+.eac-trade-container #eac-trade-chart {
+    height: 300px;
+    width: 100%;
+}
+
+/* Continental Distribution Chart */
+.continental-chart-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #FCDD09;
+}
+
+.continental-chart-container #continental-chart {
+    height: 300px;
+    width: 100%;
+}
+
+/* Regional Comparison Chart */
+.regional-comparison-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00A1F1;
+}
+
+.regional-comparison-container #regional-comparison-chart {
+    height: 300px;
+    width: 100%;
+}
+
+/* Regional Export Chart */
+.regional-export-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #6f42c1;
+}
+
+.regional-export-container #regional-export-chart {
+    height: 300px;
+    width: 100%;
+}
+
+/* Regional Stats Layout */
+.regional-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.regional-stats .stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s;
+}
+
+.regional-stats .stat-item:hover {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0 -0.75rem;
+}
+
+.regional-stats .stat-item:last-child {
+    border-bottom: none;
+}
+
+.regional-stats .stat-label {
+    font-weight: 500;
+    color: #64748b;
+}
+
+.regional-stats .stat-value {
+    font-weight: 700;
+    color: #1f2937;
+    font-size: 1.125rem;
+}
+
+/* Regional Analysis Specific Charts */
+.regional-chart-card {
+    animation: slideInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.regional-chart-card:nth-child(1) { animation-delay: 0.5s; }
+.regional-chart-card:nth-child(2) { animation-delay: 0.6s; }
+.regional-chart-card:nth-child(3) { animation-delay: 0.7s; }
+.regional-chart-card:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Regional Loading States */
+.regional-loading .chart-container canvas {
+    opacity: 0.6;
+}
+
+/* Responsive Design for Regional Page */
+@media (max-width: 768px) {
+    .eac-trade-container,
+    .continental-chart-container,
+    .regional-comparison-container,
+    .regional-export-container {
+        padding: 1rem;
+    }
+
+    .eac-trade-container #eac-trade-chart,
+    .continental-chart-container #continental-chart,
+    .regional-comparison-container #regional-comparison-chart,
+    .regional-export-container #regional-export-chart {
+        height: 250px;
+    }
+
+    .regional-stats {
+        gap: 0.75rem;
+    }
+
+    .regional-stats .stat-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Print Styles for Regional Page */
+@media print {
+    .navbar, .footer {
+        display: none;
+    }
+
+    .eac-trade-container,
+    .continental-chart-container,
+    .regional-comparison-container,
+    .regional-export-container {
+        break-inside: avoid;
+        padding: 1rem;
+    }
+}

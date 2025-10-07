@@ -41,12 +41,30 @@ Chart.defaults.elements.bar.borderSkipped = false;
 /************************************
  * 2. UTILITY FUNCTIONS             *
  ************************************/
-// Generate a linear gradient for chart backgrounds
+// Generate a linear gradient for chart backgrounds with validation
 function createGradient(ctx, area, color1, color2) {
-    const gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
-    gradient.addColorStop(0, color1);
-    gradient.addColorStop(1, color2);
-    return gradient;
+    try {
+        // Validate parameters
+        if (!ctx || !area || typeof color1 !== 'string' || typeof color2 !== 'string') {
+            console.warn('Invalid gradient parameters:', { ctx: !!ctx, area: !!area, color1, color2 });
+            return color1 || '#2d7dd2'; // Fallback to solid color
+        }
+
+        // Validate area properties
+        if (typeof area.bottom !== 'number' || typeof area.top !== 'number' ||
+            !isFinite(area.bottom) || !isFinite(area.top)) {
+            console.warn('Invalid gradient area:', area);
+            return color1 || '#2d7dd2'; // Fallback to solid color
+        }
+
+        const gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
+        gradient.addColorStop(0, color1);
+        gradient.addColorStop(1, color2);
+        return gradient;
+    } catch (error) {
+        console.error('Error creating gradient:', error);
+        return color1 || '#2d7dd2'; // Fallback to solid color
+    }
 }
 // Format large numbers (e.g., 1,000,000 -> 1M)
 function formatNumber(num) {
@@ -860,12 +878,18 @@ function renderDemoCharts() {
 }
 
 /************************************
- * 10. ON LOAD                      *
- ************************************/
+  * 10. ON LOAD                      *
+  ************************************/
 document.addEventListener('DOMContentLoaded', function() {
-    // Try to fetch real data, fallback to demo
-    fetchAndRenderAllCharts().catch(renderDemoCharts);
-    setChartAriaLabels();
+    // Only initialize if main.js hasn't already done so
+    if (typeof window.mainInitialized === 'undefined') {
+        console.log('🎨 Charts.js initializing charts...');
+        // Try to fetch real data, fallback to demo
+        fetchAndRenderAllCharts().catch(renderDemoCharts);
+        setChartAriaLabels();
+    } else {
+        console.log('🎨 Charts.js skipped - main.js already initialized');
+    }
 });
 
 /************************************

@@ -31,7 +31,7 @@ router.get('/quarterly', async (req, res) => {
          },
          {
            $project: {
-             period: '$period',
+             period: '$period', 
              exports: { $round: ['$exports', 2] },
              count: '$count'
            }
@@ -131,9 +131,7 @@ router.get('/destinations', async (req, res) => {
            $project: {
              country: '$country',
              value: { $round: ['$value', 2] },
-             count: '$count',
-             lat: getCountryCoordinates('$country').lat,
-             lng: getCountryCoordinates('$country').lng
+             count: '$count'
            }
          },
          {

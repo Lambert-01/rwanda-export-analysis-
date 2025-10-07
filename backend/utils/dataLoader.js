@@ -9,6 +9,9 @@ const path = require('path');
 // Base directory for processed data
 const PROCESSED_DATA_DIR = path.join(__dirname, '../../data/processed');
 
+// Alternative path if the above doesn't work
+const ALTERNATIVE_DATA_DIR = path.join(__dirname, '../../../data/processed');
+
 /**
  * Load JSON data from a file in the processed data directory
  * @param {string} filename - The name of the JSON file to load
@@ -17,13 +20,28 @@ const PROCESSED_DATA_DIR = path.join(__dirname, '../../data/processed');
  */
 function loadJsonData(filename) {
   try {
-    const filePath = path.join(PROCESSED_DATA_DIR, filename);
+    // Try the primary path first
+    let filePath = path.join(PROCESSED_DATA_DIR, filename);
+
+    // If file doesn't exist in primary path, try alternative path
+    if (!fs.existsSync(filePath)) {
+      filePath = path.join(ALTERNATIVE_DATA_DIR, filename);
+      console.log(`📁 Trying alternative path for ${filename}: ${filePath}`);
+    }
+
+    if (!fs.existsSync(filePath)) {
+      throw new Error(`File not found in either location: ${filename}`);
+    }
+
     const data = fs.readFileSync(filePath, 'utf8');
+    console.log(`✅ Successfully loaded ${filename} from ${filePath}`);
     return JSON.parse(data);
   } catch (error) {
     if (error.code === 'ENOENT') {
+      console.warn(`⚠️ File not found: ${filename}`);
       throw new Error(`File not found: ${filename}`);
     }
+    console.error(`❌ Error loading ${filename}:`, error.message);
     throw new Error(`Error loading ${filename}: ${error.message}`);
   }
 }

@@ -1,0 +1,190 @@
+/* ============================================
+    RWANDA EXPORT EXPLORER - EXPORTS.HTML CSS
+    Export Analysis Page Styles
+    ============================================ */
+
+/* Export Page Specific Hero Section */
+.exports-hero {
+    background: linear-gradient(135deg, #00AF54 0%, #00205b 50%, #FCDD09 100%);
+    position: relative;
+}
+
+/* Export Stats Cards */
+.export-stats-card {
+    animation: slideInLeft 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.export-stats-card:nth-child(1) { animation-delay: 0.1s; }
+.export-stats-card:nth-child(2) { animation-delay: 0.2s; }
+.export-stats-card:nth-child(3) { animation-delay: 0.3s; }
+.export-stats-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Export Map Container */
+.export-map-container {
+    background: #f8fafc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.export-map-container #export-map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Export Charts Specific Styles */
+.export-chart-card {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.export-chart-card:nth-child(1) { animation-delay: 0.5s; }
+.export-chart-card:nth-child(2) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Top Destinations List */
+.destinations-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.destination-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s;
+}
+
+.destination-item:hover {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0 -0.75rem;
+}
+
+.destination-rank {
+    background: linear-gradient(135deg, #00A1F1, #00AF54);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.destination-info {
+    flex: 1;
+    margin-left: 0.75rem;
+}
+
+.destination-name {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 0.9rem;
+}
+
+.destination-value {
+    font-size: 0.8rem;
+    color: #00AF54;
+    font-weight: 500;
+}
+
+/* Export Table Styles */
+.export-analysis-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.export-analysis-table th {
+    background: linear-gradient(135deg, #00A1F1, #00AF54);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.export-analysis-table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.export-analysis-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Export Page Specific Animations */
+.export-loading {
+    opacity: 0.7;
+}
+
+.export-loading .chart-container canvas {
+    opacity: 0.5;
+}
+
+/* Responsive Design for Exports Page */
+@media (max-width: 768px) {
+    .export-map-container #export-map {
+        height: 300px;
+    }
+
+    .destinations-list {
+        max-height: 250px;
+    }
+
+    .destination-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .destination-info {
+        margin-left: 0;
+    }
+}
+
+/* Print Styles for Exports Page */
+@media print {
+    .navbar, .footer {
+        display: none;
+    }
+
+    .export-map-container {
+        break-inside: avoid;
+    }
+
+    .export-analysis-table {
+        font-size: 0.8rem;
+    }
+}

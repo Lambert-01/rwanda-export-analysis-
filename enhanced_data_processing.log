@@ -1,0 +1,8 @@
+2025-10-05 18:43:54,213 - INFO - EnhancedDataProcessor initialized
+2025-10-05 18:43:54,213 - INFO - Processing 2 Excel files
+2025-10-05 18:43:54,213 - INFO - Processing file: 2024Q4_Trade_report_annexTables.xlsx
+2025-10-05 18:43:54,214 - ERROR - Main execution failed: Excel file not found: ..\data\raw\2024Q4_Trade_report_annexTables.xlsx
+2025-10-05 18:47:39,872 - INFO - EnhancedDataProcessor initialized
+2025-10-05 18:47:39,873 - WARNING - File not found: 2024Q4_Trade_report_annexTables.xlsx
+2025-10-05 18:47:39,873 - WARNING - File not found: 2025Q1_Trade_report_annexTables.xlsx
+2025-10-05 18:47:39,874 - ERROR - Main execution failed: No Excel files found in the raw data directory

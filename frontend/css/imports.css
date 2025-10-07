@@ -1,0 +1,175 @@
+/* ============================================
+    RWANDA EXPORT EXPLORER - IMPORTS.HTML CSS
+    Import Analysis Page Styles
+    ============================================ */
+
+/* Import Page Specific Styles */
+.imports-hero {
+    background: linear-gradient(135deg, #FCDD09 0%, #00205b 50%, #00A1F1 100%);
+}
+
+/* Import Stats Cards */
+.import-stats-card {
+    animation: slideInRight 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.import-stats-card:nth-child(1) { animation-delay: 0.1s; }
+.import-stats-card:nth-child(2) { animation-delay: 0.2s; }
+.import-stats-card:nth-child(3) { animation-delay: 0.3s; }
+.import-stats-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Import Charts Layout */
+.import-charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+    .import-charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Import Categories Chart */
+.import-categories-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #FCDD09;
+}
+
+/* Import Trends Chart */
+.import-trends-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00A1F1;
+}
+
+/* Trade Dependencies Chart */
+.trade-dependencies-container {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00AF54;
+}
+
+/* Import Table Styles */
+.import-analysis-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.import-analysis-table th {
+    background: linear-gradient(135deg, #FCDD09, #00205b);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.import-analysis-table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.import-analysis-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Import Search Box */
+.import-search-container {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.import-search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 0 0.75rem;
+    border: 1px solid #e2e8f0;
+    transition: border-color 0.2s;
+}
+
+.import-search-box:focus-within {
+    border-color: #00A1F1;
+    box-shadow: 0 0 0 3px rgba(0, 161, 241, 0.1);
+}
+
+.import-search-box i {
+    color: #9ca3af;
+    margin-right: 0.5rem;
+}
+
+.import-search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Import Page Loading States */
+.import-loading .chart-container canvas {
+    opacity: 0.6;
+}
+
+/* Responsive Design for Imports Page */
+@media (max-width: 768px) {
+    .import-charts-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .import-categories-container,
+    .import-trends-container,
+    .trade-dependencies-container {
+        padding: 1rem;
+    }
+
+    .import-search-container {
+        padding: 0.75rem;
+    }
+}
+
+/* Print Styles for Imports Page */
+@media print {
+    .navbar, .footer {
+        display: none;
+    }
+
+    .import-charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .import-analysis-table {
+        font-size: 0.8rem;
+    }
+}

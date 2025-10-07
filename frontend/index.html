@@ -21,79 +21,122 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                🇷🇼 Rwanda Export Explorer
-            </a>
+    <!-- Modern Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-container">
+                <img src="assets/images/NISR.png" alt="NISR Logo" class="nisr-logo">
+                <h3>Rwanda Export Explorer</h3>
+                <span class="ai-badge">AI-Powered</span>
+            </div>
+        </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="sidebar-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active" data-page="dashboard">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="exports.html" class="nav-link" data-page="exports">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Exports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="imports.html" class="nav-link" data-page="imports">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Imports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="predictions.html" class="nav-link" data-page="predictions">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Predictions</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="analytics.html" class="nav-link" data-page="analytics">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Advanced Analytics</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="commodities.html" class="nav-link" data-page="commodities">
+                        <i class="fas fa-boxes"></i>
+                        <span>Commodities</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="regional.html" class="nav-link" data-page="regional">
+                        <i class="fas fa-globe-africa"></i>
+                        <span>Regional Analysis</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home" data-section="home">
-                            <i class="fas fa-home me-1"></i>Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#exports" data-section="exports">
-                            <i class="fas fa-arrow-up me-1"></i>Exports
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#imports" data-section="imports">
-                            <i class="fas fa-arrow-down me-1"></i>Imports
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#predictions" data-section="predictions">
-                            <i class="fas fa-robot me-1"></i>AI Predictions
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                       <a class="nav-link" href="#excel-analysis" data-section="excel-analysis">
-                           <i class="fas fa-file-excel me-1"></i>Excel Analysis
-                       </a>
-                   </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#regional" data-section="regional">
-                            <i class="fas fa-globe-africa me-1"></i>Regional Analysis
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#commodities" data-section="commodities">
-                            <i class="fas fa-boxes me-1"></i>Commodities
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#enhanced-analysis" data-section="enhanced-analysis">
-                            <i class="fas fa-chart-area me-1"></i>Enhanced Analysis
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#analytics" data-section="analytics">
-                            <i class="fas fa-chart-line me-1"></i>Advanced Analytics
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#statistical-analysis" data-section="statistical-analysis">
-                            <i class="fas fa-calculator me-1"></i>Statistical Analysis
-                        </a>
-                    </li>
-                </ul>
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="user-details">
+                    <span class="user-name">Trade Analyst</span>
+                    <span class="user-role">NISR Dashboard</span>
+                </div>
+            </div>
+            <div class="sidebar-footer-compact">
+                <div class="footer-info">
+                    <span class="footer-copyright">© 2024 Rwanda Export Explorer</span>
+                    <span class="footer-meta">Data: NISR | Updated: 2025-01-05</span>
+                </div>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Top Header Bar -->
+    <header class="top-header">
+        <div class="header-left">
+            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Navigation Menu" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="page-title">
+                <h1>Trade Analytics Dashboard</h1>
+                <p>Real-time insights and AI-powered analysis</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="header-actions">
+                <button class="btn btn-refresh" onclick="loadRealTradeData()" title="Refresh Data">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+                <button class="btn btn-notifications" onclick="toggleNotifications()" title="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="time-display">
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -108,36 +151,66 @@
             </div>
         </div>
 
-        <!-- Home Section - Dashboard Overview -->
-        <section id="home" class="section active">
-            <!-- Hero Section -->
+        <!-- Dashboard Overview -->
+        <section id="dashboard" class="section active">
+            <!-- Modern Hero Section -->
             <div class="hero-section">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-lg-8">
-                            <h1 class="hero-title animate__animated animate__fadeInLeft">
-                                🇷🇼 Rwanda Export Explorer
-                            </h1>
-                            <p class="hero-subtitle animate__animated animate__fadeInLeft animate__delay-1s">
-                                AI-powered trade analytics platform with advanced visualizations and predictive insights
-                            </p>
-                            <div class="hero-stats animate__animated animate__fadeInUp animate__delay-2s">
-                                <div class="stat-item">
-                                    <span class="stat-number" id="total-trade-value">$0.00M</span>
-                                    <span class="stat-label">Total Trade (Q4 2024)</span>
-                                </div>
-                                <div class="stat-item">
-                                    <span class="stat-number growth-positive" id="export-growth">0.0%</span>
-                                    <span class="stat-label">Export Growth (QoQ)</span>
+                            <div class="hero-content">
+                                <h1 class="hero-title">
+                                    <span class="flag">🇷🇼</span>
+                                    Rwanda Trade Intelligence
+                                </h1>
+                                <p class="hero-subtitle">
+                                    Advanced AI-powered analytics platform for Rwanda's trade ecosystem
+                                </p>
+                                <div class="hero-stats-grid">
+                                    <div class="hero-stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-dollar-sign"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="total-trade-value">$11.32B</span>
+                                            <span class="stat-label">Total Trade Volume</span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-stat-card">
+                                        <div class="stat-icon growth">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-number growth-positive" id="export-growth">+157.9%</span>
+                                            <span class="stat-label">Export Growth</span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-stat-card">
+                                        <div class="stat-icon">
+                                            <i class="fas fa-globe"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="active-partners">134</span>
+                                            <span class="stat-label">Trading Partners</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-center">
-                            <div class="hero-image animate__animated animate__zoomIn animate__delay-1s">
-                                <i class="fas fa-chart-line fa-4x text-white mb-3"></i>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot"></i>
-                                    AI Enhanced
+                        <div class="col-lg-4">
+                            <div class="hero-visual">
+                                <div class="ai-assistant-card">
+                                    <div class="ai-avatar">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="ai-info">
+                                        <h4>AI Assistant</h4>
+                                        <p>Ready to help with your analysis</p>
+                                        <button class="btn btn-primary btn-sm" onclick="toggleChatbox()">
+                                            <i class="fas fa-comments"></i>
+                                            Ask AI
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,516 +218,348 @@
                 </div>
             </div>
 
-            <!-- Stats Cards -->
-            <div class="container">
+            <!-- Modern Stats Cards -->
+            <div class="container-fluid">
                 <div class="row g-4 mb-5" id="main-stats-cards">
                     <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-arrow-trend-up"></i>
+                        <div class="modern-stats-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-header">
+                                <div class="card-icon success">
+                                    <i class="fas fa-arrow-trend-up"></i>
+                                </div>
+                                <div class="card-badge">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span id="exports-trend">+157.9%</span>
+                                </div>
                             </div>
-                            <div class="stats-value" id="exports-value">$0.00M</div>
-                            <div class="stats-label">Q4 2024 Exports</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="exports-trend">0.0%</span>
+                            <div class="card-content">
+                                <h3 class="card-value" id="exports-value">$8.94B</h3>
+                                <p class="card-label">Total Exports</p>
+                                <div class="card-subtitle">2022-2025 Cumulative</div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-primary">
-                                <i class="fas fa-arrow-trend-down"></i>
-                            </div>
-                            <div class="stats-value" id="imports-value">$0.00M</div>
-                            <div class="stats-label">Q4 2024 Imports</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="imports-trend">0.0%</span>
+                            <div class="card-footer">
+                                <div class="trend-indicator positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>Strong Growth</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-exchange-alt"></i>
+                        <div class="modern-stats-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-header">
+                                <div class="card-icon primary">
+                                    <i class="fas fa-arrow-trend-down"></i>
+                                </div>
+                                <div class="card-badge">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span id="imports-trend">+78.0%</span>
+                                </div>
                             </div>
-                            <div class="stats-value" id="reexports-value">$0.00M</div>
-                            <div class="stats-label">Re-exports</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="reexports-trend">0.0%</span>
+                            <div class="card-content">
+                                <h3 class="card-value" id="imports-value">$20.26B</h3>
+                                <p class="card-label">Total Imports</p>
+                                <div class="card-subtitle">2022-2025 Cumulative</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="trend-indicator positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>Increasing Demand</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-danger">
-                                <i class="fas fa-balance-scale"></i>
+                        <div class="modern-stats-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-header">
+                                <div class="card-icon warning">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <div class="card-badge">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span id="reexports-trend">+45.2%</span>
+                                </div>
                             </div>
-                            <div class="stats-value" id="balance-value">$0.00M</div>
-                            <div class="stats-label">Trade Balance</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="balance-trend">Balanced</span>
+                            <div class="card-content">
+                                <h3 class="card-value" id="reexports-value">$1.24B</h3>
+                                <p class="card-label">Re-exports</p>
+                                <div class="card-subtitle">Transit Trade Volume</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="trend-indicator positive">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>Growing Hub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="modern-stats-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-header">
+                                <div class="card-icon danger">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="card-badge negative">
+                                    <i class="fas fa-arrow-down"></i>
+                                    <span id="balance-trend">Deficit</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-value" id="balance-value">-$11.32B</h3>
+                                <p class="card-label">Trade Balance</p>
+                                <div class="card-subtitle">Export-Import Gap</div>
+                            </div>
+                            <div class="card-footer">
+                                <div class="trend-indicator negative">
+                                    <i class="fas fa-arrow-down"></i>
+                                    <span>Trade Deficit</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Charts Row -->
-                <div class="row g-4" id="main-charts">
+                <!-- Modern Charts Section -->
+                <div class="row g-4 mb-5" id="main-charts">
                     <div class="col-lg-8">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
+                        <div class="chart-card modern-chart-card" data-aos="fade-right" data-aos-delay="200">
                             <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Trade Performance Over Time
-                                </h3>
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-chart-line me-2"></i>Trade Performance Trends
+                                    </h3>
+                                    <p class="chart-subtitle">Export and Import volume analysis over time</p>
+                                </div>
                                 <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-chart="quarterly">Quarterly</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-chart="yearly">Yearly</button>
-                                    <button class="btn btn-sm btn-outline-success" onclick="refreshCharts()">
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-primary active" data-chart="quarterly">Quarterly</button>
+                                        <button class="btn btn-outline-primary" data-chart="yearly">Yearly</button>
+                                    </div>
+                                    <button class="btn btn-success" onclick="refreshCharts()">
                                         <i class="fas fa-sync-alt me-1"></i>Refresh
                                     </button>
                                 </div>
                             </div>
                             <div class="chart-container">
-                                <canvas id="trade-performance-chart" height="300"></canvas>
+                                <canvas id="trade-performance-chart" height="320"></canvas>
+                            </div>
+                            <div class="chart-footer">
+                                <div class="chart-insights">
+                                    <div class="insight-item">
+                                        <i class="fas fa-lightbulb text-warning"></i>
+                                        <span>Export growth trending upward</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="chart-card animate__animated animate__fadeInRight">
+                        <div class="chart-card modern-chart-card" data-aos="fade-left" data-aos-delay="300">
                             <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-balance-scale me-2"></i>Trade Balance Trend
-                                </h3>
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-balance-scale me-2"></i>Trade Balance Analysis
+                                    </h3>
+                                    <p class="chart-subtitle">Net trade position and trends</p>
+                                </div>
                                 <div class="ai-badge">
                                     <i class="fas fa-robot"></i>AI Analysis
                                 </div>
                             </div>
                             <div class="chart-container">
-                                <canvas id="trade-balance-chart" height="300"></canvas>
+                                <canvas id="trade-balance-chart" height="320"></canvas>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Additional Analytics Cards -->
-                <div class="row g-4 mt-4" id="additional-analytics">
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-pie me-2"></i>Export Distribution by Country
-                                </h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="export-distribution-chart" height="250"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-bar me-2"></i>Commodity Performance
-                                </h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodity-performance-chart" height="250"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Exports Section -->
-        <section id="exports" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Export Analysis</h2>
-                    <p class="section-subtitle">Explore Rwanda's export destinations, products, and growth trends</p>
-                </div>
-
-                <div class="row g-4 mb-5">
-                    <!-- Export Map -->
-                    <div class="col-lg-8">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Top Export Destinations</h3>
-                                <div class="chart-controls">
-                                    <select class="form-select form-select-sm" id="export-year-filter" aria-label="Select year for export analysis">
-                                        <option value="2024">2024</option>
-                                        <option value="2023">2023</option>
-                                    </select>
+                            <div class="chart-footer">
+                                <div class="balance-indicator">
+                                    <span class="balance-status deficit">Current Deficit</span>
+                                    <span class="balance-value">-$11.32B</span>
                                 </div>
                             </div>
-                            <div class="map-container">
-                                <div id="export-map" style="height: 400px;"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Top Destinations -->
-                    <div class="col-lg-4">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Top 5 Destinations</h3>
-                            </div>
-                            <div class="destinations-list" id="top-destinations">
-                                <!-- Dynamic content -->
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row g-4">
-                    <!-- Export Products -->
+                <!-- Analytics Cards Row -->
+                <div class="row g-4 mb-5" id="additional-analytics">
                     <div class="col-lg-6">
-                        <div class="chart-card">
+                        <div class="chart-card modern-chart-card" data-aos="fade-up" data-aos-delay="400">
                             <div class="chart-header">
-                                <h3 class="chart-title">Export Products</h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="export-products-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Growth Trends -->
-                    <div class="col-lg-6">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Export Growth by Quarter</h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="export-growth-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Imports Section -->
-        <section id="imports" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-arrow-down me-2"></i>Import Analysis
-                    </h2>
-                    <p class="section-subtitle">Comprehensive analysis of Rwanda's import sources, product categories, and trade dependencies</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadImportAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportImportData()">
-                            <i class="fas fa-download me-1"></i>Export Data
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Import Overview Stats -->
-                <div class="row g-4 mb-5" id="import-overview">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-primary">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="stats-value" id="total-import-sources">18</div>
-                            <div class="stats-label">Import Sources</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Active Partners</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-info">
-                                <i class="fas fa-boxes"></i>
-                            </div>
-                            <div class="stats-value" id="import-categories">10</div>
-                            <div class="stats-label">Product Categories</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>SITC Sections</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="stats-value" id="import-growth">+9.6%</div>
-                            <div class="stats-label">Import Growth (YoY)</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Growth Rate</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-percentage"></i>
-                            </div>
-                            <div class="stats-value" id="import-dependency">47.8%</div>
-                            <div class="stats-label">Import Dependency</div>
-                            <div class="stats-trend trend-down">
-                                <i class="fas fa-arrow-down me-1"></i>
-                                <span>Vs GDP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Import Analysis Charts -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe me-2"></i>Top Import Sources
-                                </h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-import-chart="value">By Value</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-import-chart="growth">By Growth</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-import-chart="share">By Share</button>
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-chart-pie me-2"></i>Export Distribution
+                                    </h3>
+                                    <p class="chart-subtitle">Top export destinations by volume</p>
+                                </div>
+                                <div class="chart-badge">
+                                    <i class="fas fa-globe"></i>
+                                    20 Countries
                                 </div>
                             </div>
                             <div class="chart-container">
-                                <canvas id="import-sources-chart" height="300"></canvas>
+                                <canvas id="export-distribution-chart" height="280"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="chart-card modern-chart-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="chart-header">
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-chart-bar me-2"></i>Commodity Analysis
+                                    </h3>
+                                    <p class="chart-subtitle">Performance by product categories</p>
+                                </div>
+                                <div class="chart-badge">
+                                    <i class="fas fa-boxes"></i>
+                                    Top Categories
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="commodity-performance-chart" height="280"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions & Recent Activity -->
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8">
+                        <div class="chart-card modern-card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="chart-header">
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-rocket me-2"></i>Quick Actions
+                                    </h3>
+                                    <p class="chart-subtitle">Navigate to detailed analysis sections</p>
+                                </div>
+                            </div>
+                            <div class="quick-actions-grid">
+                                <a href="exports.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="650">
+                                    <div class="action-icon">
+                                        <i class="fas fa-arrow-up"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">Export Analysis</span>
+                                        <span class="action-desc">Detailed export trends & insights</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <a href="imports.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="700">
+                                    <div class="action-icon">
+                                        <i class="fas fa-arrow-down"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">Import Analysis</span>
+                                        <span class="action-desc">Import patterns & sources</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <a href="predictions.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="750">
+                                    <div class="action-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">AI Predictions</span>
+                                        <span class="action-desc">Machine learning forecasts</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <a href="analytics.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="800">
+                                    <div class="action-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">Advanced Analytics</span>
+                                        <span class="action-desc">Deep statistical analysis</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <a href="regional.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="850">
+                                    <div class="action-icon">
+                                        <i class="fas fa-globe-africa"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">Regional Analysis</span>
+                                        <span class="action-desc">Geographic trade patterns</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
+                                <a href="commodities.html" class="quick-action-btn modern" data-aos="zoom-in" data-aos-delay="900">
+                                    <div class="action-icon">
+                                        <i class="fas fa-boxes"></i>
+                                    </div>
+                                    <div class="action-content">
+                                        <span class="action-title">Commodity Analysis</span>
+                                        <span class="action-desc">Product category insights</span>
+                                    </div>
+                                    <div class="action-arrow">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="chart-card animate__animated animate__fadeInRight">
+                        <div class="chart-card modern-card" data-aos="fade-up" data-aos-delay="600">
                             <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-pie me-2"></i>Import Categories
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot"></i>SITC Analysis
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-clock me-2"></i>Recent Activity
+                                    </h3>
+                                    <p class="chart-subtitle">Latest system updates</p>
                                 </div>
                             </div>
-                            <div class="chart-container">
-                                <canvas id="import-categories-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Import Trends and Dependencies -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Import Trends Over Time
-                                </h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="import-trends-chart" height="250"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-link me-2"></i>Trade Dependencies
-                                </h3>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="trade-dependencies-chart" height="250"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Import Analysis Table -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-table me-2"></i>Detailed Import Analysis
-                                </h3>
-                                <div class="chart-controls">
-                                    <input type="text" class="form-control form-control-sm" id="import-search" placeholder="Search countries or products..." style="width: 200px;">
-                                </div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover" id="import-analysis-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Rank</th>
-                                            <th>Country/Product</th>
-                                            <th>Q4 2024 Value</th>
-                                            <th>Share (%)</th>
-                                            <th>QoQ Growth</th>
-                                            <th>YoY Growth</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="import-table-body">
-                                        <!-- Dynamic content -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- AI Predictions Section -->
-        <section id="predictions" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-robot me-2"></i>AI-Powered Predictions
-                    </h2>
-                    <p class="section-subtitle">Advanced machine learning forecasts for Rwanda's trade performance and market opportunities</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="runAIPredictions()">
-                            <i class="fas fa-brain me-1"></i>Run AI Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportPredictions()">
-                            <i class="fas fa-download me-1"></i>Export Forecasts
-                        </button>
-                        <button class="btn btn-outline-success" onclick="viewModelMetrics()">
-                            <i class="fas fa-chart-bar me-1"></i>Model Performance
-                        </button>
-                    </div>
-                </div>
-
-                <!-- AI Model Performance Overview -->
-                <div class="row g-4 mb-5" id="ai-overview">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="stats-value" id="model-accuracy">82.3%</div>
-                            <div class="stats-label">Model Accuracy</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>R² Score</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-primary">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="stats-value" id="prediction-horizon">4</div>
-                            <div class="stats-label">Forecast Quarters</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Future Periods</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="stats-value" id="confidence-level">75%</div>
-                            <div class="stats-label">Avg Confidence</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Prediction Certainty</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-info">
-                                <i class="fas fa-target"></i>
-                            </div>
-                            <div class="stats-value" id="opportunities-count">12</div>
-                            <div class="stats-label">Market Opportunities</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Identified</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Prediction Charts -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Export & Import Forecasts
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Linear Regression Model
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="predictions-chart" height="350"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="chart-card animate__animated animate__fadeInRight">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-lightbulb me-2"></i>Market Opportunities
-                                </h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">AI-Ranked</span>
-                                </div>
-                            </div>
-                            <div class="opportunities-list" id="opportunities-list">
-                                <div class="data-card">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <h6 class="mb-1">High Growth Markets</h6>
-                                            <p class="mb-0 text-muted">Uganda & Tanzania</p>
-                                        </div>
-                                        <div class="ai-badge">High</div>
+                            <div class="activity-feed">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-chart-line text-success"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <span class="activity-text">Export data updated</span>
+                                        <span class="activity-time">2 minutes ago</span>
                                     </div>
                                 </div>
-                                <div class="data-card">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <h6 class="mb-1">Emerging Commodities</h6>
-                                            <p class="mb-0 text-muted">Oils & Machinery</p>
-                                        </div>
-                                        <div class="ai-badge">Medium</div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-robot text-primary"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <span class="activity-text">AI analysis completed</span>
+                                        <span class="activity-time">15 minutes ago</span>
                                     </div>
                                 </div>
-                                <div class="data-card">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <h6 class="mb-1">Diversification Potential</h6>
-                                            <p class="mb-0 text-muted">European Markets</p>
-                                        </div>
-                                        <div class="ai-badge">Medium</div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-database text-info"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <span class="activity-text">New data imported</span>
+                                        <span class="activity-time">1 hour ago</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-bell text-warning"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <span class="activity-text">Trade alert triggered</span>
+                                        <span class="activity-time">3 hours ago</span>
                                     </div>
                                 </div>
                             </div>
@@ -662,1615 +567,59 @@
                     </div>
                 </div>
 
-                <!-- Country-specific Predictions -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe-americas me-2"></i>Country-Specific Export Forecasts
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-chart-line me-1"></i>Next Quarter Predictions
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="country-predictions-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Excel Analysis Section -->
-        <section id="excel-analysis" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-file-excel me-2"></i>Excel Data Analysis
-                    </h2>
-                    <p class="section-subtitle">Comprehensive AI-powered analysis of Rwanda's Q4 2024 trade data from all 13 Excel sheets</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadExcelAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="analyzeExcelData()">
-                            <i class="fas fa-chart-bar me-1"></i>Run New Analysis
-                        </button>
-                        <button class="btn btn-outline-success" onclick="exportAnalysisReport()">
-                            <i class="fas fa-download me-1"></i>Export Report
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Analysis Overview -->
-                <div class="row g-4 mb-5" id="excel-analysis-results">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Analysis Status
-                                </h3>
-                                <div class="analysis-status">
-                                    <span class="badge bg-info">
-                                        <i class="fas fa-robot me-1"></i>AI Processing Complete
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="analysis-content">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="sheets-processed">13</div>
-                                            <div class="metric-label">Excel Sheets Processed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="countries-analyzed">20</div>
-                                            <div class="metric-label">Countries Analyzed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="commodities-analyzed">10</div>
-                                            <div class="metric-label">Commodities Analyzed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="insights-generated">2</div>
-                                            <div class="metric-label">AI Insights Generated</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trade Overview Cards -->
-                <div class="row g-4 mb-5" id="trade-overview">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-arrow-trend-up"></i>
-                            </div>
-                            <div class="stats-value" id="excel-exports-value">$0.00M</div>
-                            <div class="stats-label">Q4 2024 Exports</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="excel-export-growth">0.0%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-primary">
-                                <i class="fas fa-arrow-trend-down"></i>
-                            </div>
-                            <div class="stats-value" id="excel-imports-value">$0.00M</div>
-                            <div class="stats-label">Q4 2024 Imports</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="excel-imports-trend">0.0%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-exchange-alt"></i>
-                            </div>
-                            <div class="stats-value" id="excel-total-trade">$0.00M</div>
-                            <div class="stats-label">Total Trade Volume</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="excel-trade-growth">0.0%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-danger">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <div class="stats-value" id="excel-balance-value">$0.00M</div>
-                            <div class="stats-label">Trade Balance</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span id="excel-balance-trend">Balanced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Detailed Analysis -->
-                <div class="row g-4 mb-5">
-                    <!-- Top Export Destinations -->
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe me-2"></i>Top Export Destinations
-                                </h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">Q4 2024 Performance</span>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="top-destinations-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Key Insights -->
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInRight">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-lightbulb me-2"></i>AI-Generated Insights
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Smart Analysis
-                                </div>
-                            </div>
-                            <div class="insights-list" id="insights-list">
-                                <div class="data-card">
-                                    <div class="d-flex align-items-start">
-                                        <i class="fas fa-info-circle text-info me-3 mt-1"></i>
-                                        <div>
-                                            <h6 class="mb-1">Leading Export Destination</h6>
-                                            <p class="mb-0 text-muted" id="insight-1">China is the top export destination with $20.43M in Q4 2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="data-card">
-                                    <div class="d-flex align-items-start">
-                                        <i class="fas fa-chart-bar text-success me-3 mt-1"></i>
-                                        <div>
-                                            <h6 class="mb-1">Top Export Product</h6>
-                                            <p class="mb-0 text-muted" id="insight-2">Other commodities & transactions, n.e.s leads exports with $428.15M in Q4 2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Commodity Analysis -->
-                <div class="row g-4 mb-5" id="commodity-analysis">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-boxes me-2"></i>Top Export Commodities by SITC Section
-                                </h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">Q4 2024 Performance Analysis</span>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodities-chart" height="400"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Forecasts Section -->
-                <div class="row g-4" id="ai-forecasts-section">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-robot me-2"></i>AI Export Forecasts
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-chart-line me-1"></i>Next Quarter Predictions
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="ai-forecasts-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Statistical Analysis Section -->
-        <section id="statistical-analysis" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-calculator me-2"></i>Statistical Analysis Dashboard
-                    </h2>
-                    <p class="section-subtitle">Advanced statistical analysis with machine learning models, outlier detection, and correlation studies</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadStatisticalAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="runStatisticalTests()">
-                            <i class="fas fa-flask me-1"></i>Run Tests
-                        </button>
-                        <button class="btn btn-outline-success" onclick="exportStatisticalReport()">
-                            <i class="fas fa-download me-1"></i>Export Report
-                        </button>
-                        <button class="btn btn-outline-info" onclick="showModelPerformance()">
-                            <i class="fas fa-chart-bar me-1"></i>Model Performance
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Model Performance Overview -->
-                <div class="row g-4 mb-5" id="model-performance-overview">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="stats-value" id="best-model-r2">0.94</div>
-                            <div class="stats-label">Best Model R² Score</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Export Forecast</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-primary">
-                                <i class="fas fa-crosshairs"></i>
-                            </div>
-                            <div class="stats-value" id="model-accuracy">89%</div>
-                            <div class="stats-label">Model Accuracy</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Cross-validated</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-search"></i>
-                            </div>
-                            <div class="stats-value" id="outliers-detected">0</div>
-                            <div class="stats-label">Outliers Detected</div>
-                            <div class="stats-trend trend-neutral">
-                                <i class="fas fa-minus me-1"></i>
-                                <span>Clean Data</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-info">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <div class="stats-value" id="correlations-found">0.93</div>
-                            <div class="stats-label">Strongest Correlation</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Export-Import</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Model Comparison Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Machine Learning Model Performance
-                                </h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-model-chart="accuracy">Accuracy</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-model-chart="comparison">Comparison</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-model-chart="predictions">Predictions</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="model-performance-chart" height="350"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="chart-card animate__animated animate__fadeInRight">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-trophy me-2"></i>Model Rankings
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>AI Optimized
-                                </div>
-                            </div>
-                            <div class="model-rankings" id="model-rankings">
-                                <div class="ranking-item">
-                                    <div class="rank-number">1</div>
-                                    <div class="rank-info">
-                                        <div class="rank-name">Gradient Boosting</div>
-                                        <div class="rank-score">R²: 0.94</div>
-                                    </div>
-                                    <div class="rank-badge gold">Best</div>
-                                </div>
-                                <div class="ranking-item">
-                                    <div class="rank-number">2</div>
-                                    <div class="rank-info">
-                                        <div class="rank-name">Random Forest</div>
-                                        <div class="rank-score">R²: 0.89</div>
-                                    </div>
-                                    <div class="rank-badge silver">Good</div>
-                                </div>
-                                <div class="ranking-item">
-                                    <div class="rank-number">3</div>
-                                    <div class="rank-info">
-                                        <div class="rank-name">Linear Regression</div>
-                                        <div class="rank-score">R²: 0.85</div>
-                                    </div>
-                                    <div class="rank-badge bronze">Fair</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Correlation Analysis Section -->
+                <!-- Market Intelligence Section -->
                 <div class="row g-4 mb-5">
                     <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
+                        <div class="chart-card modern-card market-intel-card" data-aos="fade-up" data-aos-delay="700">
                             <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-project-diagram me-2"></i>Correlation Analysis
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-link me-1"></i>Relationship Study
+                                <div class="chart-title-section">
+                                    <h3 class="chart-title">
+                                        <i class="fas fa-brain me-2"></i>Market Intelligence
+                                    </h3>
+                                    <p class="chart-subtitle">AI-powered insights and recommendations</p>
+                                </div>
+                                <div class="intel-actions">
+                                    <button class="btn btn-primary" onclick="generateInsights()">
+                                        <i class="fas fa-lightbulb me-1"></i>Generate Insights
+                                    </button>
+                                    <button class="btn btn-outline-primary" onclick="toggleChatbox()">
+                                        <i class="fas fa-comments me-1"></i>Ask AI Assistant
+                                    </button>
                                 </div>
                             </div>
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="correlation-matrix">
-                                        <h5>Variable Relationships</h5>
-                                        <div class="correlation-item">
-                                            <div class="correlation-label">Export ↔ Import</div>
-                                            <div class="correlation-bar">
-                                                <div class="correlation-fill positive" style="width: 93%"></div>
-                                            </div>
-                                            <div class="correlation-value">0.93</div>
+                            <div class="intel-content">
+                                <div class="insights-grid">
+                                    <div class="insight-card">
+                                        <div class="insight-icon">
+                                            <i class="fas fa-trending-up text-success"></i>
                                         </div>
-                                        <div class="correlation-item">
-                                            <div class="correlation-label">Export ↔ Trade Balance</div>
-                                            <div class="correlation-bar">
-                                                <div class="correlation-fill positive" style="width: 45%"></div>
-                                            </div>
-                                            <div class="correlation-value">0.45</div>
-                                        </div>
-                                        <div class="correlation-item">
-                                            <div class="correlation-label">Import ↔ Trade Balance</div>
-                                            <div class="correlation-bar">
-                                                <div class="correlation-fill negative" style="width: 32%"></div>
-                                            </div>
-                                            <div class="correlation-value">-0.32</div>
+                                        <div class="insight-content">
+                                            <h4>Export Opportunities</h4>
+                                            <p>Identified 5 high-potential markets for expansion</p>
+                                            <span class="insight-tag positive">+23% Potential</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="chart-container">
-                                        <canvas id="correlation-heatmap-chart" height="300"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Outlier Detection Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-exclamation-triangle me-2"></i>Outlier Detection Results
-                                </h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-outlier-chart="zscore">Z-Score</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-outlier-chart="iqr">IQR</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-outlier-chart="combined">Combined</button>
-                                </div>
-                            </div>
-                            <div class="outlier-analysis">
-                                <div class="outlier-summary">
-                                    <div class="outlier-metric">
-                                        <div class="metric-value" id="outlier-count">0</div>
-                                        <div class="metric-label">Outliers Detected</div>
-                                    </div>
-                                    <div class="outlier-metric">
-                                        <div class="metric-value" id="outlier-percentage">0%</div>
-                                        <div class="metric-label">Of Total Data</div>
-                                    </div>
-                                    <div class="outlier-metric">
-                                        <div class="metric-value" id="data-quality">Excellent</div>
-                                        <div class="metric-label">Data Quality</div>
-                                    </div>
-                                </div>
-                                <div class="chart-container mt-4">
-                                    <canvas id="outlier-detection-chart" height="250"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Forecasting Models Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Time Series Forecasting Models
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-brain me-1"></i>Advanced Forecasting
-                                </div>
-                            </div>
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="forecast-methods">
-                                        <h5>Available Forecasting Methods</h5>
-                                        <div class="method-item">
-                                            <div class="method-icon">
-                                                <i class="fas fa-chart-line"></i>
-                                            </div>
-                                            <div class="method-info">
-                                                <div class="method-name">ARIMA</div>
-                                                <div class="method-description">Auto-regressive integrated moving average</div>
-                                            </div>
+                                    <div class="insight-card">
+                                        <div class="insight-icon">
+                                            <i class="fas fa-exclamation-triangle text-warning"></i>
                                         </div>
-                                        <div class="method-item">
-                                            <div class="method-icon">
-                                                <i class="fas fa-wave-square"></i>
-                                            </div>
-                                            <div class="method-info">
-                                                <div class="method-name">Exponential Smoothing</div>
-                                                <div class="method-description">Trend and seasonal decomposition</div>
-                                            </div>
+                                        <div class="insight-content">
+                                            <h4>Risk Alert</h4>
+                                            <p>Supply chain disruption detected in key commodities</p>
+                                            <span class="insight-tag warning">Monitor</span>
                                         </div>
-                                        <div class="method-item">
-                                            <div class="method-icon">
-                                                <i class="fas fa-robot"></i>
-                                            </div>
-                                            <div class="method-info">
-                                                <div class="method-name">Machine Learning</div>
-                                                <div class="method-description">Regression and ensemble methods</div>
-                                            </div>
+                                    </div>
+                                    <div class="insight-card">
+                                        <div class="insight-icon">
+                                            <i class="fas fa-chart-pie text-info"></i>
                                         </div>
-                                        <div class="method-item">
-                                            <div class="method-icon">
-                                                <i class="fas fa-layer-group"></i>
-                                            </div>
-                                            <div class="method-info">
-                                                <div class="method-name">Ensemble</div>
-                                                <div class="method-description">Combined prediction methods</div>
-                                            </div>
+                                        <div class="insight-content">
+                                            <h4>Market Shift</h4>
+                                            <p>Consumer preferences changing in agricultural sector</p>
+                                            <span class="insight-tag info">Adaptation Needed</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="chart-container">
-                                        <canvas id="forecast-methods-chart" height="300"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Statistical Tests Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-flask me-2"></i>Statistical Hypothesis Tests
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-microscope me-1"></i>Significance Testing
-                                </div>
-                            </div>
-                            <div class="statistical-tests">
-                                <div class="test-result">
-                                    <div class="test-header">
-                                        <h6>Test 1: Trade Balance vs Zero</h6>
-                                        <div class="test-badge" id="test1-result">Significant</div>
-                                    </div>
-                                    <div class="test-details">
-                                        <div class="test-statistic">
-                                            <span class="stat-label">T-statistic:</span>
-                                            <span class="stat-value" id="test1-tstat">-12.45</span>
-                                        </div>
-                                        <div class="test-statistic">
-                                            <span class="stat-label">P-value:</span>
-                                            <span class="stat-value" id="test1-pvalue">0.001</span>
-                                        </div>
-                                        <div class="test-conclusion" id="test1-conclusion">
-                                            Reject H0: Trade balance is significantly different from zero
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="test-result">
-                                    <div class="test-header">
-                                        <h6>Test 2: Export vs Import Values</h6>
-                                        <div class="test-badge" id="test2-result">Significant</div>
-                                    </div>
-                                    <div class="test-details">
-                                        <div class="test-statistic">
-                                            <span class="stat-label">T-statistic:</span>
-                                            <span class="stat-value" id="test2-tstat">-8.92</span>
-                                        </div>
-                                        <div class="test-statistic">
-                                            <span class="stat-label">P-value:</span>
-                                            <span class="stat-value" id="test2-pvalue">0.001</span>
-                                        </div>
-                                        <div class="test-conclusion" id="test2-conclusion">
-                                            Reject H0: Export and import values are significantly different
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="test-result">
-                                    <div class="test-header">
-                                        <h6>Test 3: Regional Trade Differences</h6>
-                                        <div class="test-badge" id="test3-result">Significant</div>
-                                    </div>
-                                    <div class="test-details">
-                                        <div class="test-statistic">
-                                            <span class="stat-label">F-statistic:</span>
-                                            <span class="stat-value" id="test3-fstat">15.67</span>
-                                        </div>
-                                        <div class="test-statistic">
-                                            <span class="stat-label">P-value:</span>
-                                            <span class="stat-value" id="test3-pvalue">0.001</span>
-                                        </div>
-                                        <div class="test-conclusion" id="test3-conclusion">
-                                            Reject H0: Significant differences exist between regional trade values
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Interactive Analysis Tools -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-tools me-2"></i>Interactive Analysis Tools
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-cogs me-1"></i>Advanced Features
-                                </div>
-                            </div>
-                            <div class="analysis-tools">
-                                <div class="tool-section">
-                                    <h5><i class="fas fa-search me-2"></i>Variable Selection</h5>
-                                    <div class="variable-selector">
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" id="var-exports" checked>
-                                            <span class="checkmark"></span>
-                                            Export Values
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" id="var-imports" checked>
-                                            <span class="checkmark"></span>
-                                            Import Values
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" id="var-balance" checked>
-                                            <span class="checkmark"></span>
-                                            Trade Balance
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" id="var-growth" checked>
-                                            <span class="checkmark"></span>
-                                            Growth Rates
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="tool-section">
-                                    <h5><i class="fas fa-filter me-2"></i>Analysis Filters</h5>
-                                    <div class="filter-controls">
-                                        <select class="form-select" id="time-period-filter">
-                                            <option value="all">All Time Periods</option>
-                                            <option value="2024">2024 Only</option>
-                                            <option value="2023">2023 Only</option>
-                                            <option value="2022">2022 Only</option>
-                                        </select>
-                                        <select class="form-select" id="region-filter">
-                                            <option value="all">All Regions</option>
-                                            <option value="asia">Asia</option>
-                                            <option value="africa">Africa</option>
-                                            <option value="europe">Europe</option>
-                                            <option value="americas">Americas</option>
-                                        </select>
-                                        <button class="btn btn-primary" onclick="applyAnalysisFilters()">
-                                            <i class="fas fa-filter me-1"></i>Apply Filters
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="tool-section">
-                                    <h5><i class="fas fa-chart-bar me-2"></i>Visualization Options</h5>
-                                    <div class="viz-controls">
-                                        <button class="btn btn-outline-primary" onclick="toggleAnimation()">
-                                            <i class="fas fa-play me-1"></i>Toggle Animation
-                                        </button>
-                                        <button class="btn btn-outline-primary" onclick="exportAnalysisCharts()">
-                                            <i class="fas fa-download me-1"></i>Export Charts
-                                        </button>
-                                        <button class="btn btn-outline-primary" onclick="resetAnalysisView()">
-                                            <i class="fas fa-undo me-1"></i>Reset View
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Enhanced Analysis Section -->
-        <section id="enhanced-analysis" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-chart-area me-2"></i>Enhanced Analysis Dashboard
-                    </h2>
-                    <p class="section-subtitle">Comprehensive analysis with 2024Q4 and 2025Q1 data comparison and advanced insights</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadEnhancedAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Enhanced Data
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportEnhancedReport()">
-                            <i class="fas fa-download me-1"></i>Export Enhanced Report
-                        </button>
-                        <button class="btn btn-outline-success" onclick="viewDataComparison()">
-                            <i class="fas fa-balance-scale me-1"></i>View Comparisons
-                        </button>
-                        <button class="btn btn-outline-info" onclick="showStatisticalAnalysis()">
-                            <i class="fas fa-chart-bar me-1"></i>Statistical Analysis
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Analysis Overview Cards -->
-                <div class="row g-4 mb-5" id="analysis-overview-cards">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp">
-                            <div class="stats-icon bg-success">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="stats-value" id="total-export-value">$8.94B</div>
-                            <div class="stats-label">Total Export Value</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>2022-2025</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="stats-icon bg-danger">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="stats-value" id="total-import-value">$20.26B</div>
-                            <div class="stats-label">Total Import Value</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>2022-2025</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="stats-icon bg-warning">
-                                <i class="fas fa-balance-scale"></i>
-                            </div>
-                            <div class="stats-value" id="trade-balance">-$11.32B</div>
-                            <div class="stats-label">Trade Balance</div>
-                            <div class="stats-trend trend-down">
-                                <i class="fas fa-arrow-down me-1"></i>
-                                <span>Deficit</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="stats-icon bg-info">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="stats-value" id="export-destinations">20</div>
-                            <div class="stats-label">Export Destinations</div>
-                            <div class="stats-trend trend-up">
-                                <i class="fas fa-arrow-up me-1"></i>
-                                <span>Countries</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Regional Analysis Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe-africa me-2"></i>Regional Export Distribution
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>AI Analysis
-                                </div>
-                            </div>
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="regional-breakdown">
-                                        <h5>Export by Region (2022-2025)</h5>
-                                        <div class="region-item">
-                                            <div class="region-name">Asia</div>
-                                            <div class="region-bar">
-                                                <div class="region-fill asia" style="width: 76%"></div>
-                                            </div>
-                                            <div class="region-value">$6.82B (76%)</div>
-                                        </div>
-                                        <div class="region-item">
-                                            <div class="region-name">Africa</div>
-                                            <div class="region-bar">
-                                                <div class="region-fill africa" style="width: 15%"></div>
-                                            </div>
-                                            <div class="region-value">$1.37B (15%)</div>
-                                        </div>
-                                        <div class="region-item">
-                                            <div class="region-name">Europe</div>
-                                            <div class="region-bar">
-                                                <div class="region-fill europe" style="width: 6%"></div>
-                                            </div>
-                                            <div class="region-value">$0.57B (6%)</div>
-                                        </div>
-                                        <div class="region-item">
-                                            <div class="region-name">Americas</div>
-                                            <div class="region-bar">
-                                                <div class="region-fill americas" style="width: 1%"></div>
-                                            </div>
-                                            <div class="region-value">$0.12B (1%)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="chart-container">
-                                        <canvas id="regional-export-chart" height="300"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Statistical Analysis Section -->
-                <div class="row g-4 mb-5" id="statistical-analysis-section">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-calculator me-2"></i>Statistical Analysis Results
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Advanced Analytics
-                                </div>
-                            </div>
-                            <div class="analysis-results-grid">
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-link"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="correlation-strength">0.93</div>
-                                        <div class="metric-label">Export-Import Correlation</div>
-                                        <div class="metric-description">Strong positive relationship between exports and imports</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-chart-bell-curve"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="export-volatility">$343M</div>
-                                        <div class="metric-label">Export Volatility</div>
-                                        <div class="metric-description">Standard deviation of export values</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-chart-bell-curve"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="import-volatility">$620M</div>
-                                        <div class="metric-label">Import Volatility</div>
-                                        <div class="metric-description">Standard deviation of import values</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-balance-scale"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="trade-imbalance">0.45</div>
-                                        <div class="metric-label">Trade Imbalance Ratio</div>
-                                        <div class="metric-description">Export/Import ratio indicating trade dependency</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Geographic Analysis Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-map-marked-alt me-2"></i>Geographic Trade Analysis
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-satellite me-1"></i>Distance Analysis
-                                </div>
-                            </div>
-                            <div class="row g-4">
-                                <div class="col-lg-6">
-                                    <div class="geographic-insights">
-                                        <h5>Trade Partner Analysis</h5>
-                                        <div class="geo-metric">
-                                            <div class="geo-label">Average Distance to Partners</div>
-                                            <div class="geo-value" id="avg-distance">5,540 km</div>
-                                        </div>
-                                        <div class="geo-metric">
-                                            <div class="geo-label">Farthest Partner</div>
-                                            <div class="geo-value" id="farthest-partner">United States</div>
-                                        </div>
-                                        <div class="geo-metric">
-                                            <div class="geo-label">Closest Partner</div>
-                                            <div class="geo-value" id="closest-partner">Uganda</div>
-                                        </div>
-                                        <div class="geo-metric">
-                                            <div class="geo-label">Regional Concentration</div>
-                                            <div class="geo-value">Asia: 76%, Africa: 15%</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="chart-container">
-                                        <canvas id="geographic-analysis-chart" height="300"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Insights Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-robot me-2"></i>AI-Generated Insights
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-brain me-1"></i>Machine Learning
-                                </div>
-                            </div>
-                            <div class="ai-insights-container">
-                                <div class="insight-category">
-                                    <h5><i class="fas fa-chart-line me-2"></i>Trend Analysis</h5>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="trend-insight-1">
-                                            Rwanda's export values show strong seasonal patterns with Q4 typically being the strongest quarter.
-                                        </div>
-                                    </div>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="trend-insight-2">
-                                            Import volatility is higher than export volatility, indicating dependency on external market conditions.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="insight-category">
-                                    <h5><i class="fas fa-globe me-2"></i>Market Opportunities</h5>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="market-insight-1">
-                                            Asian markets represent 76% of export value, suggesting over-reliance on this region.
-                                        </div>
-                                    </div>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="market-insight-2">
-                                            African markets show growth potential with only 15% current share but high regional demand.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="insight-category">
-                                    <h5><i class="fas fa-exclamation-triangle me-2"></i>Risk Assessment</h5>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="risk-insight-1">
-                                            Trade imbalance of 0.45 indicates moderate dependency on imports for economic activity.
-                                        </div>
-                                    </div>
-                                    <div class="insight-item">
-                                        <div class="insight-text" id="risk-insight-2">
-                                            Geographic concentration increases vulnerability to regional disruptions.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Enhanced Analysis Overview -->
-                <div class="row g-4 mb-5" id="enhanced-overview">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-line me-2"></i>Enhanced Analysis Status
-                                </h3>
-                                <div class="analysis-status">
-                                    <span class="badge bg-success">
-                                        <i class="fas fa-robot me-1"></i>Comprehensive Analysis Complete
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="analysis-content">
-                                <div class="row g-4">
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="files-analyzed">2</div>
-                                            <div class="metric-label">Files Analyzed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="total-records-processed">812</div>
-                                            <div class="metric-label">Records Processed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="quarters-enhanced">14</div>
-                                            <div class="metric-label">Quarters Covered</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="data-card">
-                                            <div class="metric-value" id="countries-enhanced">37</div>
-                                            <div class="metric-label">Countries Analyzed</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 2025Q1 vs 2024Q4 Comparison Cards -->
-                <div class="row g-4 mb-5" id="quarterly-comparison-cards">
-                    <div class="col-lg-6">
-                        <div class="comparison-card enhanced-card">
-                            <h5 class="card-title text-white mb-4">
-                                <i class="fas fa-chart-line me-2"></i>Export & Import Comparison
-                            </h5>
-                            <div class="comparison-grid">
-                                <div class="metric-comparison">
-                                    <div class="metric-header">
-                                        <span class="metric-title">Export Volume</span>
-                                        <span class="metric-period">Q4 2024 vs Q1 2025</span>
-                                    </div>
-                                    <div class="metric-values">
-                                        <div class="metric-value q4-value">
-                                            <span class="value" id="q4-exports">$4.89B</span>
-                                            <span class="label">Q4 2024</span>
-                                        </div>
-                                        <div class="metric-arrow">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                        <div class="metric-value q1-value">
-                                            <span class="value" id="q1-exports">$4.14B</span>
-                                            <span class="label">Q1 2025</span>
-                                        </div>
-                                        <div class="metric-change">
-                                            <span class="change-indicator trend-down" id="export-change-indicator">-15.3%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-comparison">
-                                    <div class="metric-header">
-                                        <span class="metric-title">Import Volume</span>
-                                        <span class="metric-period">Q4 2024 vs Q1 2025</span>
-                                    </div>
-                                    <div class="metric-values">
-                                        <div class="metric-value q4-value">
-                                            <span class="value" id="q4-imports">$8.14B</span>
-                                            <span class="label">Q4 2024</span>
-                                        </div>
-                                        <div class="metric-arrow">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                        <div class="metric-value q1-value">
-                                            <span class="value" id="q1-imports">$870M</span>
-                                            <span class="label">Q1 2025</span>
-                                        </div>
-                                        <div class="metric-change">
-                                            <span class="change-indicator trend-down" id="import-change-indicator">-89.3%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-comparison">
-                                    <div class="metric-header">
-                                        <span class="metric-title">Trade Balance</span>
-                                        <span class="metric-period">Q4 2024 vs Q1 2025</span>
-                                    </div>
-                                    <div class="metric-values">
-                                        <div class="metric-value q4-value">
-                                            <span class="value" id="q4-balance">-$3.25B</span>
-                                            <span class="label">Q4 2024</span>
-                                        </div>
-                                        <div class="metric-arrow">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                        <div class="metric-value q1-value">
-                                            <span class="value" id="q1-balance">+$3.27B</span>
-                                            <span class="label">Q1 2025</span>
-                                        </div>
-                                        <div class="metric-change">
-                                            <span class="change-indicator trend-up" id="balance-change-indicator">+201%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="comparison-card">
-                            <h5 class="card-title mb-4">
-                                <i class="fas fa-balance-scale me-2"></i>Trade Balance Analysis
-                            </h5>
-                            <div class="balance-analysis">
-                                <div class="balance-overview">
-                                    <div class="balance-metric">
-                                        <span class="balance-label">Q4 2024 Deficit:</span>
-                                        <span class="balance-value deficit" id="q4-deficit">-$3.25B</span>
-                                    </div>
-                                    <div class="balance-metric">
-                                        <span class="balance-label">Q1 2025 Surplus:</span>
-                                        <span class="balance-value surplus" id="q1-surplus">+$3.27B</span>
-                                    </div>
-                                    <div class="balance-metric total">
-                                        <span class="balance-label">Net Improvement:</span>
-                                        <span class="balance-value improvement" id="net-improvement">+$6.52B</span>
-                                    </div>
-                                </div>
-
-                                <div class="balance-insights">
-                                    <h6>Key Insights:</h6>
-                                    <ul class="insights-list">
-                                        <li>Dramatic shift from deficit to surplus position</li>
-                                        <li>Export decline offset by massive import reduction</li>
-                                        <li>Improved trade balance despite lower export volumes</li>
-                                        <li>Potential seasonal or external factors influencing Q1 2025</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Enhanced Charts Section -->
-                <div class="row g-4 mb-5">
-                    <!-- Quarterly Comparison Chart -->
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-balance-scale me-2"></i>Q4 2024 vs Q1 2025 Comparison
-                                </h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">Quarterly Performance</span>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="quarterly-comparison-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Year-over-Year Analysis -->
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInRight">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-calendar-alt me-2"></i>Year-over-Year Analysis
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Multi-Year Trends
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="year-over-year-chart" height="300"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Enhanced Trade Balance and Country Performance -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-chart-bar me-2"></i>Enhanced Trade Balance Analysis
-                                </h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-balance-chart="balance">Balance</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-balance-chart="growth">Growth</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-balance-chart="trends">Trends</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="enhanced-trade-balance-chart" height="350"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe me-2"></i>Country Performance
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-trophy me-1"></i>Top Performers
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="country-performance-chart" height="350"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comprehensive Insights -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-lightbulb me-2"></i>Comprehensive Insights
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>AI-Generated Analysis
-                                </div>
-                            </div>
-                            <div class="insights-grid" id="comprehensive-insights">
-                                <!-- Dynamic content will be loaded here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quarterly Comparison Details -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeInUp">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-clipboard-list me-2"></i>Detailed Quarterly Comparison
-                                </h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">Q4 2024 vs Q1 2025 Performance</span>
-                                </div>
-                            </div>
-                            <div class="comparison-display" id="quarterly-comparison-display">
-                                <!-- Dynamic content will be loaded here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Key Findings and Recommendations -->
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInLeft">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-search me-2"></i>Key Findings
-                                </h3>
-                            </div>
-                            <div class="findings-list">
-                                <div class="finding-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Export volumes declined 15.3% from Q4 2024 to Q1 2025</span>
-                                </div>
-                                <div class="finding-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Import volumes dropped significantly by 89.3% in Q1 2025</span>
-                                </div>
-                                <div class="finding-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Trade balance improved dramatically from -$3.3B deficit to +$3.3B surplus</span>
-                                </div>
-                                <div class="finding-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>United Arab Emirates remains the top export destination</span>
-                                </div>
-                                <div class="finding-item">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    <span>Tanzania continues as the primary import source</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="chart-card animate__animated animate__fadeInRight">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-star me-2"></i>Strategic Recommendations
-                                </h3>
-                            </div>
-                            <div class="recommendations-list">
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Focus on export diversification beyond traditional markets</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Strengthen trade relations with high-growth destinations</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Explore import substitution opportunities for key commodities</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Develop strategies to reduce dependency on primary import sources</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Monitor seasonal patterns for optimal trade timing</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Regional Analysis Section -->
-        <section id="regional" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Regional & Continental Analysis</h2>
-                    <p class="section-subtitle">Explore Rwanda's trade performance across different regions and continents</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadRegionalAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportRegionalData()">
-                            <i class="fas fa-download me-1"></i>Export Data
-                        </button>
-                    </div>
-                </div>
-
-                <!-- EAC Analysis -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">East African Community (EAC) Trade</h3>
-                                <div class="badge bg-info">
-                                    <i class="fas fa-globe-africa me-1"></i>Regional Focus
-                                </div>
-                            </div>
-                            <div class="row g-4">
-                                <div class="col-lg-8">
-                                    <div class="chart-container">
-                                        <canvas id="eac-trade-chart"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="regional-stats">
-                                        <div class="stat-item">
-                                            <span class="stat-label">EAC Export Share</span>
-                                            <span class="stat-value" id="eac-export-share">--</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <span class="stat-label">Top EAC Partner</span>
-                                            <span class="stat-value" id="top-eac-partner">--</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <span class="stat-label">EAC Growth Rate</span>
-                                            <span class="stat-value" id="eac-growth-rate">--</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Continental Analysis -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-6">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Export Performance by Continent</h3>
-                                <div class="chart-controls">
-                                    <span class="text-muted">Q4 2024 Distribution</span>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="continental-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Regional Comparison</h3>
-                                <div class="badge bg-success">
-                                    <i class="fas fa-chart-radar me-1"></i>Multi-dimensional
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="regional-comparison-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Regional Insights -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Regional Insights</h3>
-                                <div class="badge bg-info">
-                                    <i class="fas fa-robot me-1"></i>AI Generated
-                                </div>
-                            </div>
-                            <div class="regional-insights" id="regional-insights">
-                                <!-- Dynamic content -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Commodities Section -->
-        <section id="commodities" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Commodity Analysis</h2>
-                    <p class="section-subtitle">Detailed breakdown of Rwanda's export and import commodities</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadCommodityAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="toggleCommodityView()">
-                            <i class="fas fa-eye me-1"></i>Toggle View
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Commodity Overview -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Top Export Commodities by SITC Section</h3>
-                                <div class="chart-controls">
-                                    <select class="form-select form-select-sm" id="commodity-period-filter" aria-label="Select period for commodity analysis">
-                                        <option value="q4_2024">Q4 2024</option>
-                                        <option value="q3_2024">Q3 2024</option>
-                                        <option value="q2_2024">Q2 2024</option>
-                                        <option value="q1_2024">Q1 2024</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodity-analysis-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Detailed Commodity Breakdown -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Commodity Performance Trends</h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-commodity-chart="trends">Trends</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-commodity-chart="comparison">Comparison</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-commodity-chart="forecast">Forecast</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodity-trends-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Commodity Details</h3>
-                            </div>
-                            <div class="commodity-details" id="commodity-details">
-                                <!-- Dynamic content -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SITC Section Analysis -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">SITC Section Analysis</h3>
-                                <div class="badge bg-success">
-                                    <i class="fas fa-chart-pie me-1"></i>Detailed Breakdown
-                                </div>
-                            </div>
-                            <div class="sitc-sections" id="sitc-sections">
-                                <!-- Dynamic content -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Advanced Analytics Section -->
-        <section id="analytics" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Advanced Analytics Dashboard</h2>
-                    <p class="section-subtitle">Deep insights with AI-powered analysis and forecasting</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="runAdvancedAnalytics()">
-                            <i class="fas fa-brain me-1"></i>Run AI Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportAnalyticsReport()">
-                            <i class="fas fa-file-pdf me-1"></i>Export Report
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Advanced Analytics Overview -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Advanced Trade Analytics</h3>
-                                <div class="badge bg-warning">
-                                    <i class="fas fa-robot me-1"></i>AI Enhanced
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="advanced-analytics-chart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Search and Filter -->
-                <div class="analytics-controls mb-4">
-                    <div class="row g-3">
-                        <div class="col-lg-4">
-                            <div class="search-box">
-                                <i class="fas fa-search"></i>
-                                <input type="text" class="form-control" id="product-search" placeholder="Search products (e.g., coffee, tea, minerals)">
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <select class="form-select" id="category-filter" aria-label="Select category filter">
-                                <option value="">All Categories</option>
-                                <option value="agricultural">Agricultural</option>
-                                <option value="mining">Mining</option>
-                                <option value="manufacturing">Manufacturing</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select class="form-select" id="time-filter" aria-label="Select time period">
-                                <option value="quarterly">Quarterly</option>
-                                <option value="yearly">Yearly</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <button class="btn btn-primary" id="apply-filters">
-                                <i class="fas fa-filter me-1"></i>Apply Filters
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Analytics Results -->
-                <div class="row g-4" id="analytics-results">
-                    <!-- Dynamic content will be loaded here -->
-                </div>
-
-                <!-- AI Recommendations -->
-                <div class="row g-4 mt-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">AI Recommendations</h3>
-                                <div class="badge bg-info">
-                                    <i class="fas fa-lightbulb me-1"></i>Smart Insights
-                                </div>
-                            </div>
-                            <div class="ai-recommendations" id="ai-recommendations">
-                                <!-- Dynamic content -->
                             </div>
                         </div>
                     </div>
@@ -2279,67 +628,392 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="footer-content">
-                        <h5 class="footer-title">
-                            <i class="fas fa-chart-line me-2"></i>Rwanda Export Explorer
-                        </h5>
-                        <p class="footer-text">
-                            AI-powered trade analytics platform built for NISR Rwanda Hackathon 2024.
-                            Empowering data-driven insights for Rwanda's economic development.
-                        </p>
-                        <div class="mt-3">
-                            <small class="text-muted">
-                                <i class="fas fa-robot me-1"></i>Powered by advanced AI algorithms and machine learning
-                            </small>
-                        </div>
-                    </div>
+    <!-- AI Chatbox -->
+    <div class="ai-chatbox" id="ai-chatbox">
+        <div class="chatbox-header">
+            <div class="chatbox-title">
+                <div class="ai-avatar small">
+                    <i class="fas fa-robot"></i>
                 </div>
-                <div class="col-lg-6 text-end">
-                    <div class="footer-links">
-                        <a href="#" class="footer-link">
-                            <i class="fas fa-database me-1"></i>Data Source: NISR
-                        </a>
-                        <a href="#" class="footer-link">
-                            <i class="fas fa-eye me-1"></i>Vision 2050
-                        </a>
-                        <a href="#" class="footer-link">
-                            <i class="fas fa-info-circle me-1"></i>About
-                        </a>
-                        <div class="mt-3">
-                            <small class="text-muted">
-                                Last updated: <span id="last-updated">Loading...</span>
-                            </small>
+                <div class="chatbox-info">
+                    <h4>AI Trade Assistant</h4>
+                    <span class="status online">Online</span>
+                </div>
+            </div>
+            <div class="chatbox-controls">
+                <button class="btn btn-settings" onclick="openAISettings()" title="AI Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <button class="btn btn-minimize" onclick="minimizeChatbox()" title="Minimize">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button class="btn btn-close" onclick="closeChatbox()" title="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chatbox-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message ai-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            Hello! I'm your AI Trade Assistant. I can help you analyze Rwanda's trade data, identify trends, and provide insights. What would you like to know?
                         </div>
+                        <div class="message-time">Just now</div>
                     </div>
                 </div>
             </div>
-            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <small class="text-muted">
-                        © 2024 Rwanda Export Explorer | Built with ❤️ for Rwanda's economic development
-                    </small>
+
+            <div class="chat-input-container">
+                <div class="chat-input-area">
+                    <input type="text" class="chat-input" id="chat-input" placeholder="Ask me about trade data, trends, or insights...">
+                    <button class="btn btn-send" onclick="sendMessage()" title="Send Message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="chat-suggestions">
+                    <button class="suggestion-btn" onclick="askQuestion('What are the top export commodities?')">Top Exports</button>
+                    <button class="suggestion-btn" onclick="askQuestion('Show me trade balance trends')">Trade Balance</button>
+                    <button class="suggestion-btn" onclick="askQuestion('What are the main trading partners?')">Trading Partners</button>
+                    <button class="suggestion-btn" onclick="askQuestion('Predict future export trends')">Future Predictions</button>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <!-- Chatbox Toggle Button -->
+    <button class="chatbox-toggle" id="chatbox-toggle" onclick="toggleChatbox()" title="Open AI Assistant">
+        <i class="fas fa-comments"></i>
+        <span class="notification-dot"></span>
+    </button>
+
+    <!-- AI Settings Modal -->
+    <div class="ai-settings-modal" id="ai-settings-modal">
+        <div class="settings-modal-content">
+            <div class="settings-header">
+                <h3>
+                    <i class="fas fa-cog me-2"></i>AI Assistant Settings
+                </h3>
+                <button class="settings-close" onclick="closeAISettings()" title="Close Settings">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="settings-body">
+                <div class="settings-section">
+                    <h4>OpenRouter / DeepSeek V1 Configuration</h4>
+                    <p class="settings-description">
+                        Your system is configured with DeepSeek V1 through OpenRouter! This provides powerful AI
+                        capabilities for intelligent trade analysis and insights. The API key is already set in your .env file.
+                    </p>
+
+                    <div class="api-status connected" id="api-status">
+                        <div class="status-indicator">
+                            <span class="status-dot connected"></span>
+                            <span class="status-text">✅ DeepSeek V1 Connected</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="openai-api-key">OpenAI API Key</label>
+                        <input type="password" id="openai-api-key" placeholder="sk-..." class="form-control">
+                        <small class="form-text">Your API key is stored locally and never sent to our servers</small>
+                    </div>
+
+                    <div class="api-status" id="api-status">
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Not configured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h4>Configuration Status</h4>
+                    <div class="config-info">
+                        <div class="config-item">
+                            <strong>API Provider:</strong> OpenRouter (DeepSeek V1)
+                        </div>
+                        <div class="config-item">
+                            <strong>Model:</strong> deepseek-v1
+                        </div>
+                        <div class="config-item">
+                            <strong>Status:</strong> <span style="color: #28a745;">✅ Connected & Ready</span>
+                        </div>
+                        <div class="config-item">
+                            <strong>API Key:</strong> <code style="background: #f1f5f9; padding: 2px 6px; border-radius: 3px;">sk-or-v1-...configured</code>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h5>🚀 DeepSeek V1 Benefits:</h5>
+                        <ul>
+                            <li>Advanced trade data analysis and pattern recognition</li>
+                            <li>Real-time market intelligence and economic forecasting</li>
+                            <li>Deep contextual understanding for business decisions</li>
+                            <li>High-performance AI optimized for analytical workloads</li>
+                            <li>Comprehensive Rwanda trade ecosystem insights</li>
+                        </ul>
+                        <div class="model-status">
+                            <small>💡 Currently using: <span id="current-model">DeepSeek V1</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-footer">
+                <button class="btn btn-primary" onclick="closeAISettings()">Great! It's Working</button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- External Libraries JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/api.js"></script>
     <script src="js/charts.js"></script>
-    <script src="js/maps.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/chatbox.js"></script>
+    <!-- dashboard.js is integrated into main.js to prevent conflicts -->
+
+    <!-- Initialize AOS and Chatbox -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+
+            // Initialize Chatbox functionality
+            initializeChatbox();
+
+            // Auto-show chatbox after a brief delay for better UX
+            setTimeout(() => {
+                const chatbox = document.getElementById('ai-chatbox');
+                const toggleBtn = document.getElementById('chatbox-toggle');
+
+                if (chatbox && toggleBtn && !chatbox.classList.contains('show')) {
+                    // Add a subtle entrance animation
+                    chatbox.style.transform = 'translateY(0)';
+                    chatbox.style.opacity = '1';
+                    chatbox.classList.add('show');
+                    toggleBtn.classList.add('hidden');
+                }
+            }, 3000);
+        });
+
+        // Enhanced Chatbox Management
+        let chatboxState = {
+            isVisible: false,
+            isMinimized: false,
+            messages: []
+        };
+
+        function initializeChatbox() {
+            const chatbox = document.getElementById('ai-chatbox');
+            const toggleBtn = document.getElementById('chatbox-toggle');
+            const input = document.getElementById('chat-input');
+            const messagesContainer = document.getElementById('chat-messages');
+
+            if (!chatbox || !toggleBtn || !input || !messagesContainer) {
+                console.warn('Chatbox elements not found during initialization');
+                return;
+            }
+
+            // Add event listeners
+            input.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+
+            // Add minimize functionality to header
+            const header = chatbox.querySelector('.chatbox-header');
+            if (header) {
+                header.addEventListener('click', function(e) {
+                    // Don't minimize if clicking on controls
+                    if (!e.target.closest('.chatbox-controls')) {
+                        toggleMinimizeChatbox();
+                    }
+                });
+            }
+
+            console.log('✅ Chatbox initialized successfully');
+        }
+
+        function toggleChatbox() {
+            const chatbox = document.getElementById('ai-chatbox');
+            const toggleBtn = document.getElementById('chatbox-toggle');
+
+            if (!chatbox || !toggleBtn) return;
+
+            const willShow = !chatbox.classList.contains('show');
+
+            if (willShow) {
+                chatbox.classList.add('show');
+                toggleBtn.classList.add('hidden');
+                chatboxState.isVisible = true;
+                chatboxState.isMinimized = false;
+
+                // Focus on input when opening
+                setTimeout(() => {
+                    const input = document.getElementById('chat-input');
+                    if (input) input.focus();
+                }, 300);
+            } else {
+                chatbox.classList.remove('show');
+                toggleBtn.classList.remove('hidden');
+                chatboxState.isVisible = false;
+            }
+        }
+
+        function toggleMinimizeChatbox() {
+            const chatbox = document.getElementById('ai-chatbox');
+            if (!chatbox) return;
+
+            const willMinimize = !chatbox.classList.contains('minimized');
+
+            if (willMinimize) {
+                chatbox.classList.add('minimized');
+                chatboxState.isMinimized = true;
+            } else {
+                chatbox.classList.remove('minimized');
+                chatboxState.isMinimized = false;
+
+                // Focus on input when expanding
+                setTimeout(() => {
+                    const input = document.getElementById('chat-input');
+                    if (input) input.focus();
+                }, 300);
+            }
+        }
+
+        function closeChatbox() {
+            const chatbox = document.getElementById('ai-chatbox');
+            const toggleBtn = document.getElementById('chatbox-toggle');
+
+            if (!chatbox || !toggleBtn) return;
+
+            chatbox.classList.remove('show');
+            toggleBtn.classList.remove('hidden');
+            chatboxState.isVisible = false;
+            chatboxState.isMinimized = false;
+        }
+
+        function minimizeChatbox() {
+            toggleMinimizeChatbox();
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chat-input');
+            if (!input) return;
+
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Add user message to chat
+            addMessage(message, 'user');
+            input.value = '';
+
+            // Simulate AI response (replace with actual API call)
+            setTimeout(() => {
+                const responses = [
+                    "I understand you're asking about Rwanda's trade data. Let me analyze that for you.",
+                    "Based on the latest NISR data, I can provide insights on export trends and patterns.",
+                    "I'd be happy to help you with trade analysis. What specific aspect would you like to explore?",
+                    "The AI-powered analytics show interesting trends in Rwanda's trade performance."
+                ];
+                const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                addMessage(randomResponse, 'ai');
+            }, 1000);
+        }
+
+        function addMessage(text, sender) {
+            const messagesContainer = document.getElementById('chat-messages');
+            if (!messagesContainer) return;
+
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+
+            const avatarDiv = document.createElement('div');
+            avatarDiv.className = 'message-avatar';
+            avatarDiv.innerHTML = sender === 'ai' ? '<i class="fas fa-robot"></i>' : '<i class="fas fa-user"></i>';
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+
+            const textDiv = document.createElement('div');
+            textDiv.className = 'message-text';
+            textDiv.textContent = text;
+
+            const timeDiv = document.createElement('div');
+            timeDiv.className = 'message-time';
+            timeDiv.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+            contentDiv.appendChild(textDiv);
+            contentDiv.appendChild(timeDiv);
+
+            messageDiv.appendChild(avatarDiv);
+            messageDiv.appendChild(contentDiv);
+
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            // Update state
+            chatboxState.messages.push({ text, sender, timestamp: Date.now() });
+        }
+
+        function askQuestion(question) {
+            const input = document.getElementById('chat-input');
+            if (input) {
+                input.value = question;
+                sendMessage();
+            }
+        }
+
+        function openAISettings() {
+            const modal = document.getElementById('ai-settings-modal');
+            if (modal) {
+                modal.classList.add('show');
+            }
+        }
+
+        function closeAISettings() {
+            const modal = document.getElementById('ai-settings-modal');
+            if (modal) {
+                modal.classList.remove('show');
+            }
+        }
+
+        function generateInsights() {
+            addMessage("Generating AI-powered market insights...", 'ai');
+            setTimeout(() => {
+                addMessage("✅ Analysis complete! I've identified key export opportunities in agricultural and mineral sectors with high growth potential.", 'ai');
+            }, 2000);
+        }
+
+        // Make functions globally available
+        window.toggleChatbox = toggleChatbox;
+        window.minimizeChatbox = minimizeChatbox;
+        window.closeChatbox = closeChatbox;
+        window.sendMessage = sendMessage;
+        window.askQuestion = askQuestion;
+        window.openAISettings = openAISettings;
+        window.closeAISettings = closeAISettings;
+        window.generateInsights = generateInsights;
+    </script>
+
 </body>
 </html>

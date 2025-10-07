@@ -7,24 +7,64 @@ const OpenAI = require('openai');
 
 class OpenAIService {
     constructor() {
-        this.client = new OpenAI({
-            apiKey: process.env.OPENAI_API_KEY || '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',
-            baseURL: process.env.OPENAI_BASE_URL || 'https://openrouter.ai/api/v1'
-        });
-        console.log('🤖 OpenAI service initialized');
+        this.apiKey = process.env.OPENAI_API_KEY;
+        this.baseURL = process.env.OPENAI_BASE_URL || 'https://openrouter.ai/api/v1';
+        this.model = process.env.OPENAI_MODEL || 'deepseek/deepseek-chat-v3.1:free';
+        this.maxTokens = parseInt(process.env.OPENAI_MAX_TOKENS) || 2000;
+        this.temperature = parseFloat(process.env.OPENAI_TEMPERATURE) || 0.7;
+
+        if (this.apiKey && this.apiKey.startsWith('sk-or-v1-')) {
+            // OpenRouter configuration
+            this.client = new OpenAI({
+                apiKey: this.apiKey,
+                baseURL: 'https://openrouter.ai/api/v1'
+            });
+            console.log('🚀 OpenRouter service initialized with DeepSeek model');
+            console.log('🎯 Model:', this.model);
+        } else if (this.apiKey && this.apiKey.startsWith('sk-')) {
+            // OpenAI configuration
+            this.client = new OpenAI({
+                apiKey: this.apiKey,
+                baseURL: this.baseURL
+            });
+            console.log('🤖 OpenAI service initialized');
+        } else {
+            this.client = null;
+            console.log('⚠️ No valid API key found - using fallback responses');
+            console.log('💡 Add OPENAI_API_KEY to your .env file to enable AI features');
+        }
+    }
+
+    /**
+     * Check if OpenAI is properly configured
+     */
+    isConfigured() {
+        return !!(this.apiKey && this.client);
     }
 
     /**
      * Generate comprehensive analysis description
      */
     async generateAnalysisDescription(data, context = 'general') {
+        // Check if OpenAI is configured
+        if (!this.isConfigured()) {
+            console.log('🤖 OpenAI not configured, using fallback description');
+            return {
+                success: true,
+                description: this.getFallbackDescription(context),
+                context: context,
+                generated_at: new Date().toISOString(),
+                using_fallback: true
+            };
+        }
+
         try {
             console.log('🤖 Generating analysis description for:', context);
 
             const prompt = this.buildAnalysisPrompt(data, context);
 
             const completion = await this.client.chat.completions.create({
-                model: "gpt-3.5-turbo",
+                model: this.model,
                 messages: [
                     {
                         role: "system",
@@ -35,8 +75,8 @@ class OpenAIService {
                         content: prompt
                     }
                 ],
-                max_tokens: 800,
-                temperature: 0.7
+                max_tokens: this.maxTokens,
+                temperature: this.temperature
             });
 
             const description = completion.choices[0].message.content;
@@ -46,7 +86,8 @@ class OpenAIService {
                 success: true,
                 description: description,
                 context: context,
-                generated_at: new Date().toISOString()
+                generated_at: new Date().toISOString(),
+                using_ai: true
             };
 
         } catch (error) {
@@ -54,7 +95,8 @@ class OpenAIService {
             return {
                 success: false,
                 error: error.message,
-                fallback_description: this.getFallbackDescription(context)
+                fallback_description: this.getFallbackDescription(context),
+                using_fallback: true
             };
         }
     }

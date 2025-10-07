@@ -41,82 +41,92 @@
   },
   {
     "quarter": "2023Q1",
-    "export_value": 370.57682763930944,
-    "import_value": 948.6765230837119,
-    "trade_balance": -578.0996954444024,
+    "export_value": 738.2090528876635,
+    "import_value": 1853.0112845554147,
+    "trade_balance": -1114.8022316677511,
     "balance_type": "deficit",
-    "export_growth": 0.18762530664987476,
-    "import_growth": 0.277187865698552,
-    "balance_growth": 0.3420657003482914
+    "export_growth": 1.3658137460789956,
+    "import_growth": 1.4946791346156543,
+    "balance_growth": 1.5880273758713765
   },
   {
     "quarter": "2023Q2",
-    "export_value": 456.2086885056222,
-    "import_value": 1080.6538446062536,
-    "trade_balance": -624.4451561006315,
+    "export_value": 909.7093553963832,
+    "import_value": 2046.0631831362205,
+    "trade_balance": -1136.3538277398372,
     "balance_type": "deficit",
-    "export_growth": 0.2310772138987065,
-    "import_growth": 0.13911730533137256,
-    "balance_growth": 0.08016863011941555
+    "export_growth": 0.23231942474541523,
+    "import_growth": 0.10418279704493205,
+    "balance_growth": 0.019332214683356774
   },
   {
     "quarter": "2023Q3",
-    "export_value": 348.9605301987203,
-    "import_value": 1047.4373628027279,
-    "trade_balance": -698.4768326040075,
+    "export_value": 698.5853943606064,
+    "import_value": 2049.91518839299,
+    "trade_balance": -1351.3297940323835,
     "balance_type": "deficit",
-    "export_growth": -0.2350857425758568,
-    "import_growth": -0.030737392893492643,
-    "balance_growth": 0.11855593046100199
+    "export_growth": -0.23207847625551214,
+    "import_growth": 0.0018826423780642365,
+    "balance_growth": 0.18918048326560832
   },
   {
     "quarter": "2023Q4",
-    "export_value": 354.8208682109885,
-    "import_value": 936.2472719796052,
-    "trade_balance": -581.4264037686166,
+    "export_value": 707.4984750130135,
+    "import_value": 1885.1472407395925,
+    "trade_balance": -1177.6487657265789,
     "balance_type": "deficit",
-    "export_growth": 0.016793698728423623,
-    "import_growth": -0.10615440576379742,
-    "balance_growth": -0.16757954361780691
+    "export_growth": 0.012758756086741485,
+    "import_growth": -0.08037793396836357,
+    "balance_growth": -0.12852601124669827
   },
   {
     "quarter": "2024Q1",
-    "export_value": 400.1192236064361,
-    "import_value": 896.4951108151131,
-    "trade_balance": -496.375887208677,
+    "export_value": 801.2963588984035,
+    "import_value": 1786.0111725767817,
+    "trade_balance": -984.7148136783783,
     "balance_type": "deficit",
-    "export_growth": 0.12766542064969988,
-    "import_growth": -0.042459040847659835,
-    "balance_growth": -0.14627907506207127
+    "export_growth": 0.1325768000894485,
+    "import_growth": -0.05258797085999345,
+    "balance_growth": -0.16382979175388113
   },
   {
     "quarter": "2024Q2",
-    "export_value": 509.41095069192323,
-    "import_value": 1057.3418985682586,
-    "trade_balance": -547.9309478763353,
+    "export_value": 1018.3694581698994,
+    "import_value": 2136.2202789560524,
+    "trade_balance": -1117.850820786153,
     "balance_type": "deficit",
-    "export_growth": 0.27314790351834817,
-    "import_growth": 0.1794173619161179,
-    "balance_growth": 0.10386294337860225
+    "export_growth": 0.2709023906834185,
+    "import_growth": 0.19608449922180715,
+    "balance_growth": 0.13520260410265217
   },
   {
     "quarter": "2024Q3",
-    "export_value": 628.0404654551105,
-    "import_value": 1239.973971044739,
-    "trade_balance": -611.9335055896286,
+    "export_value": 1254.7070111655871,
+    "import_value": 2398.21576840186,
+    "trade_balance": -1143.5087572362727,
     "balance_type": "deficit",
-    "export_growth": 0.23287586299834162,
-    "import_growth": 0.17272754699665427,
-    "balance_growth": 0.11680770717798228
+    "export_growth": 0.23207447071361242,
+    "import_growth": 0.12264441641469759,
+    "balance_growth": 0.02295291641157915
   },
   {
     "quarter": "2024Q4",
-    "export_value": 643.5620013711347,
-    "import_value": 1137.8065702414158,
-    "trade_balance": -494.2445688702811,
+    "export_value": 1269.6232738234066,
+    "import_value": 2228.358345897104,
+    "trade_balance": -958.7350720736972,
     "balance_type": "deficit",
-    "export_growth": 0.024714229050155856,
-    "import_growth": -0.08239479472076516,
-    "balance_growth": -0.19232308027642364
+    "export_growth": 0.011888243649776697,
+    "import_growth": -0.07082658063663172,
+    "balance_growth": -0.16158484488492408
+  },
+  {
+    "quarter": "2025Q1",
+    "export_value": 458.4402335617165,
+    "import_value": 869.7892320581909,
+    "trade_balance": -411.3489984964744,
+    "balance_type": "deficit",
+    "export_growth": -0.6389163281631197,
+    "import_growth": -0.6096726392056002,
+    "balance_growth": -0.5709461242439514
   }
 ]

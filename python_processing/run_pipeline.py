@@ -75,7 +75,7 @@ class PipelineRunner:
             'data_dir': str(project_root / 'data'),
             'processed_dir': os.getenv('DATA_PROCESSED_PATH', str(project_root / 'data' / 'processed')),
             'models_dir': os.getenv('MODELS_DIR', str(project_root / 'models')),
-            'excel_filename': os.getenv('EXCEL_FILE_PATH', '2024Q4_Trade_report_annexTables.xlsx') or '2024Q4_Trade_report_annexTables.xlsx',
+            'excel_filename': os.getenv('EXCEL_FILE_PATH', '2025Q1_Trade_report_annexTables.xlsx') or '2025Q1_Trade_report_annexTables.xlsx',
             'prediction_quarters': int(os.getenv('PREDICTION_QUARTERS', '4')),
             'analysis_top_n': int(os.getenv('ANALYSIS_TOP_N', '10')),
             'force_reprocess': os.getenv('FORCE_REPROCESS', 'false').lower() == 'true',

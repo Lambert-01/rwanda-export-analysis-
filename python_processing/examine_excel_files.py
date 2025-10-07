@@ -212,7 +212,6 @@ class ExcelFileExaminer:
     def examine_both_files(self) -> Dict[str, Any]:
         """Examine both 2024Q4 and 2025Q1 Excel files."""
         files_to_examine = [
-            "2024Q4_Trade_report_annexTables.xlsx",
             "2025Q1_Trade_report_annexTables.xlsx"
         ]
 
@@ -258,16 +257,14 @@ class ExcelFileExaminer:
                         # This would be expanded based on what we find
                         pass
 
-        # Find common and unique sheets
+        # For single file, all sheets are unique to that file
         result_files = list(results.keys())
-        if len(result_files) >= 2:
-            file1_sheets = set(results[result_files[0]]["sheets"].keys()) if "error" not in results[result_files[0]] else set()
-            file2_sheets = set(results[result_files[1]]["sheets"].keys()) if "error" not in results[result_files[1]] else set()
+        if len(result_files) >= 1:
+            file_sheets = set(results[result_files[0]]["sheets"].keys()) if "error" not in results[result_files[0]] else set()
 
-        summary["common_sheets"] = list(file1_sheets.intersection(file2_sheets))
+        summary["common_sheets"] = []
         summary["unique_sheets"] = {
-            "file1_only": list(file1_sheets - file2_sheets),
-            "file2_only": list(file2_sheets - file1_sheets)
+            "2025q1_only": list(file_sheets)
         }
 
         self.examination_results["summary"] = summary
@@ -301,11 +298,8 @@ def main():
         print(f"Total sheets found: {summary['total_sheets']}")
         print(f"Common sheets: {', '.join(summary['common_sheets'])}")
 
-        if summary["unique_sheets"]["file1_only"]:
-            print(f"2024Q4 unique sheets: {', '.join(summary['unique_sheets']['file1_only'])}")
-
-        if summary["unique_sheets"]["file2_only"]:
-            print(f"2025Q1 unique sheets: {', '.join(summary['unique_sheets']['file2_only'])}")
+        if summary["unique_sheets"]["2025q1_only"]:
+            print(f"2025Q1 sheets: {', '.join(summary['unique_sheets']['2025q1_only'])}")
 
         print(f"\nDetailed results saved to: data/processed/excel_examination_results.json")
         print("="*80)
