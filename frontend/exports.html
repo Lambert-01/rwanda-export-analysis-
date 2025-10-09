@@ -167,18 +167,31 @@
                     </div>
                 </div>
 
-                <!-- Export Overview Stats -->
+                <!-- Key Performance Indicators -->
                 <div class="row g-4 mb-5" id="export-overview">
+                    <div class="col-lg-12">
+                        <div class="section-header mb-4">
+                            <h3 class="section-title">
+                                <i class="fas fa-tachometer-alt me-2"></i>
+                                Export Performance Dashboard
+                            </h3>
+                            <p class="section-subtitle">Key metrics and performance indicators for Rwanda's export sector</p>
+                        </div>
+                    </div>
+
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-card animate__animated animate__fadeInUp">
                             <div class="stats-icon bg-success">
-                                <i class="fas fa-globe"></i>
+                                <i class="fas fa-globe-africa"></i>
                             </div>
-                            <div class="stats-value" id="export-destinations-count">20</div>
-                            <div class="stats-label">Export Destinations</div>
+                            <div class="stats-value" id="export-destinations-count">
+                                <span class="counter">20</span>
+                            </div>
+                            <div class="stats-label">Active Export Markets</div>
+                            <div class="stats-description">Countries receiving Rwanda's exports</div>
                             <div class="stats-trend trend-up">
                                 <i class="fas fa-arrow-up me-1"></i>
-                                <span>Active Markets</span>
+                                <span>Market Diversification</span>
                             </div>
                         </div>
                     </div>
@@ -186,13 +199,16 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-card animate__animated animate__fadeInUp animate__delay-1s">
                             <div class="stats-icon bg-primary">
-                                <i class="fas fa-boxes"></i>
+                                <i class="fas fa-box-open"></i>
                             </div>
-                            <div class="stats-value" id="export-products-count">10</div>
+                            <div class="stats-value" id="export-products-count">
+                                <span class="counter">10</span>
+                            </div>
                             <div class="stats-label">Product Categories</div>
+                            <div class="stats-description">SITC classification sections</div>
                             <div class="stats-trend trend-up">
                                 <i class="fas fa-arrow-up me-1"></i>
-                                <span>SITC Sections</span>
+                                <span>Export Variety</span>
                             </div>
                         </div>
                     </div>
@@ -200,13 +216,16 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-card animate__animated animate__fadeInUp animate__delay-2s">
                             <div class="stats-icon bg-warning">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-percentage"></i>
                             </div>
-                            <div class="stats-value" id="export-growth-rate">+157.9%</div>
-                            <div class="stats-label">Export Growth (2022-2025)</div>
+                            <div class="stats-value" id="export-growth-rate">
+                                <span class="counter">+157.9</span><span class="percentage">%</span>
+                            </div>
+                            <div class="stats-label">Export Growth Rate</div>
+                            <div class="stats-description">2022-2025 cumulative growth</div>
                             <div class="stats-trend trend-up">
                                 <i class="fas fa-arrow-up me-1"></i>
-                                <span>Overall Growth</span>
+                                <span>Strong Performance</span>
                             </div>
                         </div>
                     </div>
@@ -214,13 +233,16 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="stats-card animate__animated animate__fadeInUp animate__delay-3s">
                             <div class="stats-icon bg-info">
-                                <i class="fas fa-trophy"></i>
+                                <i class="fas fa-crown"></i>
                             </div>
-                            <div class="stats-value" id="top-destination">UAE</div>
-                            <div class="stats-label">Top Destination</div>
+                            <div class="stats-value" id="top-destination">
+                                <span class="flag">🇦🇪</span> UAE
+                            </div>
+                            <div class="stats-label">Leading Export Destination</div>
+                            <div class="stats-description">United Arab Emirates</div>
                             <div class="stats-trend trend-up">
                                 <i class="fas fa-arrow-up me-1"></i>
-                                <span>$5.81B (76%)</span>
+                                <span>$5.81B (76% Share)</span>
                             </div>
                         </div>
                     </div>
@@ -228,10 +250,14 @@
 
                 <div class="row g-4 mb-5">
                     <!-- Export Map -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Top Export Destinations</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-map-marked-alt me-2"></i>
+                                    Geographic Distribution of Rwanda's Export Destinations
+                                </h3>
+                                <p class="chart-subtitle">Interactive map showing Rwanda's key export markets and trade volumes</p>
                                 <div class="chart-controls">
                                     <select class="form-select form-select-sm" id="export-year-filter" aria-label="Select year for export analysis">
                                         <option value="2024">2024</option>
@@ -241,32 +267,42 @@
                                 </div>
                             </div>
                             <div class="map-container">
-                                <div id="export-map" style="height: 400px;"></div>
+                                <div id="export-map" style="height: 500px; border-radius: 12px;"></div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Top Destinations -->
-                    <div class="col-lg-4">
+                <!-- Top Destinations Table -->
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-12">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Top 5 Destinations</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-trophy me-2"></i>
+                                    Rwanda's Top Export Destinations
+                                </h3>
+                                <p class="chart-subtitle">Ranking of countries by export value and growth performance</p>
                             </div>
-                            <div class="destinations-list" id="top-destinations">
+                            <div class="destinations-list" id="top-destinations" style="max-height: 300px; overflow-y: auto;">
                                 <!-- Dynamic content -->
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Main Analytics Section -->
                 <div class="row g-4 mb-5">
-                    <!-- Export Products -->
+                    <!-- Export Products Distribution -->
                     <div class="col-lg-6">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Export Products by SITC Section</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-chart-pie me-2"></i>
+                                    Product Distribution by SITC Classification
+                                </h3>
+                                <p class="chart-subtitle">Breakdown of Rwanda's exports by Standard International Trade Classification sections</p>
                                 <div class="chart-controls">
-                                    <label for="export-product-filter" class="visually-hidden">Select Period for Export Products</label>
                                     <select class="form-select form-select-sm" id="export-product-filter" aria-label="Select period for export products analysis">
                                         <option value="q4_2024">Q4 2024</option>
                                         <option value="q3_2024">Q3 2024</option>
@@ -276,70 +312,132 @@
                                 </div>
                             </div>
                             <div class="chart-container">
-                                <canvas id="export-products-chart" height="300"></canvas>
+                                <canvas id="export-products-chart" height="350"></canvas>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Growth Trends -->
+                    <!-- Quarterly Growth Analysis -->
                     <div class="col-lg-6">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Export Growth by Quarter</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-chart-line me-2"></i>
+                                    Quarterly Export Growth Trends
+                                </h3>
+                                <p class="chart-subtitle">Quarter-over-quarter growth rates showing export performance momentum</p>
                             </div>
                             <div class="chart-container">
-                                <canvas id="export-growth-chart" height="300"></canvas>
+                                <canvas id="export-growth-chart" height="350"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Export Trends Analysis -->
+                <!-- Time Series Analysis -->
                 <div class="row g-4 mb-5">
                     <div class="col-lg-12">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Export Performance Over Time</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-clock me-2"></i>
+                                    Export Performance Timeline & Forecasting
+                                </h3>
+                                <p class="chart-subtitle">Historical export trends with AI-powered forecasting for future quarters</p>
                                 <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-export-chart="quarterly">Quarterly</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-export-chart="yearly">Yearly</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-export-chart="comparison">Comparison</button>
+                                    <div class="btn-group" role="group">
+                                        <input type="radio" class="btn-check" name="export-chart-type" id="quarterly-btn" checked>
+                                        <label class="btn btn-sm btn-outline-primary" for="quarterly-btn">Quarterly View</label>
+
+                                        <input type="radio" class="btn-check" name="export-chart-type" id="yearly-btn">
+                                        <label class="btn btn-sm btn-outline-primary" for="yearly-btn">Annual View</label>
+
+                                        <input type="radio" class="btn-check" name="export-chart-type" id="forecast-btn">
+                                        <label class="btn btn-sm btn-outline-primary" for="forecast-btn">With Forecast</label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="chart-container">
-                                <canvas id="export-trends-chart" height="350"></canvas>
+                                <canvas id="export-trends-chart" height="400"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Country Performance Table -->
+                <!-- Detailed Country Analysis -->
                 <div class="row g-4">
                     <div class="col-lg-12">
                         <div class="chart-card">
                             <div class="chart-header">
-                                <h3 class="chart-title">Detailed Export Analysis by Country</h3>
+                                <h3 class="chart-title">
+                                    <i class="fas fa-table me-2"></i>
+                                    Comprehensive Country-by-Country Export Analysis
+                                </h3>
+                                <p class="chart-subtitle">Detailed breakdown of export performance, market share, and growth trends by destination country</p>
                                 <div class="chart-controls">
-                                    <input type="text" class="form-control form-control-sm" id="export-search" placeholder="Search countries..." style="width: 200px;">
+                                    <div class="input-group" style="width: 300px;">
+                                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                                        <input type="text" class="form-control form-control-sm" id="export-search" placeholder="Search countries, regions, or values...">
+                                    </div>
                                 </div>
                             </div>
                             <div class="table-responsive">
-                                <table class="table table-hover" id="export-analysis-table">
-                                    <thead>
+                                <table class="table table-hover table-striped" id="export-analysis-table">
+                                    <thead class="table-dark">
                                         <tr>
-                                            <th>Rank</th>
-                                            <th>Country</th>
-                                            <th>Total Value (2022-2025)</th>
-                                            <th>Q4 2024 Value</th>
-                                            <th>Share (%)</th>
-                                            <th>Growth Rate</th>
-                                            <th>Trend</th>
+                                            <th class="text-center">
+                                                <i class="fas fa-hashtag me-1"></i>Rank
+                                            </th>
+                                            <th>
+                                                <i class="fas fa-globe-africa me-1"></i>Destination Country
+                                            </th>
+                                            <th class="text-end">
+                                                <i class="fas fa-dollar-sign me-1"></i>Total Value<br>
+                                                <small class="text-muted">(2022-2025)</small>
+                                            </th>
+                                            <th class="text-end">
+                                                <i class="fas fa-calendar-alt me-1"></i>Q4 2024 Value
+                                            </th>
+                                            <th class="text-center">
+                                                <i class="fas fa-percentage me-1"></i>Market Share
+                                            </th>
+                                            <th class="text-center">
+                                                <i class="fas fa-chart-line me-1"></i>Growth Rate<br>
+                                                <small class="text-muted">(vs Previous Period)</small>
+                                            </th>
+                                            <th class="text-center">
+                                                <i class="fas fa-trending-up me-1"></i>Trend Status
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody id="export-table-body">
                                         <!-- Dynamic content -->
                                     </tbody>
                                 </table>
+                            </div>
+
+                            <!-- Table Footer with Summary -->
+                            <div class="table-footer mt-3">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="summary-card bg-light p-3 rounded">
+                                            <h6 class="mb-1">Total Countries</h6>
+                                            <span class="fw-bold text-primary" id="total-countries">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="summary-card bg-light p-3 rounded">
+                                            <h6 class="mb-1">Avg. Growth Rate</h6>
+                                            <span class="fw-bold text-success" id="avg-growth">+12.5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="summary-card bg-light p-3 rounded">
+                                            <h6 class="mb-1">Market Concentration</h6>
+                                            <span class="fw-bold text-info" id="market-concentration">High</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -424,15 +522,281 @@
     <script src="js/chatbox.js"></script>
     <script src="js/exports.js"></script>
 
+    <!-- Custom Styling for Enhanced Layout -->
+    <style>
+        .chart-card {
+            background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .chart-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .chart-title {
+            color: #1a365d;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .chart-subtitle {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.4;
+        }
+
+        .stats-card {
+            background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--bs-primary), var(--bs-success));
+        }
+
+        .stats-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .stats-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .stats-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+
+        .counter {
+            display: inline-block;
+        }
+
+        .percentage {
+            font-size: 1.2rem;
+            color: #64748b;
+        }
+
+        .flag {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .stats-label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #334155;
+            margin-bottom: 0.25rem;
+        }
+
+        .stats-description {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats-trend {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table thead th {
+            border-bottom: 2px solid #e2e8f0;
+            font-weight: 600;
+            color: #1a365d;
+            background-color: #f8fafc;
+            padding: 1rem 0.75rem;
+        }
+
+        .table tbody td {
+            padding: 0.75rem;
+            vertical-align: middle;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .summary-card {
+            text-align: center;
+        }
+
+        .summary-card h6 {
+            color: #64748b;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+            padding: 1rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: #1a365d;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        /* Radio button styling */
+        .btn-check:checked + .btn {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        .btn-group .btn {
+            border-radius: 6px !important;
+            margin: 0 2px;
+        }
+
+        /* Loading animation for counters */
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .counter {
+            animation: countUp 0.8s ease-out;
+        }
+
+        /* Enhanced destination list styling */
+        .destinations-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .destination-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            transition: background-color 0.2s;
+        }
+
+        .destination-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .destination-rank {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d6efd, #0056b3);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .destination-info {
+            flex: 1;
+        }
+
+        .destination-name {
+            font-weight: 600;
+            color: #1a365d;
+            margin-bottom: 0.25rem;
+        }
+
+        .destination-value {
+            color: #059669;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive improvements */
+        @media (max-width: 768px) {
+            .chart-title {
+                font-size: 1.1rem;
+            }
+
+            .stats-value {
+                font-size: 1.5rem;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+        }
+    </style>
+
     <!-- Initialize AOS -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true,
-                offset: 100
-            });
+            // Initialize AOS with proper error handling
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+                console.log('✅ AOS initialized successfully');
+            } else {
+                console.warn('⚠️ AOS library not loaded');
+            }
 
             // Initialize sidebar and other components
             if (window.SidebarManager) {
@@ -441,7 +805,30 @@
             if (window.AIChatbox) {
                 window.aiChatbox = new AIChatbox();
             }
+
+            // Initialize counter animations
+            initializeCounters();
         });
+
+        function initializeCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseFloat(counter.textContent);
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target % 1 === 0 ? target : target.toFixed(1);
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = current % 1 === 0 ? Math.floor(current) : current.toFixed(1);
+                    }
+                }, 16);
+            });
+        }
     </script>
 </body>
 </html>

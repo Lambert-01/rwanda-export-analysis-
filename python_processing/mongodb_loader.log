@@ -1,0 +1,14 @@
+2025-10-08 00:27:48,487 - INFO - [SUCCESS] Connected to MongoDB successfully
+2025-10-08 00:27:48,494 - INFO - [FILE] Loading export_sitc_products.json into MongoDB collection: export_sitc_products
+2025-10-08 00:27:48,616 - INFO - [SUCCESS] Loaded 1 documents into export_sitc_products
+2025-10-08 00:27:48,616 - INFO - [FILE] Loading export_growth_by_quarter.json into MongoDB collection: export_growth_by_quarter
+2025-10-08 00:27:48,620 - INFO - [SUCCESS] Loaded 1 documents into export_growth_by_quarter
+2025-10-08 00:27:48,621 - INFO - [FILE] Loading export_performance_over_time.json into MongoDB collection: export_performance_over_time
+2025-10-08 00:27:48,627 - INFO - [SUCCESS] Loaded 1 documents into export_performance_over_time
+2025-10-08 00:27:48,628 - INFO - [FILE] Loading export_period_products_q4_2024.json into MongoDB collection: export_period_products_q4_2024
+2025-10-08 00:27:48,633 - INFO - [SUCCESS] Loaded 1 documents into export_period_products_q4_2024
+2025-10-08 00:27:48,633 - INFO - [FILE] Loading export_detailed_country_analysis.json into MongoDB collection: export_detailed_country_analysis
+2025-10-08 00:27:48,636 - INFO - [SUCCESS] Loaded 1 documents into export_detailed_country_analysis
+2025-10-08 00:27:48,640 - INFO - [FILE] Loading re-exports data into MongoDB
+2025-10-08 00:27:48,685 - INFO - [SUCCESS] Loaded 164 re-export documents
+2025-10-08 00:27:48,781 - INFO - [DISCONNECT] MongoDB connection closed

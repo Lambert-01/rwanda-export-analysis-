@@ -1,0 +1,15 @@
+{
+  "generated_at": "2025-10-08T13:45:36.224155",
+  "analyses_generated": [
+    "import_sources",
+    "period_sources_q4_2024",
+    "import_growth_by_quarter",
+    "import_performance_over_time",
+    "detailed_source_analysis"
+  ],
+  "total_analyses": 5,
+  "data_summary": {
+    "total_import_records": 171,
+    "date_range": "2023Q1 to 2025Q1"
+  }
+}

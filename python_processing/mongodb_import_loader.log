@@ -1,0 +1,16 @@
+2025-10-08 13:46:22,061 - INFO - [SUCCESS] Connected to MongoDB successfully
+2025-10-08 13:46:22,062 - INFO - [FILE] Loading raw imports data into MongoDB collection: imports
+2025-10-08 13:46:22,230 - INFO - [SUCCESS] Loaded 171 raw import documents
+2025-10-08 13:46:22,231 - INFO - [FILE] Loading import_import_sources.json into MongoDB collection: import_sources
+2025-10-08 13:46:22,270 - INFO - [SUCCESS] Loaded 1 documents into import_sources
+2025-10-08 13:46:22,271 - INFO - [FILE] Loading import_import_growth_by_quarter.json into MongoDB collection: import_growth_by_quarter
+2025-10-08 13:46:22,302 - INFO - [SUCCESS] Loaded 1 documents into import_growth_by_quarter
+2025-10-08 13:46:22,304 - INFO - [FILE] Loading import_import_performance_over_time.json into MongoDB collection: import_performance_over_time
+2025-10-08 13:46:22,364 - INFO - [SUCCESS] Loaded 1 documents into import_performance_over_time
+2025-10-08 13:46:22,368 - INFO - [FILE] Loading import_period_sources_q4_2024.json into MongoDB collection: import_period_sources_q4_2024
+2025-10-08 13:46:22,585 - INFO - [SUCCESS] Loaded 1 documents into import_period_sources_q4_2024
+2025-10-08 13:46:22,587 - INFO - [FILE] Loading import_detailed_source_analysis.json into MongoDB collection: import_detailed_source_analysis
+2025-10-08 13:46:22,659 - INFO - [SUCCESS] Loaded 1 documents into import_detailed_source_analysis
+2025-10-08 13:46:22,661 - INFO - [FILE] Loading combined imports data into MongoDB
+2025-10-08 13:46:22,725 - INFO - [SUCCESS] Loaded 171 combined import documents
+2025-10-08 13:46:22,855 - INFO - [DISCONNECT] MongoDB connection closed

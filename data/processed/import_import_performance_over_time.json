@@ -1,0 +1,259 @@
+{
+  "generated_at": "2025-10-08T13:45:36.203257",
+  "quarters_analyzed": 9,
+  "total_period_value": 8908.1,
+  "performance_data": [
+    {
+      "quarter": "2023Q1",
+      "total_value": 904.33,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 207.58
+        },
+        {
+          "country": "India",
+          "value": 173.48
+        },
+        {
+          "country": "Kenya",
+          "value": 122.36
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 90.1
+        },
+        {
+          "country": "Uganda",
+          "value": 52.19
+        }
+      ],
+      "avg_value_per_country": 47.6
+    },
+    {
+      "quarter": "2023Q2",
+      "total_value": 965.41,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 188.59
+        },
+        {
+          "country": "India",
+          "value": 183.29
+        },
+        {
+          "country": "Cameroon",
+          "value": 118.34
+        },
+        {
+          "country": "Kenya",
+          "value": 110.69
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 72.4
+        }
+      ],
+      "avg_value_per_country": 50.81
+    },
+    {
+      "quarter": "2023Q3",
+      "total_value": 1002.48,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 219.86
+        },
+        {
+          "country": "India",
+          "value": 165.86
+        },
+        {
+          "country": "Kenya",
+          "value": 127.01
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 89.43
+        },
+        {
+          "country": "Turkey",
+          "value": 70.05
+        }
+      ],
+      "avg_value_per_country": 52.76
+    },
+    {
+      "quarter": "2023Q4",
+      "total_value": 948.9,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 227.43
+        },
+        {
+          "country": "India",
+          "value": 115.36
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 86.5
+        },
+        {
+          "country": "South Africa",
+          "value": 78.79
+        },
+        {
+          "country": "Uganda",
+          "value": 71.12
+        }
+      ],
+      "avg_value_per_country": 49.94
+    },
+    {
+      "quarter": "2024Q1",
+      "total_value": 889.52,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 171.0
+        },
+        {
+          "country": "India",
+          "value": 144.46
+        },
+        {
+          "country": "Kenya",
+          "value": 99.54
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 96.62
+        },
+        {
+          "country": "Cameroon",
+          "value": 86.87
+        }
+      ],
+      "avg_value_per_country": 46.82
+    },
+    {
+      "quarter": "2024Q2",
+      "total_value": 1078.88,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Kenya",
+          "value": 245.08
+        },
+        {
+          "country": "Tanzania",
+          "value": 158.17
+        },
+        {
+          "country": "India",
+          "value": 151.51
+        },
+        {
+          "country": "Cameroon",
+          "value": 126.02
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 95.91
+        }
+      ],
+      "avg_value_per_country": 56.78
+    },
+    {
+      "quarter": "2024Q3",
+      "total_value": 1158.24,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 267.62
+        },
+        {
+          "country": "Kenya",
+          "value": 215.21
+        },
+        {
+          "country": "Cameroon",
+          "value": 162.24
+        },
+        {
+          "country": "India",
+          "value": 117.02
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 87.76
+        }
+      ],
+      "avg_value_per_country": 60.96
+    },
+    {
+      "quarter": "2024Q4",
+      "total_value": 1090.55,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 298.93
+        },
+        {
+          "country": "Kenya",
+          "value": 211.22
+        },
+        {
+          "country": "India",
+          "value": 101.83
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 96.64
+        },
+        {
+          "country": "Uganda",
+          "value": 75.13
+        }
+      ],
+      "avg_value_per_country": 57.4
+    },
+    {
+      "quarter": "2025Q1",
+      "total_value": 869.79,
+      "unique_countries": 19,
+      "top_sources": [
+        {
+          "country": "Tanzania",
+          "value": 151.3
+        },
+        {
+          "country": "Kenya",
+          "value": 135.35
+        },
+        {
+          "country": "India",
+          "value": 115.65
+        },
+        {
+          "country": "United Arab Emirates",
+          "value": 81.09
+        },
+        {
+          "country": "Uganda",
+          "value": 59.14
+        }
+      ],
+      "avg_value_per_country": 45.78
+    }
+  ]
+}

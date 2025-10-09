@@ -357,25 +357,33 @@ window.testDataLoading = async function() {
 window.populateWithSampleData = function() {
     console.log('🚀 Populating dashboard with real data from processed files...');
 
-    // Update dashboard stats with real data from your processed files
-    const statsElements = {
-        'exports-value': '$677.45M',
-        'imports-value': '$1,629.39M',
-        'balance-value': '-$951.94M',
-        'total-trade-value': '$2,306.84M',
-        'export-growth': '+157.9%',
-        'active-partners': '20'
-    };
+    try {
+        // Update dashboard stats with real data from your processed files
+        const statsElements = {
+            'exports-value': '$677.45M',
+            'imports-value': '$1,629.39M',
+            'balance-value': '-$951.94M',
+            'total-trade-value': '$2,306.84M',
+            'export-growth': '+157.9%',
+            'active-partners': '20'
+        };
 
-    Object.entries(statsElements).forEach(([elementId, value]) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.textContent = value;
-        }
-    });
+        Object.entries(statsElements).forEach(([elementId, value]) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = value;
+                console.log(`✅ Updated ${elementId}: ${value}`);
+            } else {
+                console.warn(`⚠️ Element not found: ${elementId}`);
+            }
+        });
 
-    console.log('✅ Dashboard populated with real data');
-    showToast('Dashboard updated with real data!', 'success', 2000);
+        console.log('✅ Dashboard populated with real data');
+        showToast('Dashboard updated with real data!', 'success', 2000);
+    } catch (error) {
+        console.error('❌ Error populating dashboard:', error);
+        showToast('Error updating dashboard', 'error', 3000);
+    }
 };
 
 // Force load data and populate charts immediately

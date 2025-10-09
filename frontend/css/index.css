@@ -47,6 +47,9 @@
 .chart-card {
     animation: fadeInScale 0.8s ease-out;
     animation-fill-mode: both;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .chart-card:nth-child(1) { animation-delay: 0.5s; }
@@ -65,10 +68,12 @@
 
 /* Quick Actions Grid */
 .quick-actions-grid {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .quick-action-btn {
@@ -104,6 +109,76 @@
     border-radius: 12px;
     padding: 1.5rem;
     min-height: 400px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Comparison Controls Styling */
+.comparison-controls {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-form {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-form label {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-form select {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-form button {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Comparison Results Styling */
+.comparison-results {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 400px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.comparison-placeholder {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #64748b;
+    padding: 3rem;
+    min-height: 300px;
+}
+
+.comparison-summary {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100%;
 }
 
 .comparison-placeholder {
@@ -122,6 +197,125 @@
     opacity: 0.5;
 }
 
+/* Enhanced Comparison Styles for Index Page */
+.comparison-summary {
+    width: 100%;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-left: 4px solid #00A1F1;
+    margin-bottom: 1rem;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.comparison-title {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.comparison-title::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #00A1F1;
+    border-radius: 50%;
+}
+
+.comparison-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.comparison-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.3);
+    transition: all 0.3s ease;
+}
+
+.comparison-item:hover {
+    background: rgba(226, 232, 240, 0.1);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0 -0.75rem;
+}
+
+.comparison-item:last-child {
+    border-bottom: none;
+}
+
+.comparison-rank {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #00A1F1, #00AF54);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+.comparison-info {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.comparison-name {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2px;
+}
+
+.comparison-value {
+    font-weight: 700;
+    color: #28a745;
+    font-size: 1.125rem;
+}
+
+.comparison-trend {
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.comparison-share {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #00A1F1;
+    flex-shrink: 0;
+}
+
+.comparison-details {
+    flex-shrink: 0;
+    text-align: right;
+}
+
 /* Responsive Design for Index Page */
 @media (max-width: 768px) {
     .hero-stats {
@@ -131,12 +325,44 @@
 
     .quick-actions-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        display: grid !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .comparison-container {
         padding: 1rem;
         min-height: 300px;
     }
+}
+
+/* Ensure all sections are visible */
+.section {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.section.active {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Chart containers must be visible */
+.chart-container {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 300px;
+}
+
+.chart-container canvas {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 300px !important;
 }
 
 /* Loading States for Index Page */

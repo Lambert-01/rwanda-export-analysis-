@@ -48,6 +48,18 @@
 .export-chart-card {
     animation: fadeInUp 0.8s ease-out;
     animation-fill-mode: both;
+    background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.export-chart-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .export-chart-card:nth-child(1) { animation-delay: 0.5s; }
@@ -62,6 +74,82 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Enhanced Chart Headers */
+.export-chart-card .chart-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    background: linear-gradient(135deg, rgba(0,161,241,0.02) 0%, rgba(0,175,84,0.02) 100%);
+}
+
+.export-chart-card .chart-title {
+    color: #1a365d;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.export-chart-card .chart-subtitle {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+}
+
+/* Chart Container Enhancements */
+.export-chart-card .chart-container {
+    position: relative;
+    height: 350px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+}
+
+.export-chart-card .chart-container canvas {
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Chart Controls Styling */
+.chart-controls {
+    background: rgba(0,161,241,0.05);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.chart-controls .form-select {
+    border: 1px solid rgba(0,161,241,0.2);
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.chart-controls .form-select:focus {
+    border-color: #00A1F1;
+    box-shadow: 0 0 0 0.2rem rgba(0,161,241,0.25);
+}
+
+/* Radio Button Group Styling */
+.btn-group .btn {
+    border-radius: 6px !important;
+    margin: 0 2px;
+    border: 1px solid rgba(0,161,241,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-group .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,161,241,0.2);
+}
+
+.btn-check:checked + .btn {
+    background: linear-gradient(135deg, #00A1F1, #00AF54);
+    border-color: #00A1F1;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,161,241,0.3);
 }
 
 /* Top Destinations List */
@@ -172,6 +260,248 @@
     .destination-info {
         margin-left: 0;
     }
+
+    /* Enhanced mobile chart styling */
+    .export-chart-card {
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .export-chart-card .chart-container {
+        height: 280px;
+        padding: 0.75rem;
+    }
+
+    .export-chart-card .chart-title {
+        font-size: 1.1rem;
+    }
+
+    .export-chart-card .chart-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .chart-controls {
+        padding: 0.5rem;
+        margin-top: 0.75rem;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .btn-group .btn {
+        margin: 0;
+        border-radius: 6px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .export-chart-card .chart-container {
+        height: 250px;
+        padding: 0.5rem;
+    }
+
+    .export-chart-card .chart-header {
+        padding: 1rem;
+    }
+
+    .export-chart-card .chart-title {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .export-chart-card .chart-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+    .export-chart-card {
+        margin-bottom: 2.5rem;
+    }
+
+    .export-chart-card .chart-container {
+        height: 400px;
+        padding: 1.5rem;
+    }
+
+    .export-chart-card .chart-title {
+        font-size: 1.35rem;
+    }
+
+    .export-chart-card .chart-subtitle {
+        font-size: 0.95rem;
+    }
+}
+
+/* Chart Loading States */
+.chart-loading {
+    position: relative;
+}
+
+.chart-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0,161,241,0.2);
+    border-top: 3px solid #00A1F1;
+    border-radius: 50%;
+    animation: chartLoadingSpin 1s linear infinite;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+@keyframes chartLoadingSpin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Enhanced hover effects for interactive elements */
+.chart-controls .form-select:hover {
+    border-color: rgba(0,161,241,0.4);
+    transform: translateY(-1px);
+}
+
+.destination-item {
+    cursor: pointer;
+}
+
+.destination-item:hover .destination-rank {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Override main.css chart styles to prevent conflicts */
+.export-chart-card {
+    background: linear-gradient(135deg, #fff 0%, #f8fafc 100%) !important;
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+    margin-bottom: 2rem !important;
+    overflow: hidden !important;
+}
+
+.export-chart-card .chart-container {
+    position: relative !important;
+    height: 350px !important;
+    padding: 1rem !important;
+    background: linear-gradient(135deg, #fff 0%, #f8fafc 100%) !important;
+}
+
+.export-chart-card .chart-container canvas {
+    border-radius: 8px !important;
+    background: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02) !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Ensure proper chart dimensions */
+.export-chart-card .chart-container canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Enhanced chart header styling */
+.export-chart-card .chart-header {
+    padding: 1.5rem !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+    background: linear-gradient(135deg, rgba(0,161,241,0.02) 0%, rgba(0,175,84,0.02) 100%) !important;
+}
+
+.export-chart-card .chart-title {
+    color: #1a365d !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 0.5rem 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.export-chart-card .chart-subtitle {
+    color: #64748b !important;
+    font-size: 0.9rem !important;
+    margin: 0 0 1rem 0 !important;
+    line-height: 1.4 !important;
+}
+
+/* Enhanced radio button styling */
+.btn-check:checked + .btn {
+    background: linear-gradient(135deg, #00A1F1, #00AF54) !important;
+    border-color: #00A1F1 !important;
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 4px rgba(0,161,241,0.3) !important;
+}
+
+.btn-check + .btn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 2px 4px rgba(0,161,241,0.2) !important;
+}
+
+/* Enhanced table styling */
+.export-analysis-table {
+    background: white !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.export-analysis-table th {
+    background: linear-gradient(135deg, #00A1F1, #00AF54) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    padding: 1rem !important;
+    text-align: center !important;
+    border: none !important;
+}
+
+.export-analysis-table td {
+    padding: 0.75rem 1rem !important;
+    text-align: center !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* Enhanced destination list styling */
+.destination-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    transition: background-color 0.2s !important;
+}
+
+.destination-item:hover {
+    background-color: #f8fafc !important;
+    border-radius: 8px !important;
+    padding: 0.75rem !important;
+    margin: 0 -0.75rem !important;
+}
+
+.destination-rank {
+    background: linear-gradient(135deg, #00A1F1, #00AF54) !important;
+    color: white !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    flex-shrink: 0 !important;
 }
 
 /* Print Styles for Exports Page */

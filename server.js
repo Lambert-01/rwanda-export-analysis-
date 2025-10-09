@@ -26,6 +26,9 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 // Serve static assets
 app.use('/assets', express.static(path.join(__dirname, 'frontend', 'assets')));
 
+// Serve data files (JSON files)
+app.use('/data', express.static(path.join(__dirname, 'data')));
+
 // API Routes - Order matters! More specific routes first
 app.get('/api/health', (req, res) => {
     res.json({

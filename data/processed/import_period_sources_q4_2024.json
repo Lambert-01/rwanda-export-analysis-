@@ -1,0 +1,102 @@
+{
+  "generated_at": "2025-10-08T13:45:36.202140",
+  "target_period": "2024Q4",
+  "total_import_value": 1090.55,
+  "import_sources": [
+    {
+      "source_country": "Tanzania",
+      "total_value": 298.93,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Kenya",
+      "total_value": 211.22,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "India",
+      "total_value": 101.83,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "United Arab Emirates",
+      "total_value": 96.64,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Uganda",
+      "total_value": 75.13,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "South Africa",
+      "total_value": 55.75,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Malaysia",
+      "total_value": 42.42,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Japan",
+      "total_value": 28.01,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Democratic Republic of the Congo",
+      "total_value": 26.5,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Germany",
+      "total_value": 21.65,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Egypt",
+      "total_value": 19.14,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "United States",
+      "total_value": 18.69,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Cameroon",
+      "total_value": 18.67,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Belgium",
+      "total_value": 18.46,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Turkey",
+      "total_value": 15.57,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Russia",
+      "total_value": 13.39,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "France",
+      "total_value": 12.0,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Pakistan",
+      "total_value": 8.71,
+      "quarter": "2024Q4"
+    },
+    {
+      "source_country": "Brazil",
+      "total_value": 7.84,
+      "quarter": "2024Q4"
+    }
+  ]
+}

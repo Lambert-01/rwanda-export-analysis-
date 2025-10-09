@@ -1,0 +1,70 @@
+{
+  "generated_at": "2025-10-08T13:45:36.202140",
+  "quarters_analyzed": 9,
+  "total_import_value": 8908.1,
+  "growth_data": [
+    {
+      "quarter": "2023Q1",
+      "import_value": 904.33,
+      "growth_rate": 0,
+      "growth_amount": 0,
+      "is_positive_growth": true
+    },
+    {
+      "quarter": "2023Q2",
+      "import_value": 965.41,
+      "growth_rate": 6.75,
+      "growth_amount": 61.07,
+      "is_positive_growth": true
+    },
+    {
+      "quarter": "2023Q3",
+      "import_value": 1002.48,
+      "growth_rate": 3.84,
+      "growth_amount": 37.07,
+      "is_positive_growth": true
+    },
+    {
+      "quarter": "2023Q4",
+      "import_value": 948.9,
+      "growth_rate": -5.34,
+      "growth_amount": -53.58,
+      "is_positive_growth": false
+    },
+    {
+      "quarter": "2024Q1",
+      "import_value": 889.52,
+      "growth_rate": -6.26,
+      "growth_amount": -59.38,
+      "is_positive_growth": false
+    },
+    {
+      "quarter": "2024Q2",
+      "import_value": 1078.88,
+      "growth_rate": 21.29,
+      "growth_amount": 189.36,
+      "is_positive_growth": true
+    },
+    {
+      "quarter": "2024Q3",
+      "import_value": 1158.24,
+      "growth_rate": 7.36,
+      "growth_amount": 79.36,
+      "is_positive_growth": true
+    },
+    {
+      "quarter": "2024Q4",
+      "import_value": 1090.55,
+      "growth_rate": -5.84,
+      "growth_amount": -67.69,
+      "is_positive_growth": false
+    },
+    {
+      "quarter": "2025Q1",
+      "import_value": 869.79,
+      "growth_rate": -20.24,
+      "growth_amount": -220.76,
+      "is_positive_growth": false
+    }
+  ]
+}

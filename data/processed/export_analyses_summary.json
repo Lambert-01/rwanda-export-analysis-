@@ -1,0 +1,15 @@
+{
+  "generated_at": "2025-10-08T00:51:35.500166",
+  "analyses_generated": [
+    "sitc_products",
+    "period_products_q4_2024",
+    "growth_by_quarter",
+    "performance_over_time",
+    "detailed_country_analysis"
+  ],
+  "total_analyses": 5,
+  "data_summary": {
+    "total_export_records": 179,
+    "date_range": "2023Q1 to 2025Q1"
+  }
+}

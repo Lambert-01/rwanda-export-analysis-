@@ -1,0 +1,19 @@
+{
+  "generated_at": "2025-10-08T00:51:35.469865",
+  "target_period": "2024Q4",
+  "total_export_value": 626.06,
+  "sitc_sections": [
+    {
+      "sitc_section": "Unknown",
+      "section_name": "SITC Section Unknown",
+      "total_value": 626.06,
+      "commodity_count": 1,
+      "top_commodities": [
+        {
+          "name": "Unknown",
+          "value": 626.06
+        }
+      ]
+    }
+  ]
+}

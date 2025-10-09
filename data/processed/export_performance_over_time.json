@@ -1,0 +1,322 @@
+{
+  "generated_at": "2025-10-08T00:51:35.473254",
+  "quarters_analyzed": 9,
+  "total_period_value": 4144.74,
+  "performance_data": [
+    {
+      "quarter": "2023Q1",
+      "total_value": 367.63,
+      "unique_countries": 19,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 211.6
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 44.32
+        },
+        {
+          "country": "China",
+          "value": 21.49
+        },
+        {
+          "country": "South Sudan",
+          "value": 13.39
+        },
+        {
+          "country": "Uganda",
+          "value": 12.36
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 367.63
+        }
+      ],
+      "avg_value_per_country": 19.35
+    },
+    {
+      "quarter": "2023Q2",
+      "total_value": 453.5,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 321.57
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 38.18
+        },
+        {
+          "country": "China",
+          "value": 19.43
+        },
+        {
+          "country": "Hong Kong",
+          "value": 13.17
+        },
+        {
+          "country": "United Kingdom",
+          "value": 9.58
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 453.5
+        }
+      ],
+      "avg_value_per_country": 22.68
+    },
+    {
+      "quarter": "2023Q3",
+      "total_value": 349.62,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 203.49
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 51.12
+        },
+        {
+          "country": "China",
+          "value": 23.42
+        },
+        {
+          "country": "Hong Kong",
+          "value": 10.44
+        },
+        {
+          "country": "Uganda",
+          "value": 8.83
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 349.62
+        }
+      ],
+      "avg_value_per_country": 17.48
+    },
+    {
+      "quarter": "2023Q4",
+      "total_value": 352.68,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 215.07
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 47.01
+        },
+        {
+          "country": "China",
+          "value": 19.1
+        },
+        {
+          "country": "Hong Kong",
+          "value": 9.85
+        },
+        {
+          "country": "United States",
+          "value": 8.78
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 352.68
+        }
+      ],
+      "avg_value_per_country": 17.63
+    },
+    {
+      "quarter": "2024Q1",
+      "total_value": 401.18,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 268.67
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 51.03
+        },
+        {
+          "country": "China",
+          "value": 17.75
+        },
+        {
+          "country": "Luxembourg",
+          "value": 12.07
+        },
+        {
+          "country": "Pakistan",
+          "value": 7.76
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 401.18
+        }
+      ],
+      "avg_value_per_country": 20.06
+    },
+    {
+      "quarter": "2024Q2",
+      "total_value": 508.96,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 360.62
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 47.53
+        },
+        {
+          "country": "China",
+          "value": 23.32
+        },
+        {
+          "country": "Luxembourg",
+          "value": 15.48
+        },
+        {
+          "country": "United Kingdom",
+          "value": 7.91
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 508.96
+        }
+      ],
+      "avg_value_per_country": 25.45
+    },
+    {
+      "quarter": "2024Q3",
+      "total_value": 626.67,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 447.01
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 62.17
+        },
+        {
+          "country": "China",
+          "value": 22.83
+        },
+        {
+          "country": "Luxembourg",
+          "value": 13.77
+        },
+        {
+          "country": "United Kingdom",
+          "value": 10.91
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 626.67
+        }
+      ],
+      "avg_value_per_country": 31.33
+    },
+    {
+      "quarter": "2024Q4",
+      "total_value": 626.06,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 442.55
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 72.15
+        },
+        {
+          "country": "China",
+          "value": 20.43
+        },
+        {
+          "country": "Luxembourg",
+          "value": 14.1
+        },
+        {
+          "country": "United Kingdom",
+          "value": 9.31
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 626.06
+        }
+      ],
+      "avg_value_per_country": 31.3
+    },
+    {
+      "quarter": "2025Q1",
+      "total_value": 458.44,
+      "unique_countries": 20,
+      "unique_sitc_sections": 1,
+      "top_destinations": [
+        {
+          "country": "United Arab Emirates",
+          "value": 288.75
+        },
+        {
+          "country": "Democratic Republic of the Congo",
+          "value": 54.96
+        },
+        {
+          "country": "China",
+          "value": 23.45
+        },
+        {
+          "country": "Luxembourg",
+          "value": 11.98
+        },
+        {
+          "country": "United States",
+          "value": 10.73
+        }
+      ],
+      "sitc_breakdown": [
+        {
+          "section": "Unknown",
+          "value": 458.44
+        }
+      ],
+      "avg_value_per_country": 22.92
+    }
+  ]
+}

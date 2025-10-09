@@ -464,4 +464,361 @@ router.get('/dependency-analysis', (req, res) => {
   }
 });
 
+/**
+ * @route   GET /api/imports/sitc-analysis
+ * @desc    Get Import Products by SITC Section analysis
+ * @access  Public
+ */
+router.get('/sitc-analysis', async (req, res) => {
+  try {
+    console.log('📦 Fetching SITC section analysis for imports...');
+
+    // Try to load from JSON file first
+    if (dataFileExists('import_sitc_products.json')) {
+      const sitcData = loadJsonData('import_sitc_products.json');
+      console.log('📦 SITC analysis loaded from JSON file');
+      res.json(sitcData);
+    } else {
+      // Generate SITC analysis from existing data
+      const importsData = loadJsonData('imports_data.json');
+
+      // Group by SITC section
+      const sitcGroups = importsData.reduce((acc, item) => {
+        const sitc = item.sitc_section || 'Unknown';
+        if (!acc[sitc]) {
+          acc[sitc] = {
+            sitc_section: sitc,
+            total_value: 0,
+            commodities: new Set()
+          };
+        }
+        acc[sitc].total_value += parseFloat(item.import_value) || 0;
+        acc[sitc].commodities.add(item.commodity_name || 'Unknown');
+        return acc;
+      }, {});
+
+      const sitcNames = {
+        '0': 'Food and live animals',
+        '1': 'Beverages and tobacco',
+        '2': 'Crude materials, inedible, except fuels',
+        '3': 'Mineral fuels, lubricants and related materials',
+        '4': 'Animals and vegetable oils, fats & waxes',
+        '5': 'Chemicals & related products',
+        '6': 'Manufactured goods classified chiefly by material',
+        '7': 'Machinery and transport equipment',
+        '8': 'Miscellaneous manufactured articles',
+        '9': 'Other commodities & transactions'
+      };
+
+      const result = Object.values(sitcGroups).map(item => ({
+        sitc_section: item.sitc_section,
+        section_name: sitcNames[item.sitc_section] || `SITC Section ${item.sitc_section}`,
+        total_value: Math.round(item.total_value * 100) / 100,
+        commodity_count: item.commodities.size
+      })).sort((a, b) => b.total_value - a.total_value);
+
+      res.json({
+        generated_at: new Date().toISOString(),
+        total_sections: result.length,
+        sitc_sections: result
+      });
+    }
+  } catch (error) {
+    console.error('Error fetching SITC analysis:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * @route   GET /api/imports/growth-analysis
+ * @desc    Get Import Growth by Quarter analysis
+ * @access  Public
+ */
+router.get('/growth-analysis', async (req, res) => {
+  try {
+    console.log('📈 Fetching import growth analysis...');
+
+    // Try to load from JSON file first
+    if (dataFileExists('import_growth_by_quarter.json')) {
+      const growthData = loadJsonData('import_growth_by_quarter.json');
+      console.log('📈 Growth analysis loaded from JSON file');
+      res.json(growthData);
+    } else {
+      // Generate growth analysis from existing data
+      const importsData = loadJsonData('imports_data.json');
+
+      // Group by quarter
+      const quarterlyTotals = importsData.reduce((acc, item) => {
+        const quarter = item.quarter;
+        if (!acc[quarter]) {
+          acc[quarter] = 0;
+        }
+        acc[quarter] += parseFloat(item.import_value) || 0;
+        return acc;
+      }, {});
+
+      // Sort quarters and calculate growth
+      const sortedQuarters = Object.keys(quarterlyTotals).sort();
+      const growthData = [];
+
+      for (let i = 0; i < sortedQuarters.length; i++) {
+        const quarter = sortedQuarters[i];
+        const currentValue = quarterlyTotals[quarter];
+
+        if (i === 0) {
+          growthData.push({
+            quarter,
+            import_value: Math.round(currentValue * 100) / 100,
+            growth_rate: 0,
+            growth_amount: 0,
+            is_positive_growth: true
+          });
+        } else {
+          const previousValue = quarterlyTotals[sortedQuarters[i - 1]];
+          const growthAmount = currentValue - previousValue;
+          const growthRate = previousValue === 0 ? 0 : (growthAmount / previousValue) * 100;
+
+          growthData.push({
+            quarter,
+            import_value: Math.round(currentValue * 100) / 100,
+            growth_rate: Math.round(growthRate * 100) / 100,
+            growth_amount: Math.round(growthAmount * 100) / 100,
+            is_positive_growth: growthRate >= 0
+          });
+        }
+      }
+
+      const response = {
+        generated_at: new Date().toISOString(),
+        quarters_analyzed: growthData.length,
+        total_import_value: Math.round(Object.values(quarterlyTotals).reduce((sum, val) => sum + val, 0) * 100) / 100,
+        growth_data: growthData
+      };
+
+      res.json(response);
+    }
+  } catch (error) {
+    console.error('Error fetching growth analysis:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * @route   GET /api/imports/performance-analysis
+ * @desc    Get Import Performance Over Time analysis
+ * @access  Public
+ */
+router.get('/performance-analysis', async (req, res) => {
+  try {
+    console.log('📋 Fetching import performance analysis...');
+
+    // Try to load from JSON file first
+    if (dataFileExists('import_performance_over_time.json')) {
+      const performanceData = loadJsonData('import_performance_over_time.json');
+      console.log('📋 Performance analysis loaded from JSON file');
+      res.json(performanceData);
+    } else {
+      // Generate performance analysis from existing data
+      const importsData = loadJsonData('imports_data.json');
+
+      // Group by quarter
+      const quarterlyData = importsData.reduce((acc, item) => {
+        const quarter = item.quarter;
+        const value = parseFloat(item.import_value) || 0;
+        const country = item.source_country || 'Unknown';
+        const sitc = item.sitc_section || 'Unknown';
+
+        if (!acc[quarter]) {
+          acc[quarter] = {
+            total_value: 0,
+            countries: new Set(),
+            sitc_sections: new Set(),
+            top_sources: {},
+            sitc_breakdown: {}
+          };
+        }
+
+        acc[quarter].total_value += value;
+        acc[quarter].countries.add(country);
+        acc[quarter].sitc_sections.add(sitc);
+
+        // Track top sources
+        if (!acc[quarter].top_sources[country]) {
+          acc[quarter].top_sources[country] = 0;
+        }
+        acc[quarter].top_sources[country] += value;
+
+        // Track SITC breakdown
+        if (!acc[quarter].sitc_breakdown[sitc]) {
+          acc[quarter].sitc_breakdown[sitc] = 0;
+        }
+        acc[quarter].sitc_breakdown[sitc] += value;
+
+        return acc;
+      }, {});
+
+      // Convert to response format
+      const performanceData = Object.entries(quarterlyData)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([quarter, data]) => {
+          const topSources = Object.entries(data.top_sources)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 5)
+            .map(([country, value]) => ({
+              country,
+              value: Math.round(value * 100) / 100
+            }));
+
+          const sitcBreakdown = Object.entries(data.sitc_breakdown)
+            .sort((a, b) => b[1] - a[1])
+            .map(([section, value]) => ({
+              section,
+              value: Math.round(value * 100) / 100
+            }));
+
+          return {
+            quarter,
+            total_value: Math.round(data.total_value * 100) / 100,
+            unique_countries: data.countries.size,
+            unique_sitc_sections: data.sitc_sections.size,
+            top_sources: topSources,
+            sitc_breakdown: sitcBreakdown,
+            avg_value_per_country: data.countries.size > 0 ?
+              Math.round((data.total_value / data.countries.size) * 100) / 100 : 0
+          };
+        });
+
+      const response = {
+        generated_at: new Date().toISOString(),
+        quarters_analyzed: performanceData.length,
+        total_period_value: Math.round(performanceData.reduce((sum, item) => sum + item.total_value, 0) * 100) / 100,
+        performance_data: performanceData
+      };
+
+      res.json(response);
+    }
+  } catch (error) {
+    console.error('Error fetching performance analysis:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * @route   GET /api/imports/country-analysis
+ * @desc    Get Detailed Import Analysis by Country
+ * @access  Public
+ */
+router.get('/country-analysis', async (req, res) => {
+  try {
+    console.log('🌍 Fetching detailed country analysis for imports...');
+
+    // Try to load from JSON file first
+    if (dataFileExists('import_detailed_country_analysis.json')) {
+      const countryData = loadJsonData('import_detailed_country_analysis.json');
+      console.log('🌍 Country analysis loaded from JSON file');
+      res.json(countryData);
+    } else {
+      // Generate country analysis from existing data
+      const importsData = loadJsonData('imports_data.json');
+
+      // Group by country
+      const countryGroups = importsData.reduce((acc, item) => {
+        const country = item.source_country || 'Unknown';
+        const value = parseFloat(item.import_value) || 0;
+        const quarter = item.quarter;
+
+        if (!acc[country]) {
+          acc[country] = {
+            country,
+            total_value_2022_2025: 0,
+            quarterly_values: {},
+            quarters_present: new Set()
+          };
+        }
+
+        acc[country].total_value_2022_2025 += value;
+        acc[country].quarters_present.add(quarter);
+
+        if (!acc[country].quarterly_values[quarter]) {
+          acc[country].quarterly_values[quarter] = 0;
+        }
+        acc[country].quarterly_values[quarter] += value;
+
+        return acc;
+      }, {});
+
+      // Calculate metrics for each country
+      const totalAllImports = Object.values(countryGroups).reduce((sum, country) => sum + country.total_value_2022_2025, 0);
+
+      const detailedAnalysis = Object.values(countryGroups)
+        .map((countryData, index) => {
+          const country = countryData.country;
+          const q4_2024_value = countryData.quarterly_values['2024Q4'] || 0;
+          const share_percentage = totalAllImports > 0 ? (countryData.total_value_2022_2025 / totalAllImports) * 100 : 0;
+
+          // Calculate growth rate
+          const sortedQuarters = Array.from(countryData.quarters_present).sort();
+          let growth_rate = 0;
+
+          if (sortedQuarters.length >= 2) {
+            const latest_quarter = sortedQuarters[sortedQuarters.length - 1];
+            const previous_quarter = sortedQuarters[sortedQuarters.length - 2];
+            const latest_value = countryData.quarterly_values[latest_quarter];
+            const previous_value = countryData.quarterly_values[previous_quarter];
+
+            if (previous_value > 0) {
+              growth_rate = ((latest_value - previous_value) / previous_value) * 100;
+            }
+          }
+
+          // Determine trend
+          let trend = "Stable";
+          let trend_class = "warning";
+
+          if (growth_rate > 5) {
+            trend = "Strong Growth";
+            trend_class = "success";
+          } else if (growth_rate > 0) {
+            trend = "Moderate Growth";
+            trend_class = "info";
+          } else if (growth_rate < -5) {
+            trend = "Declining";
+            trend_class = "danger";
+          }
+
+          return {
+            rank: index + 1,
+            country,
+            total_value_2022_2025: Math.round(countryData.total_value_2022_2025 * 100) / 100,
+            q4_2024_value: Math.round(q4_2024_value * 100) / 100,
+            share_percentage: Math.round(share_percentage * 100) / 100,
+            growth_rate: Math.round(growth_rate * 100) / 100,
+            trend,
+            trend_class,
+            quarters_count: countryData.quarters_present.size,
+            quarterly_breakdown: countryData.quarterly_values
+          };
+        })
+        .sort((a, b) => b.total_value_2022_2025 - a.total_value_2022_2025);
+
+      // Update ranks after sorting
+      detailedAnalysis.forEach((country, index) => {
+        country.rank = index + 1;
+      });
+
+      const response = {
+        generated_at: new Date().toISOString(),
+        total_countries: detailedAnalysis.length,
+        total_import_value: Math.round(totalAllImports * 100) / 100,
+        countries: detailedAnalysis
+      };
+
+      res.json(response);
+    }
+  } catch (error) {
+    console.error('Error fetching country analysis:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = router;

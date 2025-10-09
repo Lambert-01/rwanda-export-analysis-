@@ -12,6 +12,7 @@ class OpenAIService {
         this.model = process.env.OPENAI_MODEL || 'deepseek/deepseek-chat-v3.1:free';
         this.maxTokens = parseInt(process.env.OPENAI_MAX_TOKENS) || 2000;
         this.temperature = parseFloat(process.env.OPENAI_TEMPERATURE) || 0.7;
+        this.apiKeyValid = false;
 
         if (this.apiKey && this.apiKey.startsWith('sk-or-v1-')) {
             // OpenRouter configuration
@@ -21,6 +22,9 @@ class OpenAIService {
             });
             console.log('🚀 OpenRouter service initialized with DeepSeek model');
             console.log('🎯 Model:', this.model);
+
+            // Test API key validity on initialization
+            this.testApiKey();
         } else if (this.apiKey && this.apiKey.startsWith('sk-')) {
             // OpenAI configuration
             this.client = new OpenAI({
@@ -28,8 +32,10 @@ class OpenAIService {
                 baseURL: this.baseURL
             });
             console.log('🤖 OpenAI service initialized');
+            this.apiKeyValid = true;
         } else {
             this.client = null;
+            this.apiKeyValid = false;
             console.log('⚠️ No valid API key found - using fallback responses');
             console.log('💡 Add OPENAI_API_KEY to your .env file to enable AI features');
         }
@@ -39,7 +45,45 @@ class OpenAIService {
      * Check if OpenAI is properly configured
      */
     isConfigured() {
-        return !!(this.apiKey && this.client);
+        return !!(this.apiKey && this.client && this.apiKeyValid);
+    }
+
+    /**
+     * Test API key validity
+     */
+    async testApiKey() {
+        try {
+            console.log('🔑 Testing API key validity...');
+
+            const testCompletion = await this.client.chat.completions.create({
+                model: this.model,
+                messages: [
+                    {
+                        role: "user",
+                        content: "Hello"
+                    }
+                ],
+                max_tokens: 5
+            });
+
+            this.apiKeyValid = true;
+            console.log('✅ API key is valid');
+        } catch (error) {
+            console.error('❌ API key test failed:', error.message);
+
+            // Check if it's an authentication error
+            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found')) {
+                console.log('🔐 Authentication failed - API key is invalid or expired');
+                console.log('💡 To fix this:');
+                console.log('   1. Get a new API key from https://openrouter.ai/keys');
+                console.log('   2. Or set OPENAI_API_KEY= to disable AI features');
+                console.log('   3. Restart the server after updating .env');
+            }
+
+            console.log('🔄 Switching to fallback mode');
+            this.apiKeyValid = false;
+            this.client = null;
+        }
     }
 
     /**
@@ -92,6 +136,14 @@ class OpenAIService {
 
         } catch (error) {
             console.error('❌ Error generating analysis description:', error);
+
+            // Check if it's an authentication error
+            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found')) {
+                console.log('🔐 Authentication failed - disabling AI features and using fallback');
+                this.apiKeyValid = false;
+                this.client = null;
+            }
+
             return {
                 success: false,
                 error: error.message,

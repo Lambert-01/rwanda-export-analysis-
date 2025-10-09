@@ -99,7 +99,18 @@ function registerChart(id, chart) {
  ************************************/
 // 4.1 Trade Performance Over Time (Line Chart)
 function renderTradePerformanceChart(data) {
-    const ctx = document.getElementById('trade-performance-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping trade performance chart');
+        return;
+    }
+
+    const ctx = document.getElementById('trade-performance-chart');
+    if (!ctx) {
+        console.warn('Trade performance chart container not found');
+        return;
+    }
+
     const area = ctx.canvas;
     const gradient = createGradient(ctx, area, '#2d7dd2', '#f7931e');
     const chart = new Chart(ctx, {
@@ -171,7 +182,18 @@ function renderTradePerformanceChart(data) {
 
 // 4.2 Trade Balance Trend (Bar Chart)
 function renderTradeBalanceChart(data) {
-    const ctx = document.getElementById('trade-balance-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping trade balance chart');
+        return;
+    }
+
+    const ctx = document.getElementById('trade-balance-chart');
+    if (!ctx) {
+        console.warn('Trade balance chart container not found');
+        return;
+    }
+
     const area = ctx.canvas;
     const chart = new Chart(ctx, {
         type: 'bar',
@@ -221,7 +243,18 @@ function renderTradeBalanceChart(data) {
 
 // 4.3 Export Products (Pie Chart)
 function renderExportProductsChart(data) {
-    const ctx = document.getElementById('export-products-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping export products chart');
+        return;
+    }
+
+    const ctx = document.getElementById('export-products-chart');
+    if (!ctx) {
+        console.warn('Export products chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'pie',
         data: {
@@ -260,7 +293,18 @@ function renderExportProductsChart(data) {
 
 // 4.4 Export Growth by Quarter (Bar Chart)
 function renderExportGrowthChart(data) {
-    const ctx = document.getElementById('export-growth-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping export growth chart');
+        return;
+    }
+
+    const ctx = document.getElementById('export-growth-chart');
+    if (!ctx) {
+        console.warn('Export growth chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -309,7 +353,18 @@ function renderExportGrowthChart(data) {
 
 // 4.5 Import Sources (Doughnut Chart)
 function renderImportSourcesChart(data) {
-    const ctx = document.getElementById('import-sources-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping import sources chart');
+        return;
+    }
+
+    const ctx = document.getElementById('import-sources-chart');
+    if (!ctx) {
+        console.warn('Import sources chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -349,7 +404,18 @@ function renderImportSourcesChart(data) {
 
 // 4.6 Import Categories (Bar Chart)
 function renderImportCategoriesChart(data) {
-    const ctx = document.getElementById('import-categories-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping import categories chart');
+        return;
+    }
+
+    const ctx = document.getElementById('import-categories-chart');
+    if (!ctx) {
+        console.warn('Import categories chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -398,7 +464,18 @@ function renderImportCategoriesChart(data) {
 
 // 4.7 AI Predictions (Enhanced Line Chart with Forecasting)
 function renderPredictionsChart(data) {
-    const ctx = document.getElementById('predictions-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping predictions chart');
+        return;
+    }
+
+    const ctx = document.getElementById('predictions-chart');
+    if (!ctx) {
+        console.warn('Predictions chart container not found');
+        return;
+    }
+
     const area = ctx.canvas;
     const chart = new Chart(ctx, {
         type: 'line',
@@ -526,7 +603,18 @@ function renderPredictionsChart(data) {
 
 // 4.8 Regional Analysis Chart (Radar Chart)
 function renderRegionalChart(data) {
-    const ctx = document.getElementById('regional-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping regional chart');
+        return;
+    }
+
+    const ctx = document.getElementById('regional-chart');
+    if (!ctx) {
+        console.warn('Regional chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'radar',
         data: {
@@ -586,7 +674,18 @@ function renderRegionalChart(data) {
 
 // 4.9 Commodity Analysis Chart (Treemap-like visualization)
 function renderCommodityChart(data) {
-    const ctx = document.getElementById('commodity-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping commodity chart');
+        return;
+    }
+
+    const ctx = document.getElementById('commodity-chart');
+    if (!ctx) {
+        console.warn('Commodity chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -639,7 +738,18 @@ function renderCommodityChart(data) {
 
 // 4.10 Advanced Analytics Chart (Mixed Chart Type)
 function renderAdvancedAnalyticsChart(data) {
-    const ctx = document.getElementById('advanced-analytics-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping advanced analytics chart');
+        return;
+    }
+
+    const ctx = document.getElementById('advanced-analytics-chart');
+    if (!ctx) {
+        console.warn('Advanced analytics chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         data: {
             labels: data.labels,
@@ -897,7 +1007,18 @@ document.addEventListener('DOMContentLoaded', function() {
  ************************************/
 // 11.1 Quarterly Comparison Chart (Bar Chart)
 function renderQuarterlyComparisonChart(data) {
-    const ctx = document.getElementById('quarterly-comparison-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping quarterly comparison chart');
+        return;
+    }
+
+    const ctx = document.getElementById('quarterly-comparison-chart');
+    if (!ctx) {
+        console.warn('Quarterly comparison chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -967,7 +1088,18 @@ function renderQuarterlyComparisonChart(data) {
 
 // 11.2 Year-over-Year Analysis Chart (Line Chart)
 function renderYearOverYearChart(data) {
-    const ctx = document.getElementById('year-over-year-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping year-over-year chart');
+        return;
+    }
+
+    const ctx = document.getElementById('year-over-year-chart');
+    if (!ctx) {
+        console.warn('Year-over-year chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -1035,7 +1167,18 @@ function renderYearOverYearChart(data) {
 
 // 11.3 Enhanced Trade Balance Chart (Bar Chart with Growth)
 function renderEnhancedTradeBalanceChart(data) {
-    const ctx = document.getElementById('enhanced-trade-balance-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping enhanced trade balance chart');
+        return;
+    }
+
+    const ctx = document.getElementById('enhanced-trade-balance-chart');
+    if (!ctx) {
+        console.warn('Enhanced trade balance chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -1090,7 +1233,18 @@ function renderEnhancedTradeBalanceChart(data) {
 
 // 11.4 Country Performance Chart (Horizontal Bar Chart)
 function renderCountryPerformanceChart(data) {
-    const ctx = document.getElementById('country-performance-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping country performance chart');
+        return;
+    }
+
+    const ctx = document.getElementById('country-performance-chart');
+    if (!ctx) {
+        console.warn('Country performance chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -1165,7 +1319,18 @@ function renderCountryPerformanceChart(data) {
 
 // 11.5 Enhanced Export Distribution Chart (Treemap-like)
 function renderEnhancedExportDistributionChart(data) {
-    const ctx = document.getElementById('enhanced-export-distribution-chart').getContext('2d');
+    // Check if Chart.js is available
+    if (typeof Chart === 'undefined') {
+        console.warn('Chart.js not available - skipping enhanced export distribution chart');
+        return;
+    }
+
+    const ctx = document.getElementById('enhanced-export-distribution-chart');
+    if (!ctx) {
+        console.warn('Enhanced export distribution chart container not found');
+        return;
+    }
+
     const chart = new Chart(ctx, {
         type: 'treemap',
         data: {

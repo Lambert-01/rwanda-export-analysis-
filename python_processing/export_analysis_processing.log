@@ -1,0 +1,32 @@
+2025-10-08 00:02:27,563 - INFO - Loaded 179 export records
+2025-10-08 00:02:27,568 - INFO - Loaded 179 combined export records
+2025-10-08 00:02:27,571 - INFO - Loaded comprehensive analysis data
+2025-10-08 00:02:27,572 - INFO - ExportAnalysisProcessor initialized
+2025-10-08 00:02:27,572 - INFO - Generating all export analyses
+2025-10-08 00:02:27,572 - INFO - Generating Export Products by SITC Section analysis
+2025-10-08 00:02:27,573 - INFO - Generating Export Products analysis for period: 2024Q4
+2025-10-08 00:02:27,575 - INFO - Generating Export Growth by Quarter analysis
+2025-10-08 00:02:27,575 - INFO - Generating Export Performance Over Time analysis
+2025-10-08 00:02:27,576 - INFO - Generating Detailed Export Analysis by Country
+2025-10-08 00:02:27,583 - INFO - Saved sitc_products analysis to ..\data\processed\export_sitc_products.json
+2025-10-08 00:02:27,586 - INFO - Saved period_products_q4_2024 analysis to ..\data\processed\export_period_products_q4_2024.json
+2025-10-08 00:02:27,594 - INFO - Saved growth_by_quarter analysis to ..\data\processed\export_growth_by_quarter.json
+2025-10-08 00:02:27,630 - INFO - Saved performance_over_time analysis to ..\data\processed\export_performance_over_time.json
+2025-10-08 00:02:27,645 - INFO - Saved detailed_country_analysis analysis to ..\data\processed\export_detailed_country_analysis.json
+2025-10-08 00:02:27,655 - INFO - All analyses saved to ..\data\processed
+2025-10-08 00:51:35,461 - INFO - Loaded 179 export records
+2025-10-08 00:51:35,464 - INFO - Loaded 179 combined export records
+2025-10-08 00:51:35,467 - INFO - Loaded comprehensive analysis data
+2025-10-08 00:51:35,467 - INFO - ExportAnalysisProcessor initialized
+2025-10-08 00:51:35,468 - INFO - Generating all export analyses
+2025-10-08 00:51:35,468 - INFO - Generating Export Products by SITC Section analysis
+2025-10-08 00:51:35,469 - INFO - Generating Export Products analysis for period: 2024Q4
+2025-10-08 00:51:35,470 - INFO - Generating Export Growth by Quarter analysis
+2025-10-08 00:51:35,471 - INFO - Generating Export Performance Over Time analysis
+2025-10-08 00:51:35,473 - INFO - Generating Detailed Export Analysis by Country
+2025-10-08 00:51:35,476 - INFO - Saved sitc_products analysis to ..\data\processed\export_sitc_products.json
+2025-10-08 00:51:35,481 - INFO - Saved period_products_q4_2024 analysis to ..\data\processed\export_period_products_q4_2024.json
+2025-10-08 00:51:35,485 - INFO - Saved growth_by_quarter analysis to ..\data\processed\export_growth_by_quarter.json
+2025-10-08 00:51:35,490 - INFO - Saved performance_over_time analysis to ..\data\processed\export_performance_over_time.json
+2025-10-08 00:51:35,499 - INFO - Saved detailed_country_analysis analysis to ..\data\processed\export_detailed_country_analysis.json
+2025-10-08 00:51:35,505 - INFO - All analyses saved to ..\data\processed

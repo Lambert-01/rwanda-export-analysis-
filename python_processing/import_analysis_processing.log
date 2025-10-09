@@ -1,0 +1,16 @@
+2025-10-08 13:45:36,197 - INFO - Loaded 171 import records
+2025-10-08 13:45:36,199 - INFO - Loaded 171 combined import records
+2025-10-08 13:45:36,200 - INFO - Loaded comprehensive analysis data
+2025-10-08 13:45:36,200 - INFO - ImportAnalysisProcessor initialized
+2025-10-08 13:45:36,200 - INFO - Generating all import analyses
+2025-10-08 13:45:36,200 - INFO - Generating Import Sources analysis
+2025-10-08 13:45:36,202 - INFO - Generating Import Sources analysis for period: 2024Q4
+2025-10-08 13:45:36,202 - INFO - Generating Import Growth by Quarter analysis
+2025-10-08 13:45:36,202 - INFO - Generating Import Performance Over Time analysis
+2025-10-08 13:45:36,203 - INFO - Generating Detailed Import Analysis by Source Country
+2025-10-08 13:45:36,206 - INFO - Saved import_sources analysis to ..\data\processed\import_import_sources.json
+2025-10-08 13:45:36,209 - INFO - Saved period_sources_q4_2024 analysis to ..\data\processed\import_period_sources_q4_2024.json
+2025-10-08 13:45:36,212 - INFO - Saved import_growth_by_quarter analysis to ..\data\processed\import_import_growth_by_quarter.json
+2025-10-08 13:45:36,218 - INFO - Saved import_performance_over_time analysis to ..\data\processed\import_import_performance_over_time.json
+2025-10-08 13:45:36,222 - INFO - Saved detailed_source_analysis analysis to ..\data\processed\import_detailed_source_analysis.json
+2025-10-08 13:45:36,226 - INFO - All analyses saved to ..\data\processed

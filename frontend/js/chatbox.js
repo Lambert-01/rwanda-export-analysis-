@@ -644,21 +644,36 @@ function saveAISettings() {
 }
 
 function updateAPIStatus() {
-    const statusIndicator = document.getElementById('api-status');
-    const statusDot = statusIndicator?.querySelector('.status-dot');
-    const statusText = statusIndicator?.querySelector('.status-text');
+    try {
+        const statusIndicator = document.getElementById('api-status');
+        if (!statusIndicator) {
+            console.warn('⚠️ API status indicator not found');
+            return;
+        }
 
-    const openaiKey = localStorage.getItem('openai_api_key');
-    const openrouterKey = localStorage.getItem('openrouter_api_key');
+        const statusDot = statusIndicator.querySelector('.status-dot');
+        const statusText = statusIndicator.querySelector('.status-text');
 
-    if (openaiKey || openrouterKey) {
-        statusDot?.classList.add('connected');
-        statusText.textContent = 'API key configured';
-        statusIndicator.style.borderLeftColor = 'var(--success-color)';
-    } else {
-        statusDot?.classList.remove('connected');
-        statusText.textContent = 'No API key configured';
-        statusIndicator.style.borderLeftColor = 'var(--warning-color)';
+        const openaiKey = localStorage.getItem('openai_api_key');
+        const openrouterKey = localStorage.getItem('openrouter_api_key');
+
+        if (openaiKey || openrouterKey) {
+            statusDot?.classList.add('connected');
+            if (statusText) {
+                statusText.textContent = 'API key configured';
+            }
+            statusIndicator.style.borderLeftColor = 'var(--success-color)';
+        } else {
+            statusDot?.classList.remove('connected');
+            if (statusText) {
+                statusText.textContent = 'No API key configured';
+            }
+            statusIndicator.style.borderLeftColor = 'var(--warning-color)';
+        }
+
+        console.log('✅ API status updated successfully');
+    } catch (error) {
+        console.error('❌ Error updating API status:', error);
     }
 }
 
