@@ -678,25 +678,7 @@ A comprehensive trade analysis platform demonstrating:
 - **Comprehensive Documentation**: 800+ lines of technical documentation
 - **Real-World Impact**: Practical application for Rwanda's trade analysis
 
-**Built with precision, engineered for performance, designed for Rwanda's future.**
 
-## 🏆 About NISR Hackathon 2025
-
-### 📋 Competition Overview
-
-We participated in the **NISR Hackathon 2025**, an incredible competition that:
-
-**🎯 Who Could Join**  
-- Undergraduate and recent graduates (2024-2025)
-- Master's students from any field
-- Fresh graduates from Data Science, Statistics, Economics, Mathematics, IT, Information Systems, and Web Development
-- Teams of 2 students from any university
-- Individual participation for recent graduates
-
-**💡 Special Encouragement**
-- Final-year students
-- Female participants
-- Participants from diverse academic backgrounds
 
 **🛠️ Technical Freedom**
 - Use any programming language
@@ -749,6 +731,6 @@ If you're reading this and considering joining a hackathon, **do it!** This expe
 
 ---
 
-**🇷🇼 Built with ❤️ for Rwanda by Team Codabytes**
+**🇷🇼 Built with for Rwanda by Team Codabytes**
 
 *"From classroom theory to real-world impact - one hackathon at a time"*
