@@ -1,25 +1,23 @@
 {
-  "name": "rwanda-export-explorer-frontend",
+  "name": "rwanda-trade-analysis",
   "version": "1.0.0",
-  "description": "Frontend for Rwanda trade analysis system- Interactive trade data dashboard",
+  "description": "Rwanda Trade Analysis System - Interactive trade data dashboard powered by Node.js and Express.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "serve": "node server.js",
-    "build": "echo 'No build process needed for vanilla JS'"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "morgan": "^1.10.0",
-    "python-shell": "^3.0.1",
-    "multer": "^1.4.5-lts.1",
-    "xlsx": "^0.18.5",
-    "chart.js": "^4.4.0",
-    "leaflet": "^1.9.4",
     "bootstrap": "^5.3.0",
-    "font-awesome": "^4.7.0"
+    "chart.js": "^4.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "font-awesome": "^4.7.0",
+    "leaflet": "^1.9.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "python-shell": "^3.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
@@ -31,10 +29,14 @@
     "rwanda",
     "trade",
     "exports",
+    "imports",
     "dashboard",
     "data-visualization",
-    "nisr"
+    "analytics",
+    "nodejs",
+    "express",
+    "frontend"
   ],
-  "author": "Codabyte team",
-  "license": "NISR"
+  "author": "Codabyte Team",
+  "license": "MIT"
 }
