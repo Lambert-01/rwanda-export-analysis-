@@ -1,0 +1,34 @@
+services:
+  # Backend API Service
+  - type: web
+    name: rwanda-trade-backend
+    runtime: node
+    buildCommand: "cd backend && npm install"
+    startCommand: "cd backend && npm start"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      # Note: Add these in Render dashboard:
+      # MONGODB_URI, OPENAI_API_KEY, CORS_ORIGIN
+
+  # Frontend Static Site
+  - type: static
+    name: rwanda-trade-frontend
+    buildCommand: "npm install"
+    staticPublishPath: ./
+    envVars:
+      - key: API_BASE_URL
+        fromService:
+          type: web
+          name: rwanda-trade-backend
+          property: host
+
+  # Python Data Processing Worker (Optional)
+  - type: worker
+    name: rwanda-data-processor
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "cd python_processing && python run_pipeline.py"
+    autoDeploy: false  # Manual trigger for data processing
