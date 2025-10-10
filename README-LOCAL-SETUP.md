@@ -243,5 +243,3 @@ For issues or questions:
 4. Check file permissions
 
 ---
-
-**Built with ❤️ for Rwanda's economic development**
