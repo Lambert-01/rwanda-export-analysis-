@@ -271,13 +271,7 @@ import_model = XGBRegressor(
 
 ### System Requirements & Performance
 
-#### Hardware Requirements
-| Component | Minimum | Recommended | Purpose |
-|-----------|---------|-------------|---------|
-| **RAM** | 4GB | 8GB | Node.js/Python processing |
-| **CPU** | 2 cores | 4 cores | Data processing pipeline |
-| **Storage** | 5GB | 10GB | Dataset storage and processing |
-| **Network** | 10 Mbps | 50 Mbps | API communication |
+
 
 #### Software Dependencies
 | Technology | Version | License | Purpose |
@@ -291,13 +285,7 @@ import_model = XGBRegressor(
 | **Chart.js** | v4.4.0 | MIT | Data visualization |
 | **Leaflet.js** | v1.9.4 | BSD | Geographic mapping |
 
-### Performance Metrics
 
-#### API Response Times
-- **Simple Queries**: 50-100ms
-- **Data Aggregation**: 100-200ms
-- **AI Analysis**: 1-3 seconds
-- **ML Predictions**: 200-500ms
 
 #### Data Processing Capacity
 - **Excel Processing**: 11 sheets simultaneously
