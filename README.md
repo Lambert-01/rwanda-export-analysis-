@@ -680,11 +680,6 @@ A comprehensive trade analysis platform demonstrating:
 
 
 
-**🛠️ Technical Freedom**
-- Use any programming language
-- Submit as GitHub-deployed application with documentation
-- Focus on innovation and real-world impact
-
 **🏆 Our Achievement**
 As **Team Codabytes**, we created a platform that demonstrates:
 - **Innovation**: Modern full-stack architecture with AI integration
@@ -707,29 +702,6 @@ Thank you to the **National Institute of Statistics of Rwanda (NISR)** for:
 - **Node.js & Python communities** for excellent documentation and support
 - **Chart.js & Leaflet.js** for beautiful, interactive visualizations
 
-### 👨‍🏫 To Our University
-Thank you to our professors and mentors who encouraged us to participate and supported our learning journey throughout this hackathon.
-
-
-### 🚀 Our Vision for the Future
-
-We hope our platform becomes:
-- **A learning tool** for students studying economics and trade
-- **A decision-making aid** for policymakers and businesses
-- **An inspiration** for other young developers in Rwanda
-- **A foundation** for even more sophisticated trade analysis tools
-
-### 💬 A Message to Future Participants
-
-If you're reading this and considering joining a hackathon, **do it!** This experience taught us that:
-- **Age doesn't matter** - students can build production-ready applications
-- **Background doesn't limit you** - learn as you go and build something amazing
-- **Team work makes the dream work** - find a partner who complements your skills
-- **Government data is powerful** - use it to create real impact
-
----
-
----
 
 **Built with for Rwanda by Team Codabytes**
 
