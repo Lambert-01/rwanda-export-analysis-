@@ -731,6 +731,5 @@ If you're reading this and considering joining a hackathon, **do it!** This expe
 
 ---
 
-**🇷🇼 Built with for Rwanda by Team Codabytes**
+**Built with for Rwanda by Team Codabytes**
 
-*"From classroom theory to real-world impact - one hackathon at a time"*
