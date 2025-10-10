@@ -6,6 +6,7 @@ A comprehensive full-stack web platform for analyzing Rwanda's trade data, built
 
 ## 📋 Project Overview
 
+Rwanda’s trade data is rich but underutilized due to format complexity and limited analysis tools. Our platform bridges this gap by transforming NISR’s raw trade reports into actionable insights for policy-makers, researchers, and businesses.
 
 ### 🚀 Our Solution
 A production-ready trade analysis platform that transforms **NISR's official Rwanda trade dataset** into actionable insights through:
