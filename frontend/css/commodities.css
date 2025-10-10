@@ -1,198 +1,732 @@
-/* ============================================
-    RWANDA EXPORT EXPLORER - COMMODITIES.HTML CSS
-    Commodity Analysis Page Styles
-    ============================================ */
+/* =====================================================================
+  Rwanda trade analysis system - COMMODITIES.CSS (ENHANCED)
+   Ultra-Modern Design with Advanced Visualizations
+   ===================================================================== */
 
-/* Commodities Page Specific Styles */
+:root {
+    --color-export: #28a745;
+    --color-import: #007bff;
+    --color-reexport: #ffc107;
+    --color-surplus: #28a745;
+    --color-deficit: #dc3545;
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-export: linear-gradient(135deg, #28a745, #20c997);
+    --gradient-import: linear-gradient(135deg, #007bff, #0056b3);
+    --gradient-reexport: linear-gradient(135deg, #ffc107, #ff9800);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+/* ===== Hero Section ===== */
 .commodities-hero {
-    background: linear-gradient(135deg, #FCDD09 0%, #00AF54 50%, #00205b 100%);
+    background: var(--gradient-primary);
+    padding: 4rem 0;
+    color: white;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Commodity Overview Cards */
-.commodity-stats-card {
-    animation: rotateIn 0.6s ease-out;
-    animation-fill-mode: both;
+.commodities-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.05)"/></svg>');
+    background-size: 100px 100px;
+    opacity: 0.3;
 }
 
-.commodity-stats-card:nth-child(1) { animation-delay: 0.1s; }
-.commodity-stats-card:nth-child(2) { animation-delay: 0.2s; }
-.commodity-stats-card:nth-child(3) { animation-delay: 0.3s; }
-.commodity-stats-card:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes rotateIn {
-    0% {
-        opacity: 0;
-        transform: rotate(-10deg) scale(0.9);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0deg) scale(1);
-    }
-}
-
-/* SITC Sections Layout */
-.sitc-sections {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.sitc-section {
-    background: #f8fafc;
-    border-radius: 12px;
-    padding: 1.5rem;
-    border-left: 4px solid #00A1F1;
-    transition: all 0.3s ease;
-}
-
-.sitc-section:hover {
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-left-width: 6px;
-}
-
-.sitc-section h4 {
-    color: #1f2937;
-    margin-bottom: 0.75rem;
-    font-size: 1.125rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.sitc-section .commodity-count {
-    color: #64748b;
-    font-size: 0.875rem;
+.commodities-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
     margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
 }
 
-.sitc-section .top-commodities {
-    list-style: none;
-    padding: 0;
+.commodities-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
 }
 
-.sitc-section .top-commodities li {
+/* ===== Summary Statistics ===== */
+.commodity-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.commodity-stats-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 0.6s ease backwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.commodity-stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.commodity-stats-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.commodity-stats-card:hover::before {
+    transform: scaleX(1);
+}
+
+.commodity-stats-card .stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
-    transition: background-color 0.2s;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.sitc-section .top-commodities li:hover {
-    background-color: rgba(0, 161, 241, 0.05);
-    border-radius: 6px;
-    padding: 0.5rem;
-    margin: 0 -0.5rem;
+.commodity-stats-card.exports .stat-icon {
+    background: var(--gradient-export);
+    color: white;
 }
 
-.sitc-section .top-commodities li:last-child {
-    border-bottom: none;
+.commodity-stats-card.imports .stat-icon {
+    background: var(--gradient-import);
+    color: white;
 }
 
-/* Commodity Details */
-.commodity-details {
+.commodity-stats-card.reexports .stat-icon {
+    background: var(--gradient-reexport);
+    color: white;
+}
+
+.commodity-stats-card.balance .stat-icon {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c);
+    color: white;
+}
+
+.commodity-stats-card .stat-label {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.commodity-stats-card .stat-value {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #212529;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.commodity-stats-card .stat-detail {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.commodity-stats-card.balance.surplus .stat-value {
+    background: var(--gradient-export);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.commodity-stats-card.balance.deficit .stat-value {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Top Performers ===== */
+.top-performer-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    animation: fadeInUp 0.7s ease backwards;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-performer-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.top-performer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.top-performer-card .card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.top-performer-card.success .card-icon {
+    background: var(--gradient-export);
+}
+
+.top-performer-card.primary .card-icon {
+    background: var(--gradient-import);
+}
+
+.top-performer-card.warning .card-icon {
+    background: var(--gradient-reexport);
+}
+
+.top-performer-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #212529;
+}
+
+.performers-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.commodity-item {
-    background: white;
-    border-radius: 8px;
+.performer-item {
+    display: flex;
+    align-items: flex-start;
     padding: 1rem;
-    border-left: 3px solid #00AF54;
-    transition: all 0.2s ease;
-}
-
-.commodity-item:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.commodity-item h6 {
-    color: #1f2937;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-}
-
-.commodity-item p {
-    color: #64748b;
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-}
-
-.commodity-item .progress {
-    height: 8px;
-    background-color: #e2e8f0;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-}
-
-.commodity-item .progress-bar {
-    border-radius: 4px;
-    transition: width 1s ease-in-out;
-}
-
-/* Commodity Performance Table */
-.commodity-performance-table {
-    background: white;
+    background: #f8f9fa;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.commodity-performance-table th {
-    background: linear-gradient(135deg, #FCDD09, #00AF54);
-    color: white;
+.performer-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.performer-rank {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.performer-info {
+    flex: 1;
+}
+
+.performer-name {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.performer-stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.performer-stats .value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.performer-stats .share {
+    background: #e7f3ff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
-    padding: 1rem;
+    color: #0056b3;
+}
+
+.performer-stats .growth {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.performer-stats .growth.positive {
+    color: var(--color-export);
+}
+
+.performer-stats .growth.negative {
+    color: var(--color-deficit);
+}
+
+/* ===== SITC Comparison ===== */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.sitc-comparison-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    animation: fadeInUp 0.8s ease backwards;
+    transition: all 0.3s ease;
+}
+
+.sitc-comparison-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.sitc-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.sitc-badge {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.sitc-header h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+}
+
+.comparison-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bar-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin: 0;
+}
+
+.bar-container {
+    width: 100%;
+    height: 32px;
+    background: #f1f3f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.75rem;
+    border-radius: 8px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.bar.export {
+    background: var(--gradient-export);
+}
+
+.bar.import {
+    background: var(--gradient-import);
+}
+
+.bar.reexport {
+    background: var(--gradient-reexport);
+}
+
+.bar-value {
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.balance-indicator {
     text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.balance-indicator.surplus {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--color-export);
+}
+
+.balance-indicator.deficit {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--color-deficit);
+}
+
+/* ===== Charts Section ===== */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    animation: fadeInUp 0.9s ease backwards;
+}
+
+.chart-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+.chart-container.tall {
+    height: 500px;
+}
+
+/* ===== Detailed Table ===== */
+.detailed-table {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease backwards;
+}
+
+.detailed-table thead {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.detailed-table thead th {
+    padding: 1.25rem;
+    font-weight: 600;
     border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
-.commodity-performance-table td {
-    padding: 0.75rem 1rem;
+.detailed-table tbody tr {
+    transition: all 0.2s ease;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.detailed-table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+.detailed-table tbody td {
+    padding: 1.25rem;
+    vertical-align: middle;
+}
+
+.detailed-table .badge {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.detailed-table .badge.bg-export {
+    background: var(--color-export) !important;
+}
+
+.detailed-table .badge.bg-import {
+    background: var(--color-import) !important;
+}
+
+.detailed-table .badge.bg-reexport {
+    background: var(--color-reexport) !important;
+}
+
+/* ===== Section Headers ===== */
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #212529;
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+/* ===== Loading Screen ===== */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner-container {
     text-align: center;
-    border-bottom: 1px solid #e2e8f0;
 }
 
-.commodity-performance-table tbody tr:hover {
-    background-color: #f8fafc;
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 2rem;
 }
 
-/* Responsive Design for Commodities Page */
+.loading-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1200px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
-    .sitc-sections {
+    .commodities-hero h1 {
+        font-size: 2rem;
+    }
+
+    .commodities-hero p {
+        font-size: 1rem;
+    }
+
+    .commodity-stats-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
-    .sitc-section {
-        padding: 1rem;
+    .comparison-grid {
+        grid-template-columns: 1fr;
     }
 
-    .commodity-details {
-        gap: 0.75rem;
+    .top-performer-card {
+        padding: 1.5rem;
     }
 
-    .commodity-item {
-        padding: 0.75rem;
+    .sitc-comparison-card {
+        padding: 1.25rem;
+    }
+
+    .chart-container {
+        height: 300px;
+    }
+
+    .detailed-table {
+        font-size: 0.85rem;
+    }
+
+    .detailed-table thead th,
+    .detailed-table tbody td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
     }
 }
 
-/* Print Styles for Commodities Page */
+@media (max-width: 576px) {
+    .commodities-hero {
+        padding: 2.5rem 0;
+    }
+
+    .commodities-hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .commodity-stats-card .stat-value {
+        font-size: 1.8rem;
+    }
+
+    .performer-stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .bar-value {
+        font-size: 0.75rem;
+    }
+}
+
+/* ===== Print Styles ===== */
 @media print {
-    .navbar, .footer {
-        display: none;
+    .commodities-hero {
+        background: #667eea;
+        print-color-adjust: exact;
     }
 
-    .sitc-sections {
-        grid-template-columns: 1fr;
+    .commodity-stats-card,
+    .top-performer-card,
+    .sitc-comparison-card,
+    .chart-card {
+        page-break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #dee2e6;
     }
 
-    .commodity-performance-table {
-        font-size: 0.8rem;
+    .loading-screen {
+        display: none !important;
     }
+
+    .chart-container {
+        height: 350px;
+    }
+}
+
+/* ===== Utility Classes ===== */
+.text-export {
+    color: var(--color-export) !important;
+}
+
+.text-import {
+    color: var(--color-import) !important;
+}
+
+.text-reexport {
+    color: var(--color-reexport) !important;
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary) !important;
+}
+
+.bg-gradient-export {
+    background: var(--gradient-export) !important;
+}
+
+.bg-gradient-import {
+    background: var(--gradient-import) !important;
+}
+
+.bg-gradient-reexport {
+    background: var(--gradient-reexport) !important;
 }

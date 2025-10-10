@@ -1,5 +1,5 @@
 /**
- * Rwanda Export Explorer - Frontend Server
+ * Rwanda trade analysis system- Frontend Server
  * Express.js server to serve the frontend and provide API endpoints for Excel analysis
  */
 
@@ -35,7 +35,7 @@ app.get('/api/health', (req, res) => {
         status: 'ok',
         timestamp: new Date().toISOString(),
         port: PORT,
-        message: 'Rwanda Export Explorer Frontend Server is running'
+        message: 'Rwanda trade analysis systemFrontend Server is running'
     });
 });
 
@@ -690,7 +690,7 @@ app.get('/api/metadata', (req, res) => {
 // API documentation endpoint
 app.get('/api', (req, res) => {
     res.json({
-        name: 'Rwanda Export Explorer API',
+        name: 'Rwanda trade analysis systemAPI',
         version: '2.1.0',
         description: 'Comprehensive API for analyzing Rwanda trade data from Excel files with AI capabilities',
         port: PORT,
@@ -800,7 +800,7 @@ app.use((req, res) => {
 // Start server
 app.listen(PORT, () => {
     console.log('='.repeat(60));
-    console.log('🇷🇼 RWANDA EXPORT EXPLORER - FRONTEND SERVER');
+    console.log('🇷🇼Rwanda trade analysis system - FRONTEND SERVER');
     console.log('='.repeat(60));
     console.log(`🚀 Server running on port: ${PORT}`);
     console.log(`📊 Excel analysis available at: http://localhost:${PORT}/api/analyze-excel`);
@@ -822,12 +822,12 @@ app.listen(PORT, () => {
 
 // Graceful shutdown
 process.on('SIGINT', () => {
-    console.log('\n🛑 Shutting down Rwanda Export Explorer server...');
+    console.log('\n🛑 Shutting down Rwanda trade analysis systemserver...');
     process.exit(0);
 });
 
 process.on('SIGTERM', () => {
-    console.log('\n🛑 Shutting down Rwanda Export Explorer server...');
+    console.log('\n🛑 Shutting down Rwanda trade analysis systemserver...');
     process.exit(0);
 });
 

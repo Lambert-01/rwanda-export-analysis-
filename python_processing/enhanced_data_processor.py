@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rwanda Export Explorer - Enhanced Data Processor
+Rwanda trade analysis system- Enhanced Data Processor
 Processes multiple Excel files and all sheets for comprehensive trade data analysis
 """
 

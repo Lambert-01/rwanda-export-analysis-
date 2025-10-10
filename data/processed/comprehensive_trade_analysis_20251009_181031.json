@@ -1,0 +1,3252 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-09T18:10:31.537933",
+    "analysis_type": "comprehensive_trade_analysis",
+    "data_sources": [
+      "2025Q1_Trade_report_annexTables.xlsx"
+    ],
+    "analysis_components": [
+      "data_processing",
+      "time_series",
+      "forecasting",
+      "reporting"
+    ],
+    "forecast_horizon": 8
+  },
+  "data_processing_summary": {
+    "files_processed": {
+      "2025Q1_Trade_report_annexTables.xlsx": {
+        "filename": "2025Q1_Trade_report_annexTables.xlsx",
+        "sheets": {
+          "Graph Overall": {
+            "sheet_name": "Graph Overall",
+            "shape": [
+              12,
+              11
+            ],
+            "memory_usage": "4634",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 9,
+              "empty_columns": 1
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 1,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 9,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 11,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Rwanda's Formal External Trade in Goods (values in US$ million)",
+                "Flow/Period",
+                "Exports",
+                "2023Q1",
+                "402.14468784688006",
+                "1476.5099483773447",
+                "2023Q2",
+                "484.73934625285204",
+                "1571.0946258966371",
+                "2023Q3",
+                "388.1129711318348",
+                "1581.8144762227898",
+                "2023Q4",
+                "399.1084006995603",
+                "1486.9343027633097",
+                "2024Q1",
+                "431.6120219963785",
+                "1410.520446799369",
+                "2024Q2",
+                "537.6377961348556",
+                "1568.9725638823377",
+                "2024Q3",
+                "667.0045749074241",
+                "1751.5689343393103",
+                "2024Q4",
+                "677.4462049907256",
+                "1629.3897840889606",
+                "2025Q1",
+                "480.8222662354178",
+                "1379.0488043778544"
+              ],
+              "unique_values_count": {
+                "col_0": 0,
+                "col_1": 9,
+                "col_2": 6,
+                "col_3": 6,
+                "col_4": 6,
+                "col_5": 6,
+                "col_6": 6,
+                "col_7": 6,
+                "col_8": 6,
+                "col_9": 6,
+                "col_10": 6
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 10
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "Graph EAC": {
+            "sheet_name": "Graph EAC",
+            "shape": [
+              13,
+              11
+            ],
+            "memory_usage": "4976",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 9,
+              "empty_columns": 1
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 1,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 9,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 11,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 12,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Rwanda's External Trade  with EAC (values in US$ million)",
+                "Exports",
+                "Imports",
+                "2023Q1",
+                "74.18325781327185",
+                "387.64509357129117",
+                "2023Q2",
+                "57.14705661771808",
+                "350.9878461259191",
+                "2023Q3",
+                "70.97113499430529",
+                "414.98734003888177",
+                "2023Q4",
+                "59.824330246599274",
+                "381.3578767163398",
+                "2024Q1",
+                "56.242685603787145",
+                "344.87195064579873",
+                "2024Q2",
+                "55.92002454194189",
+                "471.61871581087854",
+                "2024Q3",
+                "72.61101916090975",
+                "567.0911547635528",
+                "2024Q4",
+                "86.14993925597129",
+                "612.4593387680063",
+                "2025Q1",
+                "69.32185735418759",
+                "358.2783064271449"
+              ],
+              "unique_values_count": {
+                "col_0": 0,
+                "col_1": 9,
+                "col_2": 6,
+                "col_3": 6,
+                "col_4": 6,
+                "col_5": 6,
+                "col_6": 6,
+                "col_7": 6,
+                "col_8": 6,
+                "col_9": 6,
+                "col_10": 6
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 9
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 10
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "EAC": {
+            "sheet_name": "EAC",
+            "shape": [
+              31,
+              21
+            ],
+            "memory_usage": "21775",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 2,
+              "mixed_columns": 18,
+              "empty_columns": 1
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 28,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 30,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Trade in Goods of Rwanda with  EAC",
+                "Flow",
+                "Exports",
+                "Partner \\ Period",
+                "Burundi",
+                "DRC",
+                "2023Q1",
+                "2.26512401606302",
+                "44.31962833433481",
+                "VALUES IN US$ Million",
+                "2023Q2",
+                "3.7218201869390044",
+                "2023Q3",
+                "5.182146963239396",
+                "51.12107401344382",
+                "2023Q4",
+                "5.466726496166151",
+                "47.007099306209",
+                "2024Q1",
+                "1.164976327645988",
+                "51.02525700576274",
+                "2024Q2",
+                "2.1842576986824813",
+                "47.52663133276006",
+                "2024Q3",
+                "3.0258459706316754",
+                "62.168168319276454",
+                "2024Q4",
+                "2.442237559597421",
+                "72.14630396888096",
+                "2025Q1",
+                "3.737660689230249",
+                "54.95579188274689",
+                "2023Q1",
+                "3.053416745008164",
+                "59.74343759058496",
+                "2023Q2",
+                "6.512706703051925",
+                "66.80604843939986",
+                "2023Q3",
+                "7.301767068619109",
+                "72.0307967704698",
+                "SHARE IN %",
+                "2023Q4",
+                "9.137965228581741",
+                "2024Q1",
+                "2.0713383707401474",
+                "90.72336510603418",
+                "2024Q2",
+                "3.9060385194291447",
+                "84.99036207881757",
+                "2024Q3",
+                "4.167199421793331",
+                "85.61809080452183",
+                "2024Q4",
+                "2.8348685799312885",
+                "83.7450433418388",
+                "2025Q1",
+                "5.391749199871178",
+                "79.27628309489766"
+              ],
+              "unique_values_count": {
+                "col_0": 0,
+                "col_1": 7,
+                "col_2": 9,
+                "col_3": 25,
+                "col_4": 25,
+                "col_5": 24,
+                "col_6": 25,
+                "col_7": 24,
+                "col_8": 24,
+                "col_9": 25,
+                "col_10": 25,
+                "col_11": 24,
+                "col_12": 23,
+                "col_13": 22,
+                "col_14": 22,
+                "col_15": 24,
+                "col_16": 22,
+                "col_17": 22,
+                "col_18": 23,
+                "col_19": 23,
+                "col_20": 22
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 22,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 23,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 24,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 25,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 26,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 27,
+                  "filled_cells": 19
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "Total trade with the World": {
+            "sheet_name": "Total trade with the World",
+            "shape": [
+              17,
+              12
+            ],
+            "memory_usage": "7009",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 2,
+              "mixed_columns": 9,
+              "empty_columns": 1
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 1,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 14,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 16,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Rwanda's External Trade  (values in US$ million)",
+                "Exports",
+                "Imports",
+                "Partner",
+                "WORLD",
+                "EAC",
+                "2023Q1",
+                "402.14468784688006",
+                "74.18325781327185",
+                "2023Q2",
+                "484.73934625285204",
+                "57.14705661771808",
+                "2023Q3",
+                "388.1129711318348",
+                "70.97113499430529",
+                "2023Q4",
+                "399.1084006995603",
+                "59.824330246599274",
+                "2024Q1",
+                "431.6120219963785",
+                "56.242685603787145",
+                "2024Q2",
+                "537.6377961348556",
+                "55.92002454194189",
+                "2024Q3",
+                "667.0045749074241",
+                "72.61101916090975",
+                "2024Q4",
+                "677.4462049907256",
+                "86.14993925597129",
+                "2025Q1",
+                "480.8222662354178",
+                "69.32185735418759"
+              ],
+              "unique_values_count": {
+                "col_0": 0,
+                "col_1": 8,
+                "col_2": 3,
+                "col_3": 10,
+                "col_4": 10,
+                "col_5": 10,
+                "col_6": 10,
+                "col_7": 10,
+                "col_8": 10,
+                "col_9": 10,
+                "col_10": 10,
+                "col_11": 10
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 10
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "Regional blocks": {
+            "sheet_name": "Regional blocks",
+            "shape": [
+              31,
+              11
+            ],
+            "memory_usage": "12274",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 2,
+              "mixed_columns": 9,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 1,
+                  "text_ratio": 1.0,
+                  "sample_content": "Trade in Goods of Rwanda with selected regional or"
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": "Partner"
+                },
+                {
+                  "row_index": 28,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                },
+                {
+                  "row_index": 30,
+                  "text_ratio": 1.0,
+                  "sample_content": "*Major revisions  include Domestic exports destina"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Trade in Goods of Rwanda with selected regional organizations (Value in US$ million)",
+                "Partner",
+                "CEPGL",
+                "Flow \\ Period",
+                "Export",
+                "Import",
+                "2023Q1",
+                "46.584752350397814",
+                "4.542269490398233",
+                "2023Q2",
+                "41.899510512663014",
+                "6.279899499732548",
+                "2023Q3",
+                "56.30322097668324",
+                "8.91525817268391",
+                "2023Q4",
+                "52.473825802375124",
+                "12.066122053382188",
+                "2024Q1",
+                "52.19023333340869",
+                "14.094919676514454",
+                "2024Q2",
+                "49.71088903144255",
+                "11.220648172096622",
+                "2024Q3",
+                "65.19401428990808",
+                "20.798656665419376",
+                "2024Q4",
+                "74.58854152847844",
+                "27.148591834759166",
+                "2025Q1",
+                "58.69345257197721",
+                "12.494808727209515"
+              ],
+              "unique_values_count": {
+                "col_0": 10,
+                "col_1": 5,
+                "col_2": 25,
+                "col_3": 25,
+                "col_4": 25,
+                "col_5": 25,
+                "col_6": 25,
+                "col_7": 25,
+                "col_8": 25,
+                "col_9": 25,
+                "col_10": 25
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 22,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 23,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 24,
+                  "filled_cells": 11
+                },
+                {
+                  "row_index": 25,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 26,
+                  "filled_cells": 10
+                },
+                {
+                  "row_index": 27,
+                  "filled_cells": 10
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "Trade by continents": {
+            "sheet_name": "Trade by continents",
+            "shape": [
+              23,
+              20
+            ],
+            "memory_usage": "16135",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 2,
+              "mixed_columns": 18,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": ""
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": "Flow"
+                },
+                {
+                  "row_index": 22,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "Flow",
+                "Exports",
+                "Imports",
+                "Partner \\ Period",
+                "WORLD",
+                "AFRICA",
+                "2023Q1",
+                "402.14468784688006",
+                "89.74986403453877",
+                "Trade in Goods of Rwanda by Continents",
+                "2023Q2",
+                "484.73934625285204",
+                "2023Q3",
+                "388.1129711318348",
+                "83.86110369060785",
+                "VALUES IN US$",
+                "2023Q4",
+                "399.1084006995603",
+                "2024Q1",
+                "431.6120219963785",
+                "70.2",
+                "2024Q2",
+                "537.6377961348556",
+                "69.15828356593329",
+                "2024Q3",
+                "667.0045749074241",
+                "85.63005780690959",
+                "2024Q4",
+                "677.4462049907256",
+                "99.01387379903561",
+                "2025Q1",
+                "480.8222662354178",
+                "83.41129154592208",
+                "2023Q1",
+                "100",
+                "22.31780420004249",
+                "2023Q2",
+                "100",
+                "14.917648442639567",
+                "2023Q3",
+                "100",
+                "21.60739525042099",
+                "SHARE IN %",
+                "2023Q4",
+                "100",
+                "2024Q1",
+                "100",
+                "16.26460719868202",
+                "2024Q2",
+                "100",
+                "12.863359693667503",
+                "2024Q3",
+                "100",
+                "12.838001571247768",
+                "2024Q4",
+                "100",
+                "14.615754442139227",
+                "2025Q1",
+                "100",
+                "17.34763495854467"
+              ],
+              "unique_values_count": {
+                "col_0": 5,
+                "col_1": 7,
+                "col_2": 19,
+                "col_3": 20,
+                "col_4": 19,
+                "col_5": 20,
+                "col_6": 18,
+                "col_7": 19,
+                "col_8": 19,
+                "col_9": 19,
+                "col_10": 19,
+                "col_11": 17,
+                "col_12": 17,
+                "col_13": 17,
+                "col_14": 18,
+                "col_15": 16,
+                "col_16": 17,
+                "col_17": 17,
+                "col_18": 17,
+                "col_19": 17
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 20
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 19
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 19
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "Sheet11": {
+            "sheet_name": "Sheet11",
+            "shape": [
+              8,
+              6
+            ],
+            "memory_usage": "2551",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 5,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "DESCRIPTION"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "DESCRIPTION",
+                "Salaries for Regionals ",
+                "Salaries for Team Leaders",
+                "QUANTITY",
+                "5",
+                "22",
+                "NUMBER OF DAYS",
+                "103",
+                "103",
+                "UNIT VALUE/day",
+                "27896",
+                "25284",
+                " TOTAL VALUE ",
+                "14366440",
+                "57293544",
+                "EXPLANATION",
+                " 1 day August, 27 for September, 27 for October, 25 for November and 24 days for December 2015. ",
+                " 1 day August, 27 for September, 27 for October, 25 for November and 24 days for December 2015."
+              ],
+              "unique_values_count": {
+                "col_0": 6,
+                "col_1": 5,
+                "col_2": 2,
+                "col_3": 4,
+                "col_4": 7,
+                "col_5": 5
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 0,
+                  "filled_cells": 6
+                },
+                {
+                  "row_index": 1,
+                  "filled_cells": 6
+                },
+                {
+                  "row_index": 2,
+                  "filled_cells": 6
+                },
+                {
+                  "row_index": 3,
+                  "filled_cells": 6
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 6
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "ExportCountry": {
+            "sheet_name": "ExportCountry",
+            "shape": [
+              31,
+              13
+            ],
+            "memory_usage": "14206",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 12,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "PARTNER COUNTRY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Top 20 destinations of exports of Rwanda in  2025,"
+                },
+                {
+                  "row_index": 4,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 28,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                },
+                {
+                  "row_index": 30,
+                  "text_ratio": 1.0,
+                  "sample_content": "*Major revisions  include Domestic exports destina"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "PARTNER COUNTRY ANALYSIS",
+                "Top 20 destinations of exports of Rwanda in  2025, Quarter 1 (Values in US$ million)",
+                "Year and Period",
+                "2023Q1",
+                "402.14468784688006",
+                "211.59547680912516",
+                "2023Q2",
+                "484.73934625285204",
+                "321.5667351898509",
+                "2023Q3",
+                "388.1129711318348",
+                "203.48599686973355",
+                "2023Q4",
+                "399.1084006995603",
+                "215.06638888780282",
+                "2024Q1",
+                "431.6120219963785",
+                "268.67271469094396",
+                "2024Q2",
+                "537.6377961348556",
+                "360.6197369274398",
+                "2024Q3",
+                "667.0045749074241",
+                "447.01299991649586",
+                "2024Q4",
+                "677.4462049907256",
+                "442.54866971286356",
+                "2025Q1",
+                "480.8222662354178",
+                "288.74992491014586",
+                "Shares in % Q1",
+                "100",
+                "60.05335966882398",
+                "% change Q1/Q4",
+                "-0.29024288173257917",
+                "-0.3475295607656127",
+                "% change Q1/Q1",
+                "0.11401499895999723",
+                "0.07472738808738666"
+              ],
+              "unique_values_count": {
+                "col_0": 26,
+                "col_1": 22,
+                "col_2": 22,
+                "col_3": 22,
+                "col_4": 22,
+                "col_5": 22,
+                "col_6": 22,
+                "col_7": 22,
+                "col_8": 22,
+                "col_9": 22,
+                "col_10": 22,
+                "col_11": 22,
+                "col_12": 22
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 4,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 22,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 23,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 24,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 25,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 26,
+                  "filled_cells": 13
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "country_exports",
+              "quarter_columns": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "country_column": 0,
+              "value_columns": []
+            }
+          },
+          "ImportCountry": {
+            "sheet_name": "ImportCountry",
+            "shape": [
+              27,
+              13
+            ],
+            "memory_usage": "12454",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 12,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "PARTNER COUNTRY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Top 20 destinations of exports of Rwanda in  2025,"
+                },
+                {
+                  "row_index": 4,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 26,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "PARTNER COUNTRY ANALYSIS",
+                "Top 20 destinations of exports of Rwanda in  2025, Quarter 1 (Values in US$ million)",
+                "Year and Period",
+                "2023Q1",
+                "1476.5099483773447",
+                "252.72683073188458",
+                "2023Q2",
+                "1571.0946258966371",
+                "287.576746325718",
+                "2023Q3",
+                "1581.8144762227898",
+                "309.35637213058766",
+                "2023Q4",
+                "1486.9343027633097",
+                "304.31726534777147",
+                "2024Q1",
+                "1410.520446799369",
+                "302.071239286069",
+                "2024Q2",
+                "1568.9725638823377",
+                "280.9106957215485",
+                "2024Q3",
+                "1751.5689343393103",
+                "299.9426648399864",
+                "2024Q4",
+                "1629.3897840889606",
+                "303.2585170608372",
+                "2025Q1",
+                "1379.0488043778544",
+                "338.52645586585294",
+                "Shares in % Q1",
+                "100",
+                "24.54782273050707",
+                "% change Q1/Q4",
+                "-0.15364094101711778",
+                "0.11629661434353245",
+                "% change Q1/Q1",
+                "-0.022312078136071944",
+                "0.12068416929047632"
+              ],
+              "unique_values_count": {
+                "col_0": 25,
+                "col_1": 22,
+                "col_2": 22,
+                "col_3": 22,
+                "col_4": 22,
+                "col_5": 22,
+                "col_6": 22,
+                "col_7": 22,
+                "col_8": 22,
+                "col_9": 22,
+                "col_10": 22,
+                "col_11": 22,
+                "col_12": 22
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 4,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 22,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 23,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 24,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 25,
+                  "filled_cells": 13
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "country_imports",
+              "quarter_columns": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "country_column": 0,
+              "value_columns": []
+            }
+          },
+          "ReexportsCountry": {
+            "sheet_name": "ReexportsCountry",
+            "shape": [
+              28,
+              13
+            ],
+            "memory_usage": "12912",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 12,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "PARTNER COUNTRY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Top 20 destinations of re-exports of Rwanda in the"
+                },
+                {
+                  "row_index": 4,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 27,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "PARTNER COUNTRY ANALYSIS",
+                "Top 20 destinations of re-exports of Rwanda in the year 2025, Quarter 1 (Values in US$ Million)",
+                "Year and Period",
+                "2023Q1",
+                "156.25277435433534",
+                "145.46457233874992",
+                "2023Q2",
+                "154.52127101941767",
+                "143.2111280560493",
+                "2023Q3",
+                "172.99703145780026",
+                "157.97154383762168",
+                "2023Q4",
+                "159.55370666284614",
+                "149.9615512462209",
+                "2024Q1",
+                "173.1654878845185",
+                "160.1153735029784",
+                "2024Q2",
+                "164.00308225717004",
+                "155.74256430133224",
+                "2024Q3",
+                "184.55894346212972",
+                "174.58862520373853",
+                "2024Q4",
+                "177.28709361426786",
+                "166.32423217971876",
+                "2025Q1",
+                "135.3866131659466",
+                "127.13663781921528",
+                "Shares in % Q1",
+                "100",
+                "93.9063581296482",
+                "% change Q1/Q4",
+                "-0.2363425311686036",
+                "-0.23560965138356993",
+                "% change Q1/Q1",
+                "-0.21816630542320348",
+                "-0.2059685772968557"
+              ],
+              "unique_values_count": {
+                "col_0": 25,
+                "col_1": 21,
+                "col_2": 22,
+                "col_3": 22,
+                "col_4": 21,
+                "col_5": 22,
+                "col_6": 22,
+                "col_7": 22,
+                "col_8": 22,
+                "col_9": 22,
+                "col_10": 22,
+                "col_11": 22,
+                "col_12": 22
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 4,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 16,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 17,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 18,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 19,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 20,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 21,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 22,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 23,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 24,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 25,
+                  "filled_cells": 13
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "ExportsCommodity": {
+            "sheet_name": "ExportsCommodity",
+            "shape": [
+              16,
+              14
+            ],
+            "memory_usage": "8584",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 13,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "COMMODITY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Products  exported by Rwanda in  2025, Quarter 1 ("
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 15,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "COMMODITY ANALYSIS",
+                "Products  exported by Rwanda in  2025, Quarter 1 (Values in US$ Million)",
+                "Year and Period",
+                "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+                "Food and live animals",
+                "Beverages and tobacco",
+                "2023Q1",
+                "402.14468784688006",
+                "106.34298380408097",
+                "2023Q2",
+                "484.73934625285204",
+                "74.62181621581541",
+                "2023Q3",
+                "388.1129711318348",
+                "89.35060707907543",
+                "2023Q4",
+                "399.1084006995603",
+                "103.81165959340615",
+                "2024Q1",
+                "431.6120219963785",
+                "76.20898691691424",
+                "2024Q2",
+                "537.6377961348556",
+                "73.43132519231176",
+                "2024Q3",
+                "667.0045749074241",
+                "99.16692353140945",
+                "2024Q4",
+                "677.4462049907256",
+                "103.124930087838",
+                "2025Q1",
+                "480.8222662354178",
+                "82.55449567716147",
+                "Shares in % Q1",
+                "100",
+                "17.169441075081483",
+                "% change Q1/Q4",
+                "-0.29024288173257917",
+                "-0.19947101436243775",
+                "% change Q1/Q1",
+                "0.11401499895999723",
+                "0.0832645730767334"
+              ],
+              "unique_values_count": {
+                "col_0": 15,
+                "col_1": 11,
+                "col_2": 12,
+                "col_3": 12,
+                "col_4": 12,
+                "col_5": 12,
+                "col_6": 12,
+                "col_7": 12,
+                "col_8": 12,
+                "col_9": 12,
+                "col_10": 12,
+                "col_11": 12,
+                "col_12": 12,
+                "col_13": 12
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 14
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "commodity_exports",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "ImportsCommodity": {
+            "sheet_name": "ImportsCommodity",
+            "shape": [
+              16,
+              14
+            ],
+            "memory_usage": "8584",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 13,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "COMMODITY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Products  imported by Rwanda in  2025, Quarter 1 ("
+                },
+                {
+                  "row_index": 3,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 15,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "COMMODITY ANALYSIS",
+                "Products  imported by Rwanda in  2025, Quarter 1 (Values in US$ Million)",
+                "Year and Period",
+                "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+                "Food and live animals",
+                "Beverages and tobacco",
+                "2023Q1",
+                "1476.5099483773447",
+                "264.48208607512186",
+                "2023Q2",
+                "1571.0946258966371",
+                "228.9831980977162",
+                "2023Q3",
+                "1581.8144762227898",
+                "254.3593310805152",
+                "2023Q4",
+                "1486.9343027633097",
+                "290.3228110732527",
+                "2024Q1",
+                "1410.520446799369",
+                "202.46",
+                "2024Q2",
+                "1568.9725638823377",
+                "238.2",
+                "2024Q3",
+                "1751.5689343393103",
+                "237.17",
+                "2024Q4",
+                "1629.3897840889606",
+                "234.56643276944519",
+                "2025Q1",
+                "1379.0488043778544",
+                "203.565452023726",
+                "Shares in % Q1",
+                "100",
+                "14.761294261486471",
+                "% change Q1/Q4",
+                "-0.15364094101711778",
+                "-0.13216290318994606",
+                "% change Q1/Q1",
+                "-0.022312078136071944",
+                "0.005460100877832774"
+              ],
+              "unique_values_count": {
+                "col_0": 15,
+                "col_1": 11,
+                "col_2": 12,
+                "col_3": 12,
+                "col_4": 12,
+                "col_5": 12,
+                "col_6": 12,
+                "col_7": 12,
+                "col_8": 12,
+                "col_9": 12,
+                "col_10": 12,
+                "col_11": 12,
+                "col_12": 12,
+                "col_13": 12
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 3,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 4,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 14
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "commodity_imports",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          },
+          "ReexportsCommodity": {
+            "sheet_name": "ReexportsCommodity",
+            "shape": [
+              17,
+              14
+            ],
+            "memory_usage": "9079",
+            "data_types": {
+              "numeric_columns": 0,
+              "text_columns": 1,
+              "mixed_columns": 13,
+              "empty_columns": 0
+            },
+            "header_analysis": {
+              "potential_header_rows": [
+                {
+                  "row_index": 0,
+                  "text_ratio": 1.0,
+                  "sample_content": "COMMODITY ANALYSIS"
+                },
+                {
+                  "row_index": 2,
+                  "text_ratio": 1.0,
+                  "sample_content": "Products  re-exported by Rwanda in  2025, Quarter "
+                },
+                {
+                  "row_index": 4,
+                  "text_ratio": 1.0,
+                  "sample_content": "Year and Period"
+                },
+                {
+                  "row_index": 16,
+                  "text_ratio": 1.0,
+                  "sample_content": "Source: NISR"
+                }
+              ]
+            },
+            "content_preview": {
+              "first_few_values": [
+                "COMMODITY ANALYSIS",
+                "Products  re-exported by Rwanda in  2025, Quarter 1 (Values in US$ Million)",
+                "Year and Period",
+                "COMMODITY DESCRIPTION/ TOTAL ESTIMATES",
+                "Food and live animals",
+                "Beverages and tobacco",
+                "2023Q1",
+                "156.25277435433534",
+                "52.970766980143715",
+                "2023Q2",
+                "154.52127101941767",
+                "54.876093670174754",
+                "2023Q3",
+                "172.99703145780026",
+                "52.23",
+                "2023Q4",
+                "159.55370666284614",
+                "56.11149495206159",
+                "2024Q1",
+                "173.1654878845185",
+                "58.81839750457572",
+                "2024Q2",
+                "164.00308225717004",
+                "50.638592454789745",
+                "2024Q3",
+                "184.55894346212972",
+                "52.33",
+                "2024Q4",
+                "177.28709361426786",
+                "51.32339986259393",
+                "2025Q1",
+                "135.3866131659466",
+                "42.32786869915701",
+                "Shares in % Q1",
+                "100",
+                "31.26444166771107",
+                "% change Q1/Q4",
+                "-0.2363425311686036",
+                "-0.17527153671659113",
+                "% change Q1/Q1",
+                "-0.21816630542320348",
+                "-0.2803634492785331"
+              ],
+              "unique_values_count": {
+                "col_0": 15,
+                "col_1": 11,
+                "col_2": 12,
+                "col_3": 12,
+                "col_4": 12,
+                "col_5": 12,
+                "col_6": 12,
+                "col_7": 12,
+                "col_8": 12,
+                "col_9": 12,
+                "col_10": 12,
+                "col_11": 12,
+                "col_12": 12,
+                "col_13": 12
+              },
+              "potential_data_starts": [
+                {
+                  "row_index": 4,
+                  "filled_cells": 13
+                },
+                {
+                  "row_index": 5,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 6,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 7,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 8,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 9,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 10,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 11,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 12,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 13,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 14,
+                  "filled_cells": 14
+                },
+                {
+                  "row_index": 15,
+                  "filled_cells": 14
+                }
+              ]
+            },
+            "potential_data_structure": {
+              "likely_data_type": "unknown",
+              "quarter_columns": [],
+              "country_column": null,
+              "value_columns": []
+            }
+          }
+        },
+        "data_summary": {
+          "total_records": 514,
+          "quarters_covered": [
+            "2023Q2",
+            "2024Q1",
+            "2023Q4",
+            "2023Q1",
+            "2023Q3",
+            "2024Q2",
+            "2024Q4",
+            "2024Q3",
+            "2025Q1"
+          ],
+          "countries_found": [
+            "Tanzania",
+            "Germany",
+            "Democratic Republic of the Congo",
+            "South Sudan",
+            "France",
+            "United Kingdom",
+            "Thailand",
+            "Ethiopia",
+            "Japan",
+            "United States",
+            "Greece",
+            "Zambia",
+            "United Arab Emirates",
+            "Ireland",
+            "Qatar",
+            "Brazil",
+            "Malaysia",
+            "Russia",
+            "Luxembourg",
+            "Uganda",
+            "India",
+            "Netherlands",
+            "Kazakhstan",
+            "Belgium",
+            "Singapore",
+            "Hong Kong",
+            "Kenya",
+            "Cameroon",
+            "South Africa",
+            "Turkey",
+            "China",
+            "Egypt",
+            "Congo",
+            "Burundi",
+            "Pakistan"
+          ],
+          "data_by_type": {
+            "exports_data": 179,
+            "imports_data": 171,
+            "re_exports_data": 164,
+            "commodity_exports": 0,
+            "commodity_imports": 0,
+            "commodity_re_exports": 0
+          }
+        },
+        "analysis_by_sheet": {}
+      }
+    },
+    "combined_analysis": {
+      "summary": {
+        "total_files_processed": 2,
+        "total_sheets_processed": 26,
+        "total_records_extracted": 350,
+        "quarters_covered": [
+          "2023Q2",
+          "2024Q1",
+          "2023Q4",
+          "2023Q1",
+          "2023Q3",
+          "2024Q2",
+          "2024Q4",
+          "2024Q3",
+          "2025Q1"
+        ],
+        "countries_found": [
+          "Tanzania",
+          "Germany",
+          "Democratic Republic of the Congo",
+          "South Sudan",
+          "France",
+          "United Kingdom",
+          "Thailand",
+          "Ethiopia",
+          "Japan",
+          "United States",
+          "United Arab Emirates",
+          "Ireland",
+          "Brazil",
+          "Malaysia",
+          "Russia",
+          "Luxembourg",
+          "Uganda",
+          "India",
+          "Netherlands",
+          "Kazakhstan",
+          "Belgium",
+          "Singapore",
+          "Hong Kong",
+          "Kenya",
+          "Cameroon",
+          "South Africa",
+          "Turkey",
+          "China",
+          "Egypt",
+          "Burundi",
+          "Pakistan"
+        ]
+      },
+      "quarterly_aggregation": {
+        "exports": [
+          {
+            "quarter": "2023Q1",
+            "export_value": 367.6322252483541
+          },
+          {
+            "quarter": "2023Q2",
+            "export_value": 453.500666890761
+          },
+          {
+            "quarter": "2023Q3",
+            "export_value": 349.62486416188614
+          },
+          {
+            "quarter": "2023Q4",
+            "export_value": 352.67760680202497
+          },
+          {
+            "quarter": "2024Q1",
+            "export_value": 401.1771352919673
+          },
+          {
+            "quarter": "2024Q2",
+            "export_value": 508.9585074779762
+          },
+          {
+            "quarter": "2024Q3",
+            "export_value": 626.6665457104766
+          },
+          {
+            "quarter": "2024Q4",
+            "export_value": 626.0612724522721
+          },
+          {
+            "quarter": "2025Q1",
+            "export_value": 458.4402335617165
+          }
+        ],
+        "imports": [
+          {
+            "quarter": "2023Q1",
+            "import_value": 904.3347614717028
+          },
+          {
+            "quarter": "2023Q2",
+            "import_value": 965.4093385299668
+          },
+          {
+            "quarter": "2023Q3",
+            "import_value": 1002.4778255902621
+          },
+          {
+            "quarter": "2023Q4",
+            "import_value": 948.8999687599874
+          },
+          {
+            "quarter": "2024Q1",
+            "import_value": 889.5160617616687
+          },
+          {
+            "quarter": "2024Q2",
+            "import_value": 1078.878380387794
+          },
+          {
+            "quarter": "2024Q3",
+            "import_value": 1158.2417973571207
+          },
+          {
+            "quarter": "2024Q4",
+            "import_value": 1090.551775655688
+          },
+          {
+            "quarter": "2025Q1",
+            "import_value": 869.7892320581909
+          }
+        ]
+      },
+      "country_aggregation": {
+        "export_destinations": [
+          {
+            "destination_country": "United Arab Emirates",
+            "export_value": 2759.3186439144015
+          },
+          {
+            "destination_country": "Democratic Republic of the Congo",
+            "export_value": 468.4476444891387
+          },
+          {
+            "destination_country": "China",
+            "export_value": 191.2138554150942
+          },
+          {
+            "destination_country": "Luxembourg",
+            "export_value": 83.52893942124835
+          },
+          {
+            "destination_country": "United Kingdom",
+            "export_value": 82.04632810816055
+          },
+          {
+            "destination_country": "Hong Kong",
+            "export_value": 74.10252575556416
+          },
+          {
+            "destination_country": "Pakistan",
+            "export_value": 63.97928255749504
+          },
+          {
+            "destination_country": "United States",
+            "export_value": 56.28562650340676
+          },
+          {
+            "destination_country": "Uganda",
+            "export_value": 55.6034531655963
+          },
+          {
+            "destination_country": "Netherlands",
+            "export_value": 43.56889462252465
+          },
+          {
+            "destination_country": "India",
+            "export_value": 37.53441743037967
+          },
+          {
+            "destination_country": "South Sudan",
+            "export_value": 33.56091848964697
+          },
+          {
+            "destination_country": "Egypt",
+            "export_value": 29.67438518755538
+          },
+          {
+            "destination_country": "Burundi",
+            "export_value": 29.190795908195383
+          },
+          {
+            "destination_country": "Singapore",
+            "export_value": 29.190433293470157
+          },
+          {
+            "destination_country": "Belgium",
+            "export_value": 27.928281431195643
+          },
+          {
+            "destination_country": "Kazakhstan",
+            "export_value": 25.68997959239224
+          },
+          {
+            "destination_country": "Ireland",
+            "export_value": 20.9714733913853
+          },
+          {
+            "destination_country": "Thailand",
+            "export_value": 19.008568103486947
+          },
+          {
+            "destination_country": "Ethiopia",
+            "export_value": 13.89461081709707
+          }
+        ],
+        "import_sources": [
+          {
+            "source_country": "Tanzania",
+            "import_value": 1890.4819046352427
+          },
+          {
+            "source_country": "Kenya",
+            "import_value": 1337.0976110678869
+          },
+          {
+            "source_country": "India",
+            "import_value": 1268.4577771279507
+          },
+          {
+            "source_country": "United Arab Emirates",
+            "import_value": 796.4324031475248
+          },
+          {
+            "source_country": "Cameroon",
+            "import_value": 646.3164467444205
+          },
+          {
+            "source_country": "Uganda",
+            "import_value": 541.7027500705611
+          },
+          {
+            "source_country": "South Africa",
+            "import_value": 313.4894112901649
+          },
+          {
+            "source_country": "Turkey",
+            "import_value": 275.2374378999536
+          },
+          {
+            "source_country": "Malaysia",
+            "import_value": 253.63629033095896
+          },
+          {
+            "source_country": "Japan",
+            "import_value": 239.3141658702644
+          },
+          {
+            "source_country": "Germany",
+            "import_value": 227.67111418372383
+          },
+          {
+            "source_country": "United States",
+            "import_value": 201.210649493542
+          },
+          {
+            "source_country": "Belgium",
+            "import_value": 177.10438564068383
+          },
+          {
+            "source_country": "Russia",
+            "import_value": 153.00682227769528
+          },
+          {
+            "source_country": "Egypt",
+            "import_value": 143.26818283418004
+          },
+          {
+            "source_country": "France",
+            "import_value": 117.09892005832538
+          },
+          {
+            "source_country": "Democratic Republic of the Congo",
+            "import_value": 113.23100795412708
+          },
+          {
+            "source_country": "Brazil",
+            "import_value": 110.25975515718628
+          },
+          {
+            "source_country": "Pakistan",
+            "import_value": 103.08210578798872
+          }
+        ]
+      },
+      "trade_balance_analysis": {
+        "quarterly_balance": [
+          {
+            "quarter": "2023Q1",
+            "export_value": 367.6322252483541,
+            "import_value": 904.3347614717028,
+            "trade_balance": -536.7025362233487,
+            "balance_type": "deficit",
+            "export_growth": 0.0,
+            "import_growth": 0.0,
+            "balance_growth": 0.0
+          },
+          {
+            "quarter": "2023Q2",
+            "export_value": 453.500666890761,
+            "import_value": 965.4093385299668,
+            "trade_balance": -511.9086716392058,
+            "balance_type": "deficit",
+            "export_growth": 0.23357158525588573,
+            "import_growth": 0.06753536373949842,
+            "balance_growth": -0.04619665999458766
+          },
+          {
+            "quarter": "2023Q3",
+            "export_value": 349.62486416188614,
+            "import_value": 1002.4778255902621,
+            "trade_balance": -652.8529614283759,
+            "balance_type": "deficit",
+            "export_growth": -0.22905325242641028,
+            "import_growth": 0.03839665267454295,
+            "balance_growth": 0.2753309283428351
+          },
+          {
+            "quarter": "2023Q4",
+            "export_value": 352.67760680202497,
+            "import_value": 948.8999687599874,
+            "trade_balance": -596.2223619579624,
+            "balance_type": "deficit",
+            "export_growth": 0.008731480375278267,
+            "import_growth": -0.05344542838015187,
+            "balance_growth": -0.08674326811126276
+          },
+          {
+            "quarter": "2024Q1",
+            "export_value": 401.1771352919673,
+            "import_value": 889.5160617616687,
+            "trade_balance": -488.33892646970133,
+            "balance_type": "deficit",
+            "export_growth": 0.1375180265334155,
+            "import_growth": -0.06258184103000974,
+            "balance_growth": -0.18094496679724936
+          },
+          {
+            "quarter": "2024Q2",
+            "export_value": 508.9585074779762,
+            "import_value": 1078.878380387794,
+            "trade_balance": -569.919872909818,
+            "balance_type": "deficit",
+            "export_growth": 0.26866279930826087,
+            "import_growth": 0.21288240512610557,
+            "balance_growth": 0.1670580451775192
+          },
+          {
+            "quarter": "2024Q3",
+            "export_value": 626.6665457104766,
+            "import_value": 1158.2417973571207,
+            "trade_balance": -531.5752516466441,
+            "balance_type": "deficit",
+            "export_growth": 0.23127236602404944,
+            "import_growth": 0.07356104118130546,
+            "balance_growth": -0.06728072328378232
+          },
+          {
+            "quarter": "2024Q4",
+            "export_value": 626.0612724522721,
+            "import_value": 1090.551775655688,
+            "trade_balance": -464.490503203416,
+            "balance_type": "deficit",
+            "export_growth": -0.0009658617686673088,
+            "import_growth": -0.058442047123396845,
+            "balance_growth": -0.12619990911055734
+          },
+          {
+            "quarter": "2025Q1",
+            "export_value": 458.4402335617165,
+            "import_value": 869.7892320581909,
+            "trade_balance": -411.3489984964744,
+            "balance_type": "deficit",
+            "export_growth": -0.26773903173085056,
+            "import_growth": -0.20243196932558738,
+            "balance_growth": -0.114408161933225
+          }
+        ],
+        "summary": {
+          "total_export_value": 4144.739057597435,
+          "total_import_value": 8908.099141572382,
+          "overall_balance": -4763.360083974947,
+          "quarters_analyzed": 9
+        }
+      },
+      "year_over_year_comparison": {
+        "exports_comparison": {},
+        "imports_comparison": {},
+        "growth_analysis": {}
+      },
+      "top_performers": {
+        "top_export_destinations": [
+          {
+            "destination_country": "United Arab Emirates",
+            "export_value": 2759.3186439144015
+          },
+          {
+            "destination_country": "Democratic Republic of the Congo",
+            "export_value": 468.4476444891387
+          },
+          {
+            "destination_country": "China",
+            "export_value": 191.2138554150942
+          },
+          {
+            "destination_country": "Luxembourg",
+            "export_value": 83.52893942124835
+          },
+          {
+            "destination_country": "United Kingdom",
+            "export_value": 82.04632810816055
+          },
+          {
+            "destination_country": "Hong Kong",
+            "export_value": 74.10252575556416
+          },
+          {
+            "destination_country": "Pakistan",
+            "export_value": 63.97928255749504
+          },
+          {
+            "destination_country": "United States",
+            "export_value": 56.28562650340676
+          },
+          {
+            "destination_country": "Uganda",
+            "export_value": 55.6034531655963
+          },
+          {
+            "destination_country": "Netherlands",
+            "export_value": 43.56889462252465
+          }
+        ],
+        "top_import_sources": [
+          {
+            "source_country": "Tanzania",
+            "import_value": 1890.4819046352427
+          },
+          {
+            "source_country": "Kenya",
+            "import_value": 1337.0976110678869
+          },
+          {
+            "source_country": "India",
+            "import_value": 1268.4577771279507
+          },
+          {
+            "source_country": "United Arab Emirates",
+            "import_value": 796.4324031475248
+          },
+          {
+            "source_country": "Cameroon",
+            "import_value": 646.3164467444205
+          },
+          {
+            "source_country": "Uganda",
+            "import_value": 541.7027500705611
+          },
+          {
+            "source_country": "South Africa",
+            "import_value": 313.4894112901649
+          },
+          {
+            "source_country": "Turkey",
+            "import_value": 275.2374378999536
+          },
+          {
+            "source_country": "Malaysia",
+            "import_value": 253.63629033095896
+          },
+          {
+            "source_country": "Japan",
+            "import_value": 239.3141658702644
+          }
+        ],
+        "fastest_growing_exports": [],
+        "fastest_growing_imports": []
+      }
+    },
+    "metadata": {
+      "processed_at": "2025-10-09T18:10:11.951632",
+      "source_files": [
+        "C:\\Users\\educa\\OneDrive\\Desktop\\NISR Prject\\rwanda-export-analysis-\\data\\raw\\2025Q1_Trade_report_annexTables.xlsx"
+      ],
+      "data_quarters": "{'2023Q2', '2024Q1', '2023Q4', '2023Q1', '2023Q3', '2024Q2', '2024Q4', '2024Q3', '2025Q1'}",
+      "commodities": "set()",
+      "countries": "{'Tanzania', 'Germany', 'Democratic Republic of the Congo', 'South Sudan', 'France', 'United Kingdom', 'Thailand', 'Ethiopia', 'Japan', 'United States', 'United Arab Emirates', 'Ireland', 'Brazil', 'Malaysia', 'Russia', 'Luxembourg', 'Uganda', 'India', 'Netherlands', 'Kazakhstan', 'Belgium', 'Singapore', 'Hong Kong', 'Kenya', 'Cameroon', 'South Africa', 'Turkey', 'China', 'Egypt', 'Burundi', 'Pakistan'}",
+      "files_processed": {
+        "2025Q1_Trade_report_annexTables.xlsx": {
+          "processed_at": "2025-10-09T18:10:22.007647",
+          "sheets_found": 13,
+          "data_extracted": {
+            "total_records": 514,
+            "quarters_covered": [
+              "2023Q2",
+              "2024Q1",
+              "2023Q4",
+              "2023Q1",
+              "2023Q3",
+              "2024Q2",
+              "2024Q4",
+              "2024Q3",
+              "2025Q1"
+            ],
+            "countries_found": [
+              "Tanzania",
+              "Germany",
+              "Democratic Republic of the Congo",
+              "South Sudan",
+              "France",
+              "United Kingdom",
+              "Thailand",
+              "Ethiopia",
+              "Japan",
+              "United States",
+              "Greece",
+              "Zambia",
+              "United Arab Emirates",
+              "Ireland",
+              "Qatar",
+              "Brazil",
+              "Malaysia",
+              "Russia",
+              "Luxembourg",
+              "Uganda",
+              "India",
+              "Netherlands",
+              "Kazakhstan",
+              "Belgium",
+              "Singapore",
+              "Hong Kong",
+              "Kenya",
+              "Cameroon",
+              "South Africa",
+              "Turkey",
+              "China",
+              "Egypt",
+              "Congo",
+              "Burundi",
+              "Pakistan"
+            ],
+            "data_by_type": {
+              "exports_data": 179,
+              "imports_data": 171,
+              "re_exports_data": 164,
+              "commodity_exports": 0,
+              "commodity_imports": 0,
+              "commodity_re_exports": 0
+            }
+          }
+        }
+      },
+      "sheets_processed": {
+        "2025Q1_Trade_report_annexTables.xlsx": [
+          "Graph Overall",
+          "Graph EAC",
+          "EAC",
+          "Total trade with the World",
+          "Regional blocks",
+          "Trade by continents",
+          "Sheet11",
+          "ExportCountry",
+          "ImportCountry",
+          "ReexportsCountry",
+          "ExportsCommodity",
+          "ImportsCommodity",
+          "ReexportsCommodity"
+        ]
+      }
+    }
+  },
+  "time_series_analysis": {
+    "generated_at": "2025-10-09T18:10:22.767810",
+    "exports_analysis": {
+      "statistical_analysis": {
+        "basic_statistics": {
+          "count": 9,
+          "mean": 3.867213192105533,
+          "median": 3.7459110881900495,
+          "std": 1.2630592863694832,
+          "min": 2.1842576986824804,
+          "max": 6.222464768094116,
+          "range": 4.038207069411635,
+          "q25": 2.956840020752061,
+          "q75": 4.307349245087195,
+          "iqr": 1.3505092243351342,
+          "skewness": 0.4956924756383153,
+          "kurtosis": -0.8042631272808793
+        },
+        "distribution_tests": {
+          "shapiro_wilk": {
+            "statistic": 0.9530803270436077,
+            "p_value": 0.7238666305587771,
+            "normal": "True"
+          }
+        },
+        "stationarity_tests": {
+          "adf": {
+            "statistic": -6.058305515990031,
+            "p_value": 1.2298761092737805e-07,
+            "critical_values": {
+              "1%": -5.354256481481482,
+              "5%": -3.6462381481481483,
+              "10%": -2.901197777777778
+            },
+            "stationary": "True"
+          },
+          "kpss": {
+            "statistic": 0.49999999999999883,
+            "p_value": 0.041666666666666935,
+            "critical_values": {
+              "10%": 0.347,
+              "5%": 0.463,
+              "2.5%": 0.574,
+              "1%": 0.739
+            },
+            "stationary": "False"
+          }
+        },
+        "trend_analysis": {
+          "slope": -0.07732071731655098,
+          "intercept": 4.176496061371736,
+          "r_squared": 0.024983484901506335,
+          "p_value": 0.6846282213591894,
+          "trend_strength": 0.15806164905348272,
+          "trend_direction": "decreasing",
+          "significant": "False"
+        },
+        "volatility_analysis": {
+          "volatility": 77.66863363691918,
+          "mean_return": 12.862402372496854,
+          "max_return": 184.87777663997414,
+          "min_return": -46.95341964383685,
+          "positive_returns": 3.0,
+          "negative_returns": 5.0
+        }
+      },
+      "forecasts": {
+        "arima": {
+          "error": "Insufficient data for ARIMA (minimum 10 observations)"
+        },
+        "sarima": {
+          "error": "Insufficient data for SARIMA (minimum 20 observations)"
+        },
+        "exponential_smoothing": {
+          "forecast_values": [
+            1.867689030059608,
+            5.151335624353648,
+            2.8271541794854698,
+            2.694296121528299
+          ],
+          "model_params": {
+            "alpha": 1.4901161193847656e-08,
+            "beta": 1.4889168016685071e-08,
+            "gamma": 0.0
+          },
+          "model_fit": {
+            "aic": 2.173632738657197,
+            "bic": 3.7514293573469537
+          }
+        },
+        "ensemble": {
+          "ensemble_forecasts": [
+            1.867689030059608,
+            5.151335624353648,
+            2.8271541794854698,
+            2.694296121528299
+          ],
+          "model_contributions": {
+            "arima": false,
+            "sarima": false,
+            "exponential_smoothing": true
+          },
+          "individual_forecasts": {
+            "arima": [],
+            "sarima": [],
+            "exponential_smoothing": [
+              1.867689030059608,
+              5.151335624353648,
+              2.8271541794854698,
+              2.694296121528299
+            ]
+          }
+        }
+      }
+    },
+    "imports_analysis": {
+      "statistical_analysis": {
+        "basic_statistics": {
+          "count": 9,
+          "mean": 39.25602833004178,
+          "median": 18.665667207985813,
+          "std": 48.357109682299,
+          "min": 11.34772578390165,
+          "max": 170.99585811588764,
+          "range": 159.648132331986,
+          "q25": 17.87262607911754,
+          "q75": 22.66832102678733,
+          "iqr": 4.795694947669787,
+          "skewness": 2.1789180933441785,
+          "kurtosis": 3.158924992004426
+        },
+        "distribution_tests": {
+          "shapiro_wilk": {
+            "statistic": 0.5688424735646971,
+            "p_value": 4.120911819600676e-05,
+            "normal": "False"
+          }
+        },
+        "stationarity_tests": {
+          "adf": {
+            "statistic": -3.1074763048928085,
+            "p_value": 0.02600483306535984,
+            "critical_values": {
+              "1%": -4.6651863281249994,
+              "5%": -3.3671868750000002,
+              "10%": -2.802960625
+            },
+            "stationary": "True"
+          },
+          "kpss": {
+            "statistic": 0.14530409353784204,
+            "p_value": 0.1,
+            "critical_values": {
+              "10%": 0.347,
+              "5%": 0.463,
+              "2.5%": 0.574,
+              "1%": 0.739
+            },
+            "stationary": "True"
+          }
+        },
+        "trend_analysis": {
+          "slope": -2.2799062005785173,
+          "intercept": 48.37565313235585,
+          "r_squared": 0.01481910687780734,
+          "p_value": 0.7550481867904645,
+          "trend_strength": 0.12173375406109573,
+          "trend_direction": "decreasing",
+          "significant": "False"
+        },
+        "volatility_analysis": {
+          "volatility": 285.28324994602804,
+          "mean_return": 103.96797108137059,
+          "max_return": 830.9754097605916,
+          "min_return": -91.65427485032161,
+          "positive_returns": 4.0,
+          "negative_returns": 4.0
+        }
+      },
+      "forecasts": {
+        "arima": {
+          "error": "Insufficient data for ARIMA (minimum 10 observations)"
+        },
+        "sarima": {
+          "error": "Insufficient data for SARIMA (minimum 20 observations)"
+        },
+        "exponential_smoothing": {
+          "forecast_values": [
+            2.7464535574215176,
+            23.17883367204015,
+            3.6642668436251,
+            48.539128676059576
+          ],
+          "model_params": {
+            "alpha": 1.4901161193847656e-08,
+            "beta": 9.407795334117943e-09,
+            "gamma": 0.0
+          },
+          "model_fit": {
+            "aic": 83.55052364314137,
+            "bic": 85.12832026183113
+          }
+        },
+        "ensemble": {
+          "ensemble_forecasts": [
+            2.7464535574215176,
+            23.17883367204015,
+            3.6642668436251,
+            48.539128676059576
+          ],
+          "model_contributions": {
+            "arima": false,
+            "sarima": false,
+            "exponential_smoothing": true
+          },
+          "individual_forecasts": {
+            "arima": [],
+            "sarima": [],
+            "exponential_smoothing": [
+              2.7464535574215176,
+              23.17883367204015,
+              3.6642668436251,
+              48.539128676059576
+            ]
+          }
+        }
+      }
+    },
+    "trade_balance_analysis": {
+      "statistical_analysis": {
+        "basic_statistics": {
+          "count": 13,
+          "mean": -871.5443409679481,
+          "median": -984.7148136783783,
+          "std": 333.38217346712804,
+          "min": -1351.3297940323835,
+          "max": -389.56806461388186,
+          "range": 961.7617294185015,
+          "q25": -1136.3538277398372,
+          "q75": -552.1723300208702,
+          "iqr": 584.1814977189671,
+          "skewness": 0.30776279356176867,
+          "kurtosis": -1.5316705202913081
+        },
+        "distribution_tests": {
+          "shapiro_wilk": {
+            "statistic": 0.8549603948194382,
+            "p_value": 0.033078434057960904,
+            "normal": "False"
+          }
+        },
+        "stationarity_tests": {
+          "adf": {
+            "statistic": -1.6320940306252572,
+            "p_value": 0.46639480497787783,
+            "critical_values": {
+              "1%": -4.137829282407408,
+              "5%": -3.1549724074074077,
+              "10%": -2.7144769444444443
+            },
+            "stationary": "False"
+          },
+          "kpss": {
+            "statistic": 0.28569271668221186,
+            "p_value": 0.1,
+            "critical_values": {
+              "10%": 0.347,
+              "5%": 0.463,
+              "2.5%": 0.574,
+              "1%": 0.739
+            },
+            "stationary": "True"
+          }
+        },
+        "trend_analysis": {
+          "slope": -34.806531473647865,
+          "intercept": -662.7051521260609,
+          "r_squared": 0.15260360142848411,
+          "p_value": 0.1869161811594005,
+          "trend_strength": 0.39064510931084767,
+          "trend_direction": "decreasing",
+          "significant": "False"
+        },
+        "volatility_analysis": {
+          "volatility": 50.77894586016538,
+          "mean_return": 9.426268918540368,
+          "max_return": 158.80273758713764,
+          "min_return": -57.09461242439513,
+          "positive_returns": 7.0,
+          "negative_returns": 5.0
+        }
+      },
+      "forecasts": {
+        "arima": {
+          "error": "'numpy.ndarray' object has no attribute 'iloc'"
+        },
+        "sarima": {
+          "error": "Insufficient data for SARIMA (minimum 20 observations)"
+        },
+        "exponential_smoothing": {
+          "forecast_values": [
+            -556.1145822464155,
+            -548.8688386706344,
+            -243.73838589818473,
+            -161.54535102096577
+          ],
+          "model_params": {
+            "alpha": 0.6864050689636093,
+            "beta": 0.266615884225132,
+            "gamma": 0.008212220075183447
+          },
+          "model_fit": {
+            "aic": 161.5545995674516,
+            "bic": 166.07419442714388
+          }
+        },
+        "ensemble": {
+          "ensemble_forecasts": [
+            -556.1145822464155,
+            -548.8688386706344,
+            -243.73838589818473,
+            -161.54535102096577
+          ],
+          "model_contributions": {
+            "arima": false,
+            "sarima": false,
+            "exponential_smoothing": true
+          },
+          "individual_forecasts": {
+            "arima": [],
+            "sarima": [],
+            "exponential_smoothing": [
+              -556.1145822464155,
+              -548.8688386706344,
+              -243.73838589818473,
+              -161.54535102096577
+            ]
+          }
+        }
+      }
+    },
+    "comparative_analysis": {
+      "correlation_analysis": {
+        "export_import_correlation": 0.2142079109980007,
+        "returns_correlation": 0.21774648378257305
+      },
+      "trade_balance_summary": {
+        "mean_balance": -35.38881513793625,
+        "balance_volatility": 51.020275069543295,
+        "positive_balance_periods": 0,
+        "negative_balance_periods": 9
+      },
+      "ratio_analysis": {
+        "mean_export_import_ratio": 0.17218779877959797,
+        "ratio_volatility": 0.08913285712255073
+      }
+    },
+    "forecasts": {},
+    "recommendations": [
+      {
+        "type": "trade_deficit",
+        "priority": "high",
+        "message": "Persistent trade deficit detected. Focus on export promotion and import substitution strategies.",
+        "confidence": 0.8
+      },
+      {
+        "type": "high_volatility",
+        "priority": "medium",
+        "message": "High export volatility detected. Consider diversification strategies to reduce risk.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  "forecasting_results": {},
+  "execution_summary": {},
+  "key_insights": {
+    "data_quality": {},
+    "trend_analysis": {
+      "exports": {
+        "direction": "decreasing",
+        "strength": 0.15806164905348272,
+        "significance": "False"
+      },
+      "trade_balance": {
+        "mean_balance": -871.5443409679481,
+        "balance_volatility": 333.38217346712804,
+        "balance_trend": "negative"
+      }
+    },
+    "forecast_insights": {},
+    "risk_assessment": {
+      "overall_risk_level": "Medium",
+      "risk_factors": [
+        "High export volatility detected"
+      ],
+      "risk_scores": {
+        "volatility": "High"
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "type": "trade_deficit",
+      "priority": "high",
+      "message": "Persistent trade deficit detected. Focus on export promotion and import substitution strategies.",
+      "confidence": 0.8
+    },
+    {
+      "type": "high_volatility",
+      "priority": "medium",
+      "message": "High export volatility detected. Consider diversification strategies to reduce risk.",
+      "confidence": 0.7
+    }
+  ]
+}

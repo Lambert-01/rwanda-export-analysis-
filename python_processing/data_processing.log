@@ -5,21 +5,21 @@
 2025-09-24 03:02:40,510 - ERROR - Error in data processing pipeline: Excel file not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
 2025-09-24 03:02:40,512 - ERROR - Pipeline execution failed: Excel file not found: data\raw\2024Q4_Trade_report_annexTables.xlsx
 2025-09-24 03:04:17,740 - INFO - PipelineRunner initialized
-2025-09-24 03:04:17,740 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:04:17,740 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:04:17,740 - INFO - Stage 1: Data Processing
 2025-09-24 03:04:17,741 - INFO - DataProcessor initialized
 2025-09-24 03:04:17,874 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
 2025-09-24 03:04:17,878 - ERROR - Pipeline failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
 2025-09-24 03:04:17,878 - ERROR - Pipeline execution failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
 2025-09-24 03:05:20,206 - INFO - PipelineRunner initialized
-2025-09-24 03:05:20,207 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:05:20,207 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:05:20,207 - INFO - Stage 1: Data Processing
 2025-09-24 03:05:20,208 - INFO - DataProcessor initialized
 2025-09-24 03:05:20,241 - ERROR - Error loading processed data: Expecting value: line 1 column 1 (char 0)
 2025-09-24 03:05:20,260 - ERROR - Pipeline failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
 2025-09-24 03:05:20,261 - ERROR - Pipeline execution failed: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
 2025-09-24 03:09:17,992 - INFO - PipelineRunner initialized
-2025-09-24 03:09:17,992 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:09:17,992 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:09:17,992 - INFO - Stage 1: Data Processing
 2025-09-24 03:09:17,993 - INFO - DataProcessor initialized
 2025-09-24 03:09:17,996 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
@@ -32,7 +32,7 @@
 2025-09-24 03:09:18,001 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:09:18,001 - INFO - Pipeline completed successfully!
 2025-09-24 03:11:58,856 - INFO - PipelineRunner initialized
-2025-09-24 03:11:58,857 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:11:58,857 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:11:58,857 - INFO - Stage 1: Data Processing
 2025-09-24 03:11:58,858 - INFO - DataProcessor initialized
 2025-09-24 03:11:58,863 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
@@ -45,7 +45,7 @@
 2025-09-24 03:11:58,870 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:11:58,871 - INFO - Pipeline completed successfully!
 2025-09-24 03:12:27,824 - INFO - PipelineRunner initialized
-2025-09-24 03:12:27,824 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:12:27,824 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:12:27,824 - INFO - Stage 1: Data Processing
 2025-09-24 03:12:27,825 - INFO - DataProcessor initialized
 2025-09-24 03:12:27,825 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
@@ -58,7 +58,7 @@
 2025-09-24 03:12:27,834 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:12:27,834 - INFO - Pipeline completed successfully!
 2025-09-24 03:13:04,222 - INFO - PipelineRunner initialized
-2025-09-24 03:13:04,223 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:13:04,223 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:13:04,223 - INFO - Stage 1: Data Processing
 2025-09-24 03:13:04,224 - INFO - DataProcessor initialized
 2025-09-24 03:13:04,226 - INFO - Data processing completed: {'exports_count': 0, 'imports_count': 0, 'balance_records': 0, 'quarters_processed': 0, 'commodities_count': 0, 'countries_count': 0}
@@ -71,7 +71,7 @@
 2025-09-24 03:13:04,232 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:13:04,232 - INFO - Pipeline completed successfully!
 2025-09-24 03:13:31,779 - INFO - PipelineRunner initialized
-2025-09-24 03:13:31,779 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-24 03:13:31,779 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-24 03:13:31,779 - INFO - Stage 1: Data Processing
 2025-09-24 03:13:31,780 - INFO - DataProcessor initialized
 2025-09-24 03:13:31,780 - INFO - Starting full data processing pipeline
@@ -143,7 +143,7 @@
 2025-09-24 03:13:35,519 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-24 03:13:35,519 - INFO - Pipeline completed successfully!
 2025-09-27 09:53:35,689 - INFO - PipelineRunner initialized
-2025-09-27 09:53:35,689 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-27 09:53:35,689 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-27 09:53:35,690 - INFO - Stage 1: Data Processing
 2025-09-27 09:53:35,690 - INFO - DataProcessor initialized
 2025-09-27 09:53:35,690 - INFO - Starting full data processing pipeline
@@ -211,7 +211,7 @@
 2025-09-27 09:53:39,557 - INFO - Summary report saved to c:\Users\educa\HACKTON\rwanda-export-explorer\data\processed\pipeline_summary.json
 2025-09-27 09:53:39,557 - INFO - Pipeline completed successfully!
 2025-09-27 09:54:56,315 - INFO - PipelineRunner initialized
-2025-09-27 09:54:56,316 - INFO - Starting Rwanda Export Explorer Data Pipeline
+2025-09-27 09:54:56,316 - INFO - Starting Rwanda trade analysis systemData Pipeline
 2025-09-27 09:54:56,316 - INFO - Stage 1: Data Processing
 2025-09-27 09:54:56,316 - INFO - DataProcessor initialized
 2025-09-27 09:54:56,316 - INFO - Starting full data processing pipeline

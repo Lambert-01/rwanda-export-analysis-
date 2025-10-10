@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Analytics | Rwanda Export Explorer</title>
+    <title>Advanced Analytics | Rwanda Trade analytic system</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Deep insights with AI-powered analysis and forecasting">
-    <meta name="keywords" content="Rwanda, analytics, AI, forecasting, statistical analysis, trade, NISR">
-    <meta name="author" content="Rwanda Export Explorer - AI Enhanced">
+    <meta name="description" content="Professional statistical analysis and AI-powered forecasting for Rwanda's trade data">
+    <meta name="keywords" content="Rwanda, analytics, statistical analysis, forecasting, AI, trade intelligence, NISR">
+    <meta name="author" content="Rwanda trade analysis system- NISR">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -16,12 +16,7 @@
     <!-- External Libraries CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -34,7 +29,7 @@
         <div class="sidebar-header">
             <div class="logo-container">
                 <img src="assets/images/NISR.png" alt="NISR Logo" class="nisr-logo">
-                <h3>Rwanda Export Explorer</h3>
+                <h3>Rwanda Trade analytic system</h3>
                 <span class="ai-badge">AI-Powered</span>
             </div>
         </div>
@@ -94,13 +89,7 @@
                 </div>
                 <div class="user-details">
                     <span class="user-name">Trade Analyst</span>
-                    <span class="user-role">Advanced Analytics</span>
-                </div>
-            </div>
-            <div class="sidebar-footer-compact">
-                <div class="footer-info">
-                    <span class="footer-copyright">© 2024 Rwanda Export Explorer</span>
-                    <span class="footer-meta">Data: NISR | Updated: 2025-01-05</span>
+                    <span class="user-role">NISR Dashboard</span>
                 </div>
             </div>
         </div>
@@ -112,23 +101,19 @@
     <!-- Top Header Bar -->
     <header class="top-header">
         <div class="header-left">
-            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Navigation Menu" aria-label="Toggle Navigation Menu">
+            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Navigation Menu">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="page-title">
                 <h1>Advanced Analytics</h1>
-                <p>Deep statistical analysis and AI-powered insights</p>
+                <p>Statistical analysis & AI-powered forecasting</p>
             </div>
         </div>
 
         <div class="header-right">
             <div class="header-actions">
-                <button class="btn btn-refresh" onclick="runAdvancedAnalytics()" title="Run AI Analysis">
-                    <i class="fas fa-brain"></i>
-                </button>
-                <button class="btn btn-notifications" onclick="toggleNotifications()" title="Notifications">
-                    <i class="fas fa-bell"></i>
-                    <span class="notification-badge">1</span>
+                <button class="btn btn-refresh" onclick="location.reload()" title="Refresh Data">
+                    <i class="fas fa-sync-alt"></i>
                 </button>
                 <div class="time-display">
                     <i class="fas fa-clock"></i>
@@ -145,396 +130,214 @@
             <div class="spinner-container">
                 <div class="spinner"></div>
                 <p class="loading-text">Loading Advanced Analytics...</p>
-                <div class="mt-3">
-                    <small class="text-white-50">Running statistical analysis...</small>
-                </div>
+                <small class="text-muted">Processing comprehensive analysis data...</small>
             </div>
         </div>
 
-        <!-- Advanced Analytics Section -->
-        <section id="analytics" class="section active">
-            <div class="container-fluid">
-                <div class="section-header">
-                    <h2 class="section-title">Advanced Analytics Dashboard</h2>
-                    <p class="section-subtitle">Deep insights with AI-powered analysis and forecasting</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="runAdvancedAnalytics()">
-                            <i class="fas fa-brain me-1"></i>Run AI Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="exportAnalyticsReport()">
-                            <i class="fas fa-file-pdf me-1"></i>Export Report
-                        </button>
+        <!-- Hero Section -->
+        <section class="analytics-hero">
+            <div class="container-fluid text-center">
+                <h1><i class="fas fa-chart-line me-3"></i>Advanced Analytics Dashboard</h1>
+                <p>Professional statistical analysis, forecasting & AI-powered insights</p>
+            </div>
+        </section>
+
+        <!-- Overview Metrics -->
+        <section class="container-fluid mb-5">
+            <div class="overview-grid">
+                <div class="overview-card exports">
+                    <div class="card-icon">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <h3>Exports Statistics</h3>
+                    <div class="metric-value" id="exports-mean">$0.00M</div>
+                    <div class="metric-label">Mean Value</div>
+                    <hr style="opacity: 0.1; margin: 1rem 0;">
+                    <p><small>Median: <strong id="exports-median">$0.00M</strong></small></p>
+                    <p><small>Std Dev: <strong id="exports-std">$0.00M</strong></small></p>
+                    <p><small>Range: <strong id="exports-range">$0.00M</strong></small></p>
+                </div>
+
+                <div class="overview-card imports">
+                    <div class="card-icon">
+                        <i class="fas fa-arrow-trend-down"></i>
+                    </div>
+                    <h3>Imports Statistics</h3>
+                    <div class="metric-value" id="imports-mean">$0.00M</div>
+                    <div class="metric-label">Mean Value</div>
+                    <hr style="opacity: 0.1; margin: 1rem 0;">
+                    <p><small>Median: <strong id="imports-median">$0.00M</strong></small></p>
+                    <p><small>Std Dev: <strong id="imports-std">$0.00M</strong></small></p>
+                    <p><small>Range: <strong id="imports-range">$0.00M</strong></small></p>
+                </div>
+
+                <div class="overview-card balance">
+                    <div class="card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Trade Balance</h3>
+                    <div class="metric-value" id="balance-mean">$0.00M</div>
+                    <div class="metric-label">Mean Balance</div>
+                    <hr style="opacity: 0.1; margin: 1rem 0;">
+                    <p><small>Median: <strong id="balance-median">$0.00M</strong></small></p>
+                    <p><small>Std Dev: <strong id="balance-std">$0.00M</strong></small></p>
+                    <p><small>Trend: <strong id="balance-trend">Calculating...</strong></small></p>
+                </div>
+
+                <div class="overview-card volatility">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3>Volatility Analysis</h3>
+                    <div class="metric-value" id="exports-volatility">0.00%</div>
+                    <div class="metric-label">Exports Volatility</div>
+                    <hr style="opacity: 0.1; margin: 1rem 0;">
+                    <p><small>Mean Return: <strong id="exports-mean-return">0.00%</strong></small></p>
+                    <p><small>Imports Vol: <strong id="imports-volatility">0.00%</strong></small></p>
+                    <p><small>Imports Return: <strong id="imports-mean-return">0.00%</strong></small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistical Analysis -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-calculator me-2"></i>Statistical Analysis
+            </h2>
+            <p class="section-subtitle">Comprehensive statistical tests and distribution analysis</p>
+            <div id="statistical-analysis"></div>
+        </section>
+
+        <!-- Forecasting Section -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-crystal-ball me-2"></i>AI-Powered Forecasting
+            </h2>
+            <p class="section-subtitle">Exponential smoothing forecasts for next 4 quarters</p>
+            <div id="forecasting-section"></div>
+        </section>
+
+        <!-- Charts Grid -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-chart-pie me-2"></i>Advanced Visualizations
+            </h2>
+            <p class="section-subtitle">Interactive charts and trend analysis</p>
+            
+            <div class="charts-grid">
+                <!-- Time Series Chart (Full Width) -->
+                <div class="chart-card full-width">
+                    <div class="chart-container tall">
+                        <canvas id="timeseries-chart"></canvas>
                     </div>
                 </div>
 
-                <!-- Advanced Analytics Overview -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Advanced Trade Analytics</h3>
-                                <div class="badge bg-warning">
-                                    <i class="fas fa-robot me-1"></i>AI Enhanced
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="advanced-analytics-chart" height="400"></canvas>
-                            </div>
-                        </div>
+                <!-- Forecast Chart (Full Width) -->
+                <div class="chart-card full-width">
+                    <div class="chart-container tall">
+                        <canvas id="forecast-chart"></canvas>
                     </div>
                 </div>
 
-                <!-- Search and Filter -->
-                <div class="analytics-controls mb-4">
-                    <div class="row g-3">
-                        <div class="col-lg-4">
-                            <div class="search-box">
-                                <i class="fas fa-search"></i>
-                                <input type="text" class="form-control" id="product-search" placeholder="Search products (e.g., coffee, tea, minerals)">
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <select class="form-select" id="category-filter" aria-label="Select category filter">
-                                <option value="">All Categories</option>
-                                <option value="agricultural">Agricultural</option>
-                                <option value="mining">Mining</option>
-                                <option value="manufacturing">Manufacturing</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <select class="form-select" id="time-filter" aria-label="Select time period">
-                                <option value="quarterly">Quarterly</option>
-                                <option value="yearly">Yearly</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-2">
-                            <button class="btn btn-primary" id="apply-filters">
-                                <i class="fas fa-filter me-1"></i>Apply Filters
-                            </button>
-                        </div>
+                <!-- Volatility Chart -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="volatility-chart"></canvas>
                     </div>
                 </div>
 
-                <!-- Analytics Results -->
-                <div class="row g-4 mb-5" id="analytics-results">
-                    <!-- Dynamic content will be loaded here -->
-                </div>
-
-                <!-- Statistical Analysis Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-calculator me-2"></i>Statistical Analysis Results
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Advanced Analytics
-                                </div>
-                            </div>
-                            <div class="analysis-results-grid">
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-link"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="correlation-strength">0.93</div>
-                                        <div class="metric-label">Export-Import Correlation</div>
-                                        <div class="metric-description">Strong positive relationship between exports and imports</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-chart-bell-curve"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="export-volatility">$343M</div>
-                                        <div class="metric-label">Export Volatility</div>
-                                        <div class="metric-description">Standard deviation of export values</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-chart-bell-curve"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="import-volatility">$620M</div>
-                                        <div class="metric-label">Import Volatility</div>
-                                        <div class="metric-description">Standard deviation of import values</div>
-                                    </div>
-                                </div>
-
-                                <div class="analysis-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-balance-scale"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="trade-imbalance">0.45</div>
-                                        <div class="metric-label">Trade Imbalance Ratio</div>
-                                        <div class="metric-description">Export/Import ratio indicating trade dependency</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Distribution Chart -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="distribution-chart"></canvas>
                     </div>
                 </div>
 
-                <!-- Regional Analysis Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-globe-africa me-2"></i>Regional Export Analysis
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Geographic Insights
-                                </div>
-                            </div>
-                            <div class="regional-analysis-grid">
-                                <div class="regional-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="asia-exports">$6.8B</div>
-                                        <div class="metric-label">Asia Exports</div>
-                                        <div class="metric-description">Primary export destination region</div>
-                                    </div>
-                                </div>
-
-                                <div class="regional-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="africa-exports">$1.4B</div>
-                                        <div class="metric-label">Africa Exports</div>
-                                        <div class="metric-description">Regional trade partners</div>
-                                    </div>
-                                </div>
-
-                                <div class="regional-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="europe-exports">$570M</div>
-                                        <div class="metric-label">Europe Exports</div>
-                                        <div class="metric-description">European market penetration</div>
-                                    </div>
-                                </div>
-
-                                <div class="regional-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="americas-exports">$123M</div>
-                                        <div class="metric-label">Americas Exports</div>
-                                        <div class="metric-description">North and South American markets</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Geographic Insights Section -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card animate__animated animate__fadeIn">
-                            <div class="chart-header">
-                                <h3 class="chart-title">
-                                    <i class="fas fa-plane me-2"></i>Geographic Trade Insights
-                                </h3>
-                                <div class="ai-badge">
-                                    <i class="fas fa-robot me-1"></i>Distance Analysis
-                                </div>
-                            </div>
-                            <div class="geographic-insights-grid">
-                                <div class="geographic-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-route"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="avg-distance">5,540 km</div>
-                                        <div class="metric-label">Average Distance to Partners</div>
-                                        <div class="metric-description">Mean distance to trading partners</div>
-                                    </div>
-                                </div>
-
-                                <div class="geographic-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="farthest-partner">United States</div>
-                                        <div class="metric-label">Farthest Trading Partner</div>
-                                        <div class="metric-description">Most distant trade relationship</div>
-                                    </div>
-                                </div>
-
-                                <div class="geographic-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="closest-partner">Uganda</div>
-                                        <div class="metric-label">Closest Trading Partner</div>
-                                        <div class="metric-description">Nearest trade relationship</div>
-                                    </div>
-                                </div>
-
-                                <div class="geographic-metric">
-                                    <div class="metric-icon">
-                                        <i class="fas fa-exchange-alt"></i>
-                                    </div>
-                                    <div class="metric-content">
-                                        <div class="metric-value" id="top-destination">UAE</div>
-                                        <div class="metric-label">Top Export Destination</div>
-                                        <div class="metric-description">Primary export market</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Recommendations -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">AI Recommendations</h3>
-                                <div class="badge bg-info">
-                                    <i class="fas fa-lightbulb me-1"></i>Smart Insights
-                                </div>
-                            </div>
-                            <div class="ai-recommendations" id="ai-recommendations">
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Focus on export diversification beyond traditional markets</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Strengthen trade relations with high-growth destinations</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Explore import substitution opportunities for key commodities</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Develop strategies to reduce dependency on primary import sources</span>
-                                </div>
-                                <div class="recommendation-item">
-                                    <i class="fas fa-lightbulb text-warning me-2"></i>
-                                    <span>Monitor seasonal patterns for optimal trade timing</span>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Correlation Chart (Full Width) -->
+                <div class="chart-card full-width">
+                    <div class="chart-container">
+                        <canvas id="correlation-chart"></canvas>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Volatility Analysis -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-wave-square me-2"></i>Volatility & Risk Analysis
+            </h2>
+            <p class="section-subtitle">Risk assessment and return analysis</p>
+            <div id="volatility-analysis"></div>
+        </section>
+
+        <!-- Trend Analysis -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-trending-up me-2"></i>Trend Analysis
+            </h2>
+            <p class="section-subtitle">Directional trends and significance testing</p>
+            <div id="trend-analysis"></div>
+        </section>
+
+        <!-- AI Recommendations -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-robot me-2"></i>AI-Powered Recommendations
+            </h2>
+            <p class="section-subtitle">Strategic insights based on comprehensive analysis</p>
+            <div id="ai-recommendations"></div>
+        </section>
     </main>
-
-
-    <!-- AI Chatbox -->
-    <div class="ai-chatbox" id="ai-chatbox">
-        <div class="chatbox-header">
-            <div class="chatbox-title">
-                <div class="ai-avatar small">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="chatbox-info">
-                    <h4>AI Analytics Assistant</h4>
-                    <span class="status online">Online</span>
-                </div>
-            </div>
-            <div class="chatbox-controls">
-                <button class="btn btn-minimize" onclick="minimizeChatbox()" title="Minimize">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button class="btn btn-close" onclick="closeChatbox()" title="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-        </div>
-
-        <div class="chatbox-body">
-            <div class="chat-messages" id="chat-messages">
-                <div class="message ai-message">
-                    <div class="message-avatar">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="message-content">
-                        <div class="message-text">
-                            Hello! I'm your Analytics Assistant. I can help you understand statistical analysis, explain correlations, interpret trends, and provide insights from the advanced analytics data.
-                        </div>
-                        <div class="message-time">Just now</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="chat-input-container">
-                <div class="chat-input-area">
-                    <input type="text" class="chat-input" id="chat-input" placeholder="Ask me about statistical analysis, correlations, or insights...">
-                    <button class="btn btn-send" onclick="sendMessage()" title="Send Message">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-                <div class="chat-suggestions">
-                    <button class="suggestion-btn" onclick="askQuestion('What is the correlation between exports and imports?')">Export-Import Correlation</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Show me regional export analysis')">Regional Analysis</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Explain trade volatility')">Trade Volatility</button>
-                    <button class="suggestion-btn" onclick="askQuestion('What are the geographic insights?')">Geographic Insights</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Chatbox Toggle Button -->
-    <button class="chatbox-toggle" id="chatbox-toggle" onclick="toggleChatbox()" title="Open AI Assistant">
-        <i class="fas fa-comments"></i>
-        <span class="notification-dot"></span>
-    </button>
 
     <!-- External Libraries JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/api.js"></script>
-    <script src="js/charts.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/chatbox.js"></script>
     <script src="js/analytics.js"></script>
 
-    <!-- Initialize AOS -->
+    <!-- Initialize Time Display and Sidebar -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true,
-                offset: 100
+        // Update time display
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                hour12: true 
+            });
+            const dateString = now.toLocaleDateString('en-US', { 
+                weekday: 'short',
+                month: 'short', 
+                day: 'numeric' 
+            });
+            const el = document.getElementById('current-time');
+            if (el) {
+                el.textContent = `${dateString}, ${timeString}`;
+            }
+        }
+
+        updateTime();
+        setInterval(updateTime, 60000);
+
+        // Sidebar toggle functionality
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+        if (sidebarToggle && sidebar && sidebarOverlay) {
+            sidebarToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('collapsed');
+                sidebarOverlay.classList.toggle('active');
             });
 
-            // Initialize sidebar and other components
-            if (window.SidebarManager) {
-                window.sidebarManager = new SidebarManager();
-            }
-            if (window.AIChatbox) {
-                window.aiChatbox = new AIChatbox();
-            }
-        });
+            sidebarOverlay.addEventListener('click', function() {
+                sidebar.classList.remove('collapsed');
+                sidebarOverlay.classList.remove('active');
+            });
+        }
     </script>
 </body>
 </html>

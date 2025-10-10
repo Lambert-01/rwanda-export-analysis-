@@ -1,6 +1,6 @@
 /**
  * CORS Middleware Configuration
- * Enables Cross-Origin Resource Sharing for the Rwanda Export Explorer API
+ * Enables Cross-Origin Resource Sharing for the Rwanda trade analysis systemAPI
  */
 
 const cors = require('cors');

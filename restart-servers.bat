@@ -1,5 +1,5 @@
 @echo off
-REM Rwanda Export Explorer - Server Restart Script
+REM Rwanda trade analysis system- Server Restart Script
 
 echo 🛑 Stopping existing servers...
 taskkill /FI "WINDOWTITLE eq Backend Server*" /T /F >nul 2>&1

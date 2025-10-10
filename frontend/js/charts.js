@@ -1,7 +1,4 @@
-/* =====================================================================
-    RWANDA EXPORT EXPLORER - ENHANCED CHARTS.JS
-    Pro-level Chart.js dashboard script with AI forecasting and advanced visualizations
-    ===================================================================== */
+
 
 /************************************
  * 1. GLOBAL CHART.JS CONFIGURATION *
@@ -933,7 +930,7 @@ function setChartAriaLabels() {
     const charts = document.querySelectorAll('canvas');
     charts.forEach(canvas => {
         canvas.setAttribute('role', 'img');
-        canvas.setAttribute('aria-label', 'Data chart for Rwanda Export Explorer');
+        canvas.setAttribute('aria-label', 'Data chart for Rwanda Trade analytic system');
         canvas.setAttribute('tabindex', '0');
     });
 }

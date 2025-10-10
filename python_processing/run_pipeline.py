@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rwanda Export Explorer - Data Processing Pipeline Runner
+Rwanda trade analysis system- Data Processing Pipeline Runner
 Orchestrates the complete data processing, analysis, and prediction pipeline.
 """
 
@@ -85,7 +85,7 @@ class PipelineRunner:
 
     def run_full_pipeline(self) -> dict:
         """Run the complete data processing pipeline."""
-        logger.info("Starting Rwanda Export Explorer Data Pipeline")
+        logger.info("Starting Rwanda trade analysis systemData Pipeline")
         self.results['pipeline_start'] = datetime.now().isoformat()
 
         try:
@@ -335,7 +335,7 @@ class PipelineRunner:
 
 def main():
     """Main entry point for the pipeline."""
-    parser = argparse.ArgumentParser(description='Rwanda Export Explorer Data Pipeline')
+    parser = argparse.ArgumentParser(description='Rwanda trade analysis systemData Pipeline')
     parser.add_argument('--force-reprocess', action='store_true',
                        help='Force reprocessing of raw data')
     parser.add_argument('--skip-predictions', action='store_true',

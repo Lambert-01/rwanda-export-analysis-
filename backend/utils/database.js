@@ -1,6 +1,6 @@
 /**
  * MongoDB Database Connection and Models
- * Comprehensive database integration for Rwanda Export Explorer
+ * Comprehensive database integration for Rwanda Trade analytic system
  */
 
 const mongoose = require('mongoose');

@@ -1,5 +1,5 @@
-/* =====================================================================
-    RWANDA EXPORT EXPLORER - MAIN.JS (HACKATHON ENHANCED)
+ewar/* =====================================================================
+   Rwanda trade analysis system - MAIN.JS (HACKATHON ENHANCED)
     NISR Hackathon 2025 - Track 5: Mobile/Web Data Solutions
     Enhanced with modern features, PWA capabilities, and mobile optimization
     ===================================================================== */
@@ -42,7 +42,7 @@ function showSection(sectionId) {
     });
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    document.title = `Rwanda Export Explorer | ${capitalize(sectionId)}`;
+    document.title = `Rwanda trade analysis system| ${capitalize(sectionId)}`;
 }
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -310,6 +310,39 @@ window.populateWithSampleData = populateWithSampleData;
 window.forceLoadData = forceLoadData;
 window.testDataLoading = testDataLoading;
 
+// Quick function to populate dashboard with real data from your processed files
+window.populateWithSampleData = function() {
+    console.log('🚀 Populating dashboard with real data from processed files...');
+
+    try {
+        // Update dashboard stats with real data from your processed files
+        const statsElements = {
+            'exports-value': '$677.45M',
+            'imports-value': '$1,629.39M',
+            'balance-value': '-$951.94M',
+            'total-trade-value': '$2,306.84M',
+            'export-growth': '+157.9%',
+            'active-partners': '20'
+        };
+
+        Object.entries(statsElements).forEach(([elementId, value]) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.textContent = value;
+                console.log(`✅ Updated ${elementId}: ${value}`);
+            } else {
+                console.warn(`⚠️ Element not found: ${elementId}`);
+            }
+        });
+
+        console.log('✅ Dashboard populated with real data');
+        showToast('Dashboard updated with real data!', 'success', 2000);
+    } catch (error) {
+        console.error('❌ Error populating dashboard:', error);
+        showToast('Error updating dashboard', 'error', 3000);
+    }
+};
+
 // Test function to verify data loading
 window.testDataLoading = async function() {
     console.log('🧪 Testing data loading...');
@@ -350,39 +383,6 @@ window.testDataLoading = async function() {
     } catch (error) {
         console.error('❌ Data loading test failed:', error);
         return { error: error.message };
-    }
-};
-
-// Quick function to populate dashboard with real data from your processed files
-window.populateWithSampleData = function() {
-    console.log('🚀 Populating dashboard with real data from processed files...');
-
-    try {
-        // Update dashboard stats with real data from your processed files
-        const statsElements = {
-            'exports-value': '$677.45M',
-            'imports-value': '$1,629.39M',
-            'balance-value': '-$951.94M',
-            'total-trade-value': '$2,306.84M',
-            'export-growth': '+157.9%',
-            'active-partners': '20'
-        };
-
-        Object.entries(statsElements).forEach(([elementId, value]) => {
-            const element = document.getElementById(elementId);
-            if (element) {
-                element.textContent = value;
-                console.log(`✅ Updated ${elementId}: ${value}`);
-            } else {
-                console.warn(`⚠️ Element not found: ${elementId}`);
-            }
-        });
-
-        console.log('✅ Dashboard populated with real data');
-        showToast('Dashboard updated with real data!', 'success', 2000);
-    } catch (error) {
-        console.error('❌ Error populating dashboard:', error);
-        showToast('Error updating dashboard', 'error', 3000);
     }
 };
 
@@ -1665,7 +1665,7 @@ function renderRegionalComparison(period) {
  * 12. DEMO & INIT                  *
  ************************************/
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Initializing Rwanda Export Explorer (Main.js)...');
+    console.log('🚀 Initializing Rwanda trade analysis system(Main.js)...');
 
     // Prevent multiple initializations
     if (typeof window.mainInitialized !== 'undefined' || typeof window.dashboardInitialized !== 'undefined') {
@@ -1677,7 +1677,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Prevent dashboard.js from initializing if it's loaded
     window.dashboardInitialized = true;
 
-    showToast('🇷🇼 Welcome to Rwanda Export Explorer!', 'success', 2500);
+    showToast('🇷🇼 Welcome to Rwanda Trade analytic system!', 'success', 2500);
 
     // Load Excel analysis on page load
     setTimeout(async () => {
@@ -2801,7 +2801,7 @@ function exportToExcel() {
 function exportToJSON() {
     const data = {
         metadata: {
-            title: 'Rwanda Export Explorer - Hackathon Data',
+            title: 'Rwanda trade analysis system- Hackathon Data',
             exportDate: new Date().toISOString(),
             source: 'NISR Q4 2024 Trade Report'
         },
@@ -2968,7 +2968,7 @@ function initializeNotificationSystem() {
     // Show welcome notification
     setTimeout(() => {
         if ('Notification' in window && Notification.permission === 'granted') {
-            new Notification('Welcome to Rwanda Export Explorer!', {
+            new Notification('Welcome to Rwanda Trade analytic system!', {
                 body: 'AI-powered trade analytics for Rwanda\'s economic development',
                 icon: '/assets/images/favicon.ico',
                 badge: '/assets/images/favicon.ico'
@@ -3042,7 +3042,7 @@ function initializeHackathonFeatures() {
 
 /* Enhanced Demo & Init */
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('🚀 Initializing Rwanda Export Explorer (Main.js)...');
+    console.log('🚀 Initializing Rwanda trade analysis system(Main.js)...');
 
     // Prevent multiple initializations
     if (typeof window.mainInitialized !== 'undefined' || typeof window.dashboardInitialized !== 'undefined') {
@@ -3054,7 +3054,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Prevent dashboard.js from initializing if it's loaded
     window.dashboardInitialized = true;
 
-    showToast('🇷🇼 Welcome to Rwanda Export Explorer!', 'success', 2500);
+    showToast('🇷🇼 Welcome to Rwanda Trade analytic system!', 'success', 2500);
 
     // Initialize hackathon features first
     initializeHackathonFeatures();

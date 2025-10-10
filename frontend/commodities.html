@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commodity Analysis | Rwanda Export Explorer</title>
+    <title>Commodity Analysis | Rwanda Trade analytic system</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Detailed breakdown of Rwanda's export and import commodities">
-    <meta name="keywords" content="Rwanda, commodities, trade, SITC, analysis, exports, imports">
-    <meta name="author" content="Rwanda Export Explorer - AI Enhanced">
+    <meta name="description" content="Advanced SITC-based commodity analysis for Rwanda's trade data">
+    <meta name="keywords" content="Rwanda, commodities, SITC, trade analysis, exports, imports, NISR">
+    <meta name="author" content="Rwanda trade analysis system- NISR">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -16,12 +16,7 @@
     <!-- External Libraries CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -34,7 +29,7 @@
         <div class="sidebar-header">
             <div class="logo-container">
                 <img src="assets/images/NISR.png" alt="NISR Logo" class="nisr-logo">
-                <h3>Rwanda Export Explorer</h3>
+                <h3>Rwanda Trade analytic system</h3>
                 <span class="ai-badge">AI-Powered</span>
             </div>
         </div>
@@ -94,13 +89,7 @@
                 </div>
                 <div class="user-details">
                     <span class="user-name">Trade Analyst</span>
-                    <span class="user-role">Commodity Analysis</span>
-                </div>
-            </div>
-            <div class="sidebar-footer-compact">
-                <div class="footer-info">
-                    <span class="footer-copyright">© 2024 Rwanda Export Explorer</span>
-                    <span class="footer-meta">Data: NISR | Updated: 2025-01-05</span>
+                    <span class="user-role">NISR Dashboard</span>
                 </div>
             </div>
         </div>
@@ -112,23 +101,19 @@
     <!-- Top Header Bar -->
     <header class="top-header">
         <div class="header-left">
-            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Navigation Menu" aria-label="Toggle Navigation Menu">
+            <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Navigation Menu">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="page-title">
                 <h1>Commodity Analysis</h1>
-                <p>Detailed breakdown of Rwanda's trade commodities</p>
+                <p>SITC-based comprehensive trade analysis</p>
             </div>
         </div>
 
         <div class="header-right">
             <div class="header-actions">
-                <button class="btn btn-refresh" onclick="loadCommodityAnalysis()" title="Refresh Analysis">
+                <button class="btn btn-refresh" onclick="location.reload()" title="Refresh Data">
                     <i class="fas fa-sync-alt"></i>
-                </button>
-                <button class="btn btn-notifications" onclick="toggleNotifications()" title="Notifications">
-                    <i class="fas fa-bell"></i>
-                    <span class="notification-badge">1</span>
                 </button>
                 <div class="time-display">
                     <i class="fas fa-clock"></i>
@@ -144,307 +129,193 @@
         <div id="loading-screen" class="loading-screen">
             <div class="spinner-container">
                 <div class="spinner"></div>
-                <p class="loading-text">Loading Commodity Analysis...</p>
-                <div class="mt-3">
-                    <small class="text-white-50">Analyzing commodity data...</small>
-                </div>
+                <p class="loading-text">Loading Commodity Data...</p>
+                <small class="text-muted">Analyzing SITC sections from NISR data...</small>
             </div>
         </div>
 
-        <!-- Commodity Analysis Section -->
-        <section id="commodities" class="section active">
-            <div class="container-fluid">
-                <div class="section-header">
-                    <h2 class="section-title">Commodity Analysis</h2>
-                    <p class="section-subtitle">Detailed breakdown of Rwanda's export and import commodities</p>
-                    <div class="section-actions">
-                        <button class="btn btn-primary" onclick="loadCommodityAnalysis()">
-                            <i class="fas fa-sync-alt me-1"></i>Refresh Analysis
-                        </button>
-                        <button class="btn btn-outline-primary" onclick="toggleCommodityView()">
-                            <i class="fas fa-eye me-1"></i>Toggle View
-                        </button>
+        <!-- Hero Section -->
+        <section class="commodities-hero">
+            <div class="container-fluid text-center">
+                <h1><i class="fas fa-boxes me-3"></i>Advanced Commodity Analysis</h1>
+                <p>Comprehensive SITC-based breakdown of Rwanda's trade commodities (2023-2025)</p>
+            </div>
+        </section>
+
+        <!-- Summary Statistics -->
+        <section class="container-fluid mb-5">
+            <div class="commodity-stats-grid">
+                <div class="commodity-stats-card exports">
+                    <div class="stat-icon">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="stat-label">Total Exports</div>
+                    <div class="stat-value" id="total-exports">$0.00M</div>
+                    <div class="stat-detail">
+                        Top: <span id="top-export-name">Loading...</span><br>
+                        <strong id="top-export-value">$0.00M</strong>
                     </div>
                 </div>
 
-                <!-- Commodity Overview -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Top Export Commodities by SITC Section</h3>
-                                <div class="chart-controls">
-                                    <select class="form-select form-select-sm" id="commodity-period-filter" aria-label="Select period for commodity analysis">
-                                        <option value="q4_2024">Q4 2024</option>
-                                        <option value="q3_2024">Q3 2024</option>
-                                        <option value="q2_2024">Q2 2024</option>
-                                        <option value="q1_2024">Q1 2024</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodity-analysis-chart" height="400"></canvas>
-                            </div>
-                        </div>
+                <div class="commodity-stats-card imports">
+                    <div class="stat-icon">
+                        <i class="fas fa-arrow-trend-down"></i>
+                    </div>
+                    <div class="stat-label">Total Imports</div>
+                    <div class="stat-value" id="total-imports">$0.00M</div>
+                    <div class="stat-detail">
+                        Top: <span id="top-import-name">Loading...</span><br>
+                        <strong id="top-import-value">$0.00M</strong>
                     </div>
                 </div>
 
-                <!-- Detailed Commodity Breakdown -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-8">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Commodity Performance Trends</h3>
-                                <div class="chart-controls">
-                                    <button class="btn btn-sm btn-outline-primary active" data-commodity-chart="trends">Trends</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-commodity-chart="comparison">Comparison</button>
-                                    <button class="btn btn-sm btn-outline-primary" data-commodity-chart="forecast">Forecast</button>
-                                </div>
-                            </div>
-                            <div class="chart-container">
-                                <canvas id="commodity-trends-chart" height="350"></canvas>
-                            </div>
-                        </div>
+                <div class="commodity-stats-card reexports">
+                    <div class="stat-icon">
+                        <i class="fas fa-exchange-alt"></i>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Commodity Details</h3>
-                            </div>
-                            <div class="commodity-details" id="commodity-details">
-                                <div class="commodity-item">
-                                    <h6>Other commodities & transactions</h6>
-                                    <p class="text-muted">SITC Section 9</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" style="width: 63%"></div>
-                                    </div>
-                                    <small class="text-muted">$428M (63% of exports)</small>
-                                </div>
-                                <div class="commodity-item">
-                                    <h6>Food and live animals</h6>
-                                    <p class="text-muted">SITC Section 0</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" style="width: 15%"></div>
-                                    </div>
-                                    <small class="text-muted">$101M (15% of exports)</small>
-                                </div>
-                                <div class="commodity-item">
-                                    <h6>Crude materials</h6>
-                                    <p class="text-muted">SITC Section 2</p>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" style="width: 9%"></div>
-                                    </div>
-                                    <small class="text-muted">$59M (9% of exports)</small>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="stat-label">Total Re-exports</div>
+                    <div class="stat-value" id="total-reexports">$0.00M</div>
+                    <div class="stat-detail">
+                        Transit trade commodities<br>
+                        <strong id="reexport-categories">0</strong> active categories
                     </div>
                 </div>
 
-                <!-- SITC Section Analysis -->
-                <div class="row g-4 mb-5">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">SITC Section Analysis</h3>
-                                <div class="badge bg-success">
-                                    <i class="fas fa-chart-pie me-1"></i>Detailed Breakdown
-                                </div>
-                            </div>
-                            <div class="sitc-sections" id="sitc-sections">
-                                <div class="row g-4">
-                                    <div class="col-lg-6">
-                                        <h5>Export Commodities</h5>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 9</span>
-                                                <span class="sitc-description">Other commodities & transactions</span>
-                                            </div>
-                                            <div class="sitc-value">$428.15M</div>
-                                            <div class="sitc-change positive">+1.11% YoY</div>
-                                        </div>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 0</span>
-                                                <span class="sitc-description">Food and live animals</span>
-                                            </div>
-                                            <div class="sitc-value">$101.12M</div>
-                                            <div class="sitc-change negative">-2.59% YoY</div>
-                                        </div>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 2</span>
-                                                <span class="sitc-description">Crude materials</span>
-                                            </div>
-                                            <div class="sitc-value">$58.79M</div>
-                                            <div class="sitc-change positive">+14.85% YoY</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>Import Commodities</h5>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 9</span>
-                                                <span class="sitc-description">Other commodities & transactions</span>
-                                            </div>
-                                            <div class="sitc-value">$396.16M</div>
-                                            <div class="sitc-change positive">+95.87% YoY</div>
-                                        </div>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 7</span>
-                                                <span class="sitc-description">Machinery and transport equipment</span>
-                                            </div>
-                                            <div class="sitc-value">$238.86M</div>
-                                            <div class="sitc-change negative">-7.64% YoY</div>
-                                        </div>
-                                        <div class="sitc-item">
-                                            <div class="sitc-header">
-                                                <span class="sitc-code">SITC 0</span>
-                                                <span class="sitc-description">Food and live animals</span>
-                                            </div>
-                                            <div class="sitc-value">$234.57M</div>
-                                            <div class="sitc-change negative">-19.20% YoY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="commodity-stats-card balance">
+                    <div class="stat-icon">
+                        <i class="fas fa-balance-scale"></i>
                     </div>
-                </div>
-
-                <!-- Commodity Performance Table -->
-                <div class="row g-4">
-                    <div class="col-lg-12">
-                        <div class="chart-card">
-                            <div class="chart-header">
-                                <h3 class="chart-title">Commodity Performance Analysis</h3>
-                                <div class="chart-controls">
-                                    <label for="commodity-type-filter" class="visually-hidden">Select Commodity Type</label>
-                                    <select class="form-select form-select-sm" id="commodity-type-filter" aria-label="Select commodity type for analysis">
-                                        <option value="exports">Export Commodities</option>
-                                        <option value="imports">Import Commodities</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover" id="commodity-performance-table">
-                                    <thead>
-                                        <tr>
-                                            <th>SITC Code</th>
-                                            <th>Commodity Description</th>
-                                            <th>Q4 2024 Value</th>
-                                            <th>Share (%)</th>
-                                            <th>Growth Rate</th>
-                                            <th>Trend</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="commodity-table-body">
-                                        <!-- Dynamic content -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="stat-label">Trade Balance</div>
+                    <div class="stat-value" id="trade-balance">$0.00M</div>
+                    <div class="stat-detail">
+                        Status: <strong id="balance-status">Calculating...</strong><br>
+                        <span id="sitc-count">10</span> SITC sections
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Top Performers -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-trophy me-2"></i>Top Performing Commodities
+            </h2>
+            <p class="section-subtitle">Leading SITC sections by trade value (2025Q1)</p>
+            <div id="top-performers"></div>
+        </section>
+
+        <!-- SITC Comparison -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-chart-bar me-2"></i>SITC Section Comparison
+            </h2>
+            <p class="section-subtitle">Side-by-side analysis of exports vs imports by commodity category</p>
+            <div id="sitc-comparison"></div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line me-2"></i>Advanced Visualizations
+            </h2>
+            <p class="section-subtitle">Interactive charts and trend analysis</p>
+            
+            <div class="charts-grid">
+                <!-- Trend Chart (Full Width) -->
+                <div class="chart-card full-width">
+                    <div class="chart-container tall">
+                        <canvas id="trends-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Export Distribution -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="exports-distribution-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Import Distribution -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="imports-distribution-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Growth Chart -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="growth-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Radar Chart -->
+                <div class="chart-card">
+                    <div class="chart-container">
+                        <canvas id="radar-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Breakdown -->
+        <section class="container-fluid mb-5">
+            <h2 class="section-title">
+                <i class="fas fa-table me-2"></i>Comprehensive Commodity Breakdown
+            </h2>
+            <p class="section-subtitle">Complete SITC analysis with growth metrics and trends</p>
+            <div id="detailed-breakdown"></div>
+        </section>
     </main>
-
-
-    <!-- AI Chatbox -->
-    <div class="ai-chatbox" id="ai-chatbox">
-        <div class="chatbox-header">
-            <div class="chatbox-title">
-                <div class="ai-avatar small">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="chatbox-info">
-                    <h4>AI Commodity Assistant</h4>
-                    <span class="status online">Online</span>
-                </div>
-            </div>
-            <div class="chatbox-controls">
-                <button class="btn btn-minimize" onclick="minimizeChatbox()" title="Minimize">
-                    <i class="fas fa-minus"></i>
-                </button>
-                <button class="btn btn-close" onclick="closeChatbox()" title="Close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-        </div>
-
-        <div class="chatbox-body">
-            <div class="chat-messages" id="chat-messages">
-                <div class="message ai-message">
-                    <div class="message-avatar">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="message-content">
-                        <div class="message-text">
-                            Hello! I'm your Commodity Analysis Assistant. I can help you understand SITC classifications, analyze commodity performance, and identify trends in Rwanda's trade products.
-                        </div>
-                        <div class="message-time">Just now</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="chat-input-container">
-                <div class="chat-input-area">
-                    <input type="text" class="chat-input" id="chat-input" placeholder="Ask me about commodities, SITC codes, or product trends...">
-                    <button class="btn btn-send" onclick="sendMessage()" title="Send Message">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </div>
-                <div class="chat-suggestions">
-                    <button class="suggestion-btn" onclick="askQuestion('What are the top export commodities?')">Top Commodities</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Explain SITC classifications')">SITC Codes</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Show me commodity trends')">Performance Trends</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Compare export vs import commodities')">Export vs Import</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Chatbox Toggle Button -->
-    <button class="chatbox-toggle" id="chatbox-toggle" onclick="toggleChatbox()" title="Open AI Assistant">
-        <i class="fas fa-comments"></i>
-        <span class="notification-dot"></span>
-    </button>
 
     <!-- External Libraries JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
 
     <!-- Custom JavaScript -->
-    <script src="js/api.js"></script>
-    <script src="js/charts.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/chatbox.js"></script>
     <script src="js/commodities.js"></script>
 
-    <!-- Initialize AOS -->
+    <!-- Initialize Time Display and Sidebar -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true,
-                offset: 100
+        // Update time display
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                hour12: true 
+            });
+            const dateString = now.toLocaleDateString('en-US', { 
+                weekday: 'short',
+                month: 'short', 
+                day: 'numeric' 
+            });
+            const el = document.getElementById('current-time');
+            if (el) {
+                el.textContent = `${dateString}, ${timeString}`;
+            }
+        }
+
+        updateTime();
+        setInterval(updateTime, 60000);
+
+        // Sidebar toggle functionality
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+        if (sidebarToggle && sidebar && sidebarOverlay) {
+            sidebarToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('collapsed');
+                sidebarOverlay.classList.toggle('active');
             });
 
-            // Initialize sidebar and other components
-            if (window.SidebarManager) {
-                window.sidebarManager = new SidebarManager();
-            }
-            if (window.AIChatbox) {
-                window.aiChatbox = new AIChatbox();
-            }
-        });
+            sidebarOverlay.addEventListener('click', function() {
+                sidebar.classList.remove('collapsed');
+                sidebarOverlay.classList.remove('active');
+            });
+        }
     </script>
 </body>
 </html>

@@ -117,8 +117,17 @@ class AIChatbox {
             if (data.success) {
                 this.addMessage(data.response, 'ai');
                 this.saveChatHistory();
+
+                // Update API status if this is a successful AI response
+                if (data.using_ai) {
+                    this.updateAPIStatus('connected');
+                }
             } else {
+                console.error('Chat API error:', data.error);
                 this.addMessage('Sorry, I encountered an error processing your message. Please try again.', 'ai');
+
+                // Update API status to show error
+                this.updateAPIStatus('error');
             }
 
         } catch (error) {
@@ -130,6 +139,7 @@ class AIChatbox {
             // Fallback to static response if API fails
             setTimeout(() => {
                 this.generateAIResponse(message);
+                this.updateAPIStatus('fallback');
             }, 500);
         }
     }
@@ -344,6 +354,40 @@ class AIChatbox {
                 });
             } catch (e) {
                 console.error('Error loading chat history:', e);
+            }
+        }
+    }
+
+    updateAPIStatus(status) {
+        const statusElement = document.querySelector('.status');
+        if (statusElement) {
+            const statusDot = statusElement.querySelector('.status-indicator') || document.createElement('span');
+
+            if (!statusDot.classList.contains('status-indicator')) {
+                statusDot.className = 'status-indicator';
+                statusElement.insertBefore(statusDot, statusElement.firstChild);
+            }
+
+            switch (status) {
+                case 'connected':
+                    statusDot.className = 'status-indicator connected';
+                    statusElement.className = 'status online ai-powered';
+                    statusElement.innerHTML = '<span class="status-indicator connected"></span>AI Powered (OpenRouter)';
+                    break;
+                case 'error':
+                    statusDot.className = 'status-indicator error';
+                    statusElement.className = 'status error';
+                    statusElement.innerHTML = '<span class="status-indicator error"></span>AI Error - Using Fallback';
+                    break;
+                case 'fallback':
+                    statusDot.className = 'status-indicator fallback';
+                    statusElement.className = 'status fallback';
+                    statusElement.innerHTML = '<span class="status-indicator fallback"></span>Static Mode';
+                    break;
+                default:
+                    statusDot.className = 'status-indicator';
+                    statusElement.className = 'status offline';
+                    statusElement.innerHTML = '<span class="status-indicator"></span>Offline';
             }
         }
     }
@@ -753,7 +797,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('🚀 Rwanda Export Explorer Dashboard initialized successfully!');
+    console.log('🚀 Rwanda trade analysis systemDashboard initialized successfully!');
     console.log('🤖 AI Chatbox ready with xAI Grok integration');
 });
 

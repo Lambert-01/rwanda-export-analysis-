@@ -1,6 +1,6 @@
-# 🇷🇼 Rwanda Export Explorer - Local Setup Guide
+# 🇷🇼 Rwanda trade analysis system- Local Setup Guide
 
-This guide explains how to set up and run the Rwanda Export Explorer application locally using the comprehensive environment configuration.
+This guide explains how to set up and run the Rwanda trade analysis systemapplication locally using the comprehensive environment configuration.
 
 ## 📋 Prerequisites
 

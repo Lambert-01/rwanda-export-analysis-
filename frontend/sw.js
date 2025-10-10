@@ -1,5 +1,5 @@
 /* =====================================================================
- * RWANDA EXPORT EXPLORER - SERVICE WORKER
+ *Rwanda trade analysis system - SERVICE WORKER
  * PWA capabilities for offline functionality and performance
  * ===================================================================== */
 

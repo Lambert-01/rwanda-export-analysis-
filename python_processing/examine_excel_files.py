@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rwanda Export Explorer - Excel File Examiner
+Rwanda trade analysis system- Excel File Examiner
 Examines the structure and content of both 2024Q4 and 2025Q1 Excel files
 """
 

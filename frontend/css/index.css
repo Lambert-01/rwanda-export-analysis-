@@ -1,5 +1,5 @@
 /* ============================================
-    RWANDA EXPORT EXPLORER - INDEX.HTML CSS
+   Rwanda trade analysis system - INDEX.HTML CSS
     Main Dashboard Page Styles
     ============================================ */
 
@@ -8,6 +8,27 @@
     background: linear-gradient(135deg, #00205b 0%, #00A1F1 50%, #00AF54 100%);
     position: relative;
     overflow: hidden;
+}
+
+/* Hero Text Colors - Yellow and Orange */
+.hero-title {
+    color: #FFD700 !important; /* Golden Yellow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+.hero-subtitle {
+    color: #FFA500 !important; /* Orange */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.hero-stats-grid .stat-number {
+    color: #FFD700 !important; /* Golden Yellow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.hero-stats-grid .stat-label {
+    color: #FFA500 !important; /* Orange */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3) !important;
 }
 
 .hero-section::before {

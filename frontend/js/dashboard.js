@@ -1,5 +1,5 @@
   /**
- * Rwanda Export Explorer - Dashboard JavaScript
+ * Rwanda trade analysis system- Dashboard JavaScript
  * Enhanced AI-powered trade analytics platform
  */
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 async function initializeApp() {
     try {
-        console.log('🚀 Starting Rwanda Export Explorer initialization...');
+        console.log('🚀 Starting Rwanda trade analysis systeminitialization...');
 
         // Show loading screen with enhanced animation
         console.log('📱 Showing loading screen...');
@@ -76,7 +76,7 @@ async function initializeApp() {
         console.log('🙈 Hiding loading screen...');
         hideLoadingScreen();
 
-        console.log('🇷🇼 Rwanda Export Explorer initialized successfully!');
+        console.log('🇷🇼 Rwanda trade analysis systeminitialized successfully!');
     } catch (error) {
         console.error('❌ Error initializing app:', error);
         console.error('❌ Error stack:', error.stack);
@@ -3706,5 +3706,5 @@ window.dashboardUtils = {
 
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('🇷🇼 Rwanda Export Explorer Dashboard JavaScript loaded');
+    console.log('🇷🇼 Rwanda trade analysis systemDashboard JavaScript loaded');
 });

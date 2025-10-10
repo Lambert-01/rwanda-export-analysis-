@@ -1,7 +1,7 @@
 {
   "name": "rwanda-export-explorer-backend",
   "version": "1.0.0",
-  "description": "Backend API for Rwanda Export Explorer dashboard",
+  "description": "Backend API for Rwanda trade analysis systemdashboard",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

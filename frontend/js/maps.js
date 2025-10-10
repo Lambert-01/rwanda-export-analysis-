@@ -1,5 +1,5 @@
 /* =====================================================================
-   RWANDA EXPORT EXPLORER - MAPS.JS
+  Rwanda trade analysis system - MAPS.JS
    Pro-level Leaflet.js map logic for interactive trade visualizations
    ===================================================================== */
 

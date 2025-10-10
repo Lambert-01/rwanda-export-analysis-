@@ -1,5 +1,5 @@
 /**
- * OpenAI Service for Rwanda Export Explorer
+ * OpenAI Service for Rwanda Trade analytic system
  * Provides AI-powered insights and descriptions for trade data
  */
 
@@ -9,7 +9,7 @@ class OpenAIService {
     constructor() {
         this.apiKey = process.env.OPENAI_API_KEY;
         this.baseURL = process.env.OPENAI_BASE_URL || 'https://openrouter.ai/api/v1';
-        this.model = process.env.OPENAI_MODEL || 'deepseek/deepseek-chat-v3.1:free';
+        this.model = process.env.OPENAI_MODEL || 'openai/gpt-oss-20b:free';
         this.maxTokens = parseInt(process.env.OPENAI_MAX_TOKENS) || 2000;
         this.temperature = parseFloat(process.env.OPENAI_TEMPERATURE) || 0.7;
         this.apiKeyValid = false;
@@ -70,14 +70,22 @@ class OpenAIService {
             console.log('✅ API key is valid');
         } catch (error) {
             console.error('❌ API key test failed:', error.message);
+            console.error('🔍 Error details:', error);
 
             // Check if it's an authentication error
-            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found')) {
+            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found') || error.message.includes('Invalid API key')) {
                 console.log('🔐 Authentication failed - API key is invalid or expired');
                 console.log('💡 To fix this:');
                 console.log('   1. Get a new API key from https://openrouter.ai/keys');
                 console.log('   2. Or set OPENAI_API_KEY= to disable AI features');
                 console.log('   3. Restart the server after updating .env');
+                console.log('   4. Current key starts with:', this.apiKey.substring(0, 20) + '...');
+            } else if (error.status === 429) {
+                console.log('⚠️ Rate limit exceeded - too many requests');
+            } else if (error.status === 403) {
+                console.log('🚫 Access forbidden - check API key permissions');
+            } else {
+                console.log('❓ Unexpected error - check your internet connection and API key');
             }
 
             console.log('🔄 Switching to fallback mode');
@@ -123,7 +131,10 @@ class OpenAIService {
                 temperature: this.temperature
             });
 
-            const description = completion.choices[0].message.content;
+            // Clean the AI response to remove any <think> tags that may be present
+            // Some reasoning models (DeepSeek, Qwen) include internal reasoning in <think> tags
+            const rawDescription = completion.choices[0].message.content;
+            const description = cleanAIResponse(rawDescription);
             console.log('✅ Analysis description generated successfully');
 
             return {
@@ -136,19 +147,31 @@ class OpenAIService {
 
         } catch (error) {
             console.error('❌ Error generating analysis description:', error);
+            console.error('🔍 Error details:', error);
 
             // Check if it's an authentication error
-            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found')) {
+            if (error.status === 401 || error.message.includes('authentication') || error.message.includes('User not found') || error.message.includes('Invalid API key')) {
                 console.log('🔐 Authentication failed - disabling AI features and using fallback');
+                console.log('💡 Current API key starts with:', this.apiKey?.substring(0, 20) + '...');
                 this.apiKeyValid = false;
                 this.client = null;
+            } else if (error.status === 429) {
+                console.log('⚠️ Rate limit exceeded during analysis generation');
+            } else if (error.status === 403) {
+                console.log('🚫 Access forbidden during analysis generation');
             }
 
             return {
                 success: false,
                 error: error.message,
                 fallback_description: this.getFallbackDescription(context),
-                using_fallback: true
+                using_fallback: true,
+                debug_info: {
+                    api_configured: this.isConfigured(),
+                    api_key_valid: this.apiKeyValid,
+                    model: this.model,
+                    base_url: this.baseURL
+                }
             };
         }
     }
@@ -178,7 +201,9 @@ class OpenAIService {
                 temperature: 0.6
             });
 
-            const insights = completion.choices[0].message.content;
+            // Clean the AI response to remove any <think> tags that may be present
+            const rawInsights = completion.choices[0].message.content;
+            const insights = cleanAIResponse(rawInsights);
             console.log('✅ Chart insights generated successfully');
 
             return {
@@ -223,7 +248,9 @@ class OpenAIService {
                 temperature: 0.7
             });
 
-            const recommendations = completion.choices[0].message.content;
+            // Clean the AI response to remove any <think> tags that may be present
+            const rawRecommendations = completion.choices[0].message.content;
+            const recommendations = cleanAIResponse(rawRecommendations);
             console.log('✅ Recommendations generated successfully');
 
             return {
@@ -397,7 +424,7 @@ class OpenAIService {
 
             return {
                 success: true,
-                analysis: completion.choices[0].message.content,
+                analysis: cleanAIResponse(completion.choices[0].message.content),
                 country: countryData.country
             };
 
@@ -443,7 +470,7 @@ class OpenAIService {
 
             return {
                 success: true,
-                insights: completion.choices[0].message.content,
+                insights: cleanAIResponse(completion.choices[0].message.content),
                 commodity: commodityData.commodity
             };
 
@@ -461,4 +488,26 @@ class OpenAIService {
 // Create singleton instance
 const openaiService = new OpenAIService();
 
+/**
+ * Utility function to clean AI responses by removing reasoning tags
+ * Some models (like DeepSeek, Qwen) include internal reasoning in <think> tags
+ * This function removes these tags to provide clean responses to users
+ *
+ * @param {string} response - Raw AI response that may contain <think> tags
+ * @returns {string} Cleaned response without reasoning tags
+ */
+function cleanAIResponse(response) {
+    if (typeof response !== 'string') {
+        return response;
+    }
+
+    // Remove <think> and </think> tags and their content
+    // This regex matches everything between <think> and </think> including the tags themselves
+    const cleanedResponse = response.replace(/<think>[\s\S]*?<\/think>/g, '');
+
+    // Trim any extra whitespace that might be left after removing the tags
+    return cleanedResponse.trim();
+}
+
 module.exports = openaiService;
+module.exports.cleanAIResponse = cleanAIResponse;

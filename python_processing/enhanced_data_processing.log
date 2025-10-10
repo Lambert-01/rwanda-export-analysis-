@@ -59,3 +59,87 @@
 2025-09-30 09:59:26,310 - INFO - Generating comprehensive analysis
 2025-09-30 09:59:26,320 - INFO - Calculating trade balance analysis
 2025-09-30 09:59:26,354 - INFO - Saved all results to ..\data\processed
+2025-10-09 18:10:11,923 - INFO - ComprehensiveAnalysisRunner initialized
+2025-10-09 18:10:11,942 - INFO - Starting comprehensive analysis pipeline
+2025-10-09 18:10:11,949 - INFO - Stage 1: Enhanced Data Processing
+2025-10-09 18:10:11,952 - INFO - EnhancedDataProcessor initialized
+2025-10-09 18:10:11,952 - INFO - Processing 1 Excel files
+2025-10-09 18:10:11,953 - INFO - Processing file: 2025Q1_Trade_report_annexTables.xlsx
+2025-10-09 18:10:11,976 - INFO - Loading Excel file: 2025Q1_Trade_report_annexTables.xlsx
+2025-10-09 18:10:16,658 - INFO - Found 13 sheets: ['Graph Overall', 'Graph EAC', 'EAC', 'Total trade with the World', 'Regional blocks', 'Trade by continents', 'Sheet11', 'ExportCountry', 'ImportCountry', 'ReexportsCountry', 'ExportsCommodity', 'ImportsCommodity', 'ReexportsCommodity']
+2025-10-09 18:10:20,854 - INFO - Processing sheet: Graph Overall
+2025-10-09 18:10:21,137 - INFO - Processing sheet: Graph EAC
+2025-10-09 18:10:21,203 - INFO - Processing sheet: EAC
+2025-10-09 18:10:21,324 - INFO - Processing sheet: Total trade with the World
+2025-10-09 18:10:21,401 - INFO - Processing sheet: Regional blocks
+2025-10-09 18:10:21,501 - INFO - Processing sheet: Trade by continents
+2025-10-09 18:10:21,600 - INFO - Processing sheet: Sheet11
+2025-10-09 18:10:21,641 - INFO - Processing sheet: ExportCountry
+2025-10-09 18:10:21,687 - INFO - Extracting country export data
+2025-10-09 18:10:21,712 - INFO - Extracted 179 country export records
+2025-10-09 18:10:21,713 - INFO - Processing sheet: ImportCountry
+2025-10-09 18:10:21,758 - INFO - Extracting country import data
+2025-10-09 18:10:21,768 - INFO - Extracted 171 country import records
+2025-10-09 18:10:21,769 - INFO - Processing sheet: ReexportsCountry
+2025-10-09 18:10:21,804 - INFO - Extracting country re-export data
+2025-10-09 18:10:21,804 - INFO - Extracting country export data
+2025-10-09 18:10:21,813 - INFO - Extracted 164 country export records
+2025-10-09 18:10:21,814 - INFO - Processing sheet: ExportsCommodity
+2025-10-09 18:10:21,844 - INFO - Extracting commodity export data
+2025-10-09 18:10:21,846 - WARNING - Expected commodity header pattern not found
+2025-10-09 18:10:21,846 - INFO - Processing sheet: ImportsCommodity
+2025-10-09 18:10:21,905 - INFO - Extracting commodity import data
+2025-10-09 18:10:21,907 - WARNING - Expected commodity header pattern not found
+2025-10-09 18:10:21,907 - INFO - Processing sheet: ReexportsCommodity
+2025-10-09 18:10:22,005 - INFO - Extracting commodity re-export data
+2025-10-09 18:10:22,006 - WARNING - Expected commodity header pattern not found
+2025-10-09 18:10:22,007 - INFO - Using 2025Q1 data
+2025-10-09 18:10:22,007 - INFO - Generating comprehensive analysis
+2025-10-09 18:10:22,234 - INFO - Calculating trade balance analysis
+2025-10-09 18:10:22,351 - INFO - Saving all results to JSON files
+2025-10-09 18:10:22,457 - INFO - Generating comprehensive analysis
+2025-10-09 18:10:22,520 - INFO - Calculating trade balance analysis
+2025-10-09 18:10:22,601 - INFO - Saved all results to C:\Users\educa\OneDrive\Desktop\NISR Prject\rwanda-export-analysis-\data\processed
+2025-10-09 18:10:22,601 - INFO - Enhanced data processing completed
+2025-10-09 18:10:22,603 - INFO - Stage 2: Enhanced Time Series Analysis
+2025-10-09 18:10:22,764 - INFO - EnhancedTimeSeriesAnalyzer initialized
+2025-10-09 18:10:22,766 - INFO - Running complete enhanced time series analysis
+2025-10-09 18:10:22,767 - INFO - Starting comprehensive analysis
+2025-10-09 18:10:22,848 - INFO - Performing statistical analysis
+2025-10-09 18:10:22,972 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:22,972 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:22,973 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:23,306 - INFO - Running ensemble forecast
+2025-10-09 18:10:23,307 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:23,307 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:23,308 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:23,667 - INFO - Performing statistical analysis
+2025-10-09 18:10:23,703 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:23,704 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:23,704 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:23,966 - INFO - Running ensemble forecast
+2025-10-09 18:10:23,966 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:23,967 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:23,968 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:24,241 - INFO - Performing statistical analysis
+2025-10-09 18:10:24,286 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:26,703 - ERROR - ARIMA forecast failed: 'numpy.ndarray' object has no attribute 'iloc'
+2025-10-09 18:10:26,703 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:26,704 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:27,069 - INFO - Running ensemble forecast
+2025-10-09 18:10:27,069 - INFO - Running ARIMA forecast with order (1, 1, 1)
+2025-10-09 18:10:28,724 - ERROR - ARIMA forecast failed: 'numpy.ndarray' object has no attribute 'iloc'
+2025-10-09 18:10:28,728 - INFO - Running SARIMA forecast with order (1, 1, 1), seasonal_order (1, 1, 1, 4)
+2025-10-09 18:10:28,728 - INFO - Running Exponential Smoothing forecast with trend=add, seasonal=add
+2025-10-09 18:10:29,158 - INFO - Analysis results saved to C:\Users\educa\OneDrive\Desktop\NISR Prject\rwanda-export-analysis-\data\processed\enhanced_time_series_analysis_20251009_181029.json
+2025-10-09 18:10:29,207 - INFO - Time series analysis completed
+2025-10-09 18:10:29,221 - INFO - Stage 3: Advanced Forecasting
+2025-10-09 18:10:29,236 - INFO - TradePredictor initialized
+2025-10-09 18:10:29,241 - INFO - Starting full prediction pipeline
+2025-10-09 18:10:29,247 - INFO - Predicting exports for next 4 quarters
+2025-10-09 18:10:31,518 - INFO - Generating baseline predictions for export
+2025-10-09 18:10:31,535 - ERROR - Error in prediction pipeline: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-09 18:10:31,536 - ERROR - Advanced forecasting failed: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-09 18:10:31,537 - INFO - Stage 4: Comprehensive Reporting
+2025-10-09 18:10:31,615 - INFO - Comprehensive report saved to C:\Users\educa\OneDrive\Desktop\NISR Prject\rwanda-export-analysis-\data\processed\comprehensive_trade_analysis_20251009_181031.json
+2025-10-09 18:10:31,632 - INFO - Comprehensive analysis completed successfully

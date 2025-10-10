@@ -1,7 +1,7 @@
 @echo off
-REM Rwanda Export Explorer - Local Development Startup Script for Windows
+REM Rwanda trade analysis system- Local Development Startup Script for Windows
 
-echo 🇷🇼 Starting Rwanda Export Explorer Local Development Environment
+echo 🇷🇼 Starting Rwanda trade analysis systemLocal Development Environment
 echo ================================================================
 
 REM Check if .env file exists
@@ -44,7 +44,7 @@ REM Start frontend server (port 3001)
 echo 🚀 Starting frontend server on port 3001...
 start "Frontend Server" cmd /k "npm start"
 
-echo ✅ Rwanda Export Explorer is now running!
+echo ✅ Rwanda trade analysis systemis now running!
 echo 📊 Frontend: http://localhost:3001
 echo 🔗 Backend API: http://localhost:3000/api
 echo 📈 Dashboard: http://localhost:3001

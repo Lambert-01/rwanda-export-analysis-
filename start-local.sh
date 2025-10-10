@@ -1,7 +1,7 @@
 #!/bin/bash
-# Rwanda Export Explorer - Local Development Startup Script
+# Rwanda trade analysis system- Local Development Startup Script
 
-echo "🇷🇼 Starting Rwanda Export Explorer Local Development Environment"
+echo "🇷🇼 Starting Rwanda trade analysis systemLocal Development Environment"
 echo "================================================================"
 
 # Check if .env file exists
@@ -43,7 +43,7 @@ echo "🚀 Starting frontend server on port 3001..."
 npm start &
 FRONTEND_PID=$!
 
-echo "✅ Rwanda Export Explorer is now running!"
+echo "✅ Rwanda trade analysis systemis now running!"
 echo "📊 Frontend: http://localhost:3001"
 echo "🔗 Backend API: http://localhost:3000/api"
 echo "📈 Dashboard: http://localhost:3001"

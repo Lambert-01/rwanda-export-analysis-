@@ -1,5 +1,5 @@
 /* =====================================================================
-   RWANDA EXPORT EXPLORER - API.JS
+  Rwanda trade analysis system - API.JS
    Pro-level API abstraction and data integration for dashboard
    ===================================================================== */
 

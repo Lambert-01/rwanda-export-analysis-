@@ -1,0 +1,373 @@
+{
+  "generated_at": "2025-10-09T18:10:22.767810",
+  "exports_analysis": {
+    "statistical_analysis": {
+      "basic_statistics": {
+        "count": 9,
+        "mean": 3.867213192105533,
+        "median": 3.7459110881900495,
+        "std": 1.2630592863694832,
+        "min": 2.1842576986824804,
+        "max": 6.222464768094116,
+        "range": 4.038207069411635,
+        "q25": 2.956840020752061,
+        "q75": 4.307349245087195,
+        "iqr": 1.3505092243351342,
+        "skewness": 0.4956924756383153,
+        "kurtosis": -0.8042631272808793
+      },
+      "distribution_tests": {
+        "shapiro_wilk": {
+          "statistic": 0.9530803270436077,
+          "p_value": 0.7238666305587771,
+          "normal": "True"
+        }
+      },
+      "stationarity_tests": {
+        "adf": {
+          "statistic": -6.058305515990031,
+          "p_value": 1.2298761092737805e-07,
+          "critical_values": {
+            "1%": -5.354256481481482,
+            "5%": -3.6462381481481483,
+            "10%": -2.901197777777778
+          },
+          "stationary": "True"
+        },
+        "kpss": {
+          "statistic": 0.49999999999999883,
+          "p_value": 0.041666666666666935,
+          "critical_values": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "stationary": "False"
+        }
+      },
+      "trend_analysis": {
+        "slope": -0.07732071731655098,
+        "intercept": 4.176496061371736,
+        "r_squared": 0.024983484901506335,
+        "p_value": 0.6846282213591894,
+        "trend_strength": 0.15806164905348272,
+        "trend_direction": "decreasing",
+        "significant": "False"
+      },
+      "volatility_analysis": {
+        "volatility": 77.66863363691918,
+        "mean_return": 12.862402372496854,
+        "max_return": 184.87777663997414,
+        "min_return": -46.95341964383685,
+        "positive_returns": 3.0,
+        "negative_returns": 5.0
+      }
+    },
+    "forecasts": {
+      "arima": {
+        "error": "Insufficient data for ARIMA (minimum 10 observations)"
+      },
+      "sarima": {
+        "error": "Insufficient data for SARIMA (minimum 20 observations)"
+      },
+      "exponential_smoothing": {
+        "forecast_values": [
+          1.867689030059608,
+          5.151335624353648,
+          2.8271541794854698,
+          2.694296121528299
+        ],
+        "model_params": {
+          "alpha": 1.4901161193847656e-08,
+          "beta": 1.4889168016685071e-08,
+          "gamma": 0.0
+        },
+        "model_fit": {
+          "aic": 2.173632738657197,
+          "bic": 3.7514293573469537
+        }
+      },
+      "ensemble": {
+        "ensemble_forecasts": [
+          1.867689030059608,
+          5.151335624353648,
+          2.8271541794854698,
+          2.694296121528299
+        ],
+        "model_contributions": {
+          "arima": false,
+          "sarima": false,
+          "exponential_smoothing": true
+        },
+        "individual_forecasts": {
+          "arima": [],
+          "sarima": [],
+          "exponential_smoothing": [
+            1.867689030059608,
+            5.151335624353648,
+            2.8271541794854698,
+            2.694296121528299
+          ]
+        }
+      }
+    }
+  },
+  "imports_analysis": {
+    "statistical_analysis": {
+      "basic_statistics": {
+        "count": 9,
+        "mean": 39.25602833004178,
+        "median": 18.665667207985813,
+        "std": 48.357109682299,
+        "min": 11.34772578390165,
+        "max": 170.99585811588764,
+        "range": 159.648132331986,
+        "q25": 17.87262607911754,
+        "q75": 22.66832102678733,
+        "iqr": 4.795694947669787,
+        "skewness": 2.1789180933441785,
+        "kurtosis": 3.158924992004426
+      },
+      "distribution_tests": {
+        "shapiro_wilk": {
+          "statistic": 0.5688424735646971,
+          "p_value": 4.120911819600676e-05,
+          "normal": "False"
+        }
+      },
+      "stationarity_tests": {
+        "adf": {
+          "statistic": -3.1074763048928085,
+          "p_value": 0.02600483306535984,
+          "critical_values": {
+            "1%": -4.6651863281249994,
+            "5%": -3.3671868750000002,
+            "10%": -2.802960625
+          },
+          "stationary": "True"
+        },
+        "kpss": {
+          "statistic": 0.14530409353784204,
+          "p_value": 0.1,
+          "critical_values": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "stationary": "True"
+        }
+      },
+      "trend_analysis": {
+        "slope": -2.2799062005785173,
+        "intercept": 48.37565313235585,
+        "r_squared": 0.01481910687780734,
+        "p_value": 0.7550481867904645,
+        "trend_strength": 0.12173375406109573,
+        "trend_direction": "decreasing",
+        "significant": "False"
+      },
+      "volatility_analysis": {
+        "volatility": 285.28324994602804,
+        "mean_return": 103.96797108137059,
+        "max_return": 830.9754097605916,
+        "min_return": -91.65427485032161,
+        "positive_returns": 4.0,
+        "negative_returns": 4.0
+      }
+    },
+    "forecasts": {
+      "arima": {
+        "error": "Insufficient data for ARIMA (minimum 10 observations)"
+      },
+      "sarima": {
+        "error": "Insufficient data for SARIMA (minimum 20 observations)"
+      },
+      "exponential_smoothing": {
+        "forecast_values": [
+          2.7464535574215176,
+          23.17883367204015,
+          3.6642668436251,
+          48.539128676059576
+        ],
+        "model_params": {
+          "alpha": 1.4901161193847656e-08,
+          "beta": 9.407795334117943e-09,
+          "gamma": 0.0
+        },
+        "model_fit": {
+          "aic": 83.55052364314137,
+          "bic": 85.12832026183113
+        }
+      },
+      "ensemble": {
+        "ensemble_forecasts": [
+          2.7464535574215176,
+          23.17883367204015,
+          3.6642668436251,
+          48.539128676059576
+        ],
+        "model_contributions": {
+          "arima": false,
+          "sarima": false,
+          "exponential_smoothing": true
+        },
+        "individual_forecasts": {
+          "arima": [],
+          "sarima": [],
+          "exponential_smoothing": [
+            2.7464535574215176,
+            23.17883367204015,
+            3.6642668436251,
+            48.539128676059576
+          ]
+        }
+      }
+    }
+  },
+  "trade_balance_analysis": {
+    "statistical_analysis": {
+      "basic_statistics": {
+        "count": 13,
+        "mean": -871.5443409679481,
+        "median": -984.7148136783783,
+        "std": 333.38217346712804,
+        "min": -1351.3297940323835,
+        "max": -389.56806461388186,
+        "range": 961.7617294185015,
+        "q25": -1136.3538277398372,
+        "q75": -552.1723300208702,
+        "iqr": 584.1814977189671,
+        "skewness": 0.30776279356176867,
+        "kurtosis": -1.5316705202913081
+      },
+      "distribution_tests": {
+        "shapiro_wilk": {
+          "statistic": 0.8549603948194382,
+          "p_value": 0.033078434057960904,
+          "normal": "False"
+        }
+      },
+      "stationarity_tests": {
+        "adf": {
+          "statistic": -1.6320940306252572,
+          "p_value": 0.46639480497787783,
+          "critical_values": {
+            "1%": -4.137829282407408,
+            "5%": -3.1549724074074077,
+            "10%": -2.7144769444444443
+          },
+          "stationary": "False"
+        },
+        "kpss": {
+          "statistic": 0.28569271668221186,
+          "p_value": 0.1,
+          "critical_values": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "stationary": "True"
+        }
+      },
+      "trend_analysis": {
+        "slope": -34.806531473647865,
+        "intercept": -662.7051521260609,
+        "r_squared": 0.15260360142848411,
+        "p_value": 0.1869161811594005,
+        "trend_strength": 0.39064510931084767,
+        "trend_direction": "decreasing",
+        "significant": "False"
+      },
+      "volatility_analysis": {
+        "volatility": 50.77894586016538,
+        "mean_return": 9.426268918540368,
+        "max_return": 158.80273758713764,
+        "min_return": -57.09461242439513,
+        "positive_returns": 7.0,
+        "negative_returns": 5.0
+      }
+    },
+    "forecasts": {
+      "arima": {
+        "error": "'numpy.ndarray' object has no attribute 'iloc'"
+      },
+      "sarima": {
+        "error": "Insufficient data for SARIMA (minimum 20 observations)"
+      },
+      "exponential_smoothing": {
+        "forecast_values": [
+          -556.1145822464155,
+          -548.8688386706344,
+          -243.73838589818473,
+          -161.54535102096577
+        ],
+        "model_params": {
+          "alpha": 0.6864050689636093,
+          "beta": 0.266615884225132,
+          "gamma": 0.008212220075183447
+        },
+        "model_fit": {
+          "aic": 161.5545995674516,
+          "bic": 166.07419442714388
+        }
+      },
+      "ensemble": {
+        "ensemble_forecasts": [
+          -556.1145822464155,
+          -548.8688386706344,
+          -243.73838589818473,
+          -161.54535102096577
+        ],
+        "model_contributions": {
+          "arima": false,
+          "sarima": false,
+          "exponential_smoothing": true
+        },
+        "individual_forecasts": {
+          "arima": [],
+          "sarima": [],
+          "exponential_smoothing": [
+            -556.1145822464155,
+            -548.8688386706344,
+            -243.73838589818473,
+            -161.54535102096577
+          ]
+        }
+      }
+    }
+  },
+  "comparative_analysis": {
+    "correlation_analysis": {
+      "export_import_correlation": 0.2142079109980007,
+      "returns_correlation": 0.21774648378257305
+    },
+    "trade_balance_summary": {
+      "mean_balance": -35.38881513793625,
+      "balance_volatility": 51.020275069543295,
+      "positive_balance_periods": 0,
+      "negative_balance_periods": 9
+    },
+    "ratio_analysis": {
+      "mean_export_import_ratio": 0.17218779877959797,
+      "ratio_volatility": 0.08913285712255073
+    }
+  },
+  "forecasts": {},
+  "recommendations": [
+    {
+      "type": "trade_deficit",
+      "priority": "high",
+      "message": "Persistent trade deficit detected. Focus on export promotion and import substitution strategies.",
+      "confidence": 0.8
+    },
+    {
+      "type": "high_volatility",
+      "priority": "medium",
+      "message": "High export volatility detected. Consider diversification strategies to reduce risk.",
+      "confidence": 0.7
+    }
+  ]
+}

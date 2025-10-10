@@ -1,7 +1,7 @@
 {
   "name": "rwanda-export-explorer-frontend",
   "version": "1.0.0",
-  "description": "Frontend for Rwanda Export Explorer - Interactive trade data dashboard",
+  "description": "Frontend for Rwanda trade analysis system- Interactive trade data dashboard",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -35,6 +35,6 @@
     "data-visualization",
     "nisr"
   ],
-  "author": "Rwanda Export Explorer Team",
-  "license": "MIT"
+  "author": "Codabyte team",
+  "license": "NISR"
 }

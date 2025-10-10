@@ -1,0 +1,15 @@
+{
+  "processed_at": "2025-10-09T09:43:30.716477",
+  "source_file": "data/raw/2025Q1_Trade_report_annexTables.xlsx",
+  "sheets_processed": [
+    "ExportsCommodity",
+    "ImportsCommodity",
+    "ReexportsCommodity"
+  ],
+  "total_records": 29,
+  "records_by_sheet": {
+    "ExportsCommodity": 10,
+    "ImportsCommodity": 10,
+    "ReexportsCommodity": 9
+  }
+}

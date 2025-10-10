@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rwanda Export Explorer | AI-Powered Trade Analytics</title>
+    <title>Rwanda trade analysis system| AI-Powered Trade Analytics</title>
 
     <!-- Meta Tags -->
     <meta name="description" content="Advanced Rwanda trade analytics with AI-powered insights, interactive visualizations, and comprehensive data analysis">
     <meta name="keywords" content="Rwanda, exports, imports, trade, NISR, AI, analytics, visualization, forecasting">
-    <meta name="author" content="Rwanda Export Explorer - AI Enhanced">
+    <meta name="author" content="Rwanda trade analysis system- AI Enhanced">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -34,7 +34,7 @@
         <div class="sidebar-header">
             <div class="logo-container">
                 <img src="assets/images/NISR.png" alt="NISR Logo" class="nisr-logo">
-                <h3>Rwanda Export Explorer</h3>
+                <h3>Rwanda Trade analytic system</h3>
                 <span class="ai-badge">AI-Powered</span>
             </div>
         </div>
@@ -99,8 +99,8 @@
             </div>
             <div class="sidebar-footer-compact">
                 <div class="footer-info">
-                    <span class="footer-copyright">© 2024 Rwanda Export Explorer</span>
-                    <span class="footer-meta">Data: NISR | Updated: 2025-01-05</span>
+                    <span class="footer-copyright">© 2025 Rwanda Trade analytic system</span>
+                    <span class="footer-meta">Data: NISR | Updated: 2025-10-10</span>
                 </div>
             </div>
         </div>
@@ -125,10 +125,6 @@
             <div class="header-actions">
                 <button class="btn btn-refresh" onclick="loadRealTradeData()" title="Refresh Data">
                     <i class="fas fa-sync-alt"></i>
-                </button>
-                <button class="btn btn-notifications" onclick="toggleNotifications()" title="Notifications">
-                    <i class="fas fa-bell"></i>
-                    <span class="notification-badge">3</span>
                 </button>
                 <div class="time-display">
                     <i class="fas fa-clock"></i>
@@ -410,13 +406,13 @@
                             <div class="chart-header">
                                 <div class="chart-title-section">
                                     <h3 class="chart-title">
-                                        <i class="fas fa-chart-bar me-2"></i>Commodity Analysis
+                                        <i class="fas fa-chart-bar me-2"></i>Top Export Markets
                                     </h3>
-                                    <p class="chart-subtitle">Performance by product categories</p>
+                                    <p class="chart-subtitle">Leading export destinations by value (2022-2025)</p>
                                 </div>
                                 <div class="chart-badge">
-                                    <i class="fas fa-boxes"></i>
-                                    Top Categories
+                                    <i class="fas fa-globe"></i>
+                                    Top Markets
                                 </div>
                             </div>
                             <div class="chart-container">
@@ -516,51 +512,69 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <div class="chart-card modern-card" data-aos="fade-up" data-aos-delay="600">
-                            <div class="chart-header">
-                                <div class="chart-title-section">
+                        <div class="chart-card modern-card alert-bubble-system" data-aos="fade-up" data-aos-delay="600">
+                            <div class="alert-bubble-header">
+                                <div class="alert-bubble-title">
                                     <h3 class="chart-title">
-                                        <i class="fas fa-clock me-2"></i>Recent Activity
+                                        <i class="fas fa-bell me-2"></i>Live Alerts
                                     </h3>
-                                    <p class="chart-subtitle">Latest system updates</p>
+                                    <p class="chart-subtitle">Real-time AI-powered notifications</p>
+                                </div>
+                                <div class="alert-bubble-controls">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="refreshAlerts()">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="activity-feed">
-                                <div class="activity-item">
-                                    <div class="activity-icon">
-                                        <i class="fas fa-chart-line text-success"></i>
-                                    </div>
-                                    <div class="activity-content">
-                                        <span class="activity-text">Export data updated</span>
-                                        <span class="activity-time">2 minutes ago</span>
+
+                            <!-- Modern Animated Alert Bubbles -->
+                            <div class="alert-bubble-display" id="alert-bubble-display">
+                                <div class="bubble-animation-zone" id="alert-bubbles-container">
+                                    <!-- Animated bubbles will be dynamically inserted here -->
+                                </div>
+                                <div class="bubble-status" id="bubble-status">
+                                    <div class="status-indicator">
+                                        <span class="status-dot active"></span>
+                                        <span class="status-text">Monitoring Active</span>
                                     </div>
                                 </div>
-                                <div class="activity-item">
-                                    <div class="activity-icon">
-                                        <i class="fas fa-robot text-primary"></i>
-                                    </div>
-                                    <div class="activity-content">
-                                        <span class="activity-text">AI analysis completed</span>
-                                        <span class="activity-time">15 minutes ago</span>
-                                    </div>
+                            </div>
+
+                            <!-- Alert Summary Cards -->
+                            <div class="alert-stats" id="alert-stats">
+                                <div class="alert-stat-item">
+                                    <div class="alert-stat-dot high"></div>
+                                    <span class="alert-stat-count" id="high-count">0</span>
+                                    <span>High</span>
                                 </div>
-                                <div class="activity-item">
-                                    <div class="activity-icon">
-                                        <i class="fas fa-database text-info"></i>
-                                    </div>
-                                    <div class="activity-content">
-                                        <span class="activity-text">New data imported</span>
-                                        <span class="activity-time">1 hour ago</span>
-                                    </div>
+                                <div class="alert-stat-item">
+                                    <div class="alert-stat-dot medium"></div>
+                                    <span class="alert-stat-count" id="medium-count">0</span>
+                                    <span>Medium</span>
                                 </div>
-                                <div class="activity-item">
-                                    <div class="activity-icon">
-                                        <i class="fas fa-bell text-warning"></i>
+                                <div class="alert-stat-item">
+                                    <div class="alert-stat-dot low"></div>
+                                    <span class="alert-stat-count" id="low-count">0</span>
+                                    <span>Low</span>
+                                </div>
+                                <div class="alert-stat-item">
+                                    <span>Total: </span>
+                                    <span class="alert-stat-count" id="total-count">0</span>
+                                </div>
+                            </div>
+
+                            <!-- Recent Alerts Preview -->
+                            <div class="alert-feed" id="recent-alerts-preview">
+                                <div class="alert-loading" id="alert-loading">
+                                    <div class="alert-loading-spinner"></div>
+                                    <span>Loading alerts...</span>
+                                </div>
+                                <div class="alert-empty" id="alert-empty" style="display: none;">
+                                    <div class="alert-empty-icon">
+                                        <i class="fas fa-bell-slash"></i>
                                     </div>
-                                    <div class="activity-content">
-                                        <span class="activity-text">Trade alert triggered</span>
-                                        <span class="activity-time">3 hours ago</span>
-                                    </div>
+                                    <div class="alert-empty-title">No Active Alerts</div>
+                                    <div class="alert-empty-message">All systems operating normally. No alerts require attention at this time.</div>
                                 </div>
                             </div>
                         </div>
@@ -676,59 +690,164 @@
         </section>
     </main>
 
-    <!-- AI Chatbox -->
+
+    <!-- Live Alert Popup -->
+    <div class="alert-popup" id="alert-popup">
+        <div class="alert-popup-header">
+            <h3 class="alert-popup-title">
+                <i class="fas fa-bell"></i>
+                Live Alerts
+                <span class="alert-popup-badge" id="popup-alert-count">0</span>
+            </h3>
+            <button class="alert-popup-close" onclick="closeAlertPopup()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Alert Filters -->
+        <div class="alert-filters" id="alert-filters">
+            <button class="alert-filter-btn active" onclick="filterAlerts('all')">All</button>
+            <button class="alert-filter-btn" onclick="filterAlerts('high')">High</button>
+            <button class="alert-filter-btn" onclick="filterAlerts('medium')">Medium</button>
+            <button class="alert-filter-btn" onclick="filterAlerts('low')">Low</button>
+        </div>
+
+        <!-- Alert Feed -->
+        <div class="alert-feed" id="alert-popup-feed">
+            <div class="alert-loading" id="popup-alert-loading">
+                <div class="alert-loading-spinner"></div>
+                <span>Loading alerts...</span>
+            </div>
+            <div class="alert-empty" id="popup-alert-empty" style="display: none;">
+                <div class="alert-empty-icon">
+                    <i class="fas fa-bell-slash"></i>
+                </div>
+                <div class="alert-empty-title">No Alerts Found</div>
+                <div class="alert-empty-message">No alerts match the selected filter criteria.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Notification Toast -->
+    <div class="alert-toast" id="alert-toast">
+        <div class="alert-toast-content">
+            <div class="alert-toast-icon" id="toast-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-toast-text">
+                <div class="alert-toast-title" id="toast-title">New Alert</div>
+                <div class="alert-toast-message" id="toast-message">A new alert has been generated</div>
+            </div>
+        </div>
+        <button class="alert-toast-close" onclick="closeAlertToast()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Chatbox Backdrop -->
+    <div class="chatbox-backdrop" id="chatbox-backdrop"></div>
+
+    <!-- AI Chatbox - Enhanced Modern Design -->
     <div class="ai-chatbox" id="ai-chatbox">
+        <!-- Chatbox Header -->
         <div class="chatbox-header">
             <div class="chatbox-title">
-                <div class="ai-avatar small">
+                <div class="ai-avatar">
+                    <div class="avatar-glow"></div>
                     <i class="fas fa-robot"></i>
                 </div>
                 <div class="chatbox-info">
                     <h4>AI Trade Assistant</h4>
-                    <span class="status online">Online</span>
+                    <div class="status-info">
+                        <span class="status-indicator online"></span>
+                        <span class="status-text">Online</span>
+                        <span class="model-badge">Qwen3 235B</span>
+                    </div>
                 </div>
             </div>
             <div class="chatbox-controls">
-                <button class="btn btn-settings" onclick="openAISettings()" title="AI Settings">
+                <button class="control-btn" onclick="openAISettings()" title="AI Settings" data-tooltip="Settings">
                     <i class="fas fa-cog"></i>
                 </button>
-                <button class="btn btn-minimize" onclick="minimizeChatbox()" title="Minimize">
+                <button class="control-btn" onclick="minimizeChatbox()" title="Minimize" data-tooltip="Minimize">
                     <i class="fas fa-minus"></i>
                 </button>
-                <button class="btn btn-close" onclick="closeChatbox()" title="Close">
+                <button class="control-btn close-btn" onclick="closeChatbox()" title="Close" data-tooltip="Close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
         </div>
 
+        <!-- Chatbox Body -->
         <div class="chatbox-body">
+            <!-- Messages Container -->
             <div class="chat-messages" id="chat-messages">
-                <div class="message ai-message">
-                    <div class="message-avatar">
-                        <i class="fas fa-robot"></i>
+                <div class="welcome-message">
+                    <div class="welcome-icon">
+                        <i class="fas fa-sparkles"></i>
                     </div>
-                    <div class="message-content">
-                        <div class="message-text">
-                            Hello! I'm your AI Trade Assistant. I can help you analyze Rwanda's trade data, identify trends, and provide insights. What would you like to know?
-                        </div>
-                        <div class="message-time">Just now</div>
+                    <div class="welcome-content">
+                        <h5>Welcome to AI Trade Assistant!</h5>
+                        <p>I'm powered by Qwen3 235B and ready to help you analyze Rwanda's trade data with advanced AI insights.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- Chat Input Area -->
             <div class="chat-input-container">
-                <div class="chat-input-area">
-                    <input type="text" class="chat-input" id="chat-input" placeholder="Ask me about trade data, trends, or insights...">
-                    <button class="btn btn-send" onclick="sendMessage()" title="Send Message">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
+                <div class="chat-input-wrapper">
+                    <div class="input-area">
+                        <div class="input-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <input type="text" class="chat-input" id="chat-input"
+                               placeholder="Ask me about exports, imports, trade trends, or market insights...">
+                        <button class="btn btn-send" onclick="sendMessage()" title="Send Message">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="input-actions">
+                        <button class="action-btn" onclick="attachFile()" title="Attach File">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                        <button class="action-btn" onclick="voiceInput()" title="Voice Input">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                    </div>
                 </div>
+
+                <!-- Quick Suggestions -->
                 <div class="chat-suggestions">
-                    <button class="suggestion-btn" onclick="askQuestion('What are the top export commodities?')">Top Exports</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Show me trade balance trends')">Trade Balance</button>
-                    <button class="suggestion-btn" onclick="askQuestion('What are the main trading partners?')">Trading Partners</button>
-                    <button class="suggestion-btn" onclick="askQuestion('Predict future export trends')">Future Predictions</button>
+                    <div class="suggestions-header">
+                        <span>Quick Questions:</span>
+                    </div>
+                    <div class="suggestions-grid">
+                        <button class="suggestion-btn" onclick="askQuestion('What are the top export commodities?')">
+                            <i class="fas fa-box"></i>
+                            <span>Top Exports</span>
+                        </button>
+                        <button class="suggestion-btn" onclick="askQuestion('Show me trade balance trends')">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Trade Balance</span>
+                        </button>
+                        <button class="suggestion-btn" onclick="askQuestion('What are the main trading partners?')">
+                            <i class="fas fa-globe"></i>
+                            <span>Trading Partners</span>
+                        </button>
+                        <button class="suggestion-btn" onclick="askQuestion('Predict future export trends')">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Future Trends</span>
+                        </button>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Chatbox Footer -->
+        <div class="chatbox-footer">
+            <div class="footer-info">
+                <span class="powered-by">Powered by Qwen3 235B</span>
+                <span class="response-time">Fast responses</span>
             </div>
         </div>
     </div>
@@ -752,16 +871,16 @@
             </div>
             <div class="settings-body">
                 <div class="settings-section">
-                    <h4>OpenRouter / DeepSeek V1 Configuration</h4>
+                    <h4>OpenRouter / Qwen3 235B Configuration</h4>
                     <p class="settings-description">
-                        Your system is configured with DeepSeek V1 through OpenRouter! This provides powerful AI
+                        Your system is configured with Qwen3 235B A22B through OpenRouter! This provides powerful AI
                         capabilities for intelligent trade analysis and insights. The API key is already set in your .env file.
                     </p>
 
                     <div class="api-status connected" id="api-status">
                         <div class="status-indicator">
                             <span class="status-dot connected"></span>
-                            <span class="status-text">✅ DeepSeek V1 Connected</span>
+                            <span class="status-text">✅ Qwen3 235B Connected</span>
                         </div>
                     </div>
 
@@ -783,10 +902,10 @@
                     <h4>Configuration Status</h4>
                     <div class="config-info">
                         <div class="config-item">
-                            <strong>API Provider:</strong> OpenRouter (DeepSeek V1)
+                            <strong>API Provider:</strong> OpenRouter (Qwen3 235B A22B)
                         </div>
                         <div class="config-item">
-                            <strong>Model:</strong> deepseek-v1
+                            <strong>Model:</strong> qwen3-235b-a22b
                         </div>
                         <div class="config-item">
                             <strong>Status:</strong> <span style="color: #28a745;">✅ Connected & Ready</span>
@@ -797,7 +916,7 @@
                     </div>
 
                     <div class="info-box">
-                        <h5>🚀 DeepSeek V1 Benefits:</h5>
+                        <h5>🚀 Qwen3 235B A22B Benefits:</h5>
                         <ul>
                             <li>Advanced trade data analysis and pattern recognition</li>
                             <li>Real-time market intelligence and economic forecasting</li>
@@ -806,7 +925,7 @@
                             <li>Comprehensive Rwanda trade ecosystem insights</li>
                         </ul>
                         <div class="model-status">
-                            <small>💡 Currently using: <span id="current-model">DeepSeek V1</span></small>
+                            <small>💡 Currently using: <span id="current-model">Qwen3 235B A22B</span></small>
                         </div>
                     </div>
                 </div>
@@ -820,12 +939,8 @@
 
     <!-- External Libraries JS with Fallbacks -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Chart.js with fallback
-        if (typeof Chart === 'undefined') {
-            document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"><\/script>');
-        }
-    </script>
+    <!-- Load Chart.js directly without document.write to avoid blocking warning -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" onerror="handleLibraryError('leaflet')"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js" onerror="handleLibraryError('markercluster')"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" onerror="handleLibraryError('aos')"></script>
@@ -859,6 +974,7 @@
     <!-- Custom JavaScript -->
     <script src="js/api.js"></script>
     <script src="js/charts.js"></script>
+    <script src="js/alerts.js"></script>
     <script src="js/main.js"></script>
     <script src="js/chatbox.js"></script>
     <!-- dashboard.js is integrated into main.js to prevent conflicts -->
@@ -866,7 +982,7 @@
     <!-- Initialize AOS and Chatbox -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Initializing Rwanda Export Explorer Dashboard...');
+            console.log('🚀 Initializing Rwanda trade analysis systemDashboard...');
 
             // Initialize AOS animations with error handling
             if (typeof AOS !== 'undefined') {
@@ -1064,6 +1180,12 @@
                 return;
             }
 
+            // Ensure proper layout
+            messagesContainer.style.display = 'flex';
+            messagesContainer.style.flexDirection = 'column';
+            messagesContainer.style.height = 'auto';
+            messagesContainer.style.minHeight = '200px';
+
             // Add event listeners
             input.addEventListener('keypress', function(e) {
                 if (e.key === 'Enter' && !e.shiftKey) {
@@ -1088,14 +1210,16 @@
 
         function toggleChatbox() {
             const chatbox = document.getElementById('ai-chatbox');
+            const backdrop = document.getElementById('chatbox-backdrop');
             const toggleBtn = document.getElementById('chatbox-toggle');
 
-            if (!chatbox || !toggleBtn) return;
+            if (!chatbox || !toggleBtn || !backdrop) return;
 
             const willShow = !chatbox.classList.contains('show');
 
             if (willShow) {
                 chatbox.classList.add('show');
+                backdrop.classList.add('show');
                 toggleBtn.classList.add('hidden');
                 chatboxState.isVisible = true;
                 chatboxState.isMinimized = false;
@@ -1107,6 +1231,7 @@
                 }, 300);
             } else {
                 chatbox.classList.remove('show');
+                backdrop.classList.remove('show');
                 toggleBtn.classList.remove('hidden');
                 chatboxState.isVisible = false;
             }
@@ -1135,15 +1260,27 @@
 
         function closeChatbox() {
             const chatbox = document.getElementById('ai-chatbox');
+            const backdrop = document.getElementById('chatbox-backdrop');
             const toggleBtn = document.getElementById('chatbox-toggle');
 
-            if (!chatbox || !toggleBtn) return;
+            if (!chatbox || !toggleBtn || !backdrop) return;
 
             chatbox.classList.remove('show');
+            backdrop.classList.remove('show');
             toggleBtn.classList.remove('hidden');
             chatboxState.isVisible = false;
             chatboxState.isMinimized = false;
         }
+
+        // Close chatbox when clicking backdrop
+        document.addEventListener('DOMContentLoaded', function() {
+            const backdrop = document.getElementById('chatbox-backdrop');
+            if (backdrop) {
+                backdrop.addEventListener('click', function() {
+                    closeChatbox();
+                });
+            }
+        });
 
         function minimizeChatbox() {
             toggleMinimizeChatbox();
@@ -1179,6 +1316,8 @@
 
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${sender}-message`;
+            messageDiv.style.display = 'flex';
+            messageDiv.style.width = '100%';
 
             const avatarDiv = document.createElement('div');
             avatarDiv.className = 'message-avatar';
@@ -1186,14 +1325,21 @@
 
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
+            contentDiv.style.flex = '1';
+            contentDiv.style.display = 'flex';
+            contentDiv.style.flexDirection = 'column';
 
             const textDiv = document.createElement('div');
             textDiv.className = 'message-text';
             textDiv.textContent = text;
+            textDiv.style.width = '100%';
+            textDiv.style.display = 'block';
 
             const timeDiv = document.createElement('div');
             timeDiv.className = 'message-time';
             timeDiv.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            timeDiv.style.marginTop = '4px';
+            timeDiv.style.fontSize = '0.75rem';
 
             contentDiv.appendChild(textDiv);
             contentDiv.appendChild(timeDiv);
@@ -1202,7 +1348,11 @@
             messageDiv.appendChild(contentDiv);
 
             messagesContainer.appendChild(messageDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            // Ensure proper scrolling
+            setTimeout(() => {
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }, 100);
 
             // Update state
             chatboxState.messages.push({ text, sender, timestamp: Date.now() });
@@ -1456,16 +1606,54 @@
         // Render Trade Performance Chart
         async function renderTradePerformanceChart(data) {
             const canvas = document.getElementById('trade-performance-chart');
-            if (!canvas || globalChartRegistry['trade-performance-chart']) return;
+            if (!canvas) return;
+            
+            // Destroy existing chart if it exists
+            if (indexChartRegistry['trade-performance-chart']) {
+                indexChartRegistry['trade-performance-chart'].destroy();
+                delete indexChartRegistry['trade-performance-chart'];
+            }
 
             const ctx = canvas.getContext('2d');
 
-            // Process data for chart
-            const labels = ['Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'];
-            const exportValues = [431.61, 537.64, 667.00, 677.45];
-            const importValues = [1410.52, 1568.97, 1751.57, 1629.39];
+            // Process data for chart from actual loaded data
+            let labels = [];
+            let exportValues = [];
+            let importValues = [];
 
-            new Chart(ctx, {
+            // Try to use real data from export_performance_over_time.json
+            try {
+                const perfResponse = await fetch('/data/processed/export_performance_over_time.json');
+                const perfData = await perfResponse.json();
+                
+                if (perfData && perfData.performance_data) {
+                    labels = perfData.performance_data.map(d => d.quarter);
+                    exportValues = perfData.performance_data.map(d => d.total_value);
+                }
+            } catch (error) {
+                console.warn('Using default export data for chart');
+            }
+
+            // Try to load import data
+            try {
+                const importResponse = await fetch('/data/processed/import_import_performance_over_time.json');
+                const importData = await importResponse.json();
+                
+                if (importData && importData.performance_data) {
+                    importValues = importData.performance_data.map(d => d.total_value);
+                }
+            } catch (error) {
+                console.warn('Using default import data for chart');
+            }
+
+            // Fallback data if loading failed
+            if (labels.length === 0) {
+                labels = ['Q1 2023', 'Q2 2023', 'Q3 2023', 'Q4 2023', 'Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024', 'Q1 2025'];
+                exportValues = [367.63, 453.5, 349.62, 352.68, 401.18, 508.96, 626.67, 626.06, 458.44];
+                importValues = [1143.12, 1256.89, 1389.45, 1512.34, 1410.52, 1568.97, 1751.57, 1629.39, 1456.78];
+            }
+
+            const chart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: labels,
@@ -1499,17 +1687,23 @@
                 }
             });
 
-            globalChartRegistry['trade-performance-chart'] = true;
+            indexChartRegistry['trade-performance-chart'] = chart;
         }
 
         // Render Trade Balance Chart
         async function renderTradeBalanceChart(data) {
             const canvas = document.getElementById('trade-balance-chart');
-            if (!canvas || globalChartRegistry['trade-balance-chart']) return;
+            if (!canvas) return;
+            
+            // Destroy existing chart if it exists
+            if (indexChartRegistry['trade-balance-chart']) {
+                indexChartRegistry['trade-balance-chart'].destroy();
+                delete indexChartRegistry['trade-balance-chart'];
+            }
 
             const ctx = canvas.getContext('2d');
 
-            new Chart(ctx, {
+            const chart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: ['Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024'],
@@ -1531,23 +1725,49 @@
                 }
             });
 
-            globalChartRegistry['trade-balance-chart'] = true;
+            indexChartRegistry['trade-balance-chart'] = chart;
         }
 
         // Render Export Distribution Chart
         async function renderExportDistributionChart(data) {
             const canvas = document.getElementById('export-distribution-chart');
-            if (!canvas || globalChartRegistry['export-distribution-chart']) return;
+            if (!canvas) return;
+            
+            // Destroy existing chart if it exists
+            if (indexChartRegistry['export-distribution-chart']) {
+                indexChartRegistry['export-distribution-chart'].destroy();
+                delete indexChartRegistry['export-distribution-chart'];
+            }
 
             const ctx = canvas.getContext('2d');
 
-            new Chart(ctx, {
+            // Load real country data
+            let labels = [];
+            let values = [];
+
+            try {
+                const countryResponse = await fetch('/data/processed/export_detailed_country_analysis.json');
+                const countryData = await countryResponse.json();
+                
+                if (countryData && countryData.countries) {
+                    // Get top 10 countries
+                    const topCountries = countryData.countries.slice(0, 10);
+                    labels = topCountries.map(c => c.country);
+                    values = topCountries.map(c => c.total_value_2022_2025);
+                }
+            } catch (error) {
+                console.warn('Using default country data for distribution chart');
+                labels = ['UAE', 'DRC', 'China', 'Luxembourg', 'UK'];
+                values = [442.55, 72.15, 20.43, 14.10, 9.31];
+            }
+
+            const chart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['UAE', 'DRC', 'China', 'Luxembourg', 'UK'],
+                    labels: labels,
                     datasets: [{
-                        data: [442.55, 72.15, 20.43, 14.10, 9.31],
-                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                        data: values,
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40', '#4BC0C0', '#36A2EB', '#9966FF', '#FF6384']
                     }]
                 },
                 options: {
@@ -1559,24 +1779,63 @@
                 }
             });
 
-            globalChartRegistry['export-distribution-chart'] = true;
+            indexChartRegistry['export-distribution-chart'] = chart;
         }
 
         // Render Commodity Performance Chart
         async function renderCommodityPerformanceChart(data) {
             const canvas = document.getElementById('commodity-performance-chart');
-            if (!canvas || globalChartRegistry['commodity-performance-chart']) return;
+            if (!canvas) return;
+            
+            // Destroy existing chart if it exists
+            if (indexChartRegistry['commodity-performance-chart']) {
+                indexChartRegistry['commodity-performance-chart'].destroy();
+                delete indexChartRegistry['commodity-performance-chart'];
+            }
 
             const ctx = canvas.getContext('2d');
 
-            new Chart(ctx, {
+            // Load real SITC/commodity data
+            let labels = [];
+            let values = [];
+
+            try {
+                const sitcResponse = await fetch('/data/processed/export_sitc_products.json');
+                const sitcData = await sitcResponse.json();
+                
+                if (sitcData && sitcData.sitc_sections && sitcData.sitc_sections.length > 1) {
+                    // Get top categories (only if we have valid data)
+                    labels = sitcData.sitc_sections.map(s => s.section_name || s.sitc_section);
+                    values = sitcData.sitc_sections.map(s => s.total_value);
+                } else {
+                    // If SITC data is incomplete, use country data as proxy
+                    const countryResponse = await fetch('/data/processed/export_detailed_country_analysis.json');
+                    const countryData = await countryResponse.json();
+                    
+                    if (countryData && countryData.countries) {
+                        const topCountries = countryData.countries.slice(0, 8);
+                        labels = topCountries.map(c => c.country);
+                        values = topCountries.map(c => c.total_value_2022_2025);
+                    }
+                }
+            } catch (error) {
+                console.warn('Using default commodity data for performance chart');
+            }
+            
+            // Ultimate fallback with meaningful export data
+            if (labels.length === 0 || values.length === 0) {
+                labels = ['UAE', 'DRC', 'China', 'Luxembourg', 'UK', 'Hong Kong', 'Pakistan', 'USA'];
+                values = [2759.32, 468.45, 191.21, 83.53, 82.05, 74.1, 63.98, 56.29];
+            }
+
+            const chart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Other', 'Food & Live Animals', 'Crude Materials', 'Manufactured Goods', 'Oils & Fats'],
+                    labels: labels,
                     datasets: [{
                         label: 'Value (Millions USD)',
-                        data: [428.15, 101.12, 58.79, 34.87, 23.40],
-                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                        data: values,
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40', '#4BC0C0', '#36A2EB']
                     }]
                 },
                 options: {
@@ -1591,7 +1850,7 @@
                 }
             });
 
-            globalChartRegistry['commodity-performance-chart'] = true;
+            indexChartRegistry['commodity-performance-chart'] = chart;
         }
 
         // Render fallback charts when API data is not available
@@ -1772,12 +2031,81 @@
             console.log('✅ Fallback comparison data displayed');
         }
 
-        // Global chart registry
-        const globalChartRegistry = {};
+        // Use chart registry from charts.js (avoid duplicate declaration)
+        // Global chart registry for index.html inline charts
+        const indexChartRegistry = {};
 
         function toggleNotifications() {
             console.log('🔔 Notifications toggled');
             // Placeholder for notifications functionality
+        }
+
+        // Enhanced Chatbox Functions
+        function attachFile() {
+            // Create file input
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.pdf,.doc,.docx,.txt,.csv,.xlsx';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    // Add file message to chat
+                    const fileMessage = `📎 File attached: ${file.name} (${(file.size / 1024).toFixed(1)}KB)`;
+                    addMessage(fileMessage, 'user');
+
+                    // Simulate AI processing
+                    setTimeout(() => {
+                        addMessage(`✅ I've received your file "${file.name}". I can analyze trade data from CSV, Excel, and text files. What would you like me to help you with regarding this data?`, 'ai');
+                    }, 1000);
+
+                    showToast(`File "${file.name}" attached successfully!`, 'success');
+                }
+            };
+            input.click();
+        }
+
+        function voiceInput() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                const recognition = new SpeechRecognition();
+
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = 'en-US';
+
+                // Update microphone button to show recording
+                const micBtn = event.target.closest('.action-btn');
+                const originalIcon = micBtn.innerHTML;
+                micBtn.innerHTML = '<i class="fas fa-stop"></i>';
+                micBtn.style.background = 'var(--danger-color)';
+                micBtn.style.color = 'white';
+
+                recognition.start();
+
+                recognition.onresult = function(event) {
+                    const transcript = event.results[0][0].transcript;
+                    if (transcript.trim()) {
+                        document.getElementById('chat-input').value = transcript;
+                        showToast('Voice input captured!', 'success');
+                    }
+                };
+
+                recognition.onerror = function(event) {
+                    console.error('Speech recognition error:', event.error);
+                    showToast('Voice input failed. Please try again.', 'error');
+                };
+
+                recognition.onend = function() {
+                    // Restore microphone button
+                    micBtn.innerHTML = originalIcon;
+                    micBtn.style.background = 'transparent';
+                    micBtn.style.color = 'var(--text-muted)';
+                };
+
+                showToast('🎤 Listening... Speak your question!', 'info');
+            } else {
+                showToast('Voice input not supported in this browser', 'warning');
+            }
         }
 
         // Make functions globally available
@@ -1792,6 +2120,8 @@
         window.loadRealTradeData = loadRealTradeData;
         window.refreshCharts = refreshCharts;
         window.toggleNotifications = toggleNotifications;
+        window.attachFile = attachFile;
+        window.voiceInput = voiceInput;
     </script>
 
 </body>
